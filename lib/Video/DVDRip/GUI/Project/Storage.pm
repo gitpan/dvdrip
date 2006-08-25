@@ -1,4 +1,4 @@
-# $Id: Storage.pm,v 1.10 2006/08/16 19:34:38 joern Exp $
+# $Id: Storage.pm,v 1.11 2006/08/25 16:48:33 joern Exp $
 
 #-----------------------------------------------------------------------
 # Copyright (C) 2001-2006 Jörn Reder <joern AT zyn.de>.
@@ -65,22 +65,25 @@ sub build_factory {
                         tip   => __ "This is a short name for "
                             . "the project. All generated files "
                             . "are named like this.",
-                        rules => "no-whitespace",
+                        rules => "project-name",
                     ),
                     Gtk2::Ex::FormFactory::Entry->new(
                         attr  => "project.vob_dir",
                         label => __ "VOB directory",
                         tip   => __ "DVD VOB files are stored here.",
+                        rules => "project-path",
                     ),
                     Gtk2::Ex::FormFactory::Entry->new(
                         attr  => "project.avi_dir",
                         label => __ "AVI directory",
                         tip   => __ "For transcoded AVI, MPEG and OGM files.",
+                        rules => "project-path",
                     ),
                     Gtk2::Ex::FormFactory::Entry->new(
                         attr  => "project.snap_dir",
                         label => __ "Temporary directory",
                         tip   => __ "For temporary files",
+                        rules => "project-path",
                     ),
                     Gtk2::Ex::FormFactory::Button->new(
                         label  => __ "Create project",

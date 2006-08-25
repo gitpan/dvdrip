@@ -1,4 +1,4 @@
-# $Id: Control.pm,v 1.34 2006/08/20 15:11:02 joern Exp $
+# $Id: Control.pm,v 1.35 2006/08/25 16:19:52 joern Exp $
 
 #-----------------------------------------------------------------------
 # Copyright (C) 2001-2006 Jörn Reder <joern AT zyn.de>.
@@ -590,12 +590,12 @@ sub build_nodes_box {
             ),
             Gtk2::Ex::FormFactory::HBox->new(
                 content => [
-#                    Gtk2::Ex::FormFactory::Button->new(
-#                        object       => "cluster",
-#                        label        => __ "Add node",
-#                        stock        => "gtk-add",
-#                        clicked_hook => sub { $self->add_node },
-#                    ),
+                    Gtk2::Ex::FormFactory::Button->new(
+                        object       => "cluster",
+                        label        => __ "Add node",
+                        stock        => "gtk-add",
+                        clicked_hook => sub { $self->add_node },
+                    ),
                     Gtk2::Ex::FormFactory::Button->new(
                         object       => "cluster_node",
                         label        => __ "Edit node",
@@ -630,18 +630,6 @@ sub build_nodes_box {
                         },
                         active_depends => "cluster_node",
                     ),
-#                    Gtk2::Ex::FormFactory::Button->new(
-#                        object       => "cluster_node",
-#                        label        => __ "Remove node",
-#                        stock        => "gtk-delete",
-#                        clicked_hook => sub { $self->remove_node },
-#                        active_cond  => sub {
-#                            my $node = $self->selected_node or return;
-#                            my $state = $node->state;
-#                            $node->state ne 'running';
-#                        },
-#                        active_depends => "cluster_node",
-#                    ),
                 ],
             ),
         ],

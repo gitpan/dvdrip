@@ -350,8 +350,8 @@ sudo make install
 
    You can ommit the "make install" step. But then you can execute the
    'dvdrip' binary only from the build directory and you must put
-   "$PWD/bin" into your PATH (export PATH=$PWD:$PATH), otherwise dvd::rip
-   can't find its files.
+   "$PWD/bin" into your PATH (export PATH=$PWD/bin:$PATH), otherwise
+   dvd::rip can't find its files.
 
 1.4.2 Update dvd::rip
 
@@ -384,16 +384,14 @@ sudo make install
    Just extract another dvd::rip version you want to use somewhere, enter
    the created directory (dvdrip-x.xx) and execute perl Makefile.PL &&
    make here (no make install). Add the actual directory to your PATH
-   (export PATH=$PWD:$PATH) and you can start this version with
+   (export PATH=$PWD/bin:$PATH) and you can start this version with
    bin/dvdrip from this directory. All files and libraries located in the
-   actual distribution directory will be used. The . in PATH is
-   neccessary, otherwise some dvd::rip helper binaries may be taken from
-   another place.
+   actual distribution directory will be used.
 
 tar xvfz dvdrip-x.xx.tar.gz
 cd dvdrip-x.xx
 perl Makefile.PL && make
-export PATH=$PWD:$PATH
+export PATH=$PWD/bin:$PATH
 bin/dvdrip
 
 1.5 Uninstall dvd::rip
@@ -622,47 +620,29 @@ URL References
   15. http://wwwkeys.de.pgp.net:11371/pks/lookup?op=get&search=0x285CF473
 
 VI. CHANGES
-   $Id: Changes,v 1.186 2006/08/20 15:44:41 joern Exp $
+   $Id: Changes,v 1.187 2006/08/25 16:48:42 joern Exp $
 
    Revision history and release notes for dvd::rip.
 
-   0.98.0 [stable branch] Sun Aug 20 2006, joern
+   0.98.1 [stable branch] Fri Aug 25 2006, joern
     Features:
-    - Improved TOC reading: when lsdvd fails (version 0.16
-      sometimes does), fallback to tcprobe.
-    - Select longest title after TOC reading.
-    - Select nice value 19 by default.
-    - Improved installation procedure: most required Perl
-      modules are shipped with the dvd::rip tarball and installed
-      together with dvd::rip if missing on the system. Refer
-      to the installation docs for details.
-
+    - Updated spanish translation. Thanks to Sergio Cambra.
+    
     Bugfixes:
-    - Fixed wrong "Ripping stopped short" warning on NTSC
-      movies whith wrongly detected framerate on TOC reading.
-      Thanks to Ben <ben AT starlitworld.com> for his hints
-      on this topic.
-    - transcode options addition didn't work since Event::ExecFlow
-      is in use, reported by Kyle Husmann <kyle.husmann AT gmail.com>
-    - When default container preference was changed after reading
-      TOC, audio widgets weren't setup up properly (e.g. vorbis
-      missing for OGG containers) right after ripping.
-    - Grabbed subtitle preview images didn't show up immediately
-      after ripping, only after reselection of the subtitle.
-    - Fixed some missing widget deactivation when no title
-      was selected.
-    - Preferences: missed updating the checking result text
-      after creating a data directory.
-    - Frame rate popdown listed wrong format depending on the
-      selected system locale (e.g. 23,976 instead of 23.976)
-    - Framerate / count corrections didn't show up in the TOC
-      right after ripping, only after reopening the project file.
-    - Changed transcode version suggestion to 1.0.2.
-    - Don't reset all transcode settings to defaults after
-      ripping, just these which may be affected due to
-      attribute changes (e.g. correctly detected frame rate).
-    - No "Save file" request appeared after ripping, even if
-      ripping changed attributes and settings.
-    - Cluster mode: when creating the first node, dvd::rip
-      complained about creating the master node first.
+    - Fixed exception when TOC reading failed for some reason.
+      Thanks for the report to Jimmi <jimmi AT bglug.it>.
+    - Spaces in the VOB file path were not refused but gave
+      wrong error messages on TOC reading later. Made special
+      character checking on project name and paths more strict.
+      Reported by Google Roxxort <larspb AT hotmail.com>.
+    - Preferences window: places buttons at the bottom of
+      the window. Thanks for the hint to Gert Brinkmann
+      <g111 AT netcologne.de>.
+    - Preferences window: when changing the DVD drive from
+      the popup, result checking output wasn't updated.
+    - Added "Add node" button to the cluster control window
+      (was lost somehow... ;)
+
+    Notes:
+    - Updated COPYRIGHT file.
 

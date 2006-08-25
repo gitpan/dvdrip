@@ -1,6 +1,28 @@
-$Id: Changes,v 1.186 2006/08/20 15:44:41 joern Exp $
+$Id: Changes,v 1.187 2006/08/25 16:48:42 joern Exp $
 
 Revision history and release notes for dvd::rip.
+
+0.98.1 [stable branch] Fri Aug 25 2006, joern
+    Features:
+    - Updated spanish translation. Thanks to Sergio Cambra.
+    
+    Bugfixes:
+    - Fixed exception when TOC reading failed for some reason.
+      Thanks for the report to Jimmi <jimmi AT bglug.it>.
+    - Spaces in the VOB file path were not refused but gave
+      wrong error messages on TOC reading later. Made special
+      character checking on project name and paths more strict.
+      Reported by Google Roxxort <larspb AT hotmail.com>.
+    - Preferences window: places buttons at the bottom of
+      the window. Thanks for the hint to Gert Brinkmann
+      <g111 AT netcologne.de>.
+    - Preferences window: when changing the DVD drive from
+      the popup, result checking output wasn't updated.
+    - Added "Add node" button to the cluster control window
+      (was lost somehow... ;)
+
+    Notes:
+    - Updated COPYRIGHT file.
 
 0.98.0 [stable branch] Sun Aug 20 2006, joern
     Features:

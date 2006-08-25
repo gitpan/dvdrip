@@ -69,6 +69,7 @@ lib/Video/DVDRip/GUI/Project/Logging.pm
 lib/Video/DVDRip/GUI/Project/Subtitle.pm
 lib/Video/DVDRip/GUI/Project/Title.pm
 lib/Video/DVDRip/GUI/Context.pm
+lib/Video/DVDRip/GUI/Rules.pm
 lib/Video/DVDRip/GUI/FormFactory/ClipImage.pm
 lib/Video/DVDRip/GUI/FormFactory/SubtitlePreviews.pm
 lib/Video/DVDRip/GUI/Filters.pm

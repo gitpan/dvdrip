@@ -1,4 +1,4 @@
-# $Id: Preferences.pm,v 1.12 2006/08/16 19:34:38 joern Exp $
+# $Id: Preferences.pm,v 1.14 2006/08/21 21:30:28 joern Exp $
 
 #-----------------------------------------------------------------------
 # Copyright (C) 2001-2006 Jörn Reder <joern AT zyn.de>.
@@ -77,17 +77,16 @@ sub build {
                                 +>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>+
                                 | Notebook                        |
                                 |                                 |
-                                +--------------------------------]+
-                                |                         Buttons |
                                 +---------------------------------+
                                 ^ Check results                   |
+                                +--------------------------------]+
+                                |                         Buttons |
                                 +---------------------------------+
 			    ",
                         content => [
                             $self->build_config_notebook,
-                            $self->build_config_buttons,
                             $self->build_config_check_results,
-
+                            $self->build_config_buttons,
                         ],
                     ),
                 ],
@@ -190,7 +189,7 @@ sub build_config_notebook {
             elsif ( $item_def->{type} eq 'switch' ) {
                 $ff_class = "Gtk2::Ex::FormFactory::YesNo";
                 $ff_params{true_label} = __"Yes";
-                $ff_params{false_label} = __"NO";
+                $ff_params{false_label} = __"No";
             }
             elsif ( $item_def->{type} eq 'popup' ) {
                 $ff_class = "Gtk2::Ex::FormFactory::Popup";
@@ -211,7 +210,8 @@ sub build_config_notebook {
                             $self->get_context->get_object_attr (
                                 "config.selected_dvd_device",
                             ),
-                        ),
+                        );
+                        $self->check_params;
                     },
                     tip => __"This is a list of connected DVD drives "
                             ."found in your system"

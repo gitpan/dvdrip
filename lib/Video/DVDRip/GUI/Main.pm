@@ -1,4 +1,4 @@
-# $Id: Main.pm,v 1.90 2006/08/18 22:13:02 joern Exp $
+# $Id: Main.pm,v 1.91 2006/08/25 16:48:14 joern Exp $
 
 #-----------------------------------------------------------------------
 # Copyright (C) 2001-2006 Jörn Reder <joern AT zyn.de>.
@@ -32,6 +32,7 @@ use Video::DVDRip::GUI::Project::Transcode;
 use Video::DVDRip::GUI::Project::Logging;
 use Video::DVDRip::GUI::Progress;
 use Video::DVDRip::GUI::ExecFlow;
+use Video::DVDRip::GUI::Rules;
 
 sub get_form_factory            { shift->{form_factory}                 }
 sub get_gtk_icon_factory        { shift->{gtk_icon_factory}             }
@@ -176,9 +177,12 @@ sub build {
 
     $context->set_object( main => $self );
 
+    my $rule_checker = Video::DVDRip::GUI::Rules->new;
+
     my $window;
     my $ff = Gtk2::Ex::FormFactory->new(
         context  => $context,
+        rule_checker => $rule_checker,
         sync     => 1,
         content  => [
             $window = Gtk2::Ex::FormFactory::Window->new(

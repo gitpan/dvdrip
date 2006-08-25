@@ -3,51 +3,34 @@ Copyright (C) 2001-2003 by Jörn Reder, All Rights Reserved.
 dvd::rip is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself (that's either GPL or Artistic License).
 
-Main development is done by Jörn Reder, but these developers (listed
-in chronological order) contributed to the project with patches:
+Custom graphics and icons are licensed under the Creative Commons
+Attribution-ShareAlike 2.5 license. Many thanks to the Tango project;
+some of the graphical base material is derived from their icon library.
 
-Norbert Preining <preining AT logic.at>
-* 0.24 - Fast resizing bugfix
-* 0.22 - Patch to make dvd::rip work with Perl 5.005
-
-Doug Shea <doug_shea AT alumni.ucsd.edu>
-* 0.31 - Alphabetical order for all generated file names
-
-Martin Hill <mhill AT alumni.uwaterloo.ca>
-* 0.38 - splitpipe.c fix, to compile on PPC architectures
-
-Wolfgang Kinkeldei <kinkeldei AT nureg.de>
-* 0.44 - "Show video from here" feature on Clip/Zoom page
-
-Petros Stavrakakis <petros AT stavrakakis.de>
-* 0.49 - cdrdao settings
-
-Stefan Gmeiner <riddlebox AT freesurf.ch>
-* 0.49 - ISO size estimation for on-the-fly burning
+Main software development is done by Jörn Reder, but these developers
+(listed in alphabetical order) contributed to the project with patches.
+You find detailed information about their work in the Changes file:
 
 Christoph Bartoschek <bartoschek AT gmx.de>
-* 0.49 - Frame range consideration for bitrate calculation
-
-Matthias Riese <matthias.riese AT Uni-Bremen.DE>
-* 0.49 - Pop existant re-opened single instance windows into foreground
-       - DVD TOC: no fixed width but occupies all space available
-
-Jarkko Hietaniemi <jhi AT iki.fi>
-* 0.49 - To keep dvd::rip's dependencies low, I added Jarkko's
-	 String::Scanf module to the distribution, moving it to
-	 dvd::rip's namespace, so it can't conflict with an
-	 existent original version.
-
-Kianusch Sayah Karadji <kianusch AT sk-tech.net>
-* 0.49 - Open/Close tray buttons on title and burn page
-       - Volume scanning for chapter mode
-
+Doug Shea <doug_shea AT alumni.ucsd.edu>
+Eric Festinger <eric.festinger AT gmail.com>
+Fabio Russo <f.russo AT anthesia.it>
 Florin Andrei <florin AT andrei.myip.org>
-* 0.50 - Comprehensive revision of the documentation fixing many
-	 typos and grammatical flaws.
-
+Jarkko Hietaniemi <jhi AT iki.fi>
+Jean-Yves Simon <lethalwp AT tiscali.be>
+Jonathan Hall <flimzy AT flimzy.com>
 Jonathan Rogers <jonner AT mailandnews.com>
-* 0.50 - OGG cluster mode for movies with more than one PSU.
-
+Kevin Pulo <kev AT pulo.com.au>.
+Kianusch Sayah Karadji<kianusch AT sk-tech.net>
+Kianusch Sayah Karadji <kianusch AT sk-tech.net>
+Larry Siden <lsiden AT gmail.com>
+Martin Hill <mhill AT alumni.uwaterloo.ca>
+Matthias Riese <matthias.riese AT Uni-Bremen.DE>
+Mike Frysinger <vapier AT gentoo.org>
 Moritz Muehlenhoff <jmm AT informatik.uni-bremen.de>.
-* 0.50 - Diskspace warning bugfix.
+Norbert Preining <preining AT logic.at>
+Petros Stavrakakis <petros AT stavrakakis.de>
+Robin Hill <robin AT robinhill.me.uk>
+Stefan Gmeiner <riddlebox AT freesurf.ch>
+Ulrich Spoerlein <q AT galgenberg.net>
+Wolfgang Kinkeldei <kinkeldei AT nureg.de>

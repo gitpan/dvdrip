@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: sr\n"
 "Report-Msgid-Bugs-To: dvd::rip Translation Team <dvdrip-lang AT exit1.org>\n"
-"POT-Creation-Date: 2006-08-18 23:45+0200\n"
+"POT-Creation-Date: 2006-08-25 18:21+0200\n"
 "PO-Revision-Date: 2004-10-22 13:21+0200\n"
 "Last-Translator: Bojan Bozovic <bole89@infosky.net>\n"
 "Language-Team: Serbian <kde-yu@kde.org.yu>\n"
@@ -73,7 +73,7 @@ msgid ""
 "       -W port   port for webserver (default: 8888)\n"
 msgstr ""
 
-#: ../bin/dvdrip-splash:12 ../lib/Video/DVDRip/GUI/Main.pm:988
+#: ../bin/dvdrip-splash:12 ../lib/Video/DVDRip/GUI/Main.pm:991
 msgid "splash.en.png"
 msgstr ""
 
@@ -99,8 +99,8 @@ msgstr "Нема аудио"
 #: ../lib/Video/DVDRip/GUI/Cluster/Title.pm:127
 #: ../lib/Video/DVDRip/GUI/Cluster/Title.pm:133
 #: ../lib/Video/DVDRip/GUI/ExecFlow.pm:79
-#: ../lib/Video/DVDRip/GUI/Preferences.pm:192
-#: ../lib/Video/DVDRip/GUI/Main.pm:717
+#: ../lib/Video/DVDRip/GUI/Preferences.pm:191
+#: ../lib/Video/DVDRip/GUI/Main.pm:720
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:197
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:614
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:620
@@ -116,7 +116,9 @@ msgstr "Да"
 #: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:218
 #: ../lib/Video/DVDRip/GUI/Cluster/Title.pm:128
 #: ../lib/Video/DVDRip/GUI/Cluster/Title.pm:134
-#: ../lib/Video/DVDRip/GUI/ExecFlow.pm:80 ../lib/Video/DVDRip/GUI/Main.pm:718
+#: ../lib/Video/DVDRip/GUI/ExecFlow.pm:80
+#: ../lib/Video/DVDRip/GUI/Preferences.pm:192
+#: ../lib/Video/DVDRip/GUI/Main.pm:721
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:198
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:615
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:621
@@ -760,7 +762,7 @@ msgid "PSU core only available for ripped DVD's."
 msgstr "PSU језгро доступно само за ишчупане DVD-ове."
 
 #: ../lib/Video/DVDRip/JobPlanner.pm:602
-#: ../lib/Video/DVDRip/GUI/Project/Title.pm:414
+#: ../lib/Video/DVDRip/GUI/Project/Title.pm:415
 msgid "No chapters selected."
 msgstr "Нема изабраних поглавља."
 
@@ -804,7 +806,7 @@ msgstr ""
 msgid "Transcode multiple titles"
 msgstr "Кодирај + Раздвоји"
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:778 ../lib/Video/DVDRip/GUI/Main.pm:314
+#: ../lib/Video/DVDRip/JobPlanner.pm:778 ../lib/Video/DVDRip/GUI/Main.pm:317
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:37
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:650
 msgid "Transcode"
@@ -1257,229 +1259,229 @@ msgstr "Подразумевани директоријум за базу под
 msgid "Default directory for .rip project files"
 msgstr "Подразумевани директоријум за .rip фајлове пројекта"
 
-#: ../lib/Video/DVDRip/Config.pm:254
+#: ../lib/Video/DVDRip/Config.pm:253
 msgid "OGG file extension"
 msgstr "Наставак за OGG фајлове"
 
-#: ../lib/Video/DVDRip/Config.pm:260
+#: ../lib/Video/DVDRip/Config.pm:259
 msgid "Start cluster control daemon locally"
 msgstr "Покрени демон за контролу скупине локално"
 
-#: ../lib/Video/DVDRip/Config.pm:265
+#: ../lib/Video/DVDRip/Config.pm:264
 msgid "Hostname of server with daemon"
 msgstr "Име домаћина сервера са демоном"
 
-#: ../lib/Video/DVDRip/Config.pm:270
+#: ../lib/Video/DVDRip/Config.pm:269
 msgid "TCP port number of daemon"
 msgstr "Број TCP порта демона"
 
-#: ../lib/Video/DVDRip/Config.pm:276
+#: ../lib/Video/DVDRip/Config.pm:275
 msgid "Default video codec"
 msgstr "Подразумевани видео кодек"
 
-#: ../lib/Video/DVDRip/Config.pm:286
+#: ../lib/Video/DVDRip/Config.pm:285
 msgid "Default container format"
 msgstr "Подразумевани формат складишта"
 
-#: ../lib/Video/DVDRip/Config.pm:292
+#: ../lib/Video/DVDRip/Config.pm:291
 msgid "Default BPP value"
 msgstr ""
 
-#: ../lib/Video/DVDRip/Config.pm:296
+#: ../lib/Video/DVDRip/Config.pm:295
 msgid ""
 "If this option is set dvd::rip automatically calculates the video bitrate "
 "using this BPP value"
 msgstr ""
 
-#: ../lib/Video/DVDRip/Config.pm:301
+#: ../lib/Video/DVDRip/Config.pm:300
 #, fuzzy
 msgid "Grab subtitles while ripping"
 msgstr "Ухвати слике титла"
 
-#: ../lib/Video/DVDRip/Config.pm:305
+#: ../lib/Video/DVDRip/Config.pm:304
 #, fuzzy
 msgid "Grab all subtitles"
 msgstr "Ухвати слике титла"
 
-#: ../lib/Video/DVDRip/Config.pm:306
+#: ../lib/Video/DVDRip/Config.pm:305
 #, fuzzy
 msgid "Grab subtitles of preferred language"
 msgstr "Ухвати слике титла"
 
-#: ../lib/Video/DVDRip/Config.pm:307
+#: ../lib/Video/DVDRip/Config.pm:306
 #, fuzzy
 msgid "Don't grab subtitles"
 msgstr "Ухвати слике титла"
 
-#: ../lib/Video/DVDRip/Config.pm:311
+#: ../lib/Video/DVDRip/Config.pm:310
 msgid "Preferred language"
 msgstr "Пожељни језик"
 
-#: ../lib/Video/DVDRip/Config.pm:317
+#: ../lib/Video/DVDRip/Config.pm:316
 msgid "Workaround transcode NPTL bugs"
 msgstr ""
 
-#: ../lib/Video/DVDRip/Config.pm:323
+#: ../lib/Video/DVDRip/Config.pm:322
 msgid "Set LD_ASSUME_KERNEL to"
 msgstr ""
 
-#: ../lib/Video/DVDRip/Config.pm:332
+#: ../lib/Video/DVDRip/Config.pm:331
 #, fuzzy
 msgid "Basic settings"
 msgstr "Поставке прегледа"
 
-#: ../lib/Video/DVDRip/Config.pm:339
+#: ../lib/Video/DVDRip/Config.pm:338
 msgid "Commands"
 msgstr "Наредбе"
 
-#: ../lib/Video/DVDRip/Config.pm:345
+#: ../lib/Video/DVDRip/Config.pm:344
 msgid "Cluster options"
 msgstr "Опције скупине"
 
-#: ../lib/Video/DVDRip/Config.pm:351
+#: ../lib/Video/DVDRip/Config.pm:350
 msgid "Miscellaneous options"
 msgstr "Разне опције"
 
-#: ../lib/Video/DVDRip/Config.pm:373
+#: ../lib/Video/DVDRip/Config.pm:372
 msgid "- No Modifications -"
 msgstr "- Без измена -"
 
-#: ../lib/Video/DVDRip/Config.pm:389
+#: ../lib/Video/DVDRip/Config.pm:388
 msgid "Autoadjust, Big Frame Size, HQ Resize"
 msgstr "Аутоматско подешавање, Велики кадрови, HQ мењање величине"
 
-#: ../lib/Video/DVDRip/Config.pm:396
+#: ../lib/Video/DVDRip/Config.pm:395
 msgid "Autoadjust, Medium Frame Size, HQ Resize"
 msgstr "Аутоматско подешавање, Средњи кадрови, HQ мењање величине"
 
-#: ../lib/Video/DVDRip/Config.pm:403
+#: ../lib/Video/DVDRip/Config.pm:402
 msgid "Autoadjust, Small Frame Size, HQ Resize"
 msgstr "Аутоматско подешавање, Мали кадрови, HQ мењање величине"
 
-#: ../lib/Video/DVDRip/Config.pm:410
+#: ../lib/Video/DVDRip/Config.pm:409
 msgid "Autoadjust, Big Frame Size, Fast Resize"
 msgstr "Аутоматско подешавање, Велики кадрови, Брзо мењање величине"
 
-#: ../lib/Video/DVDRip/Config.pm:417
+#: ../lib/Video/DVDRip/Config.pm:416
 msgid "Autoadjust, Medium Frame Size, Fast Resize"
 msgstr "Аутоматско подешавање, Средњи кадрови, Брзо мењање величине"
 
-#: ../lib/Video/DVDRip/Config.pm:424
+#: ../lib/Video/DVDRip/Config.pm:423
 msgid "Autoadjust, Small Frame Size, Fast Resize"
 msgstr "Аутоматско подешавање, Мали кадрови, Брзо мењање величине"
 
-#: ../lib/Video/DVDRip/Config.pm:431
+#: ../lib/Video/DVDRip/Config.pm:430
 msgid "VCD 4:3, PAL"
 msgstr "VCD 4:3, PAL"
 
-#: ../lib/Video/DVDRip/Config.pm:447
+#: ../lib/Video/DVDRip/Config.pm:446
 msgid "VCD 16:9, PAL"
 msgstr "VCD 16:9, PAL"
 
-#: ../lib/Video/DVDRip/Config.pm:463
+#: ../lib/Video/DVDRip/Config.pm:462
 msgid "SVCD 16:9 -> 4:3 letterbox, PAL"
 msgstr "SVCD 16:9 -> 4:3 сандуче, PAL"
 
-#: ../lib/Video/DVDRip/Config.pm:479
+#: ../lib/Video/DVDRip/Config.pm:478
 msgid "SVCD anamorph, PAL"
 msgstr "SVCD anamorph, PAL"
 
-#: ../lib/Video/DVDRip/Config.pm:495
+#: ../lib/Video/DVDRip/Config.pm:494
 msgid "XSVCD anamorph, PAL"
 msgstr "XSVCD anamorph, PAL"
 
-#: ../lib/Video/DVDRip/Config.pm:511
+#: ../lib/Video/DVDRip/Config.pm:510
 msgid "CVD anamorph, PAL"
 msgstr "CVD anamorph, PAL"
 
-#: ../lib/Video/DVDRip/Config.pm:527
+#: ../lib/Video/DVDRip/Config.pm:526
 msgid "VCD 4:3, NTSC"
 msgstr "VCD 4:3, NTSC"
 
-#: ../lib/Video/DVDRip/Config.pm:543
+#: ../lib/Video/DVDRip/Config.pm:542
 msgid "VCD 16:9, NTSC"
 msgstr "VCD 16:9, NTSC"
 
-#: ../lib/Video/DVDRip/Config.pm:559
+#: ../lib/Video/DVDRip/Config.pm:558
 msgid "SVCD 16:9 -> 4:3 letterbox, NTSC"
 msgstr "SVCD 16:9 -> 4:3 сандуче, NTSC"
 
-#: ../lib/Video/DVDRip/Config.pm:575
+#: ../lib/Video/DVDRip/Config.pm:574
 msgid "SVCD anamorph, NTSC"
 msgstr "SVCD anamorph, NTSC"
 
-#: ../lib/Video/DVDRip/Config.pm:591
+#: ../lib/Video/DVDRip/Config.pm:590
 msgid "XSVCD anamorph, NTSC"
 msgstr "XSVCD anamorph, NTSC"
 
-#: ../lib/Video/DVDRip/Config.pm:607
+#: ../lib/Video/DVDRip/Config.pm:606
 msgid "CVD anamorph, NTSC"
 msgstr "CVD anamorph, NTSC"
 
-#: ../lib/Video/DVDRip/Config.pm:909
+#: ../lib/Video/DVDRip/Config.pm:908
 #, perl-brace-format
 msgid "{file} executable : Ok"
 msgstr "{file} извршни : У реду"
 
-#: ../lib/Video/DVDRip/Config.pm:912 ../lib/Video/DVDRip/Config.pm:928
+#: ../lib/Video/DVDRip/Config.pm:911 ../lib/Video/DVDRip/Config.pm:927
 #, perl-brace-format
 msgid "{file} not found : NOT Ok"
 msgstr "{file} није пронађен : НИЈЕ у реду"
 
-#: ../lib/Video/DVDRip/Config.pm:914
+#: ../lib/Video/DVDRip/Config.pm:913
 #, perl-brace-format
 msgid "{file} not executable : NOT Ok"
 msgstr "{file} није извршни : НИЈЕ у реду"
 
-#: ../lib/Video/DVDRip/Config.pm:924
+#: ../lib/Video/DVDRip/Config.pm:923
 msgid "has whitespace : NOT Ok"
 msgstr ""
 
-#: ../lib/Video/DVDRip/Config.pm:925
+#: ../lib/Video/DVDRip/Config.pm:924
 #, fuzzy
 msgid "is no absolute path : NOT Ok"
 msgstr "{file} није уписив : НИЈЕ у реду"
 
-#: ../lib/Video/DVDRip/Config.pm:930
+#: ../lib/Video/DVDRip/Config.pm:929
 #, perl-brace-format
 msgid "{file} not writable : NOT Ok"
 msgstr "{file} није уписив : НИЈЕ у реду"
 
-#: ../lib/Video/DVDRip/Config.pm:933
+#: ../lib/Video/DVDRip/Config.pm:932
 #, perl-brace-format
 msgid "{file} writable : Ok"
 msgstr "{file} уписив : У реду"
 
-#: ../lib/Video/DVDRip/Config.pm:944
+#: ../lib/Video/DVDRip/Config.pm:943
 #, perl-brace-format
 msgid "{value} is numeric : Ok"
 msgstr "{value} је нумеричка : У реду"
 
-#: ../lib/Video/DVDRip/Config.pm:947
+#: ../lib/Video/DVDRip/Config.pm:946
 #, perl-brace-format
 msgid "{value} isn't numeric : NOT Ok"
 msgstr "{value} није нумеричка : НИЈЕ у реду"
 
-#: ../lib/Video/DVDRip/Config.pm:957
+#: ../lib/Video/DVDRip/Config.pm:956
 msgid "is empty : Ok"
 msgstr "је празан : У реду"
 
-#: ../lib/Video/DVDRip/Config.pm:968
+#: ../lib/Video/DVDRip/Config.pm:967
 #, perl-brace-format
 msgid "{value} exists : Ok"
 msgstr "{value} постоји : У реду"
 
-#: ../lib/Video/DVDRip/Config.pm:971
+#: ../lib/Video/DVDRip/Config.pm:970
 #, perl-brace-format
 msgid "{value} doesn't exist : NOT Ok"
 msgstr "{value} не постоји : НИЈЕ у реду"
 
-#: ../lib/Video/DVDRip/Config.pm:982
+#: ../lib/Video/DVDRip/Config.pm:981
 #, perl-brace-format
 msgid "'{value}' is known : Ok"
 msgstr "„{value}“ је позната : У реду"
 
-#: ../lib/Video/DVDRip/Config.pm:986
+#: ../lib/Video/DVDRip/Config.pm:985
 #, perl-brace-format
 msgid "'{value}' unknown: NOT Ok"
 msgstr "„{value}“ није позната: НИЈЕ у реду"
@@ -1719,73 +1721,73 @@ msgstr ""
 msgid "transcode version"
 msgstr "опције transcode-а"
 
-#: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:454
+#: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:467
 #, fuzzy
 msgid "No details available"
 msgstr "Нема доступних титлова"
 
-#: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:455
+#: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:468
 msgid "Not tested, no SSH connection!"
 msgstr ""
 
-#: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:456
+#: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:469
 msgid "OK"
 msgstr ""
 
-#: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:457
+#: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:470
 msgid "NOT OK"
 msgstr ""
 
-#: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:462
+#: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:475
 msgid "Master can connect to node"
 msgstr ""
 
-#: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:486
+#: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:499
 msgid "Empty"
 msgstr ""
 
-#: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:489
+#: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:502
 #, fuzzy
 msgid "Node's data directory"
 msgstr "Подразумевани директоријум за базу података"
 
-#: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:493
+#: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:506
 #, fuzzy
 msgid "Masters's data directory"
 msgstr "Подразумевани директоријум за базу података"
 
-#: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:507
+#: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:520
 msgid "Content of data directory matches"
 msgstr ""
 
-#: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:517
+#: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:530
 #, fuzzy
 msgid "Node's transcode"
 msgstr "Тестирај кодирање"
 
-#: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:519
+#: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:532
 #, fuzzy
 msgid "Masters's transcode"
 msgstr "Тестирај кодирање"
 
-#: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:541
+#: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:554
 #, fuzzy
 msgid "Node can write to data directory"
 msgstr "Подразумевани директоријум за базу података"
 
-#: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:591
+#: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:604
 msgid "Can't execute tests:"
 msgstr ""
 
-#: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:645
+#: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:658
 msgid "All tests successful"
 msgstr ""
 
-#: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:651
+#: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:664
 msgid "Brief report"
 msgstr ""
 
-#: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:661
+#: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:674
 msgid "Detailed report"
 msgstr ""
 
@@ -1972,6 +1974,11 @@ msgstr "Регистровани чворови"
 msgid "Job"
 msgstr "Посао"
 
+#: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:595
+#, fuzzy
+msgid "Add node"
+msgstr "Додај чвор"
+
 #: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:601
 #, fuzzy
 msgid "Edit node"
@@ -1987,12 +1994,12 @@ msgstr "Покрени чвор"
 msgid "Stop node"
 msgstr "Заустави чвор"
 
-#: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:655
+#: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:643
 #, fuzzy
 msgid "Cluster control daemon log output"
 msgstr "Покрени демон за контролу скупине локално"
 
-#: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:698
+#: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:686
 msgid ""
 "You must first configure a cluster control daemon\n"
 "in the Preferences dialog."
@@ -2000,12 +2007,12 @@ msgstr ""
 "Прво морате подесити демон за контролу скупине\n"
 "у прозору „Поставке“."
 
-#: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:729
+#: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:717
 #, perl-brace-format
 msgid "Can't connect to master daemon on {server}:{port}."
 msgstr "Не могу да се повежем са главним демоном на {server}:{port}."
 
-#: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:748
+#: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:736
 #, perl-brace-format
 msgid ""
 "Can't start local master daemon on port {port}.\n"
@@ -2013,25 +2020,25 @@ msgid ""
 "see why it doesn't run."
 msgstr ""
 
-#: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:995
+#: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:981
 msgid "Please configure the master node first"
 msgstr ""
 
-#: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:1014
+#: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:1002
 #, fuzzy
 msgid "Connection to master daemon lost!"
 msgstr "Не могу да се повежем са главним демоном на {server}:{port}."
 
-#: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:1067
+#: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:1055
 #, fuzzy
 msgid "Do you want to remove the selected project?"
 msgstr "Да ли желите да уклоните изабрани чвор?"
 
-#: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:1149
+#: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:1137
 msgid "Do you want to remove the selected node?"
 msgstr "Да ли желите да уклоните изабрани чвор?"
 
-#: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:1219
+#: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:1207
 msgid ""
 "Do you really want to shutdown\n"
 "the Cluster Control Daemon?"
@@ -2234,22 +2241,18 @@ msgstr "Поставке"
 msgid "Global preferences"
 msgstr "Глобалне поставке"
 
-#: ../lib/Video/DVDRip/GUI/Preferences.pm:172
+#: ../lib/Video/DVDRip/GUI/Preferences.pm:171
 #, fuzzy
 msgid "Create directory"
 msgstr "AVI директоријум"
 
-#: ../lib/Video/DVDRip/GUI/Preferences.pm:178
+#: ../lib/Video/DVDRip/GUI/Preferences.pm:177
 #, fuzzy, perl-brace-format
 msgid ""
 "Can't create directory:\n"
 "\n"
 "{dir}"
 msgstr "Не могу да извршим mkpath за директоријум „{dir}“"
-
-#: ../lib/Video/DVDRip/GUI/Preferences.pm:193
-msgid "NO"
-msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Preferences.pm:216
 #: ../lib/Video/DVDRip/GUI/Project/Storage.pm:37
@@ -2443,112 +2446,112 @@ msgstr "/File/Сними пројекат као..."
 msgid "_Close Project"
 msgstr "/Фајл/_Затвори пројекат"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:292
+#: ../lib/Video/DVDRip/GUI/Main.pm:295
 #, fuzzy
 msgid "_Exit"
 msgstr "/_Уређивање"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:300
+#: ../lib/Video/DVDRip/GUI/Main.pm:303
 #, fuzzy
 msgid "_Edit"
 msgstr "/_Уређивање"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:303
+#: ../lib/Video/DVDRip/GUI/Main.pm:306
 #, fuzzy
 msgid "Edit _Preferences..."
 msgstr "/_Уређивање/Уреди _Поставке..."
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:311
+#: ../lib/Video/DVDRip/GUI/Main.pm:314
 #, fuzzy
 msgid "_Title"
 msgstr "Наслов"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:325
+#: ../lib/Video/DVDRip/GUI/Main.pm:328
 #, fuzzy
 msgid "View target file"
 msgstr "/_Операције/Прикажи циљни фајл"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:336
+#: ../lib/Video/DVDRip/GUI/Main.pm:339
 #, fuzzy
 msgid "Add project to cluster"
 msgstr "/_Операције/Додај пројекат у скупину"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:353
+#: ../lib/Video/DVDRip/GUI/Main.pm:356
 #, fuzzy
 msgid "Create vobsub"
 msgstr "Направи vobsub фајл"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:366
+#: ../lib/Video/DVDRip/GUI/Main.pm:369
 #, fuzzy
 msgid "Create dvdrip-info file"
 msgstr "/_Операције/Направи dvdrip-инфо фајл"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:382
+#: ../lib/Video/DVDRip/GUI/Main.pm:385
 #, fuzzy
 msgid "Create WAV from selected audio track"
 msgstr "/_Операције/Направи WAV од изабране нумере"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:393
+#: ../lib/Video/DVDRip/GUI/Main.pm:396
 #, fuzzy
 msgid "_Cluster"
 msgstr "/_Скупина"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:396
+#: ../lib/Video/DVDRip/GUI/Main.pm:399
 #, fuzzy
 msgid "Contro_l..."
 msgstr "/_Скупина/Контрол_а..."
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:404
+#: ../lib/Video/DVDRip/GUI/Main.pm:407
 #, fuzzy
 msgid "_Debug"
 msgstr "/_Исправљање грешака"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:408
+#: ../lib/Video/DVDRip/GUI/Main.pm:411
 #, fuzzy
 msgid "Show _Transcode commands..."
 msgstr "/_Исправљање грешака/Прикажи _Transcode наредбе..."
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:414
+#: ../lib/Video/DVDRip/GUI/Main.pm:417
 #, fuzzy
 msgid "Check _dependencies..."
 msgstr "/_Исправљање грешака/Провери _међузависности..."
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:421
+#: ../lib/Video/DVDRip/GUI/Main.pm:424
 msgid "_Help"
 msgstr ""
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:424
+#: ../lib/Video/DVDRip/GUI/Main.pm:427
 msgid "_About dvd::rip"
 msgstr ""
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:487
+#: ../lib/Video/DVDRip/GUI/Main.pm:490
 msgid "Selected DVD title"
 msgstr "Изабрани DVD наслов"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:491
+#: ../lib/Video/DVDRip/GUI/Main.pm:494
 msgid "Choose a DVD title at any time here"
 msgstr ""
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:589
+#: ../lib/Video/DVDRip/GUI/Main.pm:592
 #, perl-brace-format
 msgid "File '{filename}' not found or not readable."
 msgstr "Фајл „{filename}“ није пронађен или није читљив."
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:641
+#: ../lib/Video/DVDRip/GUI/Main.pm:644
 #, fuzzy
 msgid "Save project: choose filename"
 msgstr "Отвори пројекат из фајла „{filename}“"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:652 ../lib/Video/DVDRip/GUI/Main.pm:679
+#: ../lib/Video/DVDRip/GUI/Main.pm:655 ../lib/Video/DVDRip/GUI/Main.pm:682
 #, fuzzy, perl-brace-format
 msgid "Project {name} created"
 msgstr "Име пројекта"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:716
+#: ../lib/Video/DVDRip/GUI/Main.pm:719
 msgid "Do you want to save this project first?"
 msgstr "Да ли прво желите да запамтите овај пројекат?"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:765
+#: ../lib/Video/DVDRip/GUI/Main.pm:768
 msgid ""
 "This is the first time you start dvd::rip. The Preferences dialog was opened "
 "automatically for you. Please review the settings, in particular the default "
@@ -2556,7 +2559,7 @@ msgid ""
 "sufficient diskspace of at least 10 GB for full DVD copies."
 msgstr ""
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:812
+#: ../lib/Video/DVDRip/GUI/Main.pm:815
 msgid ""
 "Probe Command:\n"
 "==============\n"
@@ -2564,7 +2567,7 @@ msgstr ""
 "Наредба за тражење:\n"
 "==============\n"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:824
+#: ../lib/Video/DVDRip/GUI/Main.pm:827
 msgid ""
 "Rip Command:\n"
 "============\n"
@@ -2572,7 +2575,7 @@ msgstr ""
 "Наредба за чупање:\n"
 "============\n"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:829
+#: ../lib/Video/DVDRip/GUI/Main.pm:832
 msgid ""
 "Scan Command:\n"
 "============\n"
@@ -2580,7 +2583,7 @@ msgstr ""
 "Наредба за претрагу:\n"
 "============\n"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:836
+#: ../lib/Video/DVDRip/GUI/Main.pm:839
 msgid ""
 "Grab Preview Image Command:\n"
 "===========================\n"
@@ -2588,11 +2591,11 @@ msgstr ""
 "Наредба за хватање прелиминарне слике:\n"
 "===========================\n"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:847
+#: ../lib/Video/DVDRip/GUI/Main.pm:850
 msgid "You must first rip the selected title to see this command.\n"
 msgstr "Прво морате ишчупати изабрани наслов да бисте видели ову команду.\n"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:852
+#: ../lib/Video/DVDRip/GUI/Main.pm:855
 msgid ""
 "Transcode Command:\n"
 "==================\n"
@@ -2600,7 +2603,7 @@ msgstr ""
 "Наредба за кодирање:\n"
 "==================\n"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:881
+#: ../lib/Video/DVDRip/GUI/Main.pm:884
 msgid ""
 "Additional audio tracks commands:\n"
 "============================\n"
@@ -2608,7 +2611,7 @@ msgstr ""
 "Команде за додатне аудио нумере:\n"
 "============================\n"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:902
+#: ../lib/Video/DVDRip/GUI/Main.pm:905
 msgid ""
 "View DVD Command:\n"
 "=================\n"
@@ -2616,7 +2619,7 @@ msgstr ""
 "Наредба за приказ DVD-а:\n"
 "=================\n"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:910
+#: ../lib/Video/DVDRip/GUI/Main.pm:913
 msgid ""
 "View Files Command:\n"
 "===================\n"
@@ -2624,7 +2627,7 @@ msgstr ""
 "Наредба за приказ фајлова:\n"
 "===================\n"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:927
+#: ../lib/Video/DVDRip/GUI/Main.pm:930
 msgid ""
 "CD image creation command:\n"
 "========================\n"
@@ -2632,7 +2635,7 @@ msgstr ""
 "Наредба за прављење CD слике:\n"
 "========================\n"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:933
+#: ../lib/Video/DVDRip/GUI/Main.pm:936
 msgid ""
 "CD burning command:\n"
 "==================\n"
@@ -2640,7 +2643,7 @@ msgstr ""
 "Наредба за нарезивање CD-а:\n"
 "==================\n"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:943
+#: ../lib/Video/DVDRip/GUI/Main.pm:946
 msgid ""
 "WAV creation command:\n"
 "====================\n"
@@ -2648,11 +2651,11 @@ msgstr ""
 "Наредба за прављење WAV-а:\n"
 "====================\n"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:950
+#: ../lib/Video/DVDRip/GUI/Main.pm:953
 msgid "Commands executed by dvd::rip"
 msgstr ""
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:976
+#: ../lib/Video/DVDRip/GUI/Main.pm:979
 msgid ""
 "One or several mandatory tools are\n"
 "missing or too old. You must install them\n"
@@ -3757,7 +3760,7 @@ msgstr ""
 "\n"
 "Да ли сада желите поново да прочитате TOC?"
 
-#: ../lib/Video/DVDRip/GUI/Project/Title.pm:407
+#: ../lib/Video/DVDRip/GUI/Project/Title.pm:408
 msgid "Please select a title."
 msgstr "Молим Вас изаберите наслов."
 

@@ -1,4 +1,4 @@
-# $Id: Content.pm,v 1.26 2006/08/18 21:20:38 joern Exp $
+# $Id: Content.pm,v 1.27 2006/08/21 19:45:59 joern Exp $
 
 #-----------------------------------------------------------------------
 # Copyright (C) 2001-2006 Jörn Reder <joern AT zyn.de>.
@@ -107,7 +107,8 @@ sub select_longest_title {
         }
     }
     
-    $self->set_selected_title_nr($selected_title->nr);
+    $self->set_selected_title_nr($selected_title->nr)
+        if $selected_title;
     
     1;
 }
