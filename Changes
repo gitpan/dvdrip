@@ -1,6 +1,14 @@
-$Id: Changes,v 1.187 2006/08/25 16:48:42 joern Exp $
+$Id: Changes,v 1.187.2.2 2006/11/25 08:12:24 joern Exp $
 
 Revision history and release notes for dvd::rip.
+
+0.98.2 [stable branch] Sat Nov 25 2006, joern
+    Features:
+    - Updated Serbian translation, now in latin variation as
+      well, thanks to Filip Miletic <filmil AT gmail.com>.
+    - Added Italian splash screen, thanks to Fabio Russo.
+    - Dependency check: accept SVN versions of mplayer as
+      well.
 
 0.98.1 [stable branch] Fri Aug 25 2006, joern
     Features:

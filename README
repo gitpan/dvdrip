@@ -144,8 +144,8 @@ deb http://www.debian-multimedia.org experimental main
    Local download of the latest stable release: (currently no unstable
    release available)
 
-     dvdrip-0.98.0.tar.gz
-     dvdrip-0.98.0.tar.gz.asc (GnuPG signature, get key)
+     dvdrip-0.98.2.tar.gz
+     dvdrip-0.98.2.tar.gz.asc (GnuPG signature, get key)
 
    CPAN download directory: (list of mirrors)
 
@@ -427,12 +427,12 @@ bin/dvdrip
 
    You can download a static HTML version of this documentation:
 
-     http://www.exit1.org/dvdrip/dist/dvdrip-doc-html-0.98.0.tar.bz2
+     http://www.exit1.org/dvdrip/dist/dvdrip-doc-html-0.98.2.tar.bz2
 
    A PDF version is also available (generated using the excellent tool
    htmldoc):
 
-     http://www.exit1.org/dvdrip/dist/dvdrip-doc-0.98.0.pdf.bz2
+     http://www.exit1.org/dvdrip/dist/dvdrip-doc-0.98.2.pdf.bz2
      _________________________________________________________________
 
 IV.  MAILING LIST
@@ -495,9 +495,7 @@ URL References
    8. http://news.gmane.org/thread.php?group=gmane.comp.video.dvdrip.user
    9. http://lists.exit1.org/mailman/listinfo/transcode-users
 
-V.  SUPPORT
-
-Getting help
+V.  GETTING HELP
 
    If you encounter problems, which are not covered by the
    [3]documentation, in particular the [4]FAQ, subscribe to the
@@ -589,8 +587,8 @@ Contact the author
    can contact me by mail. But be aware, that the response time may be
    longer, comparing to a list posting. The address is:
    [14]Jörn Reder <joern AT zyn.de>. Please place the word "dvd::rip"
-   everywhere in the subject, in addition to your real topic, because
-   this helps me classifying your email correctly. Thanks.
+   somewhere in the subject, in addition to your real topic, because this
+   helps me classifying your email correctly. Thanks.
 
 GnuPG Key
 
@@ -620,29 +618,15 @@ URL References
   15. http://wwwkeys.de.pgp.net:11371/pks/lookup?op=get&search=0x285CF473
 
 VI. CHANGES
-   $Id: Changes,v 1.187 2006/08/25 16:48:42 joern Exp $
+   $Id: Changes,v 1.187.2.2 2006/11/25 08:12:24 joern Exp $
 
    Revision history and release notes for dvd::rip.
 
-   0.98.1 [stable branch] Fri Aug 25 2006, joern
+   0.98.2 [stable branch] Sat Nov 25 2006, joern
     Features:
-    - Updated spanish translation. Thanks to Sergio Cambra.
-    
-    Bugfixes:
-    - Fixed exception when TOC reading failed for some reason.
-      Thanks for the report to Jimmi <jimmi AT bglug.it>.
-    - Spaces in the VOB file path were not refused but gave
-      wrong error messages on TOC reading later. Made special
-      character checking on project name and paths more strict.
-      Reported by Google Roxxort <larspb AT hotmail.com>.
-    - Preferences window: places buttons at the bottom of
-      the window. Thanks for the hint to Gert Brinkmann
-      <g111 AT netcologne.de>.
-    - Preferences window: when changing the DVD drive from
-      the popup, result checking output wasn't updated.
-    - Added "Add node" button to the cluster control window
-      (was lost somehow... ;)
-
-    Notes:
-    - Updated COPYRIGHT file.
+    - Updated Serbian translation, now in latin variation as
+      well, thanks to Filip Miletic <filmil AT gmail.com>.
+    - Added Italian splash screen, thanks to Fabio Russo.
+    - Dependency check: accept SVN versions of mplayer as
+      well.
 

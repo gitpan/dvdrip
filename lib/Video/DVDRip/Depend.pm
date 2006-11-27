@@ -1,4 +1,4 @@
-# $Id: Depend.pm,v 1.22 2006/08/18 21:21:36 joern Exp $
+# $Id: Depend.pm,v 1.22.2.1 2006/11/25 08:12:07 joern Exp $
 
 #-----------------------------------------------------------------------
 # Copyright (C) 2001-2006 Jörn Reder <joern AT zyn.de>.
@@ -156,7 +156,7 @@ my %TOOLS = (
         optional    => 1,
         get_version => sub {
             my $out = qx[mplayer --help 2>&1];
-            if ( $out =~ /CVS/i ) {
+            if ( $out =~ /CVS|SVN/i ) {
                 return "cvs";
             }
             else {
