@@ -1,4 +1,4 @@
-# $Id: ExecFlow.pm,v 1.7 2006/08/18 21:23:13 joern Exp $
+# $Id: ExecFlow.pm,v 1.7.2.1 2007/03/10 09:52:51 joern Exp $
 
 #-----------------------------------------------------------------------
 # Copyright (C) 2001-2006 Jörn Reder <joern AT zyn.de>.
@@ -226,7 +226,7 @@ sub signal_title_probed {
 sub signal_program_exit {
     my $self = shift;
 
-    warn "signal_program_exit() not implemented yet";
+    $self->get_context->get_object("main")->exit_program (force => 1);
     
     1;    
 }

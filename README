@@ -144,8 +144,8 @@ deb http://www.debian-multimedia.org experimental main
    Local download of the latest stable release: (currently no unstable
    release available)
 
-     dvdrip-0.98.2.tar.gz
-     dvdrip-0.98.2.tar.gz.asc (GnuPG signature, get key)
+     dvdrip-0.98.3.tar.gz
+     dvdrip-0.98.3.tar.gz.asc (GnuPG signature, get key)
 
    CPAN download directory: (list of mirrors)
 
@@ -427,12 +427,12 @@ bin/dvdrip
 
    You can download a static HTML version of this documentation:
 
-     http://www.exit1.org/dvdrip/dist/dvdrip-doc-html-0.98.2.tar.bz2
+     http://www.exit1.org/dvdrip/dist/dvdrip-doc-html-0.98.3.tar.bz2
 
    A PDF version is also available (generated using the excellent tool
    htmldoc):
 
-     http://www.exit1.org/dvdrip/dist/dvdrip-doc-0.98.2.pdf.bz2
+     http://www.exit1.org/dvdrip/dist/dvdrip-doc-0.98.3.pdf.bz2
      _________________________________________________________________
 
 IV.  MAILING LIST
@@ -618,15 +618,33 @@ URL References
   15. http://wwwkeys.de.pgp.net:11371/pks/lookup?op=get&search=0x285CF473
 
 VI. CHANGES
-   $Id: Changes,v 1.187.2.2 2006/11/25 08:12:24 joern Exp $
+   $Id: Changes,v 1.187.2.3 2007/03/10 09:56:16 joern Exp $
 
    Revision history and release notes for dvd::rip.
 
-   0.98.2 [stable branch] Sat Nov 25 2006, joern
+   0.98.3 [stable branch] Sat Mar 10 2007, joern
     Features:
-    - Updated Serbian translation, now in latin variation as
-      well, thanks to Filip Miletic <filmil AT gmail.com>.
-    - Added Italian splash screen, thanks to Fabio Russo.
-    - Dependency check: accept SVN versions of mplayer as
-      well.
+    - Project's tmp/ directory is now created with 0775
+      permissions, which enables cluster mode running
+      with different users belonging to the same group.
+      Patch by Tom <mailbin AT comcast.net>.
+    - Added swedish translation from Daniel Nylander
+      <po AT danielnylander.se>
+
+    Bugfixes:
+    - Added another patch from Tom fixing cluster processes
+      not running with the correct nice value.
+    - "Exit dvd::rip after transcoding" didn't work.
+    - Fixed off by one bug in dvd::rip command line option
+      to select a specific title.
+    - Try to workaround transcode hanging on preview frame
+      grabbing by providing a different import filter. Based
+      on comments from Francesco Romani and Jesse Heitler
+      <jheitler AT po2.com>.
+    - Fixed crash on DVD image paths with whitespaces. Thanks
+      for their reports to Franz Brauﬂe <mike-nought AT gmx.de>
+      and Thomas Wendt <thoemy AT gmail.com>.
+    - Fixed crash on DVD titles without audio. Thanks for
+      the report to Edward Doolittle.
+    - Fixed mplayer version detection.
 

@@ -1,4 +1,4 @@
-$Id: TODO,v 1.131 2006/08/25 16:47:51 joern Exp $
+$Id: TODO,v 1.131.2.1 2007/03/10 09:56:44 joern Exp $
 
 NOTE:
 =====
@@ -25,6 +25,12 @@ THE BIG ONES ;):
 
 TODO PRIORITY B:
 ================
+- On startup show a list of recently used projects together
+  with a snapshot image as a teaser. Suggested by
+  Sebastian Boell <s.boell AT gmail.com>
+- Cluster: make network device for dvdrip-master/GUI communication
+  configurable, for security reasons, e.g. to bind to localhost only.
+  Suggested by Edmund Urbani <emu AT emu.name>
 - pre-define user defaults for all clip & zoom and transcode parameters
   in a special project .rip file located in the user's home directory.
   The file can be loaded, all parameters changed, and saved. Future

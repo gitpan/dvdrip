@@ -1,4 +1,4 @@
-# $Id: Main.pm,v 1.91 2006/08/25 16:48:14 joern Exp $
+# $Id: Main.pm,v 1.91.2.1 2007/03/10 09:55:07 joern Exp $
 
 #-----------------------------------------------------------------------
 # Copyright (C) 2001-2006 Jörn Reder <joern AT zyn.de>.
@@ -145,7 +145,7 @@ sub start {
                     $self->log("Selecting title $select_title");
                     $context->set_object_attr( "content.selected_title_nr",
                         $select_title );
-                    $project->content->set_selected_titles( [$select_title] );
+                    $project->content->set_selected_title_nr($select_title);
                 }
 
                 # Execute a function, if requested

@@ -1,4 +1,4 @@
-# $Id: Content.pm,v 1.27 2006/08/21 19:45:59 joern Exp $
+# $Id: Content.pm,v 1.27.2.1 2007/03/10 09:51:32 joern Exp $
 
 #-----------------------------------------------------------------------
 # Copyright (C) 2001-2006 Jörn Reder <joern AT zyn.de>.
@@ -122,6 +122,8 @@ sub get_probe_title_cnt_command {
 
     my $data_source = $self->project->rip_data_source;
 
+    $data_source = quotemeta($data_source);
+
     return "execflow tcprobe -H 10 -i $data_source && echo EXECFLOW_OK";
 }
 
@@ -129,6 +131,8 @@ sub get_read_toc_lsdvd_command {
     my $self = shift;
 
     my $data_source = $self->project->rip_data_source;
+
+    $data_source = quotemeta($data_source);
 
     my $command
         = "execflow lsdvd -a -n -c -s -v -Op $data_source 2>/dev/null";

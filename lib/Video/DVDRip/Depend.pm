@@ -1,4 +1,4 @@
-# $Id: Depend.pm,v 1.22.2.1 2006/11/25 08:12:07 joern Exp $
+# $Id: Depend.pm,v 1.22.2.2 2007/03/10 09:52:25 joern Exp $
 
 #-----------------------------------------------------------------------
 # Copyright (C) 2001-2006 Jörn Reder <joern AT zyn.de>.
@@ -160,7 +160,7 @@ my %TOOLS = (
                 return "cvs";
             }
             else {
-                $out =~ /MPlayer\s+(\d+\.\d+(\.\d+)?)/i;
+                $out =~ /MPlayer.*?(\d+\.\d+(\.\d+)?)/i;
                 return $1;
             }
         },

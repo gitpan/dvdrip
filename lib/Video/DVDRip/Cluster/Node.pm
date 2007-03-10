@@ -1,4 +1,4 @@
-# $Id: Node.pm,v 1.41 2006/08/16 19:34:38 joern Exp $
+# $Id: Node.pm,v 1.41.2.1 2007/03/10 09:51:12 joern Exp $
 
 #-----------------------------------------------------------------------
 # Copyright (C) 2001-2006 Jörn Reder <joern AT zyn.de>.
@@ -244,7 +244,7 @@ sub prepare_command {
 
     $ssh_cmd .= " -o PreferredAuthentications=publickey";
 
-    $command =~ s/execflow(?:\s*-n\s*\d+\s*)?//g;
+    $command =~ s/execflow/`which nice`/g;
     $command =~ s/"/\\"/g;
     $command = qq{execflow $ssh_cmd $username\@$name "$command"};
 

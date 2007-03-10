@@ -1,6 +1,32 @@
-$Id: Changes,v 1.187.2.2 2006/11/25 08:12:24 joern Exp $
+$Id: Changes,v 1.187.2.3 2007/03/10 09:56:16 joern Exp $
 
 Revision history and release notes for dvd::rip.
+
+0.98.3 [stable branch] Sat Mar 10 2007, joern
+    Features:
+    - Project's tmp/ directory is now created with 0775
+      permissions, which enables cluster mode running
+      with different users belonging to the same group.
+      Patch by Tom <mailbin AT comcast.net>.
+    - Added swedish translation from Daniel Nylander
+      <po AT danielnylander.se>
+
+    Bugfixes:
+    - Added another patch from Tom fixing cluster processes
+      not running with the correct nice value.
+    - "Exit dvd::rip after transcoding" didn't work.
+    - Fixed off by one bug in dvd::rip command line option
+      to select a specific title.
+    - Try to workaround transcode hanging on preview frame
+      grabbing by providing a different import filter. Based
+      on comments from Francesco Romani and Jesse Heitler
+      <jheitler AT po2.com>.
+    - Fixed crash on DVD image paths with whitespaces. Thanks
+      for their reports to Franz Brauﬂe <mike-nought AT gmx.de>
+      and Thomas Wendt <thoemy AT gmail.com>.
+    - Fixed crash on DVD titles without audio. Thanks for
+      the report to Edward Doolittle.
+    - Fixed mplayer version detection.
 
 0.98.2 [stable branch] Sat Nov 25 2006, joern
     Features:

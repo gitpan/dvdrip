@@ -1,4 +1,4 @@
-# $Id: Title.pm,v 1.180 2006/08/18 21:45:08 joern Exp $
+# $Id: Title.pm,v 1.180.2.1 2007/03/10 09:56:01 joern Exp $
 
 #-----------------------------------------------------------------------
 # Copyright (C) 2001-2006 Jörn Reder <joern AT zyn.de>.
@@ -762,7 +762,7 @@ sub transcode_data_source {
 
     }
 
-    return $source;
+    return quotemeta($source);
 }
 
 sub data_source_options {
@@ -1620,7 +1620,7 @@ sub get_rip_command {
 
     my $nr           = $self->tc_title_nr;
     my $name         = $self->project->name;
-    my $dvd_device   = $self->project->dvd_device;
+    my $dvd_device   = quotemeta($self->project->dvd_device);
     my $vob_dir      = $self->vob_dir;
     my $vob_nav_file = $self->vob_nav_file;
 
@@ -1810,7 +1810,7 @@ sub get_rip_and_scan_command {
     my $nr            = $self->tc_title_nr;
     my $audio_channel = $self->audio_channel;
     my $name          = $self->project->name;
-    my $dvd_device    = $self->project->dvd_device;
+    my $dvd_device    = quotemeta($self->project->dvd_device);
     my $vob_dir       = $self->vob_dir;
     my $vob_nav_file  = $self->vob_nav_file;
     my $tc_nice       = $self->tc_nice || 0;
@@ -3090,7 +3090,7 @@ sub get_take_snapshot_command {
         . " rm -r $tmp_dir && "
         . "echo EXECFLOW_OK";
 
-    $command =~ s/-x\s+([^,]+),null,null/-x $1,null/;
+    $command =~ s/-x\s+([^,]+),null,null/-x mpeg2,null/;
 
     return $command;
 }
@@ -3358,7 +3358,7 @@ sub get_view_dvd_command {
             a => $self->audio_channel,
             m => $self->tc_viewing_angle,
             b => $base_audio_code,
-            d => $self->project->dvd_device,
+            d => quotemeta($self->project->dvd_device),
         }
     );
 
@@ -3463,7 +3463,7 @@ sub get_view_vob_image_command {
     my $angle         = $self->tc_viewing_angle;
 
     my $command = "execflow tccat -i "
-        . $self->project->dvd_device
+        . quotemeta($self->project->dvd_device)
         . " -a $audio_channel -L "
         . " -T $nr,1,$angle | $command_tmpl";
 
