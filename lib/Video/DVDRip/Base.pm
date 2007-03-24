@@ -1,4 +1,4 @@
-# $Id: Base.pm,v 1.47 2006/08/16 19:34:38 joern Exp $
+# $Id: Base.pm,v 1.47.2.1 2007/03/17 10:56:47 joern Exp $
 
 #-----------------------------------------------------------------------
 # Copyright (C) 2001-2006 Jörn Reder <joern AT zyn.de>.
@@ -71,6 +71,13 @@ sub has {
     my ($command) = @_;
 
     return $self->depend_object->has($command);
+}
+
+sub exists {
+    my $self = shift;
+    my ($command) = @_;
+
+    return $self->depend_object->exists($command);
 }
 
 sub version {

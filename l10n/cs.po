@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dvdrip\n"
 "Report-Msgid-Bugs-To: dvd::rip Translation Team <dvdrip-lang AT exit1.org>\n"
-"POT-Creation-Date: 2006-08-25 18:21+0200\n"
+"POT-Creation-Date: 2007-03-24 12:04+0100\n"
 "PO-Revision-Date: 2004-05-15 22:24-0500\n"
 "Last-Translator: Ales Tosovsky <tosovsky@wo.cz>\n"
 "Language-Team: Czech <tosovsky@wo.cz>\n"
@@ -70,7 +70,7 @@ msgid ""
 "       -W port   port for webserver (default: 8888)\n"
 msgstr ""
 
-#: ../bin/dvdrip-splash:12 ../lib/Video/DVDRip/GUI/Main.pm:991
+#: ../bin/dvdrip-splash:12 ../lib/Video/DVDRip/GUI/Main.pm:1004
 msgid "splash.en.png"
 msgstr ""
 
@@ -97,7 +97,7 @@ msgstr "Žádný zvuk"
 #: ../lib/Video/DVDRip/GUI/Cluster/Title.pm:133
 #: ../lib/Video/DVDRip/GUI/ExecFlow.pm:79
 #: ../lib/Video/DVDRip/GUI/Preferences.pm:191
-#: ../lib/Video/DVDRip/GUI/Main.pm:720
+#: ../lib/Video/DVDRip/GUI/Main.pm:733
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:197
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:614
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:620
@@ -115,7 +115,7 @@ msgstr "Ano"
 #: ../lib/Video/DVDRip/GUI/Cluster/Title.pm:134
 #: ../lib/Video/DVDRip/GUI/ExecFlow.pm:80
 #: ../lib/Video/DVDRip/GUI/Preferences.pm:192
-#: ../lib/Video/DVDRip/GUI/Main.pm:721
+#: ../lib/Video/DVDRip/GUI/Main.pm:734
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:198
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:615
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:621
@@ -295,21 +295,6 @@ msgstr "DVD titul #{nr}"
 msgid "Move PSU #0 file to final destination"
 msgstr ""
 
-#: ../lib/Video/DVDRip/Cluster/JobPlanner.pm:87
-#, fuzzy, perl-brace-format
-msgid "Project '{project}' - title #{nr}"
-msgstr "Projekt {project} odstraněn"
-
-#: ../lib/Video/DVDRip/Cluster/JobPlanner.pm:140
-#, fuzzy, perl-brace-format
-msgid "Process PSU #{nr}"
-msgstr "DVD titul #{nr}"
-
-#: ../lib/Video/DVDRip/Cluster/JobPlanner.pm:174
-#, perl-brace-format
-msgid "Process all audio tracks - title #{nr}, PSU #{psu}"
-msgstr ""
-
 #: ../lib/Video/DVDRip/Cluster/JobPlanner.pm:223
 #, perl-brace-format
 msgid "Merge all audio tracks - title #{nr}, PSU #{psu}"
@@ -332,15 +317,12 @@ msgstr ""
 
 #: ../lib/Video/DVDRip/Cluster/JobPlanner.pm:318
 #: ../lib/Video/DVDRip/Cluster/JobPlanner.pm:354
-#: ../lib/Video/DVDRip/JobPlanner.pm:309 ../lib/Video/DVDRip/JobPlanner.pm:462
-#: ../lib/Video/DVDRip/JobPlanner.pm:1040
-#: ../lib/Video/DVDRip/JobPlanner.pm:1125
-#: ../lib/Video/DVDRip/JobPlanner.pm:1206
-#: ../lib/Video/DVDRip/JobPlanner.pm:1242
-#: ../lib/Video/DVDRip/JobPlanner.pm:1250
-#: ../lib/Video/DVDRip/JobPlanner.pm:1615
-#: ../lib/Video/DVDRip/JobPlanner.pm:1620
-#: ../lib/Video/DVDRip/JobPlanner.pm:1711
+#: ../lib/Video/DVDRip/JobPlanner.pm:309 ../lib/Video/DVDRip/JobPlanner.pm:464
+#: ../lib/Video/DVDRip/JobPlanner.pm:1064
+#: ../lib/Video/DVDRip/JobPlanner.pm:1159
+#: ../lib/Video/DVDRip/JobPlanner.pm:1240
+#: ../lib/Video/DVDRip/JobPlanner.pm:1276
+#: ../lib/Video/DVDRip/JobPlanner.pm:1284
 msgid "fps"
 msgstr ""
 
@@ -362,76 +344,80 @@ msgstr "Neznámý náhledový příkaz  '{command}'"
 msgid "All internal command files"
 msgstr ""
 
-#: ../lib/Video/DVDRip/Depend.pm:41
+#: ../lib/Video/DVDRip/Depend.pm:42
 #, fuzzy, perl-brace-format
 msgid "ERROR: '{file}' not found in PATH\n"
 msgstr "{file} nenalezen : NEVYHOVUJE"
 
-#: ../lib/Video/DVDRip/Depend.pm:68
+#: ../lib/Video/DVDRip/Depend.pm:69
 msgid "dvd::rip is nothing without transcode"
 msgstr "dvd::rip by nebyl ničím bez transcode"
 
-#: ../lib/Video/DVDRip/Depend.pm:87
+#: ../lib/Video/DVDRip/Depend.pm:88
 msgid "Needed for preview image processing"
 msgstr "Potřebné pro zpracování zkušebních obrázků"
 
-#: ../lib/Video/DVDRip/Depend.pm:100
+#: ../lib/Video/DVDRip/Depend.pm:101
+msgid "FFmpeg video converter command line program"
+msgstr ""
+
+#: ../lib/Video/DVDRip/Depend.pm:113
 msgid "xvid4 configuration tool"
 msgstr "konfigurační nástroj xvid4"
 
-#: ../lib/Video/DVDRip/Depend.pm:113
+#: ../lib/Video/DVDRip/Depend.pm:126
 msgid "Needed for subtitles"
 msgstr "Vyžadováno pro titulky"
 
-#: ../lib/Video/DVDRip/Depend.pm:126
+#: ../lib/Video/DVDRip/Depend.pm:139
 #, fuzzy
 msgid "Needed for faster DVD TOC reading"
 msgstr "Potřebné pro enkódování (S)VCD"
 
-#: ../lib/Video/DVDRip/Depend.pm:139
+#: ../lib/Video/DVDRip/Depend.pm:152
 #, fuzzy
 msgid "Needed for compressed vobsub subtitles"
 msgstr "Potřebné pro komprimované titulky"
 
-#: ../lib/Video/DVDRip/Depend.pm:155
+#: ../lib/Video/DVDRip/Depend.pm:168
 msgid "Needed for subtitle vobsub viewing"
 msgstr "Potřebné pro zobrazování vobsub titulků"
 
-#: ../lib/Video/DVDRip/Depend.pm:174
+#: ../lib/Video/DVDRip/Depend.pm:187
 msgid "Needed for OGG/Vorbis"
 msgstr "Potřebné pro OGG/Vorbis"
 
-#: ../lib/Video/DVDRip/Depend.pm:187
+#: ../lib/Video/DVDRip/Depend.pm:200
 msgid "For chapter progress bar (ogmtools)"
 msgstr "Pro zobrazení ukazatele zpracování kapitol (ogmtools)"
 
-#: ../lib/Video/DVDRip/Depend.pm:200
+#: ../lib/Video/DVDRip/Depend.pm:213
 msgid "Needed for (S)VCD encoding"
 msgstr "Potřebné pro enkódování (S)VCD"
 
-#: ../lib/Video/DVDRip/Depend.pm:213
+#: ../lib/Video/DVDRip/Depend.pm:226
 msgid "Can be used to view DVD's/files"
 msgstr "Může být použito k prohlížení DVD/souborů"
 
-#: ../lib/Video/DVDRip/Depend.pm:226
+#: ../lib/Video/DVDRip/Depend.pm:239
 msgid "Only for cluster mode master"
 msgstr "Jen pro hlavní počítač clusterového režimu"
 
-#: ../lib/Video/DVDRip/Depend.pm:239
+#: ../lib/Video/DVDRip/Depend.pm:252
 msgid "Used for DVD device scanning"
 msgstr ""
 
-#: ../lib/Video/DVDRip/Depend.pm:301
+#: ../lib/Video/DVDRip/Depend.pm:314
 #, fuzzy
 msgid "not installed"
 msgstr "Nainstalované"
 
-#: ../lib/Video/DVDRip/Depend.pm:491
+#: ../lib/Video/DVDRip/Depend.pm:511
 #, fuzzy
 msgid "Program"
 msgstr "Průběh"
 
-#: ../lib/Video/DVDRip/Depend.pm:491 ../lib/Video/DVDRip/GUI/Filters.pm:294
+#: ../lib/Video/DVDRip/Depend.pm:511 ../lib/Video/DVDRip/GUI/Filters.pm:294
 msgid "Version"
 msgstr ""
 
@@ -706,21 +692,21 @@ msgstr ""
 msgid "Grab preview"
 msgstr "Získává se náhled"
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:484
+#: ../lib/Video/DVDRip/JobPlanner.pm:494 ../lib/Video/DVDRip/JobPlanner.pm:518
 #, fuzzy
 msgid "transcode can't find this frame. "
 msgstr "transcode tento snímek nemůže najít."
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:485
+#: ../lib/Video/DVDRip/JobPlanner.pm:495 ../lib/Video/DVDRip/JobPlanner.pm:519
 msgid "Try a lower frame number. "
 msgstr ""
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:487
+#: ../lib/Video/DVDRip/JobPlanner.pm:497 ../lib/Video/DVDRip/JobPlanner.pm:521
 #, fuzzy
 msgid "Try forcing slow frame grabbing."
 msgstr "Zarovnání výsledného snímku"
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:496 ../lib/Video/DVDRip/JobPlanner.pm:580
+#: ../lib/Video/DVDRip/JobPlanner.pm:509 ../lib/Video/DVDRip/JobPlanner.pm:604
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:858
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:903
 #: ../lib/Video/DVDRip/GUI/Project/ClipZoom.pm:709
@@ -731,40 +717,40 @@ msgstr "Zarovnání výsledného snímku"
 msgid "You first have to rip this title."
 msgstr "Nejdřív musíte tento titul uložit na disk (ripnout)."
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:515
+#: ../lib/Video/DVDRip/JobPlanner.pm:539
 #, fuzzy
 msgid "Process preview frame"
 msgstr "Získat zkušební obrázek  #"
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:525
+#: ../lib/Video/DVDRip/JobPlanner.pm:549
 #, fuzzy
 msgid "Generate preview thumbnails"
 msgstr "Vygenerovat zkušební snímky"
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:548
+#: ../lib/Video/DVDRip/JobPlanner.pm:572
 #, fuzzy
 msgid "Apply preset & make previews"
 msgstr "Použít přednastavené hodnoty"
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:551
+#: ../lib/Video/DVDRip/JobPlanner.pm:575
 #, fuzzy
 msgid "Apply Clip & Zoom preset"
 msgstr "Oříznutí & Velikost"
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:588
+#: ../lib/Video/DVDRip/JobPlanner.pm:612
 msgid "You can't select a frame range with psu core."
 msgstr "Se zapnutým PSU jádrem není možno zvolit rozsah snímků."
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:596
+#: ../lib/Video/DVDRip/JobPlanner.pm:620
 msgid "PSU core only available for ripped DVD's."
 msgstr "PSU jádro je k dispozici jen pro uložená DVD."
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:602
+#: ../lib/Video/DVDRip/JobPlanner.pm:626
 #: ../lib/Video/DVDRip/GUI/Project/Title.pm:415
 msgid "No chapters selected."
 msgstr "Nejsou vybrané žádné kapitoly."
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:608
+#: ../lib/Video/DVDRip/JobPlanner.pm:632
 msgid ""
 "Splitting AVI files in\n"
 "chapter mode makes no sense."
@@ -772,15 +758,15 @@ msgstr ""
 "Rozdělování AVI souborů\n"
 "nemá v kapitolovém režimu smysl."
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:615
+#: ../lib/Video/DVDRip/JobPlanner.pm:639
 msgid "WARNING: no target audio track #0"
 msgstr "VAROVÁNÍ: cílová stopa #0 neexistuje"
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:622
+#: ../lib/Video/DVDRip/JobPlanner.pm:646
 msgid "Having more than one audio track isn't possible on a (X)VCD."
 msgstr "Na (X)VCD nelze mít více než jednu zvukovou stopu."
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:630
+#: ../lib/Video/DVDRip/JobPlanner.pm:654
 msgid ""
 "WARNING: Having more than two audio tracks\n"
 "on a (X)SVCD/CVD is not standard conform. You may\n"
@@ -790,7 +776,7 @@ msgstr ""
 "na  (X)SVCD/CVD nevyhovují standardu. Můžete\n"
 "mít problémy na hardwarových přehrávačích."
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:641
+#: ../lib/Video/DVDRip/JobPlanner.pm:665
 #, fuzzy
 msgid ""
 "You better cancel now and select the appropriate\n"
@@ -799,125 +785,121 @@ msgstr ""
 "Bylo by lepší přerušit akci a zvolit vhodnou\n"
 "předvolbu na záložce Oříznutí & Velikost."
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:706
+#: ../lib/Video/DVDRip/JobPlanner.pm:730
 #, fuzzy
 msgid "Transcode multiple titles"
 msgstr "Překódovat + Rozdělit"
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:778 ../lib/Video/DVDRip/GUI/Main.pm:317
+#: ../lib/Video/DVDRip/JobPlanner.pm:802 ../lib/Video/DVDRip/GUI/Main.pm:330
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:37
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:650
 msgid "Transcode"
 msgstr "Překódovat"
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:792
+#: ../lib/Video/DVDRip/JobPlanner.pm:816
 #, fuzzy
 msgid "Transcode chapters"
 msgstr "Volby transcode"
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:841
+#: ../lib/Video/DVDRip/JobPlanner.pm:865
 msgid "Transcode with VBR audio, first pass"
 msgstr ""
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:879
+#: ../lib/Video/DVDRip/JobPlanner.pm:903
 msgid "Transcode with VBR audio, second pass"
 msgstr ""
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:900
+#: ../lib/Video/DVDRip/JobPlanner.pm:924
 #, fuzzy
 msgid "Transcode with VBR audio"
 msgstr "Kóduje se audio"
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:911
+#: ../lib/Video/DVDRip/JobPlanner.pm:935
 #, fuzzy
 msgid "Calculate video bitrate "
 msgstr "Výpočet velikosti uložených dat"
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:919
+#: ../lib/Video/DVDRip/JobPlanner.pm:943
 #, perl-brace-format
 msgid "Adjusted video bitrate to {video_bitrate} after vbr audio transcoding"
 msgstr ""
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:940
+#: ../lib/Video/DVDRip/JobPlanner.pm:964
 #, fuzzy
 msgid "Transcode multipass"
 msgstr "Překódovat + Rozdělit"
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:965
+#: ../lib/Video/DVDRip/JobPlanner.pm:989
 #, fuzzy
 msgid "Transcode video"
 msgstr "Kóduje se video"
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:969
+#: ../lib/Video/DVDRip/JobPlanner.pm:993
 #, perl-brace-format
 msgid "PSU {psu}"
 msgstr ""
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:973
+#: ../lib/Video/DVDRip/JobPlanner.pm:997
 #, perl-brace-format
 msgid "chunk {chunk}"
 msgstr ""
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:977
+#: ../lib/Video/DVDRip/JobPlanner.pm:1001
 #, perl-brace-format
 msgid "pass {pass}"
 msgstr "průchod {pass}"
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:980
+#: ../lib/Video/DVDRip/JobPlanner.pm:1004
 msgid "single pass"
 msgstr "jeden průchod"
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:1084
+#: ../lib/Video/DVDRip/JobPlanner.pm:1118
 #, fuzzy
 msgid "Merge audio"
 msgstr "Připojuje se zvuk"
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:1086
-#: ../lib/Video/DVDRip/JobPlanner.pm:1606
-#: ../lib/Video/DVDRip/JobPlanner.pm:1671
-#: ../lib/Video/DVDRip/JobPlanner.pm:1699
-#: ../lib/Video/DVDRip/JobPlanner.pm:1728
+#: ../lib/Video/DVDRip/JobPlanner.pm:1120
 #, perl-brace-format
 msgid "audio track #{nr}"
 msgstr "zvuková stopa #{nr}"
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:1164
+#: ../lib/Video/DVDRip/JobPlanner.pm:1198
 #, fuzzy
 msgid "Transcode & merge audio track"
 msgstr "Kóduje se audio"
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:1175
+#: ../lib/Video/DVDRip/JobPlanner.pm:1209
 msgid "Add additional audio tracks"
 msgstr ""
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:1184
+#: ../lib/Video/DVDRip/JobPlanner.pm:1218
 #, fuzzy
 msgid "Transcode audio"
 msgstr "Kóduje se audio"
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:1186
+#: ../lib/Video/DVDRip/JobPlanner.pm:1220
 #, perl-brace-format
 msgid "track #{nr}"
 msgstr "stopa #{nr}"
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:1216
+#: ../lib/Video/DVDRip/JobPlanner.pm:1250
 #, fuzzy
 msgid "Multiplex MPEG"
 msgstr "Multiplexuje se MPEG"
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:1238
+#: ../lib/Video/DVDRip/JobPlanner.pm:1272
 msgid "Split OGG"
 msgstr "Rozdělit OGG"
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:1238
+#: ../lib/Video/DVDRip/JobPlanner.pm:1272
 msgid "Split AVI"
 msgstr "Rozdělit AVI"
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:1287
+#: ../lib/Video/DVDRip/JobPlanner.pm:1321
 msgid "Grab subtitle images"
 msgstr "Získávání obrázky titulků"
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:1308
+#: ../lib/Video/DVDRip/JobPlanner.pm:1342
 msgid ""
 "Need IFO files in place.\n"
 "You must re-read TOC from DVD."
@@ -925,7 +907,7 @@ msgstr ""
 "Zde jsou třeba IFO soubory.\n"
 "Musíte znovu načíst TOC údaje z DVD."
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:1317
+#: ../lib/Video/DVDRip/JobPlanner.pm:1351
 msgid ""
 "No splitted target files available.\n"
 "First transcode and split the movie."
@@ -933,66 +915,39 @@ msgstr ""
 "Nejsou žádné rozdělené  soubory.\n"
 "Nejdříve překódujte a rozdělte film."
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:1367
-#: ../lib/Video/DVDRip/JobPlanner.pm:1414
+#: ../lib/Video/DVDRip/JobPlanner.pm:1401
+#: ../lib/Video/DVDRip/JobPlanner.pm:1448
 #, fuzzy
 msgid "Create vobsub files"
 msgstr "Tvorba titulkového souboru"
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:1407
+#: ../lib/Video/DVDRip/JobPlanner.pm:1441
 msgid "Extract PS1 streams from VOB"
 msgstr ""
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:1425
+#: ../lib/Video/DVDRip/JobPlanner.pm:1459
 msgid "Splitted vobsub file generation"
 msgstr ""
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:1436
+#: ../lib/Video/DVDRip/JobPlanner.pm:1470
 #, fuzzy
 msgid "Count frames of files"
 msgstr "Spočítat snímky souboru {file}"
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:1455
+#: ../lib/Video/DVDRip/JobPlanner.pm:1489
 #, perl-brace-format
 msgid "File {file} has {frames} frames."
 msgstr "Soubor {file} obsahuje {frames} snímků."
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:1491
+#: ../lib/Video/DVDRip/JobPlanner.pm:1525
 msgid "Single vobsub file generation"
 msgstr ""
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:1502
+#: ../lib/Video/DVDRip/JobPlanner.pm:1536
 msgid "Extract PS1 stream from VOB"
 msgstr ""
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:1531
-#, perl-brace-format
-msgid "PS1 file '{filename}' already exists. Skip extraction."
-msgstr "PS1 soubor '{filename}' už existuje. Přeskakuji extrakci."
-
-#: ../lib/Video/DVDRip/JobPlanner.pm:1552
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:350
-msgid "Create vobsub file"
-msgstr "Tvorba titulkového souboru"
-
-#: ../lib/Video/DVDRip/JobPlanner.pm:1556
-#, fuzzy, perl-brace-format
-msgid ", file #{nr}"
-msgstr "DVD titul #{nr}"
-
-#: ../lib/Video/DVDRip/JobPlanner.pm:1605
-#: ../lib/Video/DVDRip/JobPlanner.pm:1670
-#, fuzzy
-msgid "Volume scan"
-msgstr "Rozbor hlasitosti"
-
-#: ../lib/Video/DVDRip/JobPlanner.pm:1698
-#: ../lib/Video/DVDRip/JobPlanner.pm:1727
-#, fuzzy
-msgid "Create WAV"
-msgstr "Vytvořit teď"
-
-#: ../lib/Video/DVDRip/Title.pm:426
+#: ../lib/Video/DVDRip/Title.pm:424
 #, fuzzy, perl-brace-format
 msgid ""
 "Set codec of audio track #{nr} to 'mp3', 'vorbis' not supported by AVI "
@@ -1000,135 +955,135 @@ msgid ""
 msgstr ""
 "Zvukový kodek stopy  #{nr} nastaven na 'mp3', 'vorbis' není v AVI podporován"
 
-#: ../lib/Video/DVDRip/Title.pm:435
+#: ../lib/Video/DVDRip/Title.pm:433
 #, fuzzy, perl-brace-format
 msgid ""
 "Set codec of audio track #{nr} to 'mp3', 'mp2' not supported by AVI container"
 msgstr ""
 "Nastavit kodek zvukové stopy #{nr} na 'mp3', 'mp2' není v AVI podporován"
 
-#: ../lib/Video/DVDRip/Title.pm:446
+#: ../lib/Video/DVDRip/Title.pm:444
 msgid "Set video codec to 'xvid', '"
 msgstr "Nastavit video kodek na 'xvid', '"
 
-#: ../lib/Video/DVDRip/Title.pm:448
+#: ../lib/Video/DVDRip/Title.pm:446
 #, fuzzy
 msgid "' not supported by AVI container"
 msgstr "' není v AVI formátu podporováno"
 
-#: ../lib/Video/DVDRip/Title.pm:460
+#: ../lib/Video/DVDRip/Title.pm:458
 #, perl-brace-format
 msgid "Set codec of audio track #{nr} to 'mp2', '"
 msgstr "Nastavit kodek zvukové stopy #{nr} na 'mp2', '"
 
-#: ../lib/Video/DVDRip/Title.pm:463 ../lib/Video/DVDRip/Title.pm:473
+#: ../lib/Video/DVDRip/Title.pm:461 ../lib/Video/DVDRip/Title.pm:471
 #, fuzzy
 msgid "' not supported by MPEG container"
 msgstr "' není v OGGu podporováno"
 
-#: ../lib/Video/DVDRip/Title.pm:471
+#: ../lib/Video/DVDRip/Title.pm:469
 msgid "Set video codec to 'SVCD', '"
 msgstr "Nastavit video kodek na 'SVCD', '"
 
-#: ../lib/Video/DVDRip/Title.pm:486
+#: ../lib/Video/DVDRip/Title.pm:484
 #, perl-brace-format
 msgid "Set codec of audio track #{nr} to 'vorbis', '"
 msgstr "Nastavit kodek zvukové stopy #{nr} na 'vorbis', '"
 
-#: ../lib/Video/DVDRip/Title.pm:489
+#: ../lib/Video/DVDRip/Title.pm:487
 #, fuzzy
 msgid "' not supported by OGG container"
 msgstr "' není v OGGu podporováno"
 
-#: ../lib/Video/DVDRip/Title.pm:498
+#: ../lib/Video/DVDRip/Title.pm:496
 #, fuzzy
 msgid "Set video codec to 'xvid', MPEG not supported by OGG container"
 msgstr "Nastavit vide kodek na 'xvid', (S)VCD/CVD není OGGem podporováno"
 
-#: ../lib/Video/DVDRip/Title.pm:736
+#: ../lib/Video/DVDRip/Title.pm:734
 #: ../lib/Video/DVDRip/GUI/Project/Title.pm:119
 msgid "Chp"
 msgstr "Kap"
 
-#: ../lib/Video/DVDRip/Title.pm:738
+#: ../lib/Video/DVDRip/Title.pm:736
 #, fuzzy
 msgid "Aud"
 msgstr "Žádný zvuk"
 
-#: ../lib/Video/DVDRip/Title.pm:742
+#: ../lib/Video/DVDRip/Title.pm:740
 msgid "frames"
 msgstr "snímků"
 
-#: ../lib/Video/DVDRip/Title.pm:814 ../lib/Video/DVDRip/Title.pm:892
+#: ../lib/Video/DVDRip/Title.pm:812 ../lib/Video/DVDRip/Title.pm:890
 #, perl-brace-format
 msgid "Can't mkpath directory '{dir}'"
 msgstr "Nelze založit adresář '{dir}'"
 
-#: ../lib/Video/DVDRip/Title.pm:976
+#: ../lib/Video/DVDRip/Title.pm:974
 msgid "Width isn't even."
 msgstr ""
 
-#: ../lib/Video/DVDRip/Title.pm:979
+#: ../lib/Video/DVDRip/Title.pm:977
 msgid "Width is not divisible by 16."
 msgstr ""
 
-#: ../lib/Video/DVDRip/Title.pm:982
+#: ../lib/Video/DVDRip/Title.pm:980
 msgid "Height isn't even."
 msgstr ""
 
-#: ../lib/Video/DVDRip/Title.pm:985
+#: ../lib/Video/DVDRip/Title.pm:983
 msgid "Height is not divisible by 16."
 msgstr ""
 
-#: ../lib/Video/DVDRip/Title.pm:993
+#: ../lib/Video/DVDRip/Title.pm:991
 msgid "Settings Ok"
 msgstr ""
 
-#: ../lib/Video/DVDRip/Title.pm:999
+#: ../lib/Video/DVDRip/Title.pm:997
 msgid "After 1st clipping"
 msgstr "Po prvním oříznutí"
 
-#: ../lib/Video/DVDRip/Title.pm:1000
+#: ../lib/Video/DVDRip/Title.pm:998
 msgid "After 2nd clipping"
 msgstr "Po druhém oříznutí"
 
-#: ../lib/Video/DVDRip/Title.pm:1001
+#: ../lib/Video/DVDRip/Title.pm:999
 msgid "After zoom"
 msgstr "Po změně velikosti"
 
-#: ../lib/Video/DVDRip/Title.pm:1006
+#: ../lib/Video/DVDRip/Title.pm:1004
 #, perl-brace-format
 msgid "Eff. ratio: <b>{eff}</b>, phys. ratio: <b>{phys}</b>"
 msgstr ""
 
-#: ../lib/Video/DVDRip/Title.pm:1166
+#: ../lib/Video/DVDRip/Title.pm:1164
 #, perl-brace-format
 msgid "Can't read VOB navigation file '{filename}'"
 msgstr "Nelze načíst navigační soubor VOBu '{filename}'"
 
-#: ../lib/Video/DVDRip/Title.pm:1197
+#: ../lib/Video/DVDRip/Title.pm:1195
 msgid "Program stream units calculated"
 msgstr ""
 
-#: ../lib/Video/DVDRip/Title.pm:1236
+#: ../lib/Video/DVDRip/Title.pm:1234
 #, perl-brace-format
 msgid "invalid parameter for frame_size ('{frame_size}')"
 msgstr "nesprávný parametr pro velikost_snímku ('{frame_size}')"
 
-#: ../lib/Video/DVDRip/Title.pm:1656 ../lib/Video/DVDRip/Title.pm:3002
+#: ../lib/Video/DVDRip/Title.pm:1654 ../lib/Video/DVDRip/Title.pm:3000
 #, perl-brace-format
 msgid "Can't read VOB navigation file '{vob_nav_file}'"
 msgstr "Nelze načíst navigační soubor VOBu '{vob_nav_file}'"
 
-#: ../lib/Video/DVDRip/Title.pm:1971
+#: ../lib/Video/DVDRip/Title.pm:1969
 msgid "Enabled PSU core. Movie is NTSC and has more than one PSU."
 msgstr "Zapnuto PSU jádro. Film je NTSC a obsahuje více než jeden PSU."
 
-#: ../lib/Video/DVDRip/Title.pm:1976
+#: ../lib/Video/DVDRip/Title.pm:1974
 msgid "Not enabling PSU core, because this movie has only one PSU."
 msgstr "PSU jádro ne nespouští, protože film má jen jedno PSU."
 
-#: ../lib/Video/DVDRip/Title.pm:2489
+#: ../lib/Video/DVDRip/Title.pm:2487
 #, perl-brace-format
 msgid ""
 "When using fast resize: Clip1 and Zoom size must be divisible by "
@@ -1137,13 +1092,13 @@ msgstr ""
 "Pokud se používá rychlá změna velikosti, musí být ořez1 a změna velikosti "
 "dělitelná {multiple_of}."
 
-#: ../lib/Video/DVDRip/Title.pm:2496
+#: ../lib/Video/DVDRip/Title.pm:2494
 msgid "When using fast resize: Width and height must both shrink or expand"
 msgstr ""
 "Pokud se používá rychlá změna velikosti musí být jak šířka tak výška buď "
 "zmenšeny, nebo zvětšeny."
 
-#: ../lib/Video/DVDRip/Title.pm:2976
+#: ../lib/Video/DVDRip/Title.pm:2974
 msgid ""
 "Fast VOB navigation only available for ripped DVD's, falling back to slow "
 "method."
@@ -1151,20 +1106,20 @@ msgstr ""
 "Rychlá navigace ve VOBu je přístupná jen u uložených DVD. Přepíná se zpět na "
 "pomalou metodu."
 
-#: ../lib/Video/DVDRip/Title.pm:2980
+#: ../lib/Video/DVDRip/Title.pm:2978
 msgid "VOB navigation file is missing. Slow navigation method used."
 msgstr "Soubor pro VOB navigaci chybí. Používá se pomalá navigační metoda."
 
-#: ../lib/Video/DVDRip/Title.pm:2984
+#: ../lib/Video/DVDRip/Title.pm:2982
 msgid "Using slow preview grabbing as adviced by user"
 msgstr ""
 
-#: ../lib/Video/DVDRip/Title.pm:3014
+#: ../lib/Video/DVDRip/Title.pm:3012
 #, perl-brace-format
 msgid "VOB navigation file '{vob_nav_file}' is corrupted."
 msgstr "Navigační soubor VOBu '{vob_nav_file}' je poškozen."
 
-#: ../lib/Video/DVDRip/Title.pm:3029
+#: ../lib/Video/DVDRip/Title.pm:3027
 #, perl-brace-format
 msgid ""
 "Can't find frame {frame} in VOB navigation file '{vob_nav_file}' (which has "
@@ -1173,35 +1128,35 @@ msgstr ""
 "V navigačním souboru VOBu '{vob_nav_file}' (který obsahuje jen  {frames} "
 "snímků) nelze najít snímek {frame}. "
 
-#: ../lib/Video/DVDRip/Title.pm:3414
+#: ../lib/Video/DVDRip/Title.pm:3462
 msgid "You first have to transcode this title."
 msgstr "Tento titul musíte nejdříve překódovat. "
 
-#: ../lib/Video/DVDRip/Title.pm:3577
+#: ../lib/Video/DVDRip/Title.pm:3625
 msgid "No files for image creation selected."
 msgstr "Nejsou zvoleny žádné soubory pro vytvoření obrazu."
 
-#: ../lib/Video/DVDRip/Title.pm:3586 ../lib/Video/DVDRip/Title.pm:3663
+#: ../lib/Video/DVDRip/Title.pm:3634 ../lib/Video/DVDRip/Title.pm:3711
 msgid "No burn files selected."
 msgstr "Nejsou zvoleny žádné soubory k vypálení."
 
-#: ../lib/Video/DVDRip/Title.pm:3587
+#: ../lib/Video/DVDRip/Title.pm:3635
 msgid "File is already an CD image."
 msgstr "Soubor už je obrazem CD."
 
-#: ../lib/Video/DVDRip/Title.pm:3592
+#: ../lib/Video/DVDRip/Title.pm:3640
 msgid "Can't burn (S)VCD on the fly"
 msgstr "(S)VCD nelze vypalovat přímo (on the fly)"
 
-#: ../lib/Video/DVDRip/Title.pm:3652
+#: ../lib/Video/DVDRip/Title.pm:3700
 msgid "No files for burning selected."
 msgstr "Nejsou zvoleny žádné soubory k vypálení."
 
-#: ../lib/Video/DVDRip/Title.pm:3920 ../lib/Video/DVDRip/Title.pm:3955
+#: ../lib/Video/DVDRip/Title.pm:3968 ../lib/Video/DVDRip/Title.pm:4003
 msgid "No subtitle selected"
 msgstr "Nejsou zvoleny žádné titulky."
 
-#: ../lib/Video/DVDRip/Title.pm:4208
+#: ../lib/Video/DVDRip/Title.pm:4256
 #, perl-brace-format
 msgid ""
 "Your frame size isn't conform to the standard,\n"
@@ -1212,7 +1167,7 @@ msgstr ""
 "který by měl pro {codec}/{mode} odpovídat {should_width}x{should_height}, "
 "avšak zvoleno je {width}x{height}."
 
-#: ../lib/Video/DVDRip/Title.pm:4233
+#: ../lib/Video/DVDRip/Title.pm:4281
 msgid ""
 "2nd clipping parameters can only be\n"
 "moved to 1st clipping parameters, if\n"
@@ -1824,7 +1779,7 @@ msgid "dvd::rip - Cluster Control"
 msgstr "Ovládání clusteru"
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:250
-#: ../lib/Video/DVDRip/GUI/Main.pm:247
+#: ../lib/Video/DVDRip/GUI/Main.pm:260
 #, fuzzy
 msgid "_File"
 msgstr "/_Soubor"
@@ -2387,17 +2342,17 @@ msgstr ""
 msgid "Overwrite existing file '{filename}'?"
 msgstr "Přepsat existující soubor '{filename}'?"
 
-#: ../lib/Video/DVDRip/GUI/Base.pm:170
+#: ../lib/Video/DVDRip/GUI/Base.pm:173
 #, fuzzy
 msgid "Error message"
 msgstr "Záznam činnosti"
 
-#: ../lib/Video/DVDRip/GUI/Base.pm:204
+#: ../lib/Video/DVDRip/GUI/Base.pm:207
 #, fuzzy
 msgid "dvd::rip - Message"
 msgstr "dvd::rip Zpráva"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:100
+#: ../lib/Video/DVDRip/GUI/Main.pm:101
 #, perl-brace-format
 msgid ""
 "An internal exception was thrown!\n"
@@ -2406,147 +2361,153 @@ msgid ""
 "{msg}"
 msgstr ""
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:119
+#: ../lib/Video/DVDRip/GUI/Main.pm:120
 #, perl-brace-format
 msgid "Detected transcode version: {version}"
 msgstr "Rozpoznaná verze transcode: {version}"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:133
+#: ../lib/Video/DVDRip/GUI/Main.pm:134
 #, fuzzy
 msgid "Opening project file failed. Aborting."
 msgstr "Otevírání projektového souboru selhalo. Předčasně ukončeno.\n"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:250
+#: ../lib/Video/DVDRip/GUI/Main.pm:168
+msgid ""
+"dvd::rip detected transcode version >= 1.1.x. Support for this version is "
+"experimental. Please report bugs, if you find them."
+msgstr ""
+
+#: ../lib/Video/DVDRip/GUI/Main.pm:263
 #, fuzzy
 msgid "_New Project"
 msgstr "/Soubor/_Nový projekt"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:258
+#: ../lib/Video/DVDRip/GUI/Main.pm:271
 #, fuzzy
 msgid "_Open Project..."
 msgstr "/Soubor/_Otevřít projekt..."
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:266
+#: ../lib/Video/DVDRip/GUI/Main.pm:279
 #, fuzzy
 msgid "_Save Project"
 msgstr "/Soubor/_Uložit projekt"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:273
+#: ../lib/Video/DVDRip/GUI/Main.pm:286
 #, fuzzy
 msgid "Save _Project as..."
 msgstr "/Soubor/Uložit projekt jako..."
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:280
+#: ../lib/Video/DVDRip/GUI/Main.pm:293
 #, fuzzy
 msgid "_Close Project"
 msgstr "/Soubor/_Zavřít projekt"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:295
+#: ../lib/Video/DVDRip/GUI/Main.pm:308
 #, fuzzy
 msgid "_Exit"
 msgstr "/_Upravit"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:303
+#: ../lib/Video/DVDRip/GUI/Main.pm:316
 #, fuzzy
 msgid "_Edit"
 msgstr "/_Upravit"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:306
+#: ../lib/Video/DVDRip/GUI/Main.pm:319
 #, fuzzy
 msgid "Edit _Preferences..."
 msgstr "/_Upravit/Upravit _předvolby..."
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:314
+#: ../lib/Video/DVDRip/GUI/Main.pm:327
 #, fuzzy
 msgid "_Title"
 msgstr "Titul"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:328
+#: ../lib/Video/DVDRip/GUI/Main.pm:341
 #, fuzzy
 msgid "View target file"
 msgstr "/_Činnosti/Zobrazit vytvořený soubor"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:339
+#: ../lib/Video/DVDRip/GUI/Main.pm:352
 #, fuzzy
 msgid "Add project to cluster"
 msgstr "/_Činnosti/Vložit projekt do clusteru"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:356
+#: ../lib/Video/DVDRip/GUI/Main.pm:369
 #, fuzzy
 msgid "Create vobsub"
 msgstr "Tvorba titulkového souboru"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:369
+#: ../lib/Video/DVDRip/GUI/Main.pm:382
 #, fuzzy
 msgid "Create dvdrip-info file"
 msgstr "/_Činnosti/Vytvořit soubor dvdrip-info"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:385
+#: ../lib/Video/DVDRip/GUI/Main.pm:398
 #, fuzzy
 msgid "Create WAV from selected audio track"
 msgstr "/_Činnosti/Vytvořit WAV z vybrané zvukové stopy"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:396
+#: ../lib/Video/DVDRip/GUI/Main.pm:409
 #, fuzzy
 msgid "_Cluster"
 msgstr "/_Cluster"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:399
+#: ../lib/Video/DVDRip/GUI/Main.pm:412
 #, fuzzy
 msgid "Contro_l..."
 msgstr "/_Cluster/Ov_ládání..."
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:407
+#: ../lib/Video/DVDRip/GUI/Main.pm:420
 #, fuzzy
 msgid "_Debug"
 msgstr "/_Ladění"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:411
+#: ../lib/Video/DVDRip/GUI/Main.pm:424
 #, fuzzy
 msgid "Show _Transcode commands..."
 msgstr "/_Ladění/Zobrazit příkazy _Transcode..."
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:417
+#: ../lib/Video/DVDRip/GUI/Main.pm:430
 #, fuzzy
 msgid "Check _dependencies..."
 msgstr "/_Ladění/Zkontrolovat _závislosti..."
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:424
+#: ../lib/Video/DVDRip/GUI/Main.pm:437
 msgid "_Help"
 msgstr ""
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:427
+#: ../lib/Video/DVDRip/GUI/Main.pm:440
 msgid "_About dvd::rip"
 msgstr ""
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:490
+#: ../lib/Video/DVDRip/GUI/Main.pm:503
 msgid "Selected DVD title"
 msgstr "Zvolený DVD titul"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:494
+#: ../lib/Video/DVDRip/GUI/Main.pm:507
 msgid "Choose a DVD title at any time here"
 msgstr ""
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:592
+#: ../lib/Video/DVDRip/GUI/Main.pm:605
 #, perl-brace-format
 msgid "File '{filename}' not found or not readable."
 msgstr "Soubor '{filename}' nebyl nalezen nebo je nečitelný."
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:644
+#: ../lib/Video/DVDRip/GUI/Main.pm:657
 #, fuzzy
 msgid "Save project: choose filename"
 msgstr "Otevřít projekt ze souboru '{filename}'"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:655 ../lib/Video/DVDRip/GUI/Main.pm:682
+#: ../lib/Video/DVDRip/GUI/Main.pm:668 ../lib/Video/DVDRip/GUI/Main.pm:695
 #, fuzzy, perl-brace-format
 msgid "Project {name} created"
 msgstr "Název projektu"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:719
+#: ../lib/Video/DVDRip/GUI/Main.pm:732
 msgid "Do you want to save this project first?"
 msgstr "Chcete tento projekt nejdříve uložit?"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:768
+#: ../lib/Video/DVDRip/GUI/Main.pm:781
 msgid ""
 "This is the first time you start dvd::rip. The Preferences dialog was opened "
 "automatically for you. Please review the settings, in particular the default "
@@ -2554,7 +2515,7 @@ msgid ""
 "sufficient diskspace of at least 10 GB for full DVD copies."
 msgstr ""
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:815
+#: ../lib/Video/DVDRip/GUI/Main.pm:828
 msgid ""
 "Probe Command:\n"
 "==============\n"
@@ -2562,7 +2523,7 @@ msgstr ""
 "Zkušební příkaz:\n"
 "==============\n"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:827
+#: ../lib/Video/DVDRip/GUI/Main.pm:840
 msgid ""
 "Rip Command:\n"
 "============\n"
@@ -2570,7 +2531,7 @@ msgstr ""
 "Ripovací příkaz:\n"
 "============\n"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:832
+#: ../lib/Video/DVDRip/GUI/Main.pm:845
 msgid ""
 "Scan Command:\n"
 "============\n"
@@ -2578,7 +2539,7 @@ msgstr ""
 "Scanovací příkaz:\n"
 "============\n"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:839
+#: ../lib/Video/DVDRip/GUI/Main.pm:852
 msgid ""
 "Grab Preview Image Command:\n"
 "===========================\n"
@@ -2586,11 +2547,11 @@ msgstr ""
 "Příkaz k získání zkušebního obrázku:\n"
 "===========================\n"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:850
+#: ../lib/Video/DVDRip/GUI/Main.pm:863
 msgid "You must first rip the selected title to see this command.\n"
 msgstr "Chcete-li vidět tento příkaz, musíte nejdřív ripnout vybraný titul.\n"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:855
+#: ../lib/Video/DVDRip/GUI/Main.pm:868
 msgid ""
 "Transcode Command:\n"
 "==================\n"
@@ -2598,7 +2559,7 @@ msgstr ""
 "Příkaz Transcode:\n"
 "==================\n"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:884
+#: ../lib/Video/DVDRip/GUI/Main.pm:897
 msgid ""
 "Additional audio tracks commands:\n"
 "============================\n"
@@ -2606,7 +2567,7 @@ msgstr ""
 "Příkazy přídavných zvukových stop:\n"
 "============================\n"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:905
+#: ../lib/Video/DVDRip/GUI/Main.pm:918
 msgid ""
 "View DVD Command:\n"
 "=================\n"
@@ -2614,7 +2575,7 @@ msgstr ""
 "Příkaz prohlížení DVD:\n"
 "=================\n"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:913
+#: ../lib/Video/DVDRip/GUI/Main.pm:926
 msgid ""
 "View Files Command:\n"
 "===================\n"
@@ -2622,7 +2583,7 @@ msgstr ""
 "Příkaz prohlížení souborů:\n"
 "===================\n"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:930
+#: ../lib/Video/DVDRip/GUI/Main.pm:943
 msgid ""
 "CD image creation command:\n"
 "========================\n"
@@ -2630,7 +2591,7 @@ msgstr ""
 "Příkaz výroby obrazů CD:\n"
 "========================\n"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:936
+#: ../lib/Video/DVDRip/GUI/Main.pm:949
 msgid ""
 "CD burning command:\n"
 "==================\n"
@@ -2638,7 +2599,7 @@ msgstr ""
 "Příkaz vypalování CD:\n"
 "==================\n"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:946
+#: ../lib/Video/DVDRip/GUI/Main.pm:959
 msgid ""
 "WAV creation command:\n"
 "====================\n"
@@ -2646,11 +2607,11 @@ msgstr ""
 "Příkaz vytvoření WAV:\n"
 "====================\n"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:953
+#: ../lib/Video/DVDRip/GUI/Main.pm:966
 msgid "Commands executed by dvd::rip"
 msgstr ""
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:979
+#: ../lib/Video/DVDRip/GUI/Main.pm:992
 msgid ""
 "One or several mandatory tools are\n"
 "missing or too old. You must install them\n"
@@ -3041,13 +3002,13 @@ msgstr ""
 "nastavení rozmezí snímků ignorováno."
 
 #: ../lib/Video/DVDRip/GUI/Project/Storage.pm:44
-#: ../lib/Video/DVDRip/GUI/Project/Storage.pm:206
+#: ../lib/Video/DVDRip/GUI/Project/Storage.pm:209
 #, fuzzy
 msgid "Choose DVD device file"
 msgstr "Soubor zařízení vypalovačky"
 
 #: ../lib/Video/DVDRip/GUI/Project/Storage.pm:49
-#: ../lib/Video/DVDRip/GUI/Project/Storage.pm:132
+#: ../lib/Video/DVDRip/GUI/Project/Storage.pm:135
 msgid "Press this button to open a file chooser dialog"
 msgstr ""
 
@@ -3077,92 +3038,92 @@ msgstr "Adresář pro VOBy"
 msgid "DVD VOB files are stored here."
 msgstr ""
 
-#: ../lib/Video/DVDRip/GUI/Project/Storage.pm:77
+#: ../lib/Video/DVDRip/GUI/Project/Storage.pm:78
 msgid "AVI directory"
 msgstr "Adresář pro AVI"
 
-#: ../lib/Video/DVDRip/GUI/Project/Storage.pm:78
+#: ../lib/Video/DVDRip/GUI/Project/Storage.pm:79
 msgid "For transcoded AVI, MPEG and OGM files."
 msgstr ""
 
-#: ../lib/Video/DVDRip/GUI/Project/Storage.pm:82
+#: ../lib/Video/DVDRip/GUI/Project/Storage.pm:84
 msgid "Temporary directory"
 msgstr "Dočasný adresář"
 
-#: ../lib/Video/DVDRip/GUI/Project/Storage.pm:83
+#: ../lib/Video/DVDRip/GUI/Project/Storage.pm:85
 msgid "For temporary files"
 msgstr ""
 
-#: ../lib/Video/DVDRip/GUI/Project/Storage.pm:86
+#: ../lib/Video/DVDRip/GUI/Project/Storage.pm:89
 #, fuzzy
 msgid "Create project"
 msgstr "Založení nového projektu."
 
-#: ../lib/Video/DVDRip/GUI/Project/Storage.pm:90
+#: ../lib/Video/DVDRip/GUI/Project/Storage.pm:93
 msgid ""
 "This asks for a project filename and creates the neccessary filesystem "
 "structure"
 msgstr ""
 
-#: ../lib/Video/DVDRip/GUI/Project/Storage.pm:105
+#: ../lib/Video/DVDRip/GUI/Project/Storage.pm:108
 #, fuzzy
 msgid "Data source selection"
 msgstr "Výběr režimu zdroje dat"
 
-#: ../lib/Video/DVDRip/GUI/Project/Storage.pm:114
+#: ../lib/Video/DVDRip/GUI/Project/Storage.pm:117
 msgid "Select a DVD device or an image directory for input"
 msgstr ""
 
-#: ../lib/Video/DVDRip/GUI/Project/Storage.pm:119
+#: ../lib/Video/DVDRip/GUI/Project/Storage.pm:122
 #, fuzzy
 msgid "Choose DVD device"
 msgstr "Zařízení DVD"
 
-#: ../lib/Video/DVDRip/GUI/Project/Storage.pm:124
+#: ../lib/Video/DVDRip/GUI/Project/Storage.pm:127
 #, fuzzy
 msgid "or"
 msgstr "čtyři"
 
-#: ../lib/Video/DVDRip/GUI/Project/Storage.pm:127
-#: ../lib/Video/DVDRip/GUI/Project/Storage.pm:238
+#: ../lib/Video/DVDRip/GUI/Project/Storage.pm:130
+#: ../lib/Video/DVDRip/GUI/Project/Storage.pm:241
 #, fuzzy
 msgid "Choose DVD image directory"
 msgstr "Zasunout dvířka DVD"
 
-#: ../lib/Video/DVDRip/GUI/Project/Storage.pm:137
+#: ../lib/Video/DVDRip/GUI/Project/Storage.pm:140
 msgid "Or enter by hand"
 msgstr ""
 
-#: ../lib/Video/DVDRip/GUI/Project/Storage.pm:140
+#: ../lib/Video/DVDRip/GUI/Project/Storage.pm:143
 msgid ""
 "dvd::rip uses this location for DVD input. Either it's the filename of a "
 "physical DVD device or the path of a full DVD image copy."
 msgstr ""
 
-#: ../lib/Video/DVDRip/GUI/Project/Storage.pm:149
+#: ../lib/Video/DVDRip/GUI/Project/Storage.pm:152
 msgid "Choose a ripping mode"
 msgstr ""
 
-#: ../lib/Video/DVDRip/GUI/Project/Storage.pm:162
+#: ../lib/Video/DVDRip/GUI/Project/Storage.pm:165
 #, fuzzy
 msgid "Copy data from DVD to harddisk before encoding"
 msgstr "Před překódováním uložit data z DVD na harddisk (rip)."
 
-#: ../lib/Video/DVDRip/GUI/Project/Storage.pm:164
+#: ../lib/Video/DVDRip/GUI/Project/Storage.pm:167
 msgid ""
 "Use this mode if you have enough diskspace for a complete copy of the DVD "
 "contents. It's the fastest and most flexible DVD mode."
 msgstr ""
 
-#: ../lib/Video/DVDRip/GUI/Project/Storage.pm:173
+#: ../lib/Video/DVDRip/GUI/Project/Storage.pm:176
 msgid "Encode DVD on the fly"
 msgstr "Kódovat DVD na přímo bez ukládání na disk"
 
-#: ../lib/Video/DVDRip/GUI/Project/Storage.pm:174
+#: ../lib/Video/DVDRip/GUI/Project/Storage.pm:177
 msgid "No DVD contents are copied to harddisk."
 msgstr ""
 
-#: ../lib/Video/DVDRip/GUI/Project/Storage.pm:178
+#: ../lib/Video/DVDRip/GUI/Project/Storage.pm:181
 msgid ""
 "Copying DVD(-image) data to harddisk before encoding is\n"
 "the recommended mode, because it's faster and doesn't\n"
@@ -3176,7 +3137,7 @@ msgid ""
 "- transcode's PSU core for optimized A/V sync with NTSC video\n"
 msgstr ""
 
-#: ../lib/Video/DVDRip/GUI/Project/Storage.pm:255
+#: ../lib/Video/DVDRip/GUI/Project/Storage.pm:258
 msgid ""
 "Selected directory is no DVD image directory. It has no VIDEO_TS folder."
 msgstr ""
@@ -3500,6 +3461,10 @@ msgstr "Hodnoty pro letterbox"
 #: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:327
 msgid "Values for full size movie"
 msgstr "Hodnoty pro film v plné velikosti"
+
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:350
+msgid "Create vobsub file"
+msgstr "Tvorba titulkového souboru"
 
 #: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:362
 #: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:366
@@ -4043,6 +4008,29 @@ msgstr ""
 #, fuzzy, perl-brace-format
 msgid "{percent}PERCENT done."
 msgstr "{percent} procent hotovo."
+
+#, fuzzy
+#~ msgid "Project '{project}' - title #{nr}"
+#~ msgstr "Projekt {project} odstraněn"
+
+#, fuzzy
+#~ msgid "Process PSU #{nr}"
+#~ msgstr "DVD titul #{nr}"
+
+#~ msgid "PS1 file '{filename}' already exists. Skip extraction."
+#~ msgstr "PS1 soubor '{filename}' už existuje. Přeskakuji extrakci."
+
+#, fuzzy
+#~ msgid ", file #{nr}"
+#~ msgstr "DVD titul #{nr}"
+
+#, fuzzy
+#~ msgid "Volume scan"
+#~ msgstr "Rozbor hlasitosti"
+
+#, fuzzy
+#~ msgid "Create WAV"
+#~ msgstr "Vytvořit teď"
 
 #~ msgid "{value} has not format n,n,n and is no file : NOT Ok"
 #~ msgstr "{value} nemá formát n,n,n ani není souborem : NEVYHOVUJE"

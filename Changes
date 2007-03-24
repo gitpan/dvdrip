@@ -1,7 +1,35 @@
-$Id: Changes,v 1.187.2.3 2007/03/10 09:56:16 joern Exp $
+$Id: Changes,v 1.187.2.5 2007/03/24 11:19:30 joern Exp $
 
 Revision history and release notes for dvd::rip.
 
+0.98.4 [stable branch] Sat Mar 24 2007, joern
+    Notes:
+    - Added a new dependency to the ffmpeg command line
+      program. It's optional for now, but recommended,
+      in particular if you're suffering from the
+      preview hanging bug (see below).
+
+    Features:
+    - Experimental support for transcode 1.1.x branch. You
+      get a warning if this transcode version is detected.
+      Basic operation seems to work with 1.1.x, but it's not
+      deeply tested yet. Please report bugs, if you find them.
+      
+      Preview stuff (subtitle, filters) is currently known
+      not to be working with transcode 1.1.x.
+
+    Bugfixes:
+    - Fixed occasional hanging bug on preview grabbing by
+      using ffmpeg instead of transcode to decode the preview
+      image.
+    - Fixed crash with Italian locale when opening cluster
+      control menu. Patch by Davide Capodaglio <davidecapod
+      AT inwind.it>.
+    - Really fixed crash on DVD titles without audio. Fix
+      was announced in 0.98.3 but went lost somehow.
+    - Missed adding Daniel Nylander to the translators
+      list of the About dialog (Swedish translation).
+    
 0.98.3 [stable branch] Sat Mar 10 2007, joern
     Features:
     - Project's tmp/ directory is now created with 0775

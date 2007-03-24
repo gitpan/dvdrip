@@ -1,4 +1,4 @@
-# $Id: JobPlanner.pm,v 1.14 2006/08/18 21:43:09 joern Exp $
+# $Id: JobPlanner.pm,v 1.14.2.2 2007/03/24 11:01:07 joern Exp $
 
 #-----------------------------------------------------------------------
 # Copyright (C) 2001-2006 Jörn Reder <joern AT zyn.de>.
@@ -456,9 +456,11 @@ sub build_grab_preview_frame_job {
     my $progress_max;
     my $progress_ips;
     my $slow_mode;
-    if ( $title->project->rip_mode ne 'rip' ||
-         !$title->has_vob_nav_file ||
-          $title->tc_force_slow_grabbing ) {
+
+    if ( ( $title->project->rip_mode ne 'rip' ||
+           !$title->has_vob_nav_file ||
+            $title->tc_force_slow_grabbing )
+          and not $self->exists("ffmpeg") ) {
         $progress_ips = __"fps";
         $progress_max = $title->preview_frame_nr;
         $slow_mode    = 1;
@@ -466,17 +468,25 @@ sub build_grab_preview_frame_job {
 
     my $name = "grab_preview_".$title->nr;
 
+    my $got_frame_with_ffmpeg;
     my $grab_preview_job = Event::ExecFlow::Job::Command->new (
         name            => $name,
         title           => $info,
         command         => undef,       # pre callback, rip in chapter mode, frames not known yet
-        no_progress     => (!$progress_max),
+        no_progress     => (!$slow_mode),
         progress_max    => $progress_max,
         progress_ips    => $progress_ips,
         progress_parser => sub {
             my ($job, $buffer) = @_;
             if ( $slow_mode ) {
-                $job->set_progress_cnt($1) if $buffer =~  /\[\d+-(\d+)\]/;
+                if ( $self->version("transcode") >= 10100 ) {
+                    $job->set_progress_cnt($1)
+                        if $buffer =~ /frame=(\d+)/;
+                }
+                else {
+                    $job->set_progress_cnt($1)
+                        if $buffer =~ /\[\d+-(\d+)\]/;
+                }
             }
             if ( $buffer =~ /encoded\s+(\d+)\s+frame/ ) {
                 if ( $1 != 1 ) {
@@ -488,6 +498,9 @@ sub build_grab_preview_frame_job {
                     );
                 }
             }
+            if ( $self->exists("ffmpeg") and $buffer =~ /frame=\s*1\s*q=/ ) {
+                $got_frame_with_ffmpeg = 1;
+            }
         },
         pre_callbacks   => sub {
             my ($job) = @_;
@@ -497,6 +510,17 @@ sub build_grab_preview_frame_job {
                 );
             }
             $job->set_command($title->get_take_snapshot_command);
+        },
+        post_callbacks => sub {
+            my ($job) = @_;
+            if ( $self->exists("ffmpeg") and not $got_frame_with_ffmpeg ) {
+                $job->set_error_message (
+                    __ ("transcode can't find this frame. ").
+                    __ ("Try a lower frame number. ").
+                    ($slow_mode ? "" :
+                     __"Try forcing slow frame grabbing.")
+                );
+            }
         },
     );
     
@@ -1047,6 +1071,16 @@ sub build_transcode_video_pass_job {
 sub get_transcode_progress_parser {
     my $self = shift;
     my ($title) = @_;
+    
+    if ( $self->version("transcode") >= 10100 ) {
+        return sub {
+            my ($job, $buffer) = @_;
+            if ( $buffer =~ /frame=(\d+)/ ) {
+                $job->set_progress_cnt($1);
+            }
+            1;
+        };
+    }
     
     my $psu_frames;
     return sub {

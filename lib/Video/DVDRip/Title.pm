@@ -1,4 +1,4 @@
-# $Id: Title.pm,v 1.180.2.1 2007/03/10 09:56:01 joern Exp $
+# $Id: Title.pm,v 1.180.2.3 2007/03/24 11:00:40 joern Exp $
 
 #-----------------------------------------------------------------------
 # Copyright (C) 2001-2006 Jörn Reder <joern AT zyn.de>.
@@ -394,8 +394,6 @@ sub set_tc_video_af6_codec {
 sub audio_track {
     my $self = shift;
     if ( $self->audio_channel == -1 ) {
-        return;
-
         # no audio track selected. create a dummy object.
         # (probably this title has no audio at all)
         return Video::DVDRip::Audio->new( title => $self );
@@ -2206,7 +2204,7 @@ sub get_transcode_status_option {
     $rate ||= 25;
     
     if ( $self->version("transcode") >= 10100) {
-        return "--progress_meter 1 --progress_rate $rate";
+        return "--progress_meter 2 --progress_rate $rate";
     }
     else {
         return "--print_status $rate";
@@ -3049,6 +3047,56 @@ sub get_frame_grab_options {
 sub get_take_snapshot_command {
     my $self = shift;
 
+    return $self->get_take_snapshot_command_transcode
+        if not $self->exists("ffmpeg");
+
+    my $nr           = $self->nr;
+    my $frame        = $self->preview_frame_nr;
+    my $tmp_dir      = "/tmp/dvdrip$$.snap";
+    my $filename     = $self->preview_filename( type => 'orig' );
+    my $raw_filename = $self->raw_snapshot_filename;
+    my $frame_rate   = $self->frame_rate;
+
+    my $source_options = $self->data_source_options;
+    my $grab_options   = $self->get_frame_grab_options( frame => $frame );
+
+    $grab_options->{S} ||= "0";
+    $grab_options->{L} ||= "0";
+
+    my ($start_frame) = $grab_options->{c} =~ /(\d+)/;
+    my $start = sprintf("%.3f", $start_frame / $frame_rate);
+
+    my $command = "mkdir -m 0775 $tmp_dir; "
+        . "cd $tmp_dir; "
+        . "execflow "
+        . "tccat -i $source_options->{i} "
+        . "-t $source_options->{x} "
+        . "-S $grab_options->{L} -d 0 | "
+        . "tcdemux -s 0x80 -x mpeg2 -S $grab_options->{S} "
+        . "-M 0 -d 0 -P /dev/null | "
+        . "tcextract -t vob -a 0 -x mpeg2 -d 0 | "
+        . "ffmpeg -r $frame_rate -i - -an -r 1 -ss '$start' -vframes 1 snapshot%03d.png ";
+
+    $command .= " && "
+        . "execflow convert"
+        . " -size "
+        . $self->width . "x"
+        . $self->height
+        . " $tmp_dir/snapshot*.png $filename && "
+        . "execflow convert"
+        . " -size "
+        . $self->width . "x"
+        . $self->height
+        . " $tmp_dir/snapshot*.png gray:$raw_filename &&"
+        . " rm -r $tmp_dir && "
+        . "echo EXECFLOW_OK";
+
+    return $command;
+}
+
+sub get_take_snapshot_command_transcode {
+    my $self = shift;
+
     my $nr           = $self->nr;
     my $frame        = $self->preview_frame_nr;
     my $tmp_dir      = "/tmp/dvdrip$$.ppm";
@@ -3090,7 +3138,7 @@ sub get_take_snapshot_command {
         . " rm -r $tmp_dir && "
         . "echo EXECFLOW_OK";
 
-    $command =~ s/-x\s+([^,]+),null,null/-x mpeg2,null/;
+    $command =~ s/-x\s+([^,]+),null,null/-x $1,null/;
 
     return $command;
 }

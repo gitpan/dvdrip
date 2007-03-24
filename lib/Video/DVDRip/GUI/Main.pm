@@ -1,4 +1,4 @@
-# $Id: Main.pm,v 1.91.2.1 2007/03/10 09:55:07 joern Exp $
+# $Id: Main.pm,v 1.91.2.2 2007/03/24 10:59:59 joern Exp $
 
 #-----------------------------------------------------------------------
 # Copyright (C) 2001-2006 Jörn Reder <joern AT zyn.de>.
@@ -139,7 +139,6 @@ sub start {
 
         Glib::Idle->add(
             sub {
-
                 # Select a title, if requested
                 if ($select_title) {
                     $self->log("Selecting title $select_title");
@@ -161,6 +160,16 @@ sub start {
                 return 0;
             }
         );
+
+        if ( !$function && $self->version("transcode") >= 10100 ) {
+            $self->message_window (
+                type    => "warning",
+                message => 
+                    __("dvd::rip detected transcode version >= 1.1.x. "
+                      ."Support for this version is experimental. "
+                      ."Please report bugs, if you find them.")
+            );
+        }
     }
 
     Gtk2->main;

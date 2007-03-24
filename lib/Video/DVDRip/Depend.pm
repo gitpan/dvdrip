@@ -1,4 +1,4 @@
-# $Id: Depend.pm,v 1.22.2.2 2007/03/10 09:52:25 joern Exp $
+# $Id: Depend.pm,v 1.22.2.5 2007/03/24 11:00:15 joern Exp $
 
 #-----------------------------------------------------------------------
 # Copyright (C) 2001-2006 Jörn Reder <joern AT zyn.de>.
@@ -33,6 +33,7 @@ my %TOOLS = (
         comment     => __ "All internal command files",
         optional    => 0,
         dont_cache  => 1,
+        exists      => 1,
         get_version => sub {
             my $missing_file_cnt = 0;
             foreach my $dvdrip_file (@DVDRIP_BIN_FILES) {
@@ -73,7 +74,7 @@ my %TOOLS = (
         },
         convert       => 'default',
         min           => "0.6.14",
-        max           => "1.0.99",
+        max           => undef,
         suggested     => "1.0.2",
         installed     => undef,       # set by ->new
         installed_num => undef,       # set by ->new
@@ -93,6 +94,18 @@ my %TOOLS = (
         convert   => 'default',
         min       => "4.0.0",
         suggested => "6.2.3",
+    },
+    ffmpeg => {
+        order       => ++$ORDER,
+        command     => "ffmpeg",
+        comment     => __ "FFmpeg video converter command line program",
+        optional    => 1,
+        get_version => sub {
+            qx[ffmpeg --version 2>&1] =~ /version ([^\s]+)/i;
+            return $1;
+        },
+        convert       => 'default',
+        min           => "0",
     },
     xvid4conf => {
         order       => ++$ORDER,
@@ -304,7 +317,7 @@ sub new {
         $def->{max_num} = &$convert( $def->{max} ) if defined $def->{max};
         $def->{min_num} = &$convert( $def->{min} );
         $def->{suggested_num} = &$convert( $def->{suggested} );
-        $def->{installed_ok}  = $def->{installed_num} >= $def->{min_num};
+        $def->{installed_ok}  = $def->{exists} && ($def->{installed_num} >= $def->{min_num});
         $def->{installed_ok}  = 0
             if defined $def->{max}
             and $def->{installed_num} > $def->{max_num};
@@ -387,6 +400,8 @@ sub get_cached_version {
         $version = undef;
     }
 
+    $tool_def->{exists} = $path ne '';
+
     my $size = -s $path;
     if ( $size != $tool_def->{size} ) {
         $tool_def->{size} = $size;
@@ -431,15 +446,20 @@ sub tools { \%TOOLS }
 sub has {
     my $self = shift;
     my ($command) = @_;
-
     return 0 if not exists $TOOLS{$command};
     return $TOOLS{$command}->{installed_ok};
+}
+
+sub exists {
+    my $self = shift;
+    my ($command) = @_;
+    return 0 if not exists $TOOLS{$command};
+    return $TOOLS{$command}->{exists};
 }
 
 sub version {
     my $self = shift;
     my ($command) = @_;
-
     return if not exists $TOOLS{$command};
     return $TOOLS{$command}->{installed_num};
 }

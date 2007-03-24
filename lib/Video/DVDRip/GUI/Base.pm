@@ -1,4 +1,4 @@
-# $Id: Base.pm,v 1.36 2006/08/16 19:34:38 joern Exp $
+# $Id: Base.pm,v 1.36.2.1 2007/03/24 10:59:45 joern Exp $
 
 #-----------------------------------------------------------------------
 # Copyright (C) 2001-2006 Jörn Reder <joern AT zyn.de>.
@@ -131,10 +131,13 @@ sub show_file_dialog {
 sub message_window {
     my $self = shift;
     my %par = @_;
-    my ($message, $ff, $modal) = @par{'message','ff','modal'};
+    my  ($message, $ff, $modal, $type) =
+    @par{'message','ff','modal','type'};
+
+    $type ||= "info";
 
     my $dialog = Gtk2::MessageDialog->new_with_markup( undef,
-        ["destroy-with-parent"], "info", "none", $message );
+        ["destroy-with-parent"], $type, "none", $message );
 
     $dialog->set_position("center-on-parent");
     $dialog->set_modal($modal);

@@ -144,8 +144,8 @@ deb http://www.debian-multimedia.org experimental main
    Local download of the latest stable release: (currently no unstable
    release available)
 
-     dvdrip-0.98.3.tar.gz
-     dvdrip-0.98.3.tar.gz.asc (GnuPG signature, get key)
+     dvdrip-0.98.4.tar.gz
+     dvdrip-0.98.4.tar.gz.asc (GnuPG signature, get key)
 
    CPAN download directory: (list of mirrors)
 
@@ -228,9 +228,9 @@ cd dvdrip; cvs -z3 update
    chapter in the documentation for details.
 
    Tool Comment Mandatory Suggested Minimum Maximum
-   transcode dvd::rip is nothing without transcode Yes 1.0.2 0.6.14
-   1.0.99
+   transcode dvd::rip is nothing without transcode Yes 1.0.2 0.6.14 -
    ImageMagick Needed for preview image processing Yes 6.2.3 4.0.0 -
+   ffmpeg FFmpeg video converter command line program No 0 -
    xvid4conf xvid4 configuration tool No 1.12 1.6 -
    subtitle2pgm Needed for subtitles No 0.3 0.3 -
    lsdvd Needed for faster DVD TOC reading No 0.15 0.15 -
@@ -427,12 +427,12 @@ bin/dvdrip
 
    You can download a static HTML version of this documentation:
 
-     http://www.exit1.org/dvdrip/dist/dvdrip-doc-html-0.98.3.tar.bz2
+     http://www.exit1.org/dvdrip/dist/dvdrip-doc-html-0.98.4.tar.bz2
 
    A PDF version is also available (generated using the excellent tool
    htmldoc):
 
-     http://www.exit1.org/dvdrip/dist/dvdrip-doc-0.98.3.pdf.bz2
+     http://www.exit1.org/dvdrip/dist/dvdrip-doc-0.98.4.pdf.bz2
      _________________________________________________________________
 
 IV.  MAILING LIST
@@ -618,33 +618,35 @@ URL References
   15. http://wwwkeys.de.pgp.net:11371/pks/lookup?op=get&search=0x285CF473
 
 VI. CHANGES
-   $Id: Changes,v 1.187.2.3 2007/03/10 09:56:16 joern Exp $
+   $Id: Changes,v 1.187.2.5 2007/03/24 11:19:30 joern Exp $
 
    Revision history and release notes for dvd::rip.
 
-   0.98.3 [stable branch] Sat Mar 10 2007, joern
+   0.98.4 [stable branch] Sat Mar 24 2007, joern
+    Notes:
+    - Added a new dependency to the ffmpeg command line
+      program. It's optional for now, but recommended,
+      in particular if you're suffering from the
+      preview hanging bug (see below).
+
     Features:
-    - Project's tmp/ directory is now created with 0775
-      permissions, which enables cluster mode running
-      with different users belonging to the same group.
-      Patch by Tom <mailbin AT comcast.net>.
-    - Added swedish translation from Daniel Nylander
-      <po AT danielnylander.se>
+    - Experimental support for transcode 1.1.x branch. You
+      get a warning if this transcode version is detected.
+      Basic operation seems to work with 1.1.x, but it's not
+      deeply tested yet. Please report bugs, if you find them.
+      
+      Preview stuff (subtitle, filters) is currently known
+      not to be working with transcode 1.1.x.
 
     Bugfixes:
-    - Added another patch from Tom fixing cluster processes
-      not running with the correct nice value.
-    - "Exit dvd::rip after transcoding" didn't work.
-    - Fixed off by one bug in dvd::rip command line option
-      to select a specific title.
-    - Try to workaround transcode hanging on preview frame
-      grabbing by providing a different import filter. Based
-      on comments from Francesco Romani and Jesse Heitler
-      <jheitler AT po2.com>.
-    - Fixed crash on DVD image paths with whitespaces. Thanks
-      for their reports to Franz Brauﬂe <mike-nought AT gmx.de>
-      and Thomas Wendt <thoemy AT gmail.com>.
-    - Fixed crash on DVD titles without audio. Thanks for
-      the report to Edward Doolittle.
-    - Fixed mplayer version detection.
-
+    - Fixed occasional hanging bug on preview grabbing by
+      using ffmpeg instead of transcode to decode the preview
+      image.
+    - Fixed crash with Italian locale when opening cluster
+      control menu. Patch by Davide Capodaglio <davidecapod
+      AT inwind.it>.
+    - Really fixed crash on DVD titles without audio. Fix
+      was announced in 0.98.3 but went lost somehow.
+    - Missed adding Daniel Nylander to the translators
+      list of the About dialog (Swedish translation).
+    
