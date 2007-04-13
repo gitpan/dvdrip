@@ -1,4 +1,4 @@
-# $Id: Title.pm,v 1.180.2.3 2007/03/24 11:00:40 joern Exp $
+# $Id: Title.pm,v 1.180.2.4 2007/04/13 11:29:09 joern Exp $
 
 #-----------------------------------------------------------------------
 # Copyright (C) 2001-2006 Jörn Reder <joern AT zyn.de>.
@@ -399,6 +399,16 @@ sub audio_track {
         return Video::DVDRip::Audio->new( title => $self );
     }
     return $self->audio_tracks->[ $self->audio_channel ];
+}
+
+sub has_target_audio_tracks {
+    my $self = shift;
+    
+    foreach my $audio ( @{ $self->audio_tracks } ) {
+        return 1 if $audio->tc_target_track != -1;
+    }
+    
+    return 0;
 }
 
 sub set_tc_container {

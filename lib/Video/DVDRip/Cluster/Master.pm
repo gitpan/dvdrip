@@ -1,4 +1,4 @@
-# $Id: Master.pm,v 1.45 2006/08/25 16:20:21 joern Exp $
+# $Id: Master.pm,v 1.45.2.1 2007/04/13 11:17:44 joern Exp $
 #-----------------------------------------------------------------------
 # Copyright (C) 2001-2006 Jörn Reder <joern AT zyn.de>.
 # All Rights Reserved. See file COPYRIGHT for details.
@@ -801,8 +801,10 @@ sub node_test {
     my $master_node = $self->get_master_node;
 
     if ( $master_node ) {
+print "RUN MASTER TESTS\n";
         $master_node->run_tests(
             cb_finished => sub {
+print "RUN NODE TESTS\n";
                 $node->run_tests(
                     cb_finished => sub {
                         $self->emit_event( "NODE_TEST_FINISHED", $node->name );
@@ -837,28 +839,10 @@ sub get_job_from_id {
 sub reset_job {
     my $self = shift;
     my ($job_id) = @_;
-    my $job = $self->get_job_from_id($job_id);
-    
-    my $old_state = $job->get_state;
-    
-    $job->set_state("waiting");
-    $job->set_progress_start_time();
-    $job->set_progress_end_time();
-    $job->set_cancelled();
-    $job->set_error_message();
-    $job->set_last_percent_logged(0);
-    $job->set_last_progress();
-    $job->set_progress_cnt(0);
 
-    if ( $old_state ne 'waiting' ) {
-        my $group = $job->get_group;
-        while ( $group ) {
-print "Group: ".$group->get_title."\n";
-            $group->set_progress_cnt($group->get_progress_cnt - 1);
-            $group->set_state("waiting");
-            $group = $group->get_group;
-        }
-    }
+    my $job = $self->get_job_from_id($job_id);
+
+    $job->reset;
 
     my $project = $self->scheduler->get_projects_by_job_id->{$job_id};
     $project->set_state("not scheduled");

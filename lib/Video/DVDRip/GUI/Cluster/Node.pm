@@ -1,4 +1,4 @@
-# $Id: Node.pm,v 1.23 2006/08/20 15:11:14 joern Exp $
+# $Id: Node.pm,v 1.23.2.1 2007/04/13 11:24:24 joern Exp $
 
 #-----------------------------------------------------------------------
 # Copyright (C) 2001-2006 Jörn Reder <joern AT zyn.de>.
@@ -354,7 +354,7 @@ sub build_node_test_result {
 
                     #-- transcode version
                     Gtk2::Ex::FormFactory::Label->new(
-                        label => __ "transcode version",
+                        label => __ "Program versions",
                     ),
                     Gtk2::Ex::FormFactory::Label->new(
                         attr        => "cluster_node_gui.res_transcode",
@@ -503,7 +503,7 @@ sub node_test_finished {
             . "</u></b>\n"
             . $node_content;
         $master_content = "<b><u>"
-            . __("Masters's data directory")
+            . __("Masters' data directory")
             . "</u></b>\n"
             . $master_content;
 
@@ -516,20 +516,21 @@ sub node_test_finished {
     }
     else {
         $proxy->set_attrs(
-            {   "res_data_dir"      => $ok,
-                "res_data_dir_node" => __ "Content of data directory matches"
+            {   "res_data_dir"        => $ok,
+                "res_data_dir_node"   => __ "Content of data directory matches",
+                "res_data_dir_master" => "",
             }
         );
     }
 
-    my $node_tc   = trunc( $node_result->{transcode_version} );
-    my $master_tc = trunc( $master_result->{transcode_version} );
+    my $node_tc   = trunc( $node_result->{program_versions} );
+    my $master_tc = trunc( $master_result->{program_versions} );
 
     if ( $node_tc ne $master_tc ) {
         $node_tc
-            = "<b><u>" . __("Node's transcode") . "</u></b>\n" . $node_tc;
+            = "<b><u>" . __("Node's programs") . "</u></b>\n" . $node_tc;
         $master_tc = "<b><u>"
-            . __("Masters's transcode")
+            . __("Masters's programs")
             . "</u></b>\n"
             . $master_tc;
         $proxy->set_attrs(
@@ -595,7 +596,7 @@ sub test_node_show_result {
     #			    or error message
     #   write_test		    SUCCESS if write was succesfull,
     #			    or error message otherwise
-    #   transcode_version       full output of transcode -h
+    #   program_versions       full output of program version numbers
     #---------------------------------------------------------------
 
     if ( not ref $result ) {
@@ -624,14 +625,14 @@ sub test_node_show_result {
     my $details;
 
     my %desc = (
-        ssh_connect           => "ssh connect",
-        data_base_dir_content => "Content of project base directory",
-        write_test            => "Project base directory writable",
-        transcode_version     => "transcode version match",
+        ssh_connect           => __"ssh connect",
+        data_base_dir_content => __"Content of project base directory",
+        write_test            => __"Project base directory writable",
+        program_versions      => __"transcode version match",
     );
 
     foreach my $case (
-        qw ( ssh_connect data_base_dir_content write_test transcode_version ))
+        qw ( ssh_connect data_base_dir_content write_test program_versions ))
     {
         $report .= "Test case : $desc{$case}\n";
         $report .= "Result    : ";

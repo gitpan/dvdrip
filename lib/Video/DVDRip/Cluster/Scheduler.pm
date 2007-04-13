@@ -1,4 +1,4 @@
-# $Id: Scheduler.pm,v 1.6 2006/08/16 19:34:38 joern Exp $
+# $Id: Scheduler.pm,v 1.6.2.1 2007/04/13 11:20:43 joern Exp $
 #-----------------------------------------------------------------------
 # Copyright (C) 2001-2006 Jörn Reder <joern AT zyn.de>.
 # All Rights Reserved. See file COPYRIGHT for details.
@@ -229,8 +229,11 @@ sub job_finished {
     $node->set_assigned_job(undef);
     $job->set_node(undef);
 
-    $node->set_state("idle");
+    $node->set_state("idle")
+        if $node->state ne 'stopped';
 
+    $job->reset if $job->get_cancelled;
+    
     $self->run;
 
     1;
@@ -397,6 +400,7 @@ sub start_job {
 
     #-- start job via group
     $job->get_node->set_state("running");
+    $job->get_node->set_assigned_job($job);
     $job->get_group->start_child_job($job);
     
     1;    

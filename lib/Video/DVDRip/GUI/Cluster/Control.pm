@@ -1,4 +1,4 @@
-# $Id: Control.pm,v 1.35 2006/08/25 16:19:52 joern Exp $
+# $Id: Control.pm,v 1.35.2.1 2007/04/13 11:23:39 joern Exp $
 
 #-----------------------------------------------------------------------
 # Copyright (C) 2001-2006 Jörn Reder <joern AT zyn.de>.
@@ -761,19 +761,22 @@ sub connect_master {
     $self->set_log_socket($sock);
 
     $self->set_master_event_queue( [] );
-
+    
+    my $log_buffer = "";
     my $log_watcher = Gtk2::Helper->add_watch(
         $sock->fileno,
         'in',
         sub {
-            my $data;
             return 1 unless $self->master;
-            if ( !sysread( $sock, $data, 4096 ) ) {
+            if ( !sysread( $sock, $log_buffer, 4096, length($log_buffer) ) ) {
                 $self->client_server_error;
                 return 1;
             }
-            while ( $data =~ /^(.*)$/mg ) {
+            my $buffer_offset;
+            while ( $log_buffer =~ /(.*\n)/mg ) {
                 my $line = $1;
+                chomp($line);
+                $buffer_offset = pos($log_buffer);
                 if ( $line =~ /EVENT\t(.*)/ ) {
                     $self->enqueue_master_event( split( "\t", $1 ) );
                 }
@@ -782,6 +785,7 @@ sub connect_master {
                     $buffer->insert( $buffer->get_end_iter, $line . "\n" );
                 }
             }
+            $log_buffer = substr($log_buffer, $buffer_offset);
             1;
         }
     );
@@ -853,7 +857,6 @@ sub enqueue_master_event {
     my $self = shift;
     my ( $event, @args ) = @_;
 
-    # print "MASTER-EVENT: $event\n";
     my $queue = $self->master_event_queue;
     push @{$queue}, [ $event, \@args ];
 
@@ -1212,22 +1215,6 @@ sub shutdown_master {
             1;
         },
     );
-
-    1;
-}
-
-sub reset_job {
-    my $self = shift;
-
-    my $project = $self->selected_project;
-    return 1 if not $project;
-
-    my $job_id = $self->selected_job_id;
-    return 1 if not $job_id;
-    $job_id = $job_id->[0];
-    return 1 if not $job_id;
-
-    $project->reset_job( job_id => $job_id );
 
     1;
 }

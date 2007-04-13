@@ -1,4 +1,4 @@
-# $Id: Node.pm,v 1.41.2.1 2007/03/10 09:51:12 joern Exp $
+# $Id: Node.pm,v 1.41.2.2 2007/04/13 11:19:38 joern Exp $
 
 #-----------------------------------------------------------------------
 # Copyright (C) 2001-2006 Jörn Reder <joern AT zyn.de>.
@@ -18,6 +18,7 @@ use strict;
 
 use FileHandle;
 use Data::Dumper;
+use Scalar::Util;
 
 sub state                       { shift->{state}                        }
 sub filename                    { shift->{filename}                     }
@@ -68,7 +69,13 @@ sub set_progress_cnt            { shift->{progress_cnt}         = $_[1] }
 sub set_progress_max            { shift->{progress_max}         = $_[1] }
 sub set_progress_merge          { shift->{progress_merge}       = $_[1] }
 sub set_progress_start_time     { shift->{progress_start_time}  = $_[1] }
-sub set_assigned_job            { shift->{assigned_job}         = $_[1] }
+sub set_assigned_job            {
+    my $self = shift;
+    my ($job) = @_;
+    $self->{assigned_job} = $job;
+    Scalar::Util::weaken($self->{assigned_job});
+    return $job;
+}
 sub set_assigned_chunk          { shift->{assigned_chunk}       = $_[1] }
 
 sub test_finished               { shift->{test_finished}                }
@@ -359,7 +366,7 @@ sub get_test_command {
 
     my $data_base_dir = $self->data_base_dir;
 
-    my $command          = "sh -c '";
+    my $command          = "sh -c 'export LC_ALL=C; ";
     my $create_test_file =
         $self->is_master
         ? "touch $data_base_dir/00DVDRIP-CLUSTER; "
@@ -372,7 +379,7 @@ sub get_test_command {
     # 2. get content of data_base_dir
     $command .= "echo --data_base_dir_content--; "
         . $create_test_file
-        . "cd $data_base_dir; echo * | perl -pe \"s/ /chr(10)/eg\" | sort;"
+        . "cd $data_base_dir && echo * | perl -pe \"s/ /chr(10)/eg\" | sort;"
         . "echo --data_base_dir_content--; ";
 
     # 3. try writing in the data_base_dir
@@ -382,12 +389,17 @@ sub get_test_command {
         . "rm -f $test_file; "
         . "echo --write_test--; ";
 
-    # 4. get transcode version
-    $command .= "echo --transcode_version--; "
-        . "transcode -v; "
-        . "echo --transcode_version--; ";
-
-    $command .= "'";
+    # 4. program versions
+    my $depend = $self->depend_object;
+    
+    $command .= "echo --program_versions--; ";
+    foreach my $tool ( sort keys %{$depend->tools} ) {
+        my $def = $depend->tools->{$tool};
+        next if not $def->{cluster};
+        $command .= $def->{version_cmd}.";";
+    }
+    $command .= "echo --program_versions--; ";
+    $command .= "' 2>&1";
 
     return $command;
 }
@@ -402,8 +414,7 @@ sub parse_test_output {
     $result{output} = $output;
     foreach my $case (
         qw ( ssh_connect data_base_dir_content
-        write_test transcode_version )
-        ) {
+             write_test program_versions ) ) {
         $output =~ s/--$case--\n(.*?)--$case--//s;
         $result{$case} = $1;
     }

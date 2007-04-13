@@ -1,4 +1,4 @@
-# $Id: Preview.pm,v 1.21.2.1 2007/03/24 10:42:11 joern Exp $
+# $Id: Preview.pm,v 1.21.2.2 2007/04/13 11:25:03 joern Exp $
 
 #-----------------------------------------------------------------------
 # Copyright (C) 2001-2006 Jörn Reder <joern AT zyn.de>.
@@ -62,7 +62,7 @@ sub closed { not defined shift->transcode_pipe }
 sub open {
     my $self = shift;
 
-    return if $self->get_transcode_pipe;
+    return if $self->transcode_pipe;
 
     my $socket_file
         = "/tmp/tc.$$." . time . ( int( rand(100000) ) ) . ".sock";

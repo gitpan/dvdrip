@@ -1,4 +1,4 @@
-# $Id: Depend.pm,v 1.22.2.5 2007/03/24 11:00:15 joern Exp $
+# $Id: Depend.pm,v 1.22.2.6 2007/04/13 11:21:51 joern Exp $
 
 #-----------------------------------------------------------------------
 # Copyright (C) 2001-2006 Jörn Reder <joern AT zyn.de>.
@@ -24,6 +24,8 @@ my @DVDRIP_BIN_FILES = qw (
     dvdrip-progress     dvdrip-splitpipe
     dvdrip-subpng
 );
+
+my $OBJECT;
 
 my $ORDER = 0;
 my %TOOLS = (
@@ -68,8 +70,10 @@ my %TOOLS = (
         command     => "transcode",
         comment     => __ "dvd::rip is nothing without transcode",
         optional    => 0,
+        version_cmd => "transcode -v",
         get_version => sub {
-            qx[transcode -v 2>&1] =~ /v(\d+\.\d+\.\d+(\.\d+)?)/i;
+            my ($cmd) = @_;
+            qx[$cmd 2>&1] =~ /v(\d+\.\d+\.\d+(\.\d+)?)/i;
             return $1;
         },
         convert       => 'default',
@@ -81,14 +85,17 @@ my %TOOLS = (
         min_num       => undef,       # set by ->new
         suggested_num => undef,       # set by ->new
         installed_ok  => undef,       # set by ->new
+        cluster       => 1,
     },
     ImageMagick => {
         order       => ++$ORDER,
         command     => "convert",
         comment     => __ "Needed for preview image processing",
         optional    => 0,
+        version_cmd => "convert -version",
         get_version => sub {
-            qx[convert -version 2>&1] =~ /ImageMagick\s+(\d+\.\d+(\.\d+)?)/i;
+            my ($cmd) = @_;
+            qx[$cmd 2>&1] =~ /ImageMagick\s+(\d+\.\d+(\.\d+)?)/i;
             return $1;
         },
         convert   => 'default',
@@ -100,8 +107,10 @@ my %TOOLS = (
         command     => "ffmpeg",
         comment     => __ "FFmpeg video converter command line program",
         optional    => 1,
+        version_cmd => "ffmpeg --version",
         get_version => sub {
-            qx[ffmpeg --version 2>&1] =~ /version ([^\s]+)/i;
+            my ($cmd) = @_;
+            qx[$cmd 2>&1] =~ /version ([^\s]+)/i;
             return $1;
         },
         convert       => 'default',
@@ -112,8 +121,10 @@ my %TOOLS = (
         command     => "xvid4conf",
         comment     => __ "xvid4 configuration tool",
         optional    => 1,
+        version_cmd => "xvid4conf -v",
         get_version => sub {
-            qx[xvid4conf -v 2>&1] =~ /(\d+\.\d+(\.\d+)?)/i;
+            my ($cmd) = @_;
+            qx[$cmd 2>&1] =~ /(\d+\.\d+(\.\d+)?)/i;
             return $1;
         },
         convert   => 'default',
@@ -125,8 +136,10 @@ my %TOOLS = (
         command     => "subtitle2pgm",
         comment     => __ "Needed for subtitles",
         optional    => 1,
+        version_cmd => "subtitle2pgm -h",
         get_version => sub {
-            qx[subtitle2pgm -h  2>&1] =~ /version\s+(\d+\.\d+(\.\d+)?)/i;
+            my ($cmd) = @_;
+            qx[$cmd 2>&1] =~ /version\s+(\d+\.\d+(\.\d+)?)/i;
             return $1;
         },
         convert   => 'default',
@@ -138,8 +151,10 @@ my %TOOLS = (
         command     => "lsdvd",
         comment     => __ "Needed for faster DVD TOC reading",
         optional    => 1,
+        version_cmd => "lsdvd -V",
         get_version => sub {
-            qx[lsdvd -V  2>&1] =~ /lsdvd\s+(\d+\.\d+(\.\d+)?)/i;
+            my ($cmd) = @_;
+            qx[lsdvd -V 2>&1] =~ /lsdvd\s+(\d+\.\d+(\.\d+)?)/i;
             return $1;
         },
         convert   => 'default',
@@ -151,10 +166,10 @@ my %TOOLS = (
         command     => Video::DVDRip::Depend->config('rar_command'),
         comment     => __ "Needed for compressed vobsub subtitles",
         optional    => 1,
+        version_cmd => "",
         get_version => sub {
-            my $self = shift;
-            my $rar  = $self->config('rar_command');
-            qx[$rar '-?' 2>&1] =~ /rar\s+(\d+\.\d+(\.\d+)?)/i;
+            my $cmd = $OBJECT->config('rar_command')." '-?'";
+            qx[$cmd 2>&1] =~ /rar\s+(\d+\.\d+(\.\d+)?)/i;
             return $1;
         },
         convert   => 'default',
@@ -167,8 +182,10 @@ my %TOOLS = (
         command     => "mplayer",
         comment     => __ "Needed for subtitle vobsub viewing",
         optional    => 1,
+        version_cmd => "mplayer --help",
         get_version => sub {
-            my $out = qx[mplayer --help 2>&1];
+            my ($cmd) = @_;
+            my $out = qx[$cmd 2>&1];
             if ( $out =~ /CVS|SVN/i ) {
                 return "cvs";
             }
@@ -186,21 +203,26 @@ my %TOOLS = (
         command     => "ogmmerge",
         comment     => __ "Needed for OGG/Vorbis",
         optional    => 1,
+        version_cmd => "ogmmerge -V",
         get_version => sub {
-            qx[ogmmerge -V 2>&1] =~ /v(\d+\.\d+(\.\d+)?)/i;
+            my ($cmd) = @_;
+            qx[$cmd 2>&1] =~ /v(\d+\.\d+(\.\d+)?)/i;
             return $1;
         },
         convert   => 'default',
         min       => "1.0.0",
         suggested => "1.5",
+        cluster   => 1,
     },
     dvdxchap => {
         order       => ++$ORDER,
         command     => "dvdxchap",
         comment     => __ "For chapter progress bar (ogmtools)",
         optional    => 1,
+        version_cmd => "dvdxchap -V",
         get_version => sub {
-            qx[dvdxchap -V 2>&1] =~ /v(\d+\.\d+(\.\d+)?)/i;
+            my ($cmd) = @_;
+            qx[$cmd 2>&1] =~ /v(\d+\.\d+(\.\d+)?)/i;
             return $1;
         },
         convert   => 'default',
@@ -212,8 +234,10 @@ my %TOOLS = (
         command     => "mplex",
         comment     => __ "Needed for (S)VCD encoding",
         optional    => 1,
+        version_cmd => "mplex --help",
         get_version => sub {
-            qx[mplex --help 2>&1] =~ /version\s+(\d+\.\d+(\.\d+)?)/i;
+            my ($cmd) = @_;
+            qx[$cmd 2>&1] =~ /version\s+(\d+\.\d+(\.\d+)?)/i;
             return $1;
         },
         convert   => 'default',
@@ -225,8 +249,10 @@ my %TOOLS = (
         command     => "xine",
         comment     => __ "Can be used to view DVD's/files",
         optional    => 1,
+        version_cmd => "xine -version",
         get_version => sub {
-            qx[xine -version 2>&1] =~ /v(\d+\.\d+(\.\d+)?)/i;
+            my ($cmd) = @_;
+            qx[$cmd 2>&1] =~ /v(\d+\.\d+(\.\d+)?)/i;
             return $1;
         },
         convert   => 'default',
@@ -238,8 +264,10 @@ my %TOOLS = (
         command     => "/usr/sbin/fping",
         comment     => __ "Only for cluster mode master",
         optional    => 1,
+        version_cmd => "/usr/sbin/fping -v",
         get_version => sub {
-            qx[/usr/sbin/fping -v 2>&1] =~ /Version\s+(\d+\.\d+(\.\d+)?)/i;
+            my ($cmd) = @_;
+            qx[$cmd 2>&1] =~ /Version\s+(\d+\.\d+(\.\d+)?)/i;
             return $1;
         },
         convert   => 'default',
@@ -251,8 +279,10 @@ my %TOOLS = (
         command     => "/usr/bin/lshal",
         comment     => __"Used for DVD device scanning",
         optional    => 1,
+        version_cmd => "/usr/bin/lshal -v",
         get_version => sub {
-            qx[/usr/bin/lshal -v 2>&1] =~ /version\s+(\d+\.\d+(\.\d+)?)/i;
+            my ($cmd) = @_;
+            qx[$cmd 2>&1] =~ /version\s+(\d+\.\d+(\.\d+)?)/i;
             return $1;
         },
         convert   => 'default',
@@ -260,8 +290,6 @@ my %TOOLS = (
         suggested => "0.5.7",
     },
 );
-
-my $OBJECT;
 
 sub convert_default {
     my ($ver) = @_;
@@ -301,7 +329,7 @@ sub new {
         $DEBUG && print "[depend] $tool => ";
 
         my $version = $OBJECT->get_cached_version($def)
-            || &$get_version($OBJECT);
+            || &$get_version($def->{version_cmd});
 
         if ( $version ne '' ) {
             $DEBUG && print "$version ";

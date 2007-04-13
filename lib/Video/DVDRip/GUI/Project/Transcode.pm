@@ -1,4 +1,4 @@
-# $Id: Transcode.pm,v 1.20 2006/08/16 19:34:38 joern Exp $
+# $Id: Transcode.pm,v 1.20.2.1 2007/04/13 11:27:47 joern Exp $
 
 #-----------------------------------------------------------------------
 # Copyright (C) 2001-2006 Jörn Reder <joern AT zyn.de>.
@@ -907,6 +907,13 @@ sub add_to_cluster {
     if ( $title->tc_container eq 'vcd' ) {
         $self->message_window( message => __
                 "MPEG processing is not supported for cluster mode." );
+        return 1;
+    }
+
+    if ( not $title->has_target_audio_tracks and $title->is_ogg ) {
+        $self->message_window( message => __
+                "Transcoding without audio in an OGG container isn't ".
+                "supported in cluster mode." );
         return 1;
     }
 

@@ -1,4 +1,4 @@
-# $Id: JobPlanner.pm,v 1.14.2.2 2007/03/24 11:01:07 joern Exp $
+# $Id: JobPlanner.pm,v 1.14.2.3 2007/04/13 11:28:55 joern Exp $
 
 #-----------------------------------------------------------------------
 # Copyright (C) 2001-2006 Jörn Reder <joern AT zyn.de>.
@@ -16,7 +16,7 @@ use Carp;
 use strict;
 
 use Locale::TextDomain qw (video.dvdrip);
-use Event::ExecFlow 0.62 qw (video.dvdrip);
+use Event::ExecFlow 0.63 qw (video.dvdrip);
 
 
 sub get_project                 { shift->{project}                      }
@@ -498,7 +498,7 @@ sub build_grab_preview_frame_job {
                     );
                 }
             }
-            if ( $self->exists("ffmpeg") and $buffer =~ /frame=\s*1\s*q=/ ) {
+            if ( $self->exists("ffmpeg") and $buffer =~ /frame=\s*1.*?q\s*=/ ) {
                 $got_frame_with_ffmpeg = 1;
             }
         },

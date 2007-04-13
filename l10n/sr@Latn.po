@@ -26,7 +26,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dvd::rip 0.97\n"
 "Report-Msgid-Bugs-To: dvd::rip Translation Team <dvdrip-lang AT exit1.org>\n"
-"POT-Creation-Date: 2007-03-24 12:04+0100\n"
+"POT-Creation-Date: 2007-04-13 21:42+0200\n"
 "PO-Revision-Date: 2006-09-09 00:18+0200\n"
 "Last-Translator: Filip Miletic <filmil at gmail dot com>\n"
 "Language-Team: Serbian <kde-yu@kde.org.yu> <gnom@prevod.org>\n"
@@ -155,17 +155,17 @@ msgstr "Da"
 msgid "No"
 msgstr "Ne"
 
-#: ../lib/Video/DVDRip/Cluster/Node.pm:282
+#: ../lib/Video/DVDRip/Cluster/Node.pm:289
 #, perl-brace-format
 msgid "Node '{node}' stopped"
 msgstr "Čvor „{node}“ zaustavljen"
 
-#: ../lib/Video/DVDRip/Cluster/Node.pm:297
+#: ../lib/Video/DVDRip/Cluster/Node.pm:304
 #, perl-brace-format
 msgid "Node '{node}' started"
 msgstr "Čvor „{node}“ pokrenut"
 
-#: ../lib/Video/DVDRip/Cluster/Node.pm:346
+#: ../lib/Video/DVDRip/Cluster/Node.pm:353
 #, perl-brace-format
 msgid "Node {name} finished tests"
 msgstr "Nod {name} je završio testove"
@@ -369,80 +369,80 @@ msgstr "ne mogu da pošaljem naredbu transcode-u"
 msgid "Unknown preview command '{command}'"
 msgstr "Nepoznata naredba za pregled „{command}“"
 
-#: ../lib/Video/DVDRip/Depend.pm:33
+#: ../lib/Video/DVDRip/Depend.pm:35
 msgid "All internal command files"
 msgstr "Sve interne komandne datoteke"
 
-#: ../lib/Video/DVDRip/Depend.pm:42
+#: ../lib/Video/DVDRip/Depend.pm:44
 #, perl-brace-format
 msgid "ERROR: '{file}' not found in PATH\n"
 msgstr "GREŠKA: datoteka „{file}‟ nije nađena u promenljivoj PATH\n"
 
-#: ../lib/Video/DVDRip/Depend.pm:69
+#: ../lib/Video/DVDRip/Depend.pm:71
 msgid "dvd::rip is nothing without transcode"
 msgstr "dvd::rip je ništa bez programa transcode"
 
-#: ../lib/Video/DVDRip/Depend.pm:88
+#: ../lib/Video/DVDRip/Depend.pm:93
 msgid "Needed for preview image processing"
 msgstr "Potrebno za obradu slika za pregled"
 
-#: ../lib/Video/DVDRip/Depend.pm:101
+#: ../lib/Video/DVDRip/Depend.pm:108
 msgid "FFmpeg video converter command line program"
 msgstr ""
 
-#: ../lib/Video/DVDRip/Depend.pm:113
+#: ../lib/Video/DVDRip/Depend.pm:122
 msgid "xvid4 configuration tool"
 msgstr "xvid4 alat za podešavanje"
 
-#: ../lib/Video/DVDRip/Depend.pm:126
+#: ../lib/Video/DVDRip/Depend.pm:137
 msgid "Needed for subtitles"
 msgstr "Potrebno za titlove"
 
-#: ../lib/Video/DVDRip/Depend.pm:139
+#: ../lib/Video/DVDRip/Depend.pm:152
 msgid "Needed for faster DVD TOC reading"
 msgstr "Potrebno za brže čitanje DVD tabele sadržaja"
 
-#: ../lib/Video/DVDRip/Depend.pm:152
+#: ../lib/Video/DVDRip/Depend.pm:167
 msgid "Needed for compressed vobsub subtitles"
 msgstr "Potrebno za kompresovane vobsub titlove"
 
-#: ../lib/Video/DVDRip/Depend.pm:168
+#: ../lib/Video/DVDRip/Depend.pm:183
 msgid "Needed for subtitle vobsub viewing"
 msgstr "Potrebno za prikaz vobsub titlova"
 
-#: ../lib/Video/DVDRip/Depend.pm:187
+#: ../lib/Video/DVDRip/Depend.pm:204
 msgid "Needed for OGG/Vorbis"
 msgstr "Potrebno za OGG/Vorbis"
 
-#: ../lib/Video/DVDRip/Depend.pm:200
+#: ../lib/Video/DVDRip/Depend.pm:220
 msgid "For chapter progress bar (ogmtools)"
 msgstr "Za liniju napretka poglavlja (ogmtools)"
 
-#: ../lib/Video/DVDRip/Depend.pm:213
+#: ../lib/Video/DVDRip/Depend.pm:235
 msgid "Needed for (S)VCD encoding"
 msgstr "Potrebno za (S)VCD kodiranje"
 
-#: ../lib/Video/DVDRip/Depend.pm:226
+#: ../lib/Video/DVDRip/Depend.pm:250
 msgid "Can be used to view DVD's/files"
 msgstr "Ne može se koristiti za prikaz DVD-ova/fajlova"
 
-#: ../lib/Video/DVDRip/Depend.pm:239
+#: ../lib/Video/DVDRip/Depend.pm:265
 msgid "Only for cluster mode master"
 msgstr "Samo za glavni režim skupine"
 
-#: ../lib/Video/DVDRip/Depend.pm:252
+#: ../lib/Video/DVDRip/Depend.pm:280
 msgid "Used for DVD device scanning"
 msgstr "Koristi se za pretragu DVD uređaja"
 
-#: ../lib/Video/DVDRip/Depend.pm:314
+#: ../lib/Video/DVDRip/Depend.pm:342
 msgid "not installed"
 msgstr "nije instalirano"
 
-#: ../lib/Video/DVDRip/Depend.pm:511
+#: ../lib/Video/DVDRip/Depend.pm:539
 msgid "Program"
 msgstr "Program"
 
-#: ../lib/Video/DVDRip/Depend.pm:511 ../lib/Video/DVDRip/GUI/Filters.pm:294
+#: ../lib/Video/DVDRip/Depend.pm:539 ../lib/Video/DVDRip/GUI/Filters.pm:294
 msgid "Version"
 msgstr "Izdanje"
 
@@ -948,7 +948,7 @@ msgstr "Jedinstveno generisanje vobsub datoteke"
 msgid "Extract PS1 stream from VOB"
 msgstr "Izvlačenje PS1 toka iz VOBa"
 
-#: ../lib/Video/DVDRip/Title.pm:424
+#: ../lib/Video/DVDRip/Title.pm:434
 #, perl-brace-format
 msgid ""
 "Set codec of audio track #{nr} to 'mp3', 'vorbis' not supported by AVI "
@@ -957,7 +957,7 @@ msgstr ""
 "Audio kodek za traku br. {nr} postavljen na „mp3“, AVI kontejner ne podržava "
 "„vorbis“"
 
-#: ../lib/Video/DVDRip/Title.pm:433
+#: ../lib/Video/DVDRip/Title.pm:443
 #, perl-brace-format
 msgid ""
 "Set codec of audio track #{nr} to 'mp3', 'mp2' not supported by AVI container"
@@ -965,123 +965,123 @@ msgstr ""
 "Postavi kodek za audio numeru #{nr} na „mp3“, AVI kontejner ne podržava "
 "„mp2“ "
 
-#: ../lib/Video/DVDRip/Title.pm:444
+#: ../lib/Video/DVDRip/Title.pm:454
 msgid "Set video codec to 'xvid', '"
 msgstr "Postavi video kodek na „xvid“, „"
 
-#: ../lib/Video/DVDRip/Title.pm:446
+#: ../lib/Video/DVDRip/Title.pm:456
 msgid "' not supported by AVI container"
 msgstr "‟ AVI kontejner ne podržava"
 
-#: ../lib/Video/DVDRip/Title.pm:458
+#: ../lib/Video/DVDRip/Title.pm:468
 #, perl-brace-format
 msgid "Set codec of audio track #{nr} to 'mp2', '"
 msgstr "Postavi kodek audio numere #{nr} na „mp2“, '"
 
-#: ../lib/Video/DVDRip/Title.pm:461 ../lib/Video/DVDRip/Title.pm:471
+#: ../lib/Video/DVDRip/Title.pm:471 ../lib/Video/DVDRip/Title.pm:481
 msgid "' not supported by MPEG container"
 msgstr "‟ ne podržava OGG kontejner"
 
-#: ../lib/Video/DVDRip/Title.pm:469
+#: ../lib/Video/DVDRip/Title.pm:479
 msgid "Set video codec to 'SVCD', '"
 msgstr "Postavi video kodek na „SVCD“, '"
 
-#: ../lib/Video/DVDRip/Title.pm:484
+#: ../lib/Video/DVDRip/Title.pm:494
 #, perl-brace-format
 msgid "Set codec of audio track #{nr} to 'vorbis', '"
 msgstr "Postavi kodek audio numere #{nr} na „vorbis“, '"
 
-#: ../lib/Video/DVDRip/Title.pm:487
+#: ../lib/Video/DVDRip/Title.pm:497
 msgid "' not supported by OGG container"
 msgstr "‟ ne podržava OGG kontejner"
 
-#: ../lib/Video/DVDRip/Title.pm:496
+#: ../lib/Video/DVDRip/Title.pm:506
 msgid "Set video codec to 'xvid', MPEG not supported by OGG container"
 msgstr "Postavi video kodek na „xvid“, OGG ne podržava (S)VCD/CVD"
 
-#: ../lib/Video/DVDRip/Title.pm:734
+#: ../lib/Video/DVDRip/Title.pm:744
 #: ../lib/Video/DVDRip/GUI/Project/Title.pm:119
 msgid "Chp"
 msgstr "Pog"
 
-#: ../lib/Video/DVDRip/Title.pm:736
+#: ../lib/Video/DVDRip/Title.pm:746
 msgid "Aud"
 msgstr "Aud"
 
-#: ../lib/Video/DVDRip/Title.pm:740
+#: ../lib/Video/DVDRip/Title.pm:750
 msgid "frames"
 msgstr "kadrova"
 
-#: ../lib/Video/DVDRip/Title.pm:812 ../lib/Video/DVDRip/Title.pm:890
+#: ../lib/Video/DVDRip/Title.pm:822 ../lib/Video/DVDRip/Title.pm:900
 #, perl-brace-format
 msgid "Can't mkpath directory '{dir}'"
 msgstr "Ne mogu da izvršim mkpath za direktorijum „{dir}“"
 
-#: ../lib/Video/DVDRip/Title.pm:974
+#: ../lib/Video/DVDRip/Title.pm:984
 msgid "Width isn't even."
 msgstr "Širina nije parna."
 
-#: ../lib/Video/DVDRip/Title.pm:977
+#: ../lib/Video/DVDRip/Title.pm:987
 msgid "Width is not divisible by 16."
 msgstr "Širina nije deljiva sa 16."
 
-#: ../lib/Video/DVDRip/Title.pm:980
+#: ../lib/Video/DVDRip/Title.pm:990
 msgid "Height isn't even."
 msgstr "Visina nije parna."
 
-#: ../lib/Video/DVDRip/Title.pm:983
+#: ../lib/Video/DVDRip/Title.pm:993
 msgid "Height is not divisible by 16."
 msgstr "Visina nije deljiva sa 16."
 
-#: ../lib/Video/DVDRip/Title.pm:991
+#: ../lib/Video/DVDRip/Title.pm:1001
 msgid "Settings Ok"
 msgstr "Podešavanja su u redu"
 
-#: ../lib/Video/DVDRip/Title.pm:997
+#: ../lib/Video/DVDRip/Title.pm:1007
 msgid "After 1st clipping"
 msgstr "Posle prvog sečenja"
 
-#: ../lib/Video/DVDRip/Title.pm:998
+#: ../lib/Video/DVDRip/Title.pm:1008
 msgid "After 2nd clipping"
 msgstr "Posle drugog sečenja"
 
-#: ../lib/Video/DVDRip/Title.pm:999
+#: ../lib/Video/DVDRip/Title.pm:1009
 msgid "After zoom"
 msgstr "Posle uvećanja"
 
-#: ../lib/Video/DVDRip/Title.pm:1004
+#: ../lib/Video/DVDRip/Title.pm:1014
 #, perl-brace-format
 msgid "Eff. ratio: <b>{eff}</b>, phys. ratio: <b>{phys}</b>"
 msgstr "Efektivni odnos: <b>{eff}</b>, fizički odnos: <b>{phys}</b>"
 
-#: ../lib/Video/DVDRip/Title.pm:1164
+#: ../lib/Video/DVDRip/Title.pm:1174
 #, perl-brace-format
 msgid "Can't read VOB navigation file '{filename}'"
 msgstr "Ne mogu da pročitam VOB navigacioni fajl „{filename}“"
 
-#: ../lib/Video/DVDRip/Title.pm:1195
+#: ../lib/Video/DVDRip/Title.pm:1205
 msgid "Program stream units calculated"
 msgstr "Izračunate jedinice toka programa"
 
-#: ../lib/Video/DVDRip/Title.pm:1234
+#: ../lib/Video/DVDRip/Title.pm:1244
 #, perl-brace-format
 msgid "invalid parameter for frame_size ('{frame_size}')"
 msgstr "neispravan parametar za veličinu kadra („{frame_size}“)"
 
-#: ../lib/Video/DVDRip/Title.pm:1654 ../lib/Video/DVDRip/Title.pm:3000
+#: ../lib/Video/DVDRip/Title.pm:1664 ../lib/Video/DVDRip/Title.pm:3010
 #, perl-brace-format
 msgid "Can't read VOB navigation file '{vob_nav_file}'"
 msgstr "Ne mogu da pročitam VOB navigacioni fajl „{vob_nav_file}“"
 
-#: ../lib/Video/DVDRip/Title.pm:1969
+#: ../lib/Video/DVDRip/Title.pm:1979
 msgid "Enabled PSU core. Movie is NTSC and has more than one PSU."
 msgstr "Uključeno PSU jezgro. Film je NTSC i ima više od jednog PSU-a."
 
-#: ../lib/Video/DVDRip/Title.pm:1974
+#: ../lib/Video/DVDRip/Title.pm:1984
 msgid "Not enabling PSU core, because this movie has only one PSU."
 msgstr "Ne uključujem PSU jezgro, zato što ovaj film ima samo jedan PSU."
 
-#: ../lib/Video/DVDRip/Title.pm:2487
+#: ../lib/Video/DVDRip/Title.pm:2497
 #, perl-brace-format
 msgid ""
 "When using fast resize: Clip1 and Zoom size must be divisible by "
@@ -1090,13 +1090,13 @@ msgstr ""
 "Kada koristite brzo menjanje veličine: Isečak 1 u veličina uvećanja moraju "
 "biti deljivi sa {multiple_of}"
 
-#: ../lib/Video/DVDRip/Title.pm:2494
+#: ../lib/Video/DVDRip/Title.pm:2504
 msgid "When using fast resize: Width and height must both shrink or expand"
 msgstr ""
 "Kada koristite brzo menjanje veličine: I širina i visina moraju da se "
 "skupljaju ili proširuju"
 
-#: ../lib/Video/DVDRip/Title.pm:2974
+#: ../lib/Video/DVDRip/Title.pm:2984
 msgid ""
 "Fast VOB navigation only available for ripped DVD's, falling back to slow "
 "method."
@@ -1104,20 +1104,20 @@ msgstr ""
 "Brza VOB navigacija je moguća samo za iščupane DVD-ove, vraćam se na spori "
 "metod."
 
-#: ../lib/Video/DVDRip/Title.pm:2978
+#: ../lib/Video/DVDRip/Title.pm:2988
 msgid "VOB navigation file is missing. Slow navigation method used."
 msgstr "VOB navigacioni fajl nedostaje. Koristi se metod za sporu navigaciju."
 
-#: ../lib/Video/DVDRip/Title.pm:2982
+#: ../lib/Video/DVDRip/Title.pm:2992
 msgid "Using slow preview grabbing as adviced by user"
 msgstr "Koristi se spora dobavka pregleda, prema uputstvu korisnika"
 
-#: ../lib/Video/DVDRip/Title.pm:3012
+#: ../lib/Video/DVDRip/Title.pm:3022
 #, perl-brace-format
 msgid "VOB navigation file '{vob_nav_file}' is corrupted."
 msgstr "VOB navigacioni fajl „{vob_nav_file}“ nije ispravan."
 
-#: ../lib/Video/DVDRip/Title.pm:3027
+#: ../lib/Video/DVDRip/Title.pm:3037
 #, perl-brace-format
 msgid ""
 "Can't find frame {frame} in VOB navigation file '{vob_nav_file}' (which has "
@@ -1126,35 +1126,35 @@ msgstr ""
 "Ne mogu da pronađem kadar {frame} u VOB navigacionom fajlu "
 "„{vob_nav_file}“ (koji ima samo {frames} kadrova). "
 
-#: ../lib/Video/DVDRip/Title.pm:3462
+#: ../lib/Video/DVDRip/Title.pm:3472
 msgid "You first have to transcode this title."
 msgstr "Prvo morate da kodirate ovaj naslov."
 
-#: ../lib/Video/DVDRip/Title.pm:3625
+#: ../lib/Video/DVDRip/Title.pm:3635
 msgid "No files for image creation selected."
 msgstr "Nema izabranih fajlova za pravljenje slike."
 
-#: ../lib/Video/DVDRip/Title.pm:3634 ../lib/Video/DVDRip/Title.pm:3711
+#: ../lib/Video/DVDRip/Title.pm:3644 ../lib/Video/DVDRip/Title.pm:3721
 msgid "No burn files selected."
 msgstr "Nema izabranih fajlova za narezivanje."
 
-#: ../lib/Video/DVDRip/Title.pm:3635
+#: ../lib/Video/DVDRip/Title.pm:3645
 msgid "File is already an CD image."
 msgstr "Fajl je već CD slika."
 
-#: ../lib/Video/DVDRip/Title.pm:3640
+#: ../lib/Video/DVDRip/Title.pm:3650
 msgid "Can't burn (S)VCD on the fly"
 msgstr "Ne mogu da narezujem (S)VCD-ove u letu"
 
-#: ../lib/Video/DVDRip/Title.pm:3700
+#: ../lib/Video/DVDRip/Title.pm:3710
 msgid "No files for burning selected."
 msgstr "Nema izabranih fajlova za narezivanje."
 
-#: ../lib/Video/DVDRip/Title.pm:3968 ../lib/Video/DVDRip/Title.pm:4003
+#: ../lib/Video/DVDRip/Title.pm:3978 ../lib/Video/DVDRip/Title.pm:4013
 msgid "No subtitle selected"
 msgstr "Nije izabran titl"
 
-#: ../lib/Video/DVDRip/Title.pm:4256
+#: ../lib/Video/DVDRip/Title.pm:4266
 #, perl-brace-format
 msgid ""
 "Your frame size isn't conform to the standard,\n"
@@ -1165,7 +1165,7 @@ msgstr ""
 "koji je {should_width}x{should_height} za {codec}/{mode}, ali ste Vi "
 "podesili {width}x{height}."
 
-#: ../lib/Video/DVDRip/Title.pm:4281
+#: ../lib/Video/DVDRip/Title.pm:4291
 msgid ""
 "2nd clipping parameters can only be\n"
 "moved to 1st clipping parameters, if\n"
@@ -1667,8 +1667,9 @@ msgid "Write access"
 msgstr "Pristup za upis"
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:357
-msgid "transcode version"
-msgstr "izdanje programa transcode"
+#, fuzzy
+msgid "Program versions"
+msgstr "Napredak"
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:467
 msgid "No details available"
@@ -1699,38 +1700,61 @@ msgid "Node's data directory"
 msgstr "Čvorov direktorijum sa podacima"
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:506
-msgid "Masters's data directory"
+#, fuzzy
+msgid "Masters' data directory"
 msgstr "Glavni direktorijum sa podacima"
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:520
 msgid "Content of data directory matches"
 msgstr "Sadržaj direktorijuma sa podacima se poklapa"
 
-#: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:530
-msgid "Node's transcode"
+#: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:531
+#, fuzzy
+msgid "Node's programs"
 msgstr "Čvorov transcode"
 
-#: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:532
-msgid "Masters's transcode"
+#: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:533
+#, fuzzy
+msgid "Masters's programs"
 msgstr "Glavni transcode"
 
-#: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:554
+#: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:555
 msgid "Node can write to data directory"
 msgstr "Čvor može da upisuje u direktorijum s podacima"
 
-#: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:604
+#: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:605
 msgid "Can't execute tests:"
 msgstr "Nije moguće proveriti:"
 
-#: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:658
+#: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:628
+#, fuzzy
+msgid "ssh connect"
+msgstr "SSH veza"
+
+#: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:629
+#, fuzzy
+msgid "Content of project base directory"
+msgstr "Sadržaj direktorijuma sa podacima se poklapa"
+
+#: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:630
+#, fuzzy
+msgid "Project base directory writable"
+msgstr "Izbaci disk nakon narezivanja"
+
+#: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:631
+#, fuzzy
+msgid "transcode version match"
+msgstr "izdanje programa transcode"
+
+#: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:659
 msgid "All tests successful"
 msgstr "Svi testovi su u redu"
 
-#: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:664
+#: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:665
 msgid "Brief report"
 msgstr "Kratak izveštaj"
 
-#: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:674
+#: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:675
 msgid "Detailed report"
 msgstr "Detaljan izveštaj"
 
@@ -1941,23 +1965,23 @@ msgstr ""
 "Pokrenite ručno program dvdrip-master da biste videli zašto\n"
 "nije pokrenut."
 
-#: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:981
+#: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:984
 msgid "Please configure the master node first"
 msgstr "Molimo da prvo podesite glavni čvor"
 
-#: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:1002
+#: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:1005
 msgid "Connection to master daemon lost!"
 msgstr "Izgubljena je veza sa glavnim demonom!"
 
-#: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:1055
+#: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:1058
 msgid "Do you want to remove the selected project?"
 msgstr "Da li želite da uklonite izabrani projekat?"
 
-#: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:1137
+#: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:1140
 msgid "Do you want to remove the selected node?"
 msgstr "Da li želite da uklonite izabrani čvor?"
 
-#: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:1207
+#: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:1210
 msgid ""
 "Do you really want to shutdown\n"
 "the Cluster Control Daemon?"
@@ -2957,7 +2981,13 @@ msgstr ""
 msgid "MPEG processing is not supported for cluster mode."
 msgstr "MPEG obrada nije podržana za režim skupine."
 
-#: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:916
+#: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:915
+msgid ""
+"Transcoding without audio in an OGG container isn't supported in cluster "
+"mode."
+msgstr ""
+
+#: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:923
 msgid ""
 "WARNING: your frame range setting\n"
 "is ignored in cluster mode"
@@ -3911,41 +3941,41 @@ msgstr "Izvršavanje naredbe: {command}"
 msgid "Sending signal 9 to PID(s)"
 msgstr "Slanje signala 9 procesima:"
 
-#: /home/joern/projects/Event-ExecFlow/lib/Event/ExecFlow/Job.pm:310
+#: /home/joern/projects/Event-ExecFlow/lib/Event/ExecFlow/Job.pm:330
 msgid "Cancelled"
 msgstr "Otkazano"
 
-#: /home/joern/projects/Event-ExecFlow/lib/Event/ExecFlow/Job.pm:311
+#: /home/joern/projects/Event-ExecFlow/lib/Event/ExecFlow/Job.pm:331
 msgid "Error"
 msgstr "Greška"
 
-#: /home/joern/projects/Event-ExecFlow/lib/Event/ExecFlow/Job.pm:312
+#: /home/joern/projects/Event-ExecFlow/lib/Event/ExecFlow/Job.pm:332
 msgid "Skipped"
 msgstr "Preskočeno"
 
-#: /home/joern/projects/Event-ExecFlow/lib/Event/ExecFlow/Job.pm:314
+#: /home/joern/projects/Event-ExecFlow/lib/Event/ExecFlow/Job.pm:334
 msgid "Waiting"
 msgstr "Čekanje"
 
-#: /home/joern/projects/Event-ExecFlow/lib/Event/ExecFlow/Job.pm:327
+#: /home/joern/projects/Event-ExecFlow/lib/Event/ExecFlow/Job.pm:347
 #, perl-brace-format
 msgid "Duration: {time}"
 msgstr "Trajanje: {time}"
 
-#: /home/joern/projects/Event-ExecFlow/lib/Event/ExecFlow/Job.pm:336
+#: /home/joern/projects/Event-ExecFlow/lib/Event/ExecFlow/Job.pm:356
 msgid "Initializing"
 msgstr "Započinjem"
 
-#: /home/joern/projects/Event-ExecFlow/lib/Event/ExecFlow/Job.pm:343
+#: /home/joern/projects/Event-ExecFlow/lib/Event/ExecFlow/Job.pm:363
 #, perl-brace-format
 msgid "elapsed {time}"
 msgstr "proteklo {time}"
 
-#: /home/joern/projects/Event-ExecFlow/lib/Event/ExecFlow/Job.pm:347
+#: /home/joern/projects/Event-ExecFlow/lib/Event/ExecFlow/Job.pm:367
 msgid " finished"
 msgstr " gotovo"
 
-#: /home/joern/projects/Event-ExecFlow/lib/Event/ExecFlow/Job.pm:360
+#: /home/joern/projects/Event-ExecFlow/lib/Event/ExecFlow/Job.pm:380
 #, perl-brace-format
 msgid "{percent}PERCENT done."
 msgstr "{percent} %% gotovo."
@@ -4118,9 +4148,6 @@ msgstr "{percent} %% gotovo."
 
 #~ msgid "Overburning"
 #~ msgstr "Prerezivanje"
-
-#~ msgid "Eject disc after write"
-#~ msgstr "Izbaci disk nakon narezivanja"
 
 #~ msgid "Buffersize"
 #~ msgstr "Veličina bafera"
