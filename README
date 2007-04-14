@@ -144,8 +144,8 @@ deb http://www.debian-multimedia.org experimental main
    Local download of the latest stable release: (currently no unstable
    release available)
 
-     dvdrip-0.98.4.tar.gz
-     dvdrip-0.98.4.tar.gz.asc (GnuPG signature, get key)
+     dvdrip-0.98.5.tar.gz
+     dvdrip-0.98.5.tar.gz.asc (GnuPG signature, get key)
 
    CPAN download directory: (list of mirrors)
 
@@ -427,12 +427,12 @@ bin/dvdrip
 
    You can download a static HTML version of this documentation:
 
-     http://www.exit1.org/dvdrip/dist/dvdrip-doc-html-0.98.4.tar.bz2
+     http://www.exit1.org/dvdrip/dist/dvdrip-doc-html-0.98.5.tar.bz2
 
    A PDF version is also available (generated using the excellent tool
    htmldoc):
 
-     http://www.exit1.org/dvdrip/dist/dvdrip-doc-0.98.4.pdf.bz2
+     http://www.exit1.org/dvdrip/dist/dvdrip-doc-0.98.5.pdf.bz2
      _________________________________________________________________
 
 IV.  MAILING LIST
@@ -618,38 +618,15 @@ URL References
   15. http://wwwkeys.de.pgp.net:11371/pks/lookup?op=get&search=0x285CF473
 
 VI. CHANGES
-   $Id: Changes,v 1.187.2.6 2007/04/13 19:44:30 joern Exp $
+   $Id: Changes,v 1.187.2.7 2007/04/14 14:39:04 joern Exp $
 
    Revision history and release notes for dvd::rip.
 
-   0.98.5 [stable branch] Fri Apr 13 2007, joern
-    Notes:
-    - This version requires Event::ExecFlow 0.63. Grab it
-      from the perl-modules/ directory of this dvd::rip
-      tarball.
-
+   0.98.6 [stable branch] Fri Apr 14 2007, joern
+    Features:
+    - Swedish and Serbian translation updates.
+    
     Bugfixes:
-    - Fixed a typo which made the the subtitle preview
-      window crash. Thanks for the report to Dario Castellarin.
-    - Fixed ffmpeg preview grabbing with newer ffmpeg builds.
-      Thanks for the report to Christian Marillat.
-    - Fixed a buffering issue in the cluster control GUI
-      when processing progress update events from the master.
-      Thanks for the report to Joe Plunkett <ragnarok_it AT
-      yahoo.com>.
-    - Stopping a cluster node didn't work when it was actually
-      executing a job.
-    - Cluster node test now checks for ogmtools as well.
-      Thanks for this suggestion to Bart Nagel <bart AT
-      bnagel.net>.
-    - Programs in cluster node check now are executed in
-      C locale to prevent any problems due to different
-      default locales on cluster nodes.
-    - Restarting a cluster project which finished with errors
-      didn't work under specific circumstances (bug in
-      Event::ExecFlow).
-    - Prevent putting non-audio titles with ogg container
-      on a cluster, since ogmcat doesn't support ogg files
-      without audio. Thanks for the report to Carlos-Manuel
-      Major <cmajor AT free.fr>.
+    - Crash on first dvd::rip startup (initial configuration)
+      fixed. Thanks for the report to Christian Marillat.
 

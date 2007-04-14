@@ -1,6 +1,14 @@
-$Id: Changes,v 1.187.2.6 2007/04/13 19:44:30 joern Exp $
+$Id: Changes,v 1.187.2.7 2007/04/14 14:39:04 joern Exp $
 
 Revision history and release notes for dvd::rip.
+
+0.98.6 [stable branch] Fri Apr 14 2007, joern
+    Features:
+    - Swedish and Serbian translation updates.
+    
+    Bugfixes:
+    - Crash on first dvd::rip startup (initial configuration)
+      fixed. Thanks for the report to Christian Marillat.
 
 0.98.5 [stable branch] Fri Apr 13 2007, joern
     Notes:

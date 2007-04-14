@@ -1,4 +1,4 @@
-# $Id: Depend.pm,v 1.22.2.6 2007/04/13 11:21:51 joern Exp $
+# $Id: Depend.pm,v 1.22.2.7 2007/04/14 14:38:42 joern Exp $
 
 #-----------------------------------------------------------------------
 # Copyright (C) 2001-2006 Jörn Reder <joern AT zyn.de>.
@@ -168,7 +168,7 @@ my %TOOLS = (
         optional    => 1,
         version_cmd => "",
         get_version => sub {
-            my $cmd = $OBJECT->config('rar_command')." '-?'";
+            my $cmd = Video::DVDRip::Depend->config('rar_command')." '-?'";
             qx[$cmd 2>&1] =~ /rar\s+(\d+\.\d+(\.\d+)?)/i;
             return $1;
         },
