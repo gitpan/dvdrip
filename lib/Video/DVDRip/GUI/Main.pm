@@ -1,4 +1,4 @@
-# $Id: Main.pm,v 1.91.2.2 2007/03/24 10:59:59 joern Exp $
+# $Id: Main.pm,v 1.91.2.4 2007/08/05 17:07:48 joern Exp $
 
 #-----------------------------------------------------------------------
 # Copyright (C) 2001-2006 Jörn Reder <joern AT zyn.de>.
@@ -666,7 +666,7 @@ sub save_project {
                     $context->update_object_widgets("project");
                     $self->logger->set_project($project);
                     $self->log( __x "Project {name} created",
-                        $project->name );
+                        name => $project->name );
                 }
             },
         );
@@ -692,7 +692,7 @@ sub save_project_as {
             unless ($created) {
                 $context->update_object_widgets("project");
                 $self->logger->set_project($project);
-                $self->log( __x "Project {name} created", $project->name );
+                $self->log( __x "Project {name} created", name => $project->name );
             }
         },
     );
@@ -1020,7 +1020,8 @@ sub show_about_dialog {
         translator_credits => $translators,
     );
 
-    $about->show;
+    $about->run;
+    $about->destroy;
 
     1;
 }

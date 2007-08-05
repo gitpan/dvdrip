@@ -1,4 +1,4 @@
-# $Id: JobPlanner.pm,v 1.14.2.3 2007/04/13 11:28:55 joern Exp $
+# $Id: JobPlanner.pm,v 1.14.2.4 2007/08/05 16:58:21 joern Exp $
 
 #-----------------------------------------------------------------------
 # Copyright (C) 2001-2006 Jörn Reder <joern AT zyn.de>.
@@ -460,7 +460,7 @@ sub build_grab_preview_frame_job {
     if ( ( $title->project->rip_mode ne 'rip' ||
            !$title->has_vob_nav_file ||
             $title->tc_force_slow_grabbing )
-          and not $self->exists("ffmpeg") ) {
+          and not $self->has("ffmpeg") ) {
         $progress_ips = __"fps";
         $progress_max = $title->preview_frame_nr;
         $slow_mode    = 1;
@@ -498,7 +498,7 @@ sub build_grab_preview_frame_job {
                     );
                 }
             }
-            if ( $self->exists("ffmpeg") and $buffer =~ /frame=\s*1.*?q\s*=/ ) {
+            if ( $self->has("ffmpeg") and $buffer =~ /frame=\s*1.*?q\s*=/ ) {
                 $got_frame_with_ffmpeg = 1;
             }
         },
@@ -513,7 +513,7 @@ sub build_grab_preview_frame_job {
         },
         post_callbacks => sub {
             my ($job) = @_;
-            if ( $self->exists("ffmpeg") and not $got_frame_with_ffmpeg ) {
+            if ( $self->has("ffmpeg") and not $got_frame_with_ffmpeg ) {
                 $job->set_error_message (
                     __ ("transcode can't find this frame. ").
                     __ ("Try a lower frame number. ").

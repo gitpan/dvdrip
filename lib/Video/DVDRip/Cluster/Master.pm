@@ -1,4 +1,4 @@
-# $Id: Master.pm,v 1.45.2.1 2007/04/13 11:17:44 joern Exp $
+# $Id: Master.pm,v 1.45.2.2 2007/08/05 16:56:51 joern Exp $
 #-----------------------------------------------------------------------
 # Copyright (C) 2001-2006 Jörn Reder <joern AT zyn.de>.
 # All Rights Reserved. See file COPYRIGHT for details.
@@ -118,19 +118,25 @@ sub new {
     return $self;
 }
 
+my $FPING;
 sub check_prerequisites {
     my $class = shift;
 
-    # check for suid root /usr/sbin/fping
-    croak "/usr/sbin/fping missing"
-        if not -f "/usr/sbin/fping";
-    croak "no permission to execute /usr/sbin/fping"
-        if not -x "/usr/sbin/fping";
+    foreach my $path ( "/usr/bin", "/usr/sbin" ) {
+        if ( -f "$path/fping" and -x "$path/fping" ) {
+            $FPING = "$path/fping";
+            last;
+        }
+    }
 
-    my ( $mode, $uid ) = ( stat("/usr/sbin/fping") )[ 2, 4 ];
+    if ( !$FPING ) {
+        croak "can't find a executable fping in /usr/bin and /usr/sbin";
+    }
+
+    my ( $mode, $uid ) = ( stat($FPING) )[ 2, 4 ];
     my $suid = $mode & 04000;
 
-    croak "/usr/sbin/fping is not suid root"
+    croak "$FPING is not suid root"
         if not $suid or $uid != 0;
 
     1;
@@ -138,7 +144,7 @@ sub check_prerequisites {
 
 sub node_check_unnecessary {
     my $self = shift;
-
+    return;
     return if $self->rpc_server->get_clients_connected;
     return if @{ $self->job_get_unfinished_projects };
     return 1;
@@ -189,7 +195,7 @@ sub node_check {
 
     return 1 if not $nodes_list;
 
-    my $command = "/usr/sbin/fping $nodes_list";
+    my $command = "$FPING $nodes_list";
 
     my $buffer;
 
@@ -198,6 +204,7 @@ sub node_check {
         command      => $command,
         no_log       => 1,
         cb_line_read => sub {
+            $self->log(4, "fping: $_[0]");
             $buffer .= $_[0] . "\n";
             1;
         },

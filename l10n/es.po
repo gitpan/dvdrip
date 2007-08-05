@@ -2,14 +2,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 # Copyright (C) YEAR J�n Reder <joern AT zyn.de>.
 #
-# Sergio Cambra <runico@users.berlios.de>, 2004, 2005, 2006.
+# Sergio Cambra <runico@users.berlios.de>, 2004, 2005, 2006, 2007.
 # Sergio Cambra García <sergio.cambra@hispalinux.es>, 2004.
 msgid ""
 msgstr ""
 "Project-Id-Version: es\n"
 "Report-Msgid-Bugs-To: dvd::rip Translation Team <dvdrip-lang AT exit1.org>\n"
-"POT-Creation-Date: 2007-04-13 21:42+0200\n"
-"PO-Revision-Date: 2006-08-24 03:31+0200\n"
+"POT-Creation-Date: 2007-08-05 18:57+0200\n"
+"PO-Revision-Date: 2007-04-15 21:17+0200\n"
 "Last-Translator: Sergio Cambra <runico@users.berlios.de>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -181,90 +181,90 @@ msgstr "Demonio maestro activado"
 msgid "Got signal {signal}."
 msgstr "Señal {signal} recibida."
 
-#: ../lib/Video/DVDRip/Cluster/Master.pm:175
+#: ../lib/Video/DVDRip/Cluster/Master.pm:181
 msgid "Node check watcher disabled"
 msgstr "Vigía de comprobación de nodos desactivado"
 
-#: ../lib/Video/DVDRip/Cluster/Master.pm:206
+#: ../lib/Video/DVDRip/Cluster/Master.pm:213
 msgid "Warning: node check fping reported nothing"
 msgstr "Atención: comprobación de nodo con fping no informó nada"
 
-#: ../lib/Video/DVDRip/Cluster/Master.pm:223
+#: ../lib/Video/DVDRip/Cluster/Master.pm:230
 #, perl-brace-format
 msgid "Node '{node_name}' is now online."
 msgstr "El nodo '{node_name}' está ahora en línea."
 
-#: ../lib/Video/DVDRip/Cluster/Master.pm:232
+#: ../lib/Video/DVDRip/Cluster/Master.pm:239
 #, perl-brace-format
 msgid "Node '{node_name}' is still reachable. Will be online in 5 seconds."
 msgstr ""
 "Todavía se puede contactar con el nodo '{node_name}'. Estará en línea dentro "
 "de 5 segundos."
 
-#: ../lib/Video/DVDRip/Cluster/Master.pm:241
+#: ../lib/Video/DVDRip/Cluster/Master.pm:248
 #, perl-brace-format
 msgid "Node '{node_name}' is now reachable. Will be online in 10 seconds."
 msgstr ""
 "Todavía se puede contactar con el nodo '{node_name}'. Estará en línea dentro "
 "de 10 segundos."
 
-#: ../lib/Video/DVDRip/Cluster/Master.pm:249
+#: ../lib/Video/DVDRip/Cluster/Master.pm:256
 #, perl-brace-format
 msgid "Node '{node_name}' is Ok again"
 msgstr "Nodo '{node_name}' está bien otra vez."
 
-#: ../lib/Video/DVDRip/Cluster/Master.pm:260
+#: ../lib/Video/DVDRip/Cluster/Master.pm:267
 #, perl-brace-format
 msgid "Warning: Node '{node_name}' is unreachable"
 msgstr "Atención: No se puede contactar con el nodo '{node_name}'"
 
-#: ../lib/Video/DVDRip/Cluster/Master.pm:270
+#: ../lib/Video/DVDRip/Cluster/Master.pm:277
 #, perl-brace-format
 msgid "Warning: Node '{node_name}' possibly offline"
 msgstr "Atención: El nodo '{node_name}' posiblemente esté desconectado."
 
-#: ../lib/Video/DVDRip/Cluster/Master.pm:363
+#: ../lib/Video/DVDRip/Cluster/Master.pm:370
 #, perl-brace-format
 msgid "Loading node file '{file}'"
 msgstr "Cargando archivo de nodo '{file}'"
 
-#: ../lib/Video/DVDRip/Cluster/Master.pm:387
+#: ../lib/Video/DVDRip/Cluster/Master.pm:394
 #, perl-brace-format
 msgid "Loading project file '{filename}'"
 msgstr "Cargando archivo de proyecto '{filename}'"
 
-#: ../lib/Video/DVDRip/Cluster/Master.pm:424
+#: ../lib/Video/DVDRip/Cluster/Master.pm:431
 msgid "Node must have a name"
 msgstr "Un nodo debe tener un nombre"
 
-#: ../lib/Video/DVDRip/Cluster/Master.pm:425
+#: ../lib/Video/DVDRip/Cluster/Master.pm:432
 msgid "Node with this name already exists"
 msgstr "Ya existe un nodo con ese nombre"
 
-#: ../lib/Video/DVDRip/Cluster/Master.pm:434
+#: ../lib/Video/DVDRip/Cluster/Master.pm:441
 #, perl-brace-format
 msgid "Node '{node_name}' saved to '{filename}'"
 msgstr "Nodo '{node_name}' guardado a '{filename}'"
 
-#: ../lib/Video/DVDRip/Cluster/Master.pm:515
+#: ../lib/Video/DVDRip/Cluster/Master.pm:522
 #, perl-brace-format
 msgid "Project with filename '{filename}' added"
 msgstr "Añadido un proyecto con nombre de archivo '{filename}'"
 
-#: ../lib/Video/DVDRip/Cluster/Master.pm:648
+#: ../lib/Video/DVDRip/Cluster/Master.pm:655
 #, perl-brace-format
 msgid "Project {project} removed"
 msgstr "Proyecto {project} eliminado"
 
-#: ../lib/Video/DVDRip/Cluster/Master.pm:734
+#: ../lib/Video/DVDRip/Cluster/Master.pm:741
 msgid "Master shutdown. Stopping active jobs."
 msgstr "Apagando el maestro. Parando trabajos activos."
 
-#: ../lib/Video/DVDRip/Cluster/Master.pm:738
+#: ../lib/Video/DVDRip/Cluster/Master.pm:745
 msgid "Master shutdown"
 msgstr "Apagando el maestro"
 
-#: ../lib/Video/DVDRip/Cluster/Master.pm:749
+#: ../lib/Video/DVDRip/Cluster/Master.pm:756
 msgid "Cluster control daemon will shutdown in 2 seconds..."
 msgstr "Demonio de control del cluster se cerrará en 2 segundos..."
 
@@ -377,7 +377,7 @@ msgstr "Necesitado para las previsualizaciones"
 
 #: ../lib/Video/DVDRip/Depend.pm:108
 msgid "FFmpeg video converter command line program"
-msgstr ""
+msgstr "Programa FFmpeg conversor de videos de linea de comandos"
 
 #: ../lib/Video/DVDRip/Depend.pm:122
 msgid "xvid4 configuration tool"
@@ -570,7 +570,7 @@ msgstr "Tamaño de video final"
 msgid "Resulting File Size"
 msgstr "Tamaño de archivo final"
 
-#: ../lib/Video/DVDRip/Logger.pm:137
+#: ../lib/Video/DVDRip/Logger.pm:138
 msgid "Logfile nuked."
 msgstr "Archivo de registro vaciado."
 
@@ -1062,7 +1062,7 @@ msgstr "Unidades de flujo de programa calculadas"
 msgid "invalid parameter for frame_size ('{frame_size}')"
 msgstr "Parámetro no válido para tamaño de fotograma ('{frame_size}')"
 
-#: ../lib/Video/DVDRip/Title.pm:1664 ../lib/Video/DVDRip/Title.pm:3010
+#: ../lib/Video/DVDRip/Title.pm:1664 ../lib/Video/DVDRip/Title.pm:3032
 #, perl-brace-format
 msgid "Can't read VOB navigation file '{vob_nav_file}'"
 msgstr "No puedo leer el archivo de navegación VOB '{vob_nav_file}'"
@@ -1090,7 +1090,7 @@ msgstr ""
 "Cuando usar redimensionado rápido: Tanto la anchura como la altura deben "
 "encogerse o expandirse."
 
-#: ../lib/Video/DVDRip/Title.pm:2984
+#: ../lib/Video/DVDRip/Title.pm:3006
 msgid ""
 "Fast VOB navigation only available for ripped DVD's, falling back to slow "
 "method."
@@ -1098,21 +1098,21 @@ msgstr ""
 "La navegación de VOB rápida sólo está disponible para DVD extraídos, "
 "volviendo al método lento."
 
-#: ../lib/Video/DVDRip/Title.pm:2988
+#: ../lib/Video/DVDRip/Title.pm:3010
 msgid "VOB navigation file is missing. Slow navigation method used."
 msgstr ""
 "Falta el archivo de navegación VOB. Se usará el método de navegación lento."
 
-#: ../lib/Video/DVDRip/Title.pm:2992
+#: ../lib/Video/DVDRip/Title.pm:3014
 msgid "Using slow preview grabbing as adviced by user"
 msgstr "Usando captura lenta de previsualización como aconsejó el usuario"
 
-#: ../lib/Video/DVDRip/Title.pm:3022
+#: ../lib/Video/DVDRip/Title.pm:3044
 #, perl-brace-format
 msgid "VOB navigation file '{vob_nav_file}' is corrupted."
 msgstr "El archivo de navegación VOB '{vob_nav_file}' está corrupto."
 
-#: ../lib/Video/DVDRip/Title.pm:3037
+#: ../lib/Video/DVDRip/Title.pm:3059
 #, perl-brace-format
 msgid ""
 "Can't find frame {frame} in VOB navigation file '{vob_nav_file}' (which has "
@@ -1121,35 +1121,35 @@ msgstr ""
 "No puedo encontrar el fotograma {frame} en el archivo de navegación VOB "
 "'{vob_nav_file}' (que sólo tiene {frames} fotogramas). "
 
-#: ../lib/Video/DVDRip/Title.pm:3472
+#: ../lib/Video/DVDRip/Title.pm:3497
 msgid "You first have to transcode this title."
 msgstr "Primero tienes que codificar este título."
 
-#: ../lib/Video/DVDRip/Title.pm:3635
+#: ../lib/Video/DVDRip/Title.pm:3660
 msgid "No files for image creation selected."
 msgstr "No hay archivos seleccionados para crear la imagen."
 
-#: ../lib/Video/DVDRip/Title.pm:3644 ../lib/Video/DVDRip/Title.pm:3721
+#: ../lib/Video/DVDRip/Title.pm:3669 ../lib/Video/DVDRip/Title.pm:3746
 msgid "No burn files selected."
 msgstr "No hay archivos seleccionados para grabar."
 
-#: ../lib/Video/DVDRip/Title.pm:3645
+#: ../lib/Video/DVDRip/Title.pm:3670
 msgid "File is already an CD image."
 msgstr "El archivo ya es una imagen de CD."
 
-#: ../lib/Video/DVDRip/Title.pm:3650
+#: ../lib/Video/DVDRip/Title.pm:3675
 msgid "Can't burn (S)VCD on the fly"
 msgstr "No se puede grabar (S)VCD al vuelo"
 
-#: ../lib/Video/DVDRip/Title.pm:3710
+#: ../lib/Video/DVDRip/Title.pm:3735
 msgid "No files for burning selected."
 msgstr "No hay archivos seleccionados para grabar."
 
-#: ../lib/Video/DVDRip/Title.pm:3978 ../lib/Video/DVDRip/Title.pm:4013
+#: ../lib/Video/DVDRip/Title.pm:4003 ../lib/Video/DVDRip/Title.pm:4038
 msgid "No subtitle selected"
 msgstr "No hay subtítulos seleccionados"
 
-#: ../lib/Video/DVDRip/Title.pm:4266
+#: ../lib/Video/DVDRip/Title.pm:4291
 #, perl-brace-format
 msgid ""
 "Your frame size isn't conform to the standard,\n"
@@ -1160,7 +1160,7 @@ msgstr ""
 "que es {should_width}x{should_height} para {codec}/{mode}, pero has "
 "configurado {width}x{height}."
 
-#: ../lib/Video/DVDRip/Title.pm:4291
+#: ../lib/Video/DVDRip/Title.pm:4316
 msgid ""
 "2nd clipping parameters can only be\n"
 "moved to 1st clipping parameters, if\n"
@@ -1660,9 +1660,8 @@ msgid "Write access"
 msgstr "Acceso de escritura"
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:357
-#, fuzzy
 msgid "Program versions"
-msgstr "Progreso"
+msgstr "Versiones de programas"
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:467
 msgid "No details available"
@@ -1693,23 +1692,20 @@ msgid "Node's data directory"
 msgstr "Directorio de datos del nodo"
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:506
-#, fuzzy
 msgid "Masters' data directory"
-msgstr "Directorio de datos del maestro"
+msgstr "Directorio de datos de los maestros"
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:520
 msgid "Content of data directory matches"
 msgstr "El contenido de los directorios de datos es igual"
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:531
-#, fuzzy
 msgid "Node's programs"
 msgstr "Transcode del nodo"
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:533
-#, fuzzy
 msgid "Masters's programs"
-msgstr "Transcode del maestro"
+msgstr "Transcode de los maestros"
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:555
 msgid "Node can write to data directory"
@@ -1720,23 +1716,20 @@ msgid "Can't execute tests:"
 msgstr "No se pudo ejecutar las pruebas:"
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:628
-#, fuzzy
 msgid "ssh connect"
 msgstr "Conexión SSH"
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:629
-#, fuzzy
 msgid "Content of project base directory"
-msgstr "El contenido de los directorios de datos es igual"
+msgstr "Contenido del directorio base del proyecto"
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:630
 msgid "Project base directory writable"
-msgstr ""
+msgstr "Directorio base del proyecto escribible"
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:631
-#, fuzzy
 msgid "transcode version match"
-msgstr "Versión de transcode"
+msgstr "Versiones de transcode iguales"
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:659
 msgid "All tests successful"
@@ -1913,9 +1906,8 @@ msgid "Job"
 msgstr "Trabajo"
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:595
-#, fuzzy
 msgid "Add node"
-msgstr "_Añadir nodo"
+msgstr "Añadir nodo"
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:601
 msgid "Edit node"
@@ -2347,6 +2339,8 @@ msgid ""
 "dvd::rip detected transcode version >= 1.1.x. Support for this version is "
 "experimental. Please report bugs, if you find them."
 msgstr ""
+"dvd::rip detectó una versión de transcode >= 1.1.x. El soporte de esta "
+"versión es experimental. Por favor informa los errores que encuentres."
 
 #: ../lib/Video/DVDRip/GUI/Main.pm:263
 msgid "_New Project"
@@ -2982,6 +2976,8 @@ msgid ""
 "Transcoding without audio in an OGG container isn't supported in cluster "
 "mode."
 msgstr ""
+"Codificar sin audio en un contenedor OGG no está soportado en el modo "
+"cluster."
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:923
 msgid ""
@@ -3986,30 +3982,3 @@ msgstr " terminado"
 #, perl-brace-format
 msgid "{percent}PERCENT done."
 msgstr "{percent}PERCENT hecho."
-
-#~ msgid "Project '{project}' - title #{nr}"
-#~ msgstr "Proyecto '{project}' - título #{nr}"
-
-#~ msgid "Process PSU #{nr}"
-#~ msgstr "Procesar la PSU #{nr}"
-
-#~ msgid "Process all audio tracks - title #{nr}, PSU #{psu}"
-#~ msgstr "Procesar todas las pistas de audio - título #{nr}, PSU #{psu}"
-
-#~ msgid "PS1 file '{filename}' already exists. Skip extraction."
-#~ msgstr "El archivo PS1 '{filename}' ya existe. Saltando extracción."
-
-#~ msgid ", file #{nr}"
-#~ msgstr ", archivo #{nr}"
-
-#~ msgid "Volume scan"
-#~ msgstr "Escanear el volumen"
-
-#~ msgid "Create WAV"
-#~ msgstr "Crear WAV"
-
-#~ msgid "Read TOC"
-#~ msgstr "Leer TOC"
-
-#~ msgid "NO"
-#~ msgstr "NO"

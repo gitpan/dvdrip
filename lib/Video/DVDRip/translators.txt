@@ -1,3 +1,6 @@
+[Catalan]
+Joan Farrerons <jfarrerons AT economistes.com>
+
 [Czech]
 Ales Tosovsky <tosovsky AT wo.cz>
 

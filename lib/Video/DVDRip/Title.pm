@@ -1,4 +1,4 @@
-# $Id: Title.pm,v 1.180.2.4 2007/04/13 11:29:09 joern Exp $
+# $Id: Title.pm,v 1.180.2.5 2007/08/05 16:59:15 joern Exp $
 
 #-----------------------------------------------------------------------
 # Copyright (C) 2001-2006 Jörn Reder <joern AT zyn.de>.
@@ -2868,12 +2868,34 @@ sub get_mplex_command {
     my $avi_file = $self->target_avi_file;
     my $size     = $self->tc_disc_size;
 
-    my $svcd = $video_codec =~ /^(X?SVCD|CVD)$/;
+    my %mplex_f = (
+        XSVCD => 5,
+        SVCD  => 4,
+        CVD   => 4,
+        XVCD  => 2,
+        VCD   => 1,
+    );
 
-    my $mplex_f = $svcd ? 4 : $video_codec eq 'XVCD' ? 2 : 1;
-    my $mplex_v = $svcd || $video_codec eq 'XVCD' ? "-V" : "";
-    my $vext = $svcd ? 'm2v' : 'm1v';
+    my %mplex_v = (
+        XSVCD => "-V",
+        SVCD  => "-V",
+        CVD   => "-V",
+        XVCD  => "-V",
+        VCD   => "",
+    );
 
+    my %vext = (
+        XSVCD => "m2v",
+        SVCD  => "m2v",
+        CVD   => "m2v",
+        XVCD  => "m1v",
+        VCD   => "m1v",
+    );
+
+    my $mplex_f = $mplex_f{$video_codec};
+    my $mplex_v = $mplex_v{$video_codec};
+    my $vext    = $vext{$video_codec};
+    
     my $target_file = "$avi_file-%d.mpg";
 
     my $add_audio_tracks;
@@ -3058,7 +3080,7 @@ sub get_take_snapshot_command {
     my $self = shift;
 
     return $self->get_take_snapshot_command_transcode
-        if not $self->exists("ffmpeg");
+        if not $self->has("ffmpeg");
 
     my $nr           = $self->nr;
     my $frame        = $self->preview_frame_nr;
@@ -3076,10 +3098,13 @@ sub get_take_snapshot_command {
     my ($start_frame) = $grab_options->{c} =~ /(\d+)/;
     my $start = sprintf("%.3f", $start_frame / $frame_rate);
 
+    my $T;
+    $T = "-T $source_options->{T}" if $source_options->{T};
+
     my $command = "mkdir -m 0775 $tmp_dir; "
         . "cd $tmp_dir; "
         . "execflow "
-        . "tccat -i $source_options->{i} "
+        . "tccat -i $source_options->{i} $T "
         . "-t $source_options->{x} "
         . "-S $grab_options->{L} -d 0 | "
         . "tcdemux -s 0x80 -x mpeg2 -S $grab_options->{S} "

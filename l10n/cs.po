@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dvdrip\n"
 "Report-Msgid-Bugs-To: dvd::rip Translation Team <dvdrip-lang AT exit1.org>\n"
-"POT-Creation-Date: 2007-04-13 21:42+0200\n"
+"POT-Creation-Date: 2007-08-05 18:57+0200\n"
 "PO-Revision-Date: 2004-05-15 22:24-0500\n"
 "Last-Translator: Ales Tosovsky <tosovsky@wo.cz>\n"
 "Language-Team: Czech <tosovsky@wo.cz>\n"
@@ -169,86 +169,86 @@ msgstr "Řídící daemon aktivován"
 msgid "Got signal {signal}."
 msgstr ""
 
-#: ../lib/Video/DVDRip/Cluster/Master.pm:175
+#: ../lib/Video/DVDRip/Cluster/Master.pm:181
 msgid "Node check watcher disabled"
 msgstr "Sledovač kontroly uzlů zakázán"
 
-#: ../lib/Video/DVDRip/Cluster/Master.pm:206
+#: ../lib/Video/DVDRip/Cluster/Master.pm:213
 msgid "Warning: node check fping reported nothing"
 msgstr "Varování: kontrola uzlu pomocí fping nic nevrátila"
 
-#: ../lib/Video/DVDRip/Cluster/Master.pm:223
+#: ../lib/Video/DVDRip/Cluster/Master.pm:230
 #, perl-brace-format
 msgid "Node '{node_name}' is now online."
 msgstr "Uzel '{node_name}' je nyní on-line."
 
-#: ../lib/Video/DVDRip/Cluster/Master.pm:232
+#: ../lib/Video/DVDRip/Cluster/Master.pm:239
 #, fuzzy, perl-brace-format
 msgid "Node '{node_name}' is still reachable. Will be online in 5 seconds."
 msgstr "Uzel '{node_name}' je stále dostupný. On-line bude během 10ti vteřin."
 
-#: ../lib/Video/DVDRip/Cluster/Master.pm:241
+#: ../lib/Video/DVDRip/Cluster/Master.pm:248
 #, fuzzy, perl-brace-format
 msgid "Node '{node_name}' is now reachable. Will be online in 10 seconds."
 msgstr "Uzel '{node_name}' je stále dostupný. On-line bude během 20ti vteřin."
 
-#: ../lib/Video/DVDRip/Cluster/Master.pm:249
+#: ../lib/Video/DVDRip/Cluster/Master.pm:256
 #, perl-brace-format
 msgid "Node '{node_name}' is Ok again"
 msgstr "Uzel '{node_name}' je opět v pořádku"
 
-#: ../lib/Video/DVDRip/Cluster/Master.pm:260
+#: ../lib/Video/DVDRip/Cluster/Master.pm:267
 #, perl-brace-format
 msgid "Warning: Node '{node_name}' is unreachable"
 msgstr "Varování: Uzel '{node_name}' je nedosažitelný"
 
-#: ../lib/Video/DVDRip/Cluster/Master.pm:270
+#: ../lib/Video/DVDRip/Cluster/Master.pm:277
 #, perl-brace-format
 msgid "Warning: Node '{node_name}' possibly offline"
 msgstr "Varování: Uzel '{node_name}' je možná offline"
 
-#: ../lib/Video/DVDRip/Cluster/Master.pm:363
+#: ../lib/Video/DVDRip/Cluster/Master.pm:370
 #, perl-brace-format
 msgid "Loading node file '{file}'"
 msgstr "Nahrává se uzlový soubor '{file}'"
 
-#: ../lib/Video/DVDRip/Cluster/Master.pm:387
+#: ../lib/Video/DVDRip/Cluster/Master.pm:394
 #, perl-brace-format
 msgid "Loading project file '{filename}'"
 msgstr "Načítá se projektový soubor '{filename}'"
 
-#: ../lib/Video/DVDRip/Cluster/Master.pm:424
+#: ../lib/Video/DVDRip/Cluster/Master.pm:431
 msgid "Node must have a name"
 msgstr "Uzel musí mít jméno"
 
-#: ../lib/Video/DVDRip/Cluster/Master.pm:425
+#: ../lib/Video/DVDRip/Cluster/Master.pm:432
 msgid "Node with this name already exists"
 msgstr "Uzel s tímto jménem už existuje"
 
-#: ../lib/Video/DVDRip/Cluster/Master.pm:434
+#: ../lib/Video/DVDRip/Cluster/Master.pm:441
 #, perl-brace-format
 msgid "Node '{node_name}' saved to '{filename}'"
 msgstr "Uzel '{node_name}' byl uložen do '{filename}'"
 
-#: ../lib/Video/DVDRip/Cluster/Master.pm:515
+#: ../lib/Video/DVDRip/Cluster/Master.pm:522
 #, perl-brace-format
 msgid "Project with filename '{filename}' added"
 msgstr "Projekt s názvem souboru '{filename}' vložen"
 
-#: ../lib/Video/DVDRip/Cluster/Master.pm:648
+#: ../lib/Video/DVDRip/Cluster/Master.pm:655
 #, perl-brace-format
 msgid "Project {project} removed"
 msgstr "Projekt {project} odstraněn"
 
-#: ../lib/Video/DVDRip/Cluster/Master.pm:734
+#: ../lib/Video/DVDRip/Cluster/Master.pm:741
 msgid "Master shutdown. Stopping active jobs."
 msgstr ""
 
-#: ../lib/Video/DVDRip/Cluster/Master.pm:738
+#: ../lib/Video/DVDRip/Cluster/Master.pm:745
 msgid "Master shutdown"
 msgstr ""
 
-#: ../lib/Video/DVDRip/Cluster/Master.pm:749
+#: ../lib/Video/DVDRip/Cluster/Master.pm:756
 msgid "Cluster control daemon will shutdown in 2 seconds..."
 msgstr "Řídící daemon clusteru bude ukončen za 2 vteřiny..."
 
@@ -565,7 +565,7 @@ msgstr "Výsledná velikost videa"
 msgid "Resulting File Size"
 msgstr "Výsledná velikost videa"
 
-#: ../lib/Video/DVDRip/Logger.pm:137
+#: ../lib/Video/DVDRip/Logger.pm:138
 msgid "Logfile nuked."
 msgstr "Soubor se záznamem činnosti byl vyčištěn."
 
@@ -1070,7 +1070,7 @@ msgstr ""
 msgid "invalid parameter for frame_size ('{frame_size}')"
 msgstr "nesprávný parametr pro velikost_snímku ('{frame_size}')"
 
-#: ../lib/Video/DVDRip/Title.pm:1664 ../lib/Video/DVDRip/Title.pm:3010
+#: ../lib/Video/DVDRip/Title.pm:1664 ../lib/Video/DVDRip/Title.pm:3032
 #, perl-brace-format
 msgid "Can't read VOB navigation file '{vob_nav_file}'"
 msgstr "Nelze načíst navigační soubor VOBu '{vob_nav_file}'"
@@ -1098,7 +1098,7 @@ msgstr ""
 "Pokud se používá rychlá změna velikosti musí být jak šířka tak výška buď "
 "zmenšeny, nebo zvětšeny."
 
-#: ../lib/Video/DVDRip/Title.pm:2984
+#: ../lib/Video/DVDRip/Title.pm:3006
 msgid ""
 "Fast VOB navigation only available for ripped DVD's, falling back to slow "
 "method."
@@ -1106,20 +1106,20 @@ msgstr ""
 "Rychlá navigace ve VOBu je přístupná jen u uložených DVD. Přepíná se zpět na "
 "pomalou metodu."
 
-#: ../lib/Video/DVDRip/Title.pm:2988
+#: ../lib/Video/DVDRip/Title.pm:3010
 msgid "VOB navigation file is missing. Slow navigation method used."
 msgstr "Soubor pro VOB navigaci chybí. Používá se pomalá navigační metoda."
 
-#: ../lib/Video/DVDRip/Title.pm:2992
+#: ../lib/Video/DVDRip/Title.pm:3014
 msgid "Using slow preview grabbing as adviced by user"
 msgstr ""
 
-#: ../lib/Video/DVDRip/Title.pm:3022
+#: ../lib/Video/DVDRip/Title.pm:3044
 #, perl-brace-format
 msgid "VOB navigation file '{vob_nav_file}' is corrupted."
 msgstr "Navigační soubor VOBu '{vob_nav_file}' je poškozen."
 
-#: ../lib/Video/DVDRip/Title.pm:3037
+#: ../lib/Video/DVDRip/Title.pm:3059
 #, perl-brace-format
 msgid ""
 "Can't find frame {frame} in VOB navigation file '{vob_nav_file}' (which has "
@@ -1128,35 +1128,35 @@ msgstr ""
 "V navigačním souboru VOBu '{vob_nav_file}' (který obsahuje jen  {frames} "
 "snímků) nelze najít snímek {frame}. "
 
-#: ../lib/Video/DVDRip/Title.pm:3472
+#: ../lib/Video/DVDRip/Title.pm:3497
 msgid "You first have to transcode this title."
 msgstr "Tento titul musíte nejdříve překódovat. "
 
-#: ../lib/Video/DVDRip/Title.pm:3635
+#: ../lib/Video/DVDRip/Title.pm:3660
 msgid "No files for image creation selected."
 msgstr "Nejsou zvoleny žádné soubory pro vytvoření obrazu."
 
-#: ../lib/Video/DVDRip/Title.pm:3644 ../lib/Video/DVDRip/Title.pm:3721
+#: ../lib/Video/DVDRip/Title.pm:3669 ../lib/Video/DVDRip/Title.pm:3746
 msgid "No burn files selected."
 msgstr "Nejsou zvoleny žádné soubory k vypálení."
 
-#: ../lib/Video/DVDRip/Title.pm:3645
+#: ../lib/Video/DVDRip/Title.pm:3670
 msgid "File is already an CD image."
 msgstr "Soubor už je obrazem CD."
 
-#: ../lib/Video/DVDRip/Title.pm:3650
+#: ../lib/Video/DVDRip/Title.pm:3675
 msgid "Can't burn (S)VCD on the fly"
 msgstr "(S)VCD nelze vypalovat přímo (on the fly)"
 
-#: ../lib/Video/DVDRip/Title.pm:3710
+#: ../lib/Video/DVDRip/Title.pm:3735
 msgid "No files for burning selected."
 msgstr "Nejsou zvoleny žádné soubory k vypálení."
 
-#: ../lib/Video/DVDRip/Title.pm:3978 ../lib/Video/DVDRip/Title.pm:4013
+#: ../lib/Video/DVDRip/Title.pm:4003 ../lib/Video/DVDRip/Title.pm:4038
 msgid "No subtitle selected"
 msgstr "Nejsou zvoleny žádné titulky."
 
-#: ../lib/Video/DVDRip/Title.pm:4266
+#: ../lib/Video/DVDRip/Title.pm:4291
 #, perl-brace-format
 msgid ""
 "Your frame size isn't conform to the standard,\n"
@@ -1167,7 +1167,7 @@ msgstr ""
 "který by měl pro {codec}/{mode} odpovídat {should_width}x{should_height}, "
 "avšak zvoleno je {width}x{height}."
 
-#: ../lib/Video/DVDRip/Title.pm:4291
+#: ../lib/Video/DVDRip/Title.pm:4316
 msgid ""
 "2nd clipping parameters can only be\n"
 "moved to 1st clipping parameters, if\n"

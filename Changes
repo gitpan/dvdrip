@@ -1,6 +1,31 @@
-$Id: Changes,v 1.187.2.7 2007/04/14 14:39:04 joern Exp $
+$Id: Changes,v 1.187.2.9 2007/08/05 17:07:55 joern Exp $
 
 Revision history and release notes for dvd::rip.
+
+0.98.7 [stable branch] Sun Aug 05 2007, joern
+    Bugfixes:
+    - tools/gensplash was missing what made "make install"
+      in ./l10n fail. Thanks for the reports to
+      Flavio <qazav3.0 AT gmail.com> and Joan Farrerons.
+    - Cluster mode node check was disabled until a GUI
+      connected to the master.
+    - Small fixes regarding missing project name and utf8
+      problems in the logfile. Thanks to tropikhajma
+      <tropikhajma AT gmail.com>.
+    - Fixed grabbing previews from the wrong title with
+      on-the-fly processing. Thanks for the patch to
+      Wolfram Kresse <wk AT wkresse.de>
+    - Fixed problems with fping not installed in /usr/sbin.
+      Now dvdrip-master supports /usr/sbin and /usr/bin as well.
+      Reported by Neill Mitchell <mitchell_neill AT hotmail.com>.
+    - Determine svn versions of ffmpeg properly.
+    - Fixed close button in "About" dialog.
+
+    Features:
+    - A Catalan translation provided by Joan Farrerons
+      <jfarrerons AT economistes.com>.
+    - Spanish and Italian translation updates.
+    - Added dvdrip.desktop file. Thanks to Christian Marillat.
 
 0.98.6 [stable branch] Fri Apr 14 2007, joern
     Features:

@@ -1,4 +1,4 @@
-# $Id: Depend.pm,v 1.22.2.7 2007/04/14 14:38:42 joern Exp $
+# $Id: Depend.pm,v 1.22.2.9 2007/08/05 17:07:35 joern Exp $
 
 #-----------------------------------------------------------------------
 # Copyright (C) 2001-2006 Jörn Reder <joern AT zyn.de>.
@@ -107,14 +107,14 @@ my %TOOLS = (
         command     => "ffmpeg",
         comment     => __ "FFmpeg video converter command line program",
         optional    => 1,
-        version_cmd => "ffmpeg --version",
+        version_cmd => "ffmpeg -version",
         get_version => sub {
             my ($cmd) = @_;
             qx[$cmd 2>&1] =~ /version ([^\s]+)/i;
             return $1;
         },
         convert       => 'default',
-        min           => "0",
+        min           => "0.4.10",
     },
     xvid4conf => {
         order       => ++$ORDER,
@@ -261,10 +261,10 @@ my %TOOLS = (
     },
     fping => {
         order       => ++$ORDER,
-        command     => "/usr/sbin/fping",
+        command     => "fping",
         comment     => __ "Only for cluster mode master",
         optional    => 1,
-        version_cmd => "/usr/sbin/fping -v",
+        version_cmd => "fping -v",
         get_version => sub {
             my ($cmd) = @_;
             qx[$cmd 2>&1] =~ /Version\s+(\d+\.\d+(\.\d+)?)/i;
@@ -276,10 +276,10 @@ my %TOOLS = (
     },
     hal => {
         order       => ++$ORDER,
-        command     => "/usr/bin/lshal",
+        command     => "lshal",
         comment     => __"Used for DVD device scanning",
         optional    => 1,
-        version_cmd => "/usr/bin/lshal -v",
+        version_cmd => "lshal -v",
         get_version => sub {
             my ($cmd) = @_;
             qx[$cmd 2>&1] =~ /version\s+(\d+\.\d+(\.\d+)?)/i;
@@ -293,7 +293,7 @@ my %TOOLS = (
 
 sub convert_default {
     my ($ver) = @_;
-    return 990000 if $ver eq 'cvs';
+    return 990000 if $ver =~ /cvs|svn/i;
     $ver =~ m/(\d+)(\.(\d+))?(\.(\d+))?(\.\d+)?/;
     $ver = $1 * 10000 + $3 * 100 + $5;
     $ver = $ver - 1 + $6 if $6;

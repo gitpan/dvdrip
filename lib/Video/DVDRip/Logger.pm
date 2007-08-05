@@ -1,4 +1,4 @@
-# $Id: Logger.pm,v 1.7 2006/08/16 19:34:38 joern Exp $
+# $Id: Logger.pm,v 1.7.2.1 2007/08/05 16:58:33 joern Exp $
 
 #-----------------------------------------------------------------------
 # Copyright (C) 2001-2006 Jörn Reder <joern AT zyn.de>.
@@ -113,11 +113,12 @@ sub log {
     }
 
     if ($fh) {
-        print "$date:   $line";
+        print $fh "$date:   $line";
     }
 
     if ($project) {
         open( OUT, ">>" . $project->logfile );
+        binmode OUT, ":utf8";
         print OUT "$date\t$line";
         close OUT;
     }

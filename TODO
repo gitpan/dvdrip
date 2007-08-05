@@ -1,4 +1,4 @@
-$Id: TODO,v 1.131.2.1 2007/03/10 09:56:44 joern Exp $
+$Id: TODO,v 1.131.2.2 2007/08/05 16:59:53 joern Exp $
 
 NOTE:
 =====
@@ -25,6 +25,10 @@ THE BIG ONES ;):
 
 TODO PRIORITY B:
 ================
+- Add filename expansion to the "execute after transcoding" command.
+  Suggested by "Ivan F. Villanueva B." <dvdrip AT artificialidea.com>.
+- Add a FOURCC option to customize FOURCC of the generated .avi files.
+
 - On startup show a list of recently used projects together
   with a snapshot image as a teaser. Suggested by
   Sebastian Boell <s.boell AT gmail.com>
