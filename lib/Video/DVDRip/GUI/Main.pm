@@ -1,4 +1,4 @@
-# $Id: Main.pm,v 1.91.2.4 2007/08/05 17:07:48 joern Exp $
+# $Id: Main.pm,v 1.91.2.5 2007/08/09 21:35:51 joern Exp $
 
 #-----------------------------------------------------------------------
 # Copyright (C) 2001-2006 Jörn Reder <joern AT zyn.de>.
@@ -39,6 +39,46 @@ sub get_gtk_icon_factory        { shift->{gtk_icon_factory}             }
 
 sub set_form_factory            { shift->{form_factory}         = $_[1] }
 sub set_gtk_icon_factory        { shift->{gtk_icon_factory}     = $_[1] }
+
+sub get_gui_state_file {
+    return $ENV{HOME}."/.dvdrip/main-gui.state";
+}
+
+sub save_gui_state {
+    my $self = shift;
+
+    my ($win_width, $win_height) =
+        $self->get_form_factory
+             ->get_widget("main_window")
+             ->get_gtk_parent_widget
+             ->get_size;
+
+    my $file = $self->get_gui_state_file;
+    open (my $fh, "> $file") or die "can't write $file";
+    print $fh $win_width."\t".
+              $win_height."\n";
+    close $fh;
+    
+    1;
+}
+
+sub load_gui_state {
+    my $self = shift;
+
+    my $file = $self->get_gui_state_file;
+    if ( ! -f $file ) {
+        return ( default_width => 600, default_height => 500 );
+    }
+
+    open (my $fh, $file) or die "can't read $file";
+    my $line = <$fh>;
+    close $fh;
+
+    chomp $line;
+    my @pos = split("\t", $line);
+
+    return ( default_width => $pos[0], default_height => $pos[1] );
+}
 
 sub window_name {
     my $self = shift;
@@ -200,8 +240,7 @@ sub build {
                 customize_hook => sub {
                     my ($gtk_window) = @_;
                     $_[0]->parent->set(
-                        default_width  => 600,
-                        default_height => 500,
+                        $self->load_gui_state,
                     );
                     1;
                 },
@@ -484,6 +523,7 @@ sub build_project_factory {
                 name    => "main_nb",
                 attr    => "project.last_selected_nb_page",
                 expand  => 1,
+                $self->get_optimum_screen_size_options("notebook"),
                 content => [
                     $storage->build_factory,   $title->build_factory,
                     $clip_zoom->build_factory, $subtitle->build_factory,
@@ -752,6 +792,8 @@ sub exit_program {
     my $self    = shift;
     my %par     = @_;
     my ($force) = @par{'force'};
+
+    $self->save_gui_state;
 
     return 1
         if not $force

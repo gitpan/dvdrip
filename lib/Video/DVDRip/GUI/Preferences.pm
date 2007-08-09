@@ -1,4 +1,4 @@
-# $Id: Preferences.pm,v 1.14 2006/08/21 21:30:28 joern Exp $
+# $Id: Preferences.pm,v 1.14.2.1 2007/08/09 21:36:08 joern Exp $
 
 #-----------------------------------------------------------------------
 # Copyright (C) 2001-2006 Jörn Reder <joern AT zyn.de>.
@@ -136,6 +136,7 @@ sub build_config_notebook {
             $ff_params{rules}              = $item_def->{rules};
             $ff_params{attr}               = "config.$item_name";
             $ff_params{changed_hook_after} = $changed_hook;
+            $ff_params{tip}                = $item_def->{tooltip};
 
             if ( $item_def->{avail_method} ) {
                 my $method = $item_def->{avail_method};

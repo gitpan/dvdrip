@@ -1,4 +1,4 @@
-# $Id: Storage.pm,v 1.11 2006/08/25 16:48:33 joern Exp $
+# $Id: Storage.pm,v 1.11.2.1 2007/08/09 21:37:41 joern Exp $
 
 #-----------------------------------------------------------------------
 # Copyright (C) 2001-2006 Jörn Reder <joern AT zyn.de>.
@@ -51,6 +51,7 @@ sub build_factory {
     }
 
     return Gtk2::Ex::FormFactory::VBox->new(
+        $self->get_optimum_screen_size_options("page"),
         title    => '[gtk-harddisk]'.__ "Storage",
         object   => "project",
         no_frame => 1,

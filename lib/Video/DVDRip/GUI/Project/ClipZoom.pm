@@ -1,4 +1,4 @@
-# $Id: ClipZoom.pm,v 1.17 2006/08/16 19:34:38 joern Exp $
+# $Id: ClipZoom.pm,v 1.17.2.1 2007/08/09 21:37:41 joern Exp $
 
 #-----------------------------------------------------------------------
 # Copyright (C) 2001-2006 Jörn Reder <joern AT zyn.de>.
@@ -48,6 +48,7 @@ sub build_factory {
     my $context = $self->get_context;
 
     return Gtk2::Ex::FormFactory::VBox->new(
+        $self->get_optimum_screen_size_options("page"),
         title       => '[gtk-zoom-in]'.__ "Clip & Zoom",
         object      => "title",
         active_cond => sub {

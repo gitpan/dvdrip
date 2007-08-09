@@ -1,4 +1,4 @@
-# $Id: Base.pm,v 1.36.2.1 2007/03/24 10:59:45 joern Exp $
+# $Id: Base.pm,v 1.36.2.2 2007/08/09 21:35:05 joern Exp $
 
 #-----------------------------------------------------------------------
 # Copyright (C) 2001-2006 Jörn Reder <joern AT zyn.de>.
@@ -295,6 +295,25 @@ sub new_job_executor {
         form_factory => $self->get_form_factory,
         @_,
     );
+}
+
+sub get_optimum_screen_size_options {
+    my $self = shift;
+    my ($type) = @_;
+
+    return () if not $self->config("small_screen");
+
+    if ( $type eq 'page' ) {
+        return (
+            scrollbars     => [ "automatic", "automatic" ],
+            properties     => { border_width => 8 },
+        );
+    }
+    elsif ( $type eq 'notebook' ) {
+        return (
+            properties     => { tab_pos => "left" },
+        );
+    }
 }
 
 1;

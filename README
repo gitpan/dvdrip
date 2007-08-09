@@ -141,8 +141,8 @@ deb http://www.debian-multimedia.org experimental main
    Local download of the latest stable release: (currently no unstable
    release available)
 
-     dvdrip-0.98.7.tar.gz
-     dvdrip-0.98.7.tar.gz.asc (GnuPG signature, get key)
+     dvdrip-0.98.8.tar.gz
+     dvdrip-0.98.8.tar.gz.asc (GnuPG signature, get key)
 
    CPAN download directory: (list of mirrors)
 
@@ -423,12 +423,12 @@ bin/dvdrip
 
    You can download a static HTML version of this documentation:
 
-     http://www.exit1.org/dvdrip/dist/dvdrip-doc-html-0.98.7.tar.bz2
+     http://www.exit1.org/dvdrip/dist/dvdrip-doc-html-0.98.8.tar.bz2
 
    A PDF version is also available (generated using the excellent tool
    htmldoc):
 
-     http://www.exit1.org/dvdrip/dist/dvdrip-doc-0.98.7.pdf.bz2
+     http://www.exit1.org/dvdrip/dist/dvdrip-doc-0.98.8.pdf.bz2
      __________________________________________________________________
 
 IV.  
@@ -610,32 +610,24 @@ URL References
   15. http://wwwkeys.de.pgp.net:11371/pks/lookup?op=get&search=0x285CF473
 
 VI. CHANGES
-   $Id: Changes,v 1.187.2.9 2007/08/05 17:07:55 joern Exp $
+   $Id: Changes,v 1.187.2.11 2007/08/09 21:44:49 joern Exp $
 
    Revision history and release notes for dvd::rip.
 
-   0.98.7 [stable branch] Sun Aug 05 2007, joern
+   0.98.8 [stable branch] Thu Aug 95 2007, joern
     Bugfixes:
-    - tools/gensplash was missing what made "make install"
-      in ./l10n fail. Thanks for the reports to
-      Flavio <qazav3.0 AT gmail.com> and Joan Farrerons.
-    - Cluster mode node check was disabled until a GUI
-      connected to the master.
-    - Small fixes regarding missing project name and utf8
-      problems in the logfile. Thanks to tropikhajma
-      <tropikhajma AT gmail.com>.
-    - Fixed grabbing previews from the wrong title with
-      on-the-fly processing. Thanks for the patch to
-      Wolfram Kresse <wk AT wkresse.de>
-    - Fixed problems with fping not installed in /usr/sbin.
-      Now dvdrip-master supports /usr/sbin and /usr/bin as well.
-      Reported by Neill Mitchell <mitchell_neill AT hotmail.com>.
-    - Determine svn versions of ffmpeg properly.
-    - Fixed close button in "About" dialog.
-
+    - Tooltips were missing in the Preferences dialog.
+    
     Features:
-    - A Catalan translation provided by Joan Farrerons
-      <jfarrerons AT economistes.com>.
-    - Spanish and Italian translation updates.
-    - Added dvdrip.desktop file. Thanks to Christian Marillat.
+    - Added a small screen layout mode. The default layout
+      doesn't fit well on wide screens with a small veritical
+      resolution. On initial startup the "small" mode is activated,
+      when the screen resolution has less than 1024 lines, but you
+      can change it in the preferences at any time.
+      Requested by Olivier Choquet <olivier.choquet AT gmail.com>,
+      Guelden Cevik <Guelden_Cevik AT yahoo.de> and many 
+      I can't remember anymore ;)
+    - dvd::rip now remembers the main window size between
+      sessions.  
+    
 

@@ -1,4 +1,4 @@
-# $Id: Title.pm,v 1.24 2006/08/18 21:51:16 joern Exp $
+# $Id: Title.pm,v 1.24.2.1 2007/08/09 21:37:41 joern Exp $
 
 #-----------------------------------------------------------------------
 # Copyright (C) 2001-2006 Jörn Reder <joern AT zyn.de>.
@@ -36,6 +36,7 @@ sub build_factory {
     my $context = $self->get_context;
 
     return Gtk2::Ex::FormFactory::VBox->new(
+        $self->get_optimum_screen_size_options("page"),
         title       => '[gtk-cdrom]'.__"RIP Title",
         object      => "project",
         active_cond => sub {

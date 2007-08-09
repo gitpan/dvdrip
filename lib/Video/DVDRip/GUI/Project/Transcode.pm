@@ -1,4 +1,4 @@
-# $Id: Transcode.pm,v 1.20.2.1 2007/04/13 11:27:47 joern Exp $
+# $Id: Transcode.pm,v 1.20.2.2 2007/08/09 21:37:41 joern Exp $
 
 #-----------------------------------------------------------------------
 # Copyright (C) 2001-2006 Jörn Reder <joern AT zyn.de>.
@@ -33,6 +33,7 @@ sub build_factory {
     my $context = $self->get_context;
 
     return Gtk2::Ex::FormFactory::VBox->new(
+        $self->get_optimum_screen_size_options("page"),
         object      => "title",
         title       => '[gtk-convert]'.__ "Transcode",
         active_cond => sub {

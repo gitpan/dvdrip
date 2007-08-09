@@ -1,4 +1,4 @@
-# $Id: Logging.pm,v 1.8 2006/08/16 19:34:38 joern Exp $
+# $Id: Logging.pm,v 1.8.2.1 2007/08/09 21:37:41 joern Exp $
 
 #-----------------------------------------------------------------------
 # Copyright (C) 2001-2006 Jörn Reder <joern AT zyn.de>.
@@ -31,6 +31,7 @@ sub build_factory {
         },
         active_depends => "project.created",
         no_frame       => 1,
+        $self->get_optimum_screen_size_options("page"),
         content        => [
             Gtk2::Ex::FormFactory::Table->new(
                 title  => __ "Log messages",
