@@ -1,4 +1,4 @@
-# $Id: Title.pm,v 1.56 2006/08/16 19:34:38 joern Exp $
+# $Id: Title.pm,v 1.56.2.2 2008/10/03 09:35:59 joern Exp $
 
 #-----------------------------------------------------------------------
 # Copyright (C) 2001-2006 Jörn Reder <joern AT zyn.de>.
@@ -300,10 +300,13 @@ sub get_merge_video_audio_command {
         if $self->tc_nice =~ /\S/;
 
     my $command = "mkdir -m 0775 -p '$audio_video_psu_dir' && "
-        . "${nice}execflow avimerge -i $avi_chunks_dir/*"
-        . " -o $audio_video_psu_file ";
+        . "${nice}execflow avimerge -o $audio_video_psu_file";
 
     $command .= " -p $audio_psu_file " if !$self->is_ogg;
+
+    #-- -i *always* at the end! At some time avimerge's cmd line
+    #-- parser was messed up...
+    $command .= " -i $avi_chunks_dir/*";
 
     $command .= " && rm $avi_chunks_dir/*"
         if $self->with_cleanup;

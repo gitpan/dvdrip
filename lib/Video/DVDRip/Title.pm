@@ -1,4 +1,4 @@
-# $Id: Title.pm,v 1.180.2.5 2007/08/05 16:59:15 joern Exp $
+# $Id: Title.pm,v 1.180.2.6 2008/10/01 10:03:12 joern Exp $
 
 #-----------------------------------------------------------------------
 # Copyright (C) 2001-2006 Jörn Reder <joern AT zyn.de>.
@@ -680,6 +680,15 @@ sub is_mpeg {
     return $self->tc_container eq 'vcd';
 }
 
+sub is_resized {
+    my $self = shift;
+    
+    my $clip_size = $self->preview_label(type => "clip1", size_only => 1);
+    my $zoom_size = $self->preview_label(type => "zoom",  size_only => 1);
+    
+    return $clip_size ne $zoom_size;
+}
+
 sub has_vbr_audio {
     my $self = shift;
 
@@ -940,7 +949,7 @@ sub preview_scratch_filename {
 sub preview_label {
     my $self = shift;
     my %par = @_;
-    my ($type, $details) = @par{'type','details'};
+    my ($type, $details, $size_only) = @par{'type','details','size_only'};
 
     my ( $width, $height, $warn_width, $warn_height, $text, $ratio,
         $phys_ratio );
@@ -1022,6 +1031,7 @@ sub preview_label {
         );
     }
 
+    return "${width}x${height}" if $size_only;
     return $text;
 }
 
@@ -1107,21 +1117,24 @@ sub apply_preset {
 
     $self->set_last_applied_preset( $preset->name );
 
-    if ( $preset->auto ) {
+    if ( $preset->auto_clip ) {
+        $self->auto_adjust_clip_only;
+    }
+    elsif ( $preset->auto ) {
         $self->auto_adjust_clip_zoom(
             frame_size  => $preset->frame_size,
             fast_resize => $preset->tc_fast_resize,
         );
-        return 1;
     }
-
-    my $attributes = $preset->attributes;
-    my $set_method;
-    foreach my $attr ( @{$attributes} ) {
-        $set_method = "set_$attr";
-        $self->$set_method( $preset->$attr() );
+    else {
+        my $attributes = $preset->attributes;
+        my $set_method;
+        foreach my $attr ( @{$attributes} ) {
+            $set_method = "set_$attr";
+            $self->$set_method( $preset->$attr() );
+        }
     }
-
+    
     1;
 }
 
@@ -1234,6 +1247,50 @@ sub get_effective_ratio {
         = $zoom_height - $self->tc_clip2_top - $self->tc_clip2_bottom;
 
     return ( $clip2_width, $clip2_height, $zoom_ratio );
+}
+
+sub calc_export_par {
+    my $self = shift;
+
+    my $width  = $self->width;
+    my $height = $self->height;
+
+    my $source_aspect = $width/$height;
+    my $target_aspect = $self->aspect_ratio;
+
+    my ($w, $h) = split(":", $target_aspect);
+    $target_aspect = $w/$h;
+    
+    return sprintf("%d,100", 100 * $target_aspect / $source_aspect);
+}
+
+sub auto_adjust_clip_only {
+    my $self = shift;
+
+    $self->set_tc_fast_resize(1);
+
+    my $result = $self->get_zoom_parameters(
+        target_width        => undef,
+        target_height       => undef,
+        fast_resize_align   => 16,
+        result_align        => 16,
+        result_align_clip2  => 1,
+        auto_clip           => 1,
+        use_clip1           => 0,
+    );
+
+    $self->set_tc_zoom_width( undef );
+    $self->set_tc_zoom_height( undef );
+    $self->set_tc_clip1_left( 0 );
+    $self->set_tc_clip1_right( 0 );
+    $self->set_tc_clip1_top( 0 );
+    $self->set_tc_clip1_bottom( 0 );
+    $self->set_tc_clip2_left( $result->{clip2_left} );
+    $self->set_tc_clip2_right( $result->{clip2_right} );
+    $self->set_tc_clip2_top( $result->{clip2_top} );
+    $self->set_tc_clip2_bottom( $result->{clip2_bottom} );
+
+    1;
 }
 
 sub auto_adjust_clip_zoom {
@@ -2060,7 +2117,7 @@ sub suggest_transcode_options {
         $self->set_tc_container('vcd');
     }
 
-    $self->set_preset("auto_medium_fast")
+    $self->set_preset($self->config("default_preset"))
         unless $self->last_applied_preset;
 
     my $subtitle_langs = $self->get_subtitle_languages;
@@ -2476,44 +2533,50 @@ sub get_transcode_command {
         if $clip2 =~ /^-?\d+,-?\d+,-?\d+,-?\d+$/
         and $clip2 ne '0,0,0,0';
 
-    if ( $self->tc_fast_bisection ) {
-        $command .= " -r 2,2";
-
-    }
-    elsif ( not $self->tc_fast_resize ) {
-        my $zoom = $self->tc_zoom_width . "x" . $self->tc_zoom_height;
-        $command .= " -Z $zoom"
-            if $zoom =~ /^\d+x\d+$/;
-
+    if ( not $self->is_resized ) {
+        my $export_par = $self->calc_export_par;
+        $command .= " --export_par $export_par";
     }
     else {
-        my $multiple_of = 8;
+        if ( $self->tc_fast_bisection ) {
+            $command .= " -r 2,2";
 
-        my ( $width_n, $height_n, $err_div32, $err_shrink_expand )
-            = $self->get_fast_resize_options;
-
-        if ($err_div32) {
-            croak __x(
-                "When using fast resize: Clip1 and Zoom size must be divisible by {multiple_of}",
-                multiple_of => $multiple_of
-            );
         }
+        elsif ( not $self->tc_fast_resize ) {
+            my $zoom = $self->tc_zoom_width . "x" . $self->tc_zoom_height;
+            $command .= " -Z $zoom"
+                if $zoom =~ /^\d+x\d+$/;
 
-        if ($err_shrink_expand) {
-            croak __
-                "When using fast resize: Width and height must both shrink or expand";
         }
+        else {
+            my $multiple_of = 8;
 
-        if ( $width_n * $height_n >= 0 ) {
-            if ( $width_n > 0 or $height_n > 0 ) {
-                $command .= " -X $height_n,$width_n";
-                $command .= ",$multiple_of" if $multiple_of != 32;
+            my ( $width_n, $height_n, $err_div32, $err_shrink_expand )
+                = $self->get_fast_resize_options;
+
+            if ($err_div32) {
+                croak __x(
+                    "When using fast resize: Clip1 and Zoom size must be divisible by {multiple_of}",
+                    multiple_of => $multiple_of
+                );
             }
-            elsif ( $width_n < 0 or $height_n < 0 ) {
-                $width_n  = abs($width_n);
-                $height_n = abs($height_n);
-                $command .= " -B $height_n,$width_n";
-                $command .= ",$multiple_of" if $multiple_of != 32;
+
+            if ($err_shrink_expand) {
+                croak __
+                    "When using fast resize: Width and height must both shrink or expand";
+            }
+
+            if ( $width_n * $height_n >= 0 ) {
+                if ( $width_n > 0 or $height_n > 0 ) {
+                    $command .= " -X $height_n,$width_n";
+                    $command .= ",$multiple_of" if $multiple_of != 32;
+                }
+                elsif ( $width_n < 0 or $height_n < 0 ) {
+                    $width_n  = abs($width_n);
+                    $height_n = abs($height_n);
+                    $command .= " -B $height_n,$width_n";
+                    $command .= ",$multiple_of" if $multiple_of != 32;
+                }
             }
         }
     }
@@ -4038,7 +4101,7 @@ sub suggest_subtitle_on_movie {
     croak "msg:" . __ "No subtitle selected" if not $subtitle;
 
     my $clip2_bottom = $self->tc_clip2_bottom;
-    my $zoom_height  = $self->tc_zoom_height;
+    my $zoom_height  = $self->tc_zoom_height || $self->height;
     my $pre_zoom_height
         = $self->height - $self->tc_clip1_top - $self->tc_clip1_bottom;
     my $scale = $pre_zoom_height / $zoom_height;

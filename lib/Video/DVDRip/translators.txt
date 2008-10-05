@@ -4,6 +4,9 @@ Joan Farrerons <jfarrerons AT economistes.com>
 [Czech]
 Ales Tosovsky <tosovsky AT wo.cz>
 
+[Danish]
+Ysangkok <ysangkok AT gmail.com>
+
 [French]
 Sebastien Corot <scorot AT libertysurf.fr>
 Christophe Combelles <ccomb AT free.fr>

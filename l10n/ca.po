@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ca\n"
 "Report-Msgid-Bugs-To: dvd::rip Translation Team <dvdrip-lang AT exit1.org>\n"
-"POT-Creation-Date: 2007-08-09 23:25+0200\n"
-"PO-Revision-Date: 2007-07-13 12:26+0000\n"
+"POT-Creation-Date: 2008-01-13 15:18+0100\n"
+"PO-Revision-Date: 2007-09-04 16:15+0000\n"
 "Last-Translator: Joan Farrerons <jfarrerons@economistes.com>\n"
 "Language-Team: català <ca@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural = (n != 1);\n"
 
 #: ../bin/dvdrip:47
 msgid ""
@@ -82,7 +82,7 @@ msgstr ""
 "       -w        inicia el servei de servidor web\n"
 "       -W port   port per al servidor web (predeterminat: 8888)\n"
 
-#: ../bin/dvdrip-splash:12 ../lib/Video/DVDRip/GUI/Main.pm:1049
+#: ../bin/dvdrip-splash:12 ../lib/Video/DVDRip/GUI/Main.pm:1046
 msgid "splash.en.png"
 msgstr "splash.ca.png"
 
@@ -107,7 +107,7 @@ msgstr "Àudio"
 #: ../lib/Video/DVDRip/GUI/Cluster/Title.pm:133
 #: ../lib/Video/DVDRip/GUI/ExecFlow.pm:79
 #: ../lib/Video/DVDRip/GUI/Preferences.pm:192
-#: ../lib/Video/DVDRip/GUI/Main.pm:776
+#: ../lib/Video/DVDRip/GUI/Main.pm:773
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:198
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:615
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:621
@@ -125,7 +125,7 @@ msgstr "Sí"
 #: ../lib/Video/DVDRip/GUI/Cluster/Title.pm:134
 #: ../lib/Video/DVDRip/GUI/ExecFlow.pm:80
 #: ../lib/Video/DVDRip/GUI/Preferences.pm:193
-#: ../lib/Video/DVDRip/GUI/Main.pm:777
+#: ../lib/Video/DVDRip/GUI/Main.pm:774
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:199
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:616
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:622
@@ -196,14 +196,14 @@ msgstr "El node '{node_name}' és ara en línia."
 #, perl-brace-format
 msgid "Node '{node_name}' is still reachable. Will be online in 5 seconds."
 msgstr ""
-"El node '{node_name}' encara és accessible. Estarà en línia d'aqui a 5 "
+"El node '{node_name}' encara és accessible. Estarà en línia d'aquí a 5 "
 "segons."
 
 #: ../lib/Video/DVDRip/Cluster/Master.pm:248
 #, perl-brace-format
 msgid "Node '{node_name}' is now reachable. Will be online in 10 seconds."
 msgstr ""
-"El node '{node_name}' és accessible ara. Estarà en línia d'aqui a 10 segons."
+"El node '{node_name}' és accessible ara. Estarà en línia d'aquí a 10 segons."
 
 #: ../lib/Video/DVDRip/Cluster/Master.pm:256
 #, perl-brace-format
@@ -269,13 +269,13 @@ msgstr "El dimoni de control del clúster s'aturarà en 2 segons..."
 #: ../lib/Video/DVDRip/GUI/ExecFlow.pm:97
 #, perl-brace-format
 msgid "Start job '{name}'"
-msgstr "Inicia la tasca '{name}'"
+msgstr "Comença la tasca '{name}'"
 
 #: ../lib/Video/DVDRip/Cluster/ExecFlowFrontend.pm:83
 #: ../lib/Video/DVDRip/GUI/ExecFlow.pm:134
 #, perl-brace-format
 msgid "Job '{name}' exited with error: {error}"
-msgstr "La tasca '{name}' ha sortit amb l'error: {error}"
+msgstr "La tasca '{name}' ha sortir amb l'error: {error}"
 
 #: ../lib/Video/DVDRip/Cluster/ExecFlowFrontend.pm:100
 #: ../lib/Video/DVDRip/GUI/ExecFlow.pm:161
@@ -297,7 +297,7 @@ msgstr "La tasca '{name}' ha acabat"
 
 #: ../lib/Video/DVDRip/Cluster/Scheduler.pm:57
 msgid "All running cluster projects"
-msgstr "Tots els projectes s'estan executant en el clúster"
+msgstr "Tots els projectes que s'executen en el clúster"
 
 #: ../lib/Video/DVDRip/Cluster/JobPlanner.pm:41
 #, perl-brace-format
@@ -718,7 +718,7 @@ msgstr "Prova de forçar la captura lenta de fotogrames."
 #: ../lib/Video/DVDRip/GUI/Project/ClipZoom.pm:749
 #: ../lib/Video/DVDRip/GUI/Project/ClipZoom.pm:776
 #: ../lib/Video/DVDRip/GUI/Project/ClipZoom.pm:798
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:527
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:526
 msgid "You first have to rip this title."
 msgstr "Abans heu d'extreure aquest títol."
 
@@ -740,11 +740,11 @@ msgstr "Aplica l'ajust de Retallat i Zoom"
 
 #: ../lib/Video/DVDRip/JobPlanner.pm:612
 msgid "You can't select a frame range with psu core."
-msgstr "No podeu seleccionar un rang de fotogrames amb el nucli PSU activat."
+msgstr "No podeu seleccionar un rang de fotogrames amb nucli PSU activat."
 
 #: ../lib/Video/DVDRip/JobPlanner.pm:620
 msgid "PSU core only available for ripped DVD's."
-msgstr "El nucli PSU només està disponible per a DVD extrets."
+msgstr "Nucli PSU només està disponible per a DVD extrets."
 
 #: ../lib/Video/DVDRip/JobPlanner.pm:626
 #: ../lib/Video/DVDRip/GUI/Project/Title.pm:416
@@ -789,7 +789,7 @@ msgstr ""
 msgid "Transcode multiple titles"
 msgstr "Codifica diversos títols"
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:802 ../lib/Video/DVDRip/GUI/Main.pm:372
+#: ../lib/Video/DVDRip/JobPlanner.pm:802 ../lib/Video/DVDRip/GUI/Main.pm:369
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:38
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:651
 msgid "Transcode"
@@ -990,89 +990,93 @@ msgstr ""
 "El còdec de vídeo s'ha posat a 'xvid', MPEG no és compatible amb el "
 "contenidor OGG"
 
-#: ../lib/Video/DVDRip/Title.pm:744
+#: ../lib/Video/DVDRip/Title.pm:749
 #: ../lib/Video/DVDRip/GUI/Project/Title.pm:120
 msgid "Chp"
 msgstr "Caps."
 
-#: ../lib/Video/DVDRip/Title.pm:746
+#: ../lib/Video/DVDRip/Title.pm:751
 msgid "Aud"
 msgstr "Àud."
 
-#: ../lib/Video/DVDRip/Title.pm:750
+#: ../lib/Video/DVDRip/Title.pm:755
 msgid "frames"
 msgstr "fotogrames"
 
-#: ../lib/Video/DVDRip/Title.pm:822 ../lib/Video/DVDRip/Title.pm:900
+#: ../lib/Video/DVDRip/Title.pm:827 ../lib/Video/DVDRip/Title.pm:905
 #, perl-brace-format
 msgid "Can't mkpath directory '{dir}'"
 msgstr "No es pot crear el directori '{dir}'"
 
-#: ../lib/Video/DVDRip/Title.pm:984
+#: ../lib/Video/DVDRip/Title.pm:989
 msgid "Width isn't even."
 msgstr "L'amplada no és parell."
 
-#: ../lib/Video/DVDRip/Title.pm:987
+#: ../lib/Video/DVDRip/Title.pm:992
 msgid "Width is not divisible by 16."
 msgstr "L'amplada no és divisible per 16."
 
-#: ../lib/Video/DVDRip/Title.pm:990
+#: ../lib/Video/DVDRip/Title.pm:995
 msgid "Height isn't even."
 msgstr "L'alçària no és parell."
 
-#: ../lib/Video/DVDRip/Title.pm:993
+#: ../lib/Video/DVDRip/Title.pm:998
 msgid "Height is not divisible by 16."
 msgstr "L'alçària no és divisible per 16."
 
-#: ../lib/Video/DVDRip/Title.pm:1001
+#: ../lib/Video/DVDRip/Title.pm:1006
 msgid "Settings Ok"
 msgstr "Configuracions correctes"
 
-#: ../lib/Video/DVDRip/Title.pm:1007
+#: ../lib/Video/DVDRip/Title.pm:1012
 msgid "After 1st clipping"
 msgstr "Després del 1r retall"
 
-#: ../lib/Video/DVDRip/Title.pm:1008
+#: ../lib/Video/DVDRip/Title.pm:1013
 msgid "After 2nd clipping"
 msgstr "Després del 2n retall"
 
-#: ../lib/Video/DVDRip/Title.pm:1009
+#: ../lib/Video/DVDRip/Title.pm:1014
 msgid "After zoom"
 msgstr "Després del zoom"
 
-#: ../lib/Video/DVDRip/Title.pm:1014
+#: ../lib/Video/DVDRip/Title.pm:1019
 #, perl-brace-format
 msgid "Eff. ratio: <b>{eff}</b>, phys. ratio: <b>{phys}</b>"
 msgstr "R.A. efec.: <b>{eff}</b>, R.A. física: <b>{phys}</b>"
 
-#: ../lib/Video/DVDRip/Title.pm:1174
+#: ../lib/Video/DVDRip/Title.pm:1189
 #, perl-brace-format
 msgid "Can't read VOB navigation file '{filename}'"
 msgstr "No es pot llegir el fitxer de navegació VOB '{filename}'"
 
-#: ../lib/Video/DVDRip/Title.pm:1205
+#: ../lib/Video/DVDRip/Title.pm:1220
 msgid "Program stream units calculated"
 msgstr "Unitats de flux de programa calculades"
 
-#: ../lib/Video/DVDRip/Title.pm:1244
+#: ../lib/Video/DVDRip/Title.pm:1320
 #, perl-brace-format
 msgid "invalid parameter for frame_size ('{frame_size}')"
 msgstr "Paràmetre no vàlid per a mida de fotograma ('{frame_size}')"
 
-#: ../lib/Video/DVDRip/Title.pm:1664 ../lib/Video/DVDRip/Title.pm:3032
+#: ../lib/Video/DVDRip/Title.pm:1740 ../lib/Video/DVDRip/Title.pm:3108
 #, perl-brace-format
 msgid "Can't read VOB navigation file '{vob_nav_file}'"
 msgstr "No es pot llegir el fitxer de navegació VOB '{vob_nav_file}'"
 
-#: ../lib/Video/DVDRip/Title.pm:1979
+#: ../lib/Video/DVDRip/Title.pm:2055
 msgid "Enabled PSU core. Movie is NTSC and has more than one PSU."
-msgstr "S'ha activat el nucli PSU. La pel·lícula és NTSC i té més d'una PSU."
+msgstr ""
+"S'ha activat nucli PSU. La pel·lícula és NTSC i té més d'una PSU (program "
+"stream unit)."
 
-#: ../lib/Video/DVDRip/Title.pm:1984
+#: ../lib/Video/DVDRip/Title.pm:2060
 msgid "Not enabling PSU core, because this movie has only one PSU."
-msgstr "No s'activa el nucli PSU, perquè aquesta pel·lícula només té una PSU."
+msgstr ""
+"No s'activa nucli PSU, perquè aquesta pel·lícula només té una PSU (program "
+"stream unit)."
 
-#: ../lib/Video/DVDRip/Title.pm:2497
+#: ../lib/Video/DVDRip/Title.pm:2573
 #, perl-brace-format
 msgid ""
 "When using fast resize: Clip1 and Zoom size must be divisible by "
@@ -1081,13 +1085,13 @@ msgstr ""
 "En usar redimensionat ràpid: la mida de Retall 1 i la de Zoom han de ser "
 "divisibles per {multiple_of}"
 
-#: ../lib/Video/DVDRip/Title.pm:2504
+#: ../lib/Video/DVDRip/Title.pm:2580
 msgid "When using fast resize: Width and height must both shrink or expand"
 msgstr ""
 "En usar redimensionat ràpid: tant l'amplada com l'alçària han d'encongir-se "
 "o bé expandir-se."
 
-#: ../lib/Video/DVDRip/Title.pm:3006
+#: ../lib/Video/DVDRip/Title.pm:3082
 msgid ""
 "Fast VOB navigation only available for ripped DVD's, falling back to slow "
 "method."
@@ -1095,21 +1099,21 @@ msgstr ""
 "La navegació rapida de VOB només està disponible per a DVD extrets, s'està "
 "tornant al mètode lent."
 
-#: ../lib/Video/DVDRip/Title.pm:3010
+#: ../lib/Video/DVDRip/Title.pm:3086
 msgid "VOB navigation file is missing. Slow navigation method used."
 msgstr "Manca el fitxer de navegació VOB. S'usarà el mètode de navegació lent."
 
-#: ../lib/Video/DVDRip/Title.pm:3014
+#: ../lib/Video/DVDRip/Title.pm:3090
 msgid "Using slow preview grabbing as adviced by user"
 msgstr ""
 "S'està usant la captura lenta de previsualització com ha aconsellat l'usuari"
 
-#: ../lib/Video/DVDRip/Title.pm:3044
+#: ../lib/Video/DVDRip/Title.pm:3120
 #, perl-brace-format
 msgid "VOB navigation file '{vob_nav_file}' is corrupted."
 msgstr "El fitxer de navegació VOB '{vob_nav_file}' és corrupte."
 
-#: ../lib/Video/DVDRip/Title.pm:3059
+#: ../lib/Video/DVDRip/Title.pm:3135
 #, perl-brace-format
 msgid ""
 "Can't find frame {frame} in VOB navigation file '{vob_nav_file}' (which has "
@@ -1118,35 +1122,35 @@ msgstr ""
 "No es pot trobar el fotograma {frame} en el fitxer de navegació VOB "
 "'{vob_nav_file}' (que només té {frames} fotogrames). "
 
-#: ../lib/Video/DVDRip/Title.pm:3497
+#: ../lib/Video/DVDRip/Title.pm:3573
 msgid "You first have to transcode this title."
 msgstr "Abans heu de codificar aquest títol."
 
-#: ../lib/Video/DVDRip/Title.pm:3660
+#: ../lib/Video/DVDRip/Title.pm:3736
 msgid "No files for image creation selected."
 msgstr "No hi ha fitxers seleccionats per crear la imatge."
 
-#: ../lib/Video/DVDRip/Title.pm:3669 ../lib/Video/DVDRip/Title.pm:3746
+#: ../lib/Video/DVDRip/Title.pm:3745 ../lib/Video/DVDRip/Title.pm:3822
 msgid "No burn files selected."
 msgstr "No hi ha fitxers seleccionats per gravar."
 
-#: ../lib/Video/DVDRip/Title.pm:3670
+#: ../lib/Video/DVDRip/Title.pm:3746
 msgid "File is already an CD image."
 msgstr "El fitxer ja és una imatge de CD."
 
-#: ../lib/Video/DVDRip/Title.pm:3675
+#: ../lib/Video/DVDRip/Title.pm:3751
 msgid "Can't burn (S)VCD on the fly"
 msgstr "No es pot gravar el (S)VCD al vol"
 
-#: ../lib/Video/DVDRip/Title.pm:3735
+#: ../lib/Video/DVDRip/Title.pm:3811
 msgid "No files for burning selected."
 msgstr "No hi ha fitxers seleccionats per gravar."
 
-#: ../lib/Video/DVDRip/Title.pm:4003 ../lib/Video/DVDRip/Title.pm:4038
+#: ../lib/Video/DVDRip/Title.pm:4079 ../lib/Video/DVDRip/Title.pm:4114
 msgid "No subtitle selected"
 msgstr "No hi ha subtítols seleccionats"
 
-#: ../lib/Video/DVDRip/Title.pm:4291
+#: ../lib/Video/DVDRip/Title.pm:4367
 #, perl-brace-format
 msgid ""
 "Your frame size isn't conform to the standard,\n"
@@ -1157,7 +1161,7 @@ msgstr ""
 "que és {should_width}x{should_height} per a {codec}/{mode}, però heu "
 "configurat {width}x{height}."
 
-#: ../lib/Video/DVDRip/Title.pm:4316
+#: ../lib/Video/DVDRip/Title.pm:4392
 msgid ""
 "2nd clipping parameters can only be\n"
 "moved to 1st clipping parameters, if\n"
@@ -1252,183 +1256,197 @@ msgid "Don't grab subtitles"
 msgstr "No capturis subtítols"
 
 #: ../lib/Video/DVDRip/Config.pm:310
+#, fuzzy
+msgid "Default Clip & Zoom preset"
+msgstr "Aplica l'ajust de Retallat i Zoom"
+
+#: ../lib/Video/DVDRip/Config.pm:316
 msgid "Preferred language"
 msgstr "Idioma preferit"
 
-#: ../lib/Video/DVDRip/Config.pm:316
+#: ../lib/Video/DVDRip/Config.pm:322
 msgid "Workaround transcode NPTL bugs"
 msgstr "Eludeix els errors NPTL del transcode"
 
-#: ../lib/Video/DVDRip/Config.pm:322
+#: ../lib/Video/DVDRip/Config.pm:328
 msgid "Set LD_ASSUME_KERNEL to"
 msgstr "Fixa LD_ASSUME_KERNEL a"
 
-#: ../lib/Video/DVDRip/Config.pm:329
+#: ../lib/Video/DVDRip/Config.pm:335
 msgid "Optimize layout for small screens"
-msgstr ""
+msgstr "Optimitza la presentació per a pantalles petites"
 
-#: ../lib/Video/DVDRip/Config.pm:333
+#: ../lib/Video/DVDRip/Config.pm:339
 msgid ""
 "With this option the dvd::rip GUI may be tweaked to fit even on small "
 "screens by adding scrollbars to the notebook pages. dvd::rip needs to be "
 "restarted to take effect"
 msgstr ""
+"Amb aquesta opció es pot ajustar la interfície gràfica (GUI) del dvd::rip "
+"perquè s'acomodi fins i tot a les pantalles petites, tot afegint barres de "
+"desplaçament a les pàgines de la pantalla del \"bloc de notes\". Caldrà, "
+"però, reiniciar el dvd::rip perquè aquest ajustament sigui efectiu."
 
-#: ../lib/Video/DVDRip/Config.pm:341
+#: ../lib/Video/DVDRip/Config.pm:347
 msgid "Basic settings"
 msgstr "Configuracions bàsiques"
 
-#: ../lib/Video/DVDRip/Config.pm:348
+#: ../lib/Video/DVDRip/Config.pm:354
 msgid "Commands"
 msgstr "Ordres"
 
-#: ../lib/Video/DVDRip/Config.pm:354
+#: ../lib/Video/DVDRip/Config.pm:360
 msgid "Cluster options"
 msgstr "Opcions de clúster"
 
-#: ../lib/Video/DVDRip/Config.pm:360
+#: ../lib/Video/DVDRip/Config.pm:366
 msgid "Miscellaneous options"
 msgstr "Opcions diverses"
 
-#: ../lib/Video/DVDRip/Config.pm:382
-msgid "- No Modifications -"
+#: ../lib/Video/DVDRip/Config.pm:387
+#, fuzzy
+msgid "- No Modifications (anamorph) -"
 msgstr "- Sense modificacions -"
 
-#: ../lib/Video/DVDRip/Config.pm:398
+#: ../lib/Video/DVDRip/Config.pm:403
+msgid "Autoadjust, Clipping only (anamorph)"
+msgstr ""
+
+#: ../lib/Video/DVDRip/Config.pm:408
 msgid "Autoadjust, Big Frame Size, HQ Resize"
 msgstr "Autoajust, mida gran, redimensionat HQ"
 
-#: ../lib/Video/DVDRip/Config.pm:405
+#: ../lib/Video/DVDRip/Config.pm:415
 msgid "Autoadjust, Medium Frame Size, HQ Resize"
 msgstr "Autoajust, mida mitjana, redimensionat HQ"
 
-#: ../lib/Video/DVDRip/Config.pm:412
+#: ../lib/Video/DVDRip/Config.pm:422
 msgid "Autoadjust, Small Frame Size, HQ Resize"
 msgstr "Autoajust, mida petita, redimensionat HQ"
 
-#: ../lib/Video/DVDRip/Config.pm:419
+#: ../lib/Video/DVDRip/Config.pm:429
 msgid "Autoadjust, Big Frame Size, Fast Resize"
 msgstr "Autoajust, mida gran, redimensionat ràpid"
 
-#: ../lib/Video/DVDRip/Config.pm:426
+#: ../lib/Video/DVDRip/Config.pm:436
 msgid "Autoadjust, Medium Frame Size, Fast Resize"
 msgstr "Autoajust, mida mitjana, redimensionat ràpid"
 
-#: ../lib/Video/DVDRip/Config.pm:433
+#: ../lib/Video/DVDRip/Config.pm:443
 msgid "Autoadjust, Small Frame Size, Fast Resize"
 msgstr "Autoajust, mida petita, redimensionat ràpid"
 
-#: ../lib/Video/DVDRip/Config.pm:440
+#: ../lib/Video/DVDRip/Config.pm:450
 msgid "VCD 4:3, PAL"
 msgstr "VCD 4:3, PAL"
 
-#: ../lib/Video/DVDRip/Config.pm:456
+#: ../lib/Video/DVDRip/Config.pm:466
 msgid "VCD 16:9, PAL"
 msgstr "VCD 16:9, PAL"
 
-#: ../lib/Video/DVDRip/Config.pm:472
+#: ../lib/Video/DVDRip/Config.pm:482
 msgid "SVCD 16:9 -> 4:3 letterbox, PAL"
 msgstr "SVCD 16:9 -> 4:3 letterbox, PAL"
 
-#: ../lib/Video/DVDRip/Config.pm:488
+#: ../lib/Video/DVDRip/Config.pm:498
 msgid "SVCD anamorph, PAL"
 msgstr "SVCD anamòrfic, PAL"
 
-#: ../lib/Video/DVDRip/Config.pm:504
+#: ../lib/Video/DVDRip/Config.pm:514
 msgid "XSVCD anamorph, PAL"
 msgstr "XSVCD anamòrfic, PAL"
 
-#: ../lib/Video/DVDRip/Config.pm:520
+#: ../lib/Video/DVDRip/Config.pm:530
 msgid "CVD anamorph, PAL"
 msgstr "CVD anamòrfic, PAL"
 
-#: ../lib/Video/DVDRip/Config.pm:536
+#: ../lib/Video/DVDRip/Config.pm:546
 msgid "VCD 4:3, NTSC"
 msgstr "VCD 4:3, NTSC"
 
-#: ../lib/Video/DVDRip/Config.pm:552
+#: ../lib/Video/DVDRip/Config.pm:562
 msgid "VCD 16:9, NTSC"
 msgstr "VCD 16:9, NTSC"
 
-#: ../lib/Video/DVDRip/Config.pm:568
+#: ../lib/Video/DVDRip/Config.pm:578
 msgid "SVCD 16:9 -> 4:3 letterbox, NTSC"
 msgstr "SVCD 16:9 -> 4:3 letterbox, NTSC"
 
-#: ../lib/Video/DVDRip/Config.pm:584
+#: ../lib/Video/DVDRip/Config.pm:594
 msgid "SVCD anamorph, NTSC"
 msgstr "SVCD anamòrfic, NTSC"
 
-#: ../lib/Video/DVDRip/Config.pm:600
+#: ../lib/Video/DVDRip/Config.pm:610
 msgid "XSVCD anamorph, NTSC"
 msgstr "XSVCD anamòrfic, NTSC"
 
-#: ../lib/Video/DVDRip/Config.pm:616
+#: ../lib/Video/DVDRip/Config.pm:626
 msgid "CVD anamorph, NTSC"
 msgstr "CVD anamòrfic, NTSC"
 
-#: ../lib/Video/DVDRip/Config.pm:918
+#: ../lib/Video/DVDRip/Config.pm:938
 #, perl-brace-format
 msgid "{file} executable : Ok"
 msgstr "{file} és executable: Bé"
 
-#: ../lib/Video/DVDRip/Config.pm:921 ../lib/Video/DVDRip/Config.pm:937
+#: ../lib/Video/DVDRip/Config.pm:941 ../lib/Video/DVDRip/Config.pm:957
 #, perl-brace-format
 msgid "{file} not found : NOT Ok"
 msgstr "{file} no s'ha trobat: Error"
 
-#: ../lib/Video/DVDRip/Config.pm:923
+#: ../lib/Video/DVDRip/Config.pm:943
 #, perl-brace-format
 msgid "{file} not executable : NOT Ok"
 msgstr "{file} no és executable: Error"
 
-#: ../lib/Video/DVDRip/Config.pm:933
+#: ../lib/Video/DVDRip/Config.pm:953
 msgid "has whitespace : NOT Ok"
 msgstr "té espais en blanc: Error"
 
-#: ../lib/Video/DVDRip/Config.pm:934
+#: ../lib/Video/DVDRip/Config.pm:954
 msgid "is no absolute path : NOT Ok"
 msgstr "no és un camí absolut: Error"
 
-#: ../lib/Video/DVDRip/Config.pm:939
+#: ../lib/Video/DVDRip/Config.pm:959
 #, perl-brace-format
 msgid "{file} not writable : NOT Ok"
 msgstr "{file} no és escribible : Error"
 
-#: ../lib/Video/DVDRip/Config.pm:942
+#: ../lib/Video/DVDRip/Config.pm:962
 #, perl-brace-format
 msgid "{file} writable : Ok"
 msgstr "{file} és escribible : Bé"
 
-#: ../lib/Video/DVDRip/Config.pm:953
+#: ../lib/Video/DVDRip/Config.pm:973
 #, perl-brace-format
 msgid "{value} is numeric : Ok"
 msgstr "{value} és numèric: Bé"
 
-#: ../lib/Video/DVDRip/Config.pm:956
+#: ../lib/Video/DVDRip/Config.pm:976
 #, perl-brace-format
 msgid "{value} isn't numeric : NOT Ok"
 msgstr "{value} no és numèric: Error"
 
-#: ../lib/Video/DVDRip/Config.pm:966
+#: ../lib/Video/DVDRip/Config.pm:986
 msgid "is empty : Ok"
 msgstr "és buit : Bé"
 
-#: ../lib/Video/DVDRip/Config.pm:977
+#: ../lib/Video/DVDRip/Config.pm:997
 #, perl-brace-format
 msgid "{value} exists : Ok"
 msgstr "{value} existeix: Bé"
 
-#: ../lib/Video/DVDRip/Config.pm:980
+#: ../lib/Video/DVDRip/Config.pm:1000
 #, perl-brace-format
 msgid "{value} doesn't exist : NOT Ok"
 msgstr "{value} no existeix: Error"
 
-#: ../lib/Video/DVDRip/Config.pm:991
+#: ../lib/Video/DVDRip/Config.pm:1011
 #, perl-brace-format
 msgid "'{value}' is known : Ok"
 msgstr "'{value}' és conegut: Bé"
 
-#: ../lib/Video/DVDRip/Config.pm:995
+#: ../lib/Video/DVDRip/Config.pm:1015
 #, perl-brace-format
 msgid "'{value}' unknown: NOT Ok"
 msgstr "'{value}' és desconegut: Error"
@@ -1790,7 +1808,7 @@ msgid "dvd::rip - Cluster Control"
 msgstr "dvd::rip - Control del clúster"
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:250
-#: ../lib/Video/DVDRip/GUI/Main.pm:302
+#: ../lib/Video/DVDRip/GUI/Main.pm:299
 msgid "_File"
 msgstr "_Fitxer"
 
@@ -2242,7 +2260,7 @@ msgstr "Paràmetres"
 
 #: ../lib/Video/DVDRip/GUI/ZoomCalculator.pm:171
 msgid "Fast resize align"
-msgstr "Alineació de redimensionat ràpid"
+msgstr "Alineació de redimensionat ràpida"
 
 #: ../lib/Video/DVDRip/GUI/ZoomCalculator.pm:175
 msgid "Result frame align"
@@ -2324,7 +2342,7 @@ msgstr "Missatge d'error"
 msgid "dvd::rip - Message"
 msgstr "dvd::rip - Missatge"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:142
+#: ../lib/Video/DVDRip/GUI/Main.pm:141
 #, perl-brace-format
 msgid ""
 "An internal exception was thrown!\n"
@@ -2337,16 +2355,16 @@ msgstr ""
 "\n"
 "{msg}"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:161
+#: ../lib/Video/DVDRip/GUI/Main.pm:160
 #, perl-brace-format
 msgid "Detected transcode version: {version}"
 msgstr "Versió del transcode detectada: {version}"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:175
+#: ../lib/Video/DVDRip/GUI/Main.pm:174
 msgid "Opening project file failed. Aborting."
 msgstr "No s'ha pogut obrir el fitxer de projecte. S'està cancel·lant."
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:209
+#: ../lib/Video/DVDRip/GUI/Main.pm:208
 msgid ""
 "dvd::rip detected transcode version >= 1.1.x. Support for this version is "
 "experimental. Please report bugs, if you find them."
@@ -2355,117 +2373,117 @@ msgstr ""
 "per a aquesta versió és experimental. Si us plau, informeu sobre els errors "
 "si en trobeu."
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:305
+#: ../lib/Video/DVDRip/GUI/Main.pm:302
 msgid "_New Project"
 msgstr "Projecte _nou"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:313
+#: ../lib/Video/DVDRip/GUI/Main.pm:310
 msgid "_Open Project..."
 msgstr "_Obre projecte"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:321
+#: ../lib/Video/DVDRip/GUI/Main.pm:318
 msgid "_Save Project"
 msgstr "De_sa projecte"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:328
+#: ../lib/Video/DVDRip/GUI/Main.pm:325
 msgid "Save _Project as..."
 msgstr "Des_a projecte com..."
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:335
+#: ../lib/Video/DVDRip/GUI/Main.pm:332
 msgid "_Close Project"
 msgstr "_Tanca projecte"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:350
+#: ../lib/Video/DVDRip/GUI/Main.pm:347
 msgid "_Exit"
 msgstr "_Surt"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:358
+#: ../lib/Video/DVDRip/GUI/Main.pm:355
 msgid "_Edit"
 msgstr "_Edita"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:361
+#: ../lib/Video/DVDRip/GUI/Main.pm:358
 msgid "Edit _Preferences..."
 msgstr "_Preferències"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:369
+#: ../lib/Video/DVDRip/GUI/Main.pm:366
 msgid "_Title"
 msgstr "_Títol"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:383
+#: ../lib/Video/DVDRip/GUI/Main.pm:380
 msgid "View target file"
 msgstr "Visualitza el fitxer codificat"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:394
+#: ../lib/Video/DVDRip/GUI/Main.pm:391
 msgid "Add project to cluster"
 msgstr "Afegeix projecte a clúster"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:411
+#: ../lib/Video/DVDRip/GUI/Main.pm:408
 msgid "Create vobsub"
 msgstr "Crea fitxer vobsub"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:424
+#: ../lib/Video/DVDRip/GUI/Main.pm:421
 msgid "Create dvdrip-info file"
 msgstr "Crea fitxer dvdrip-info"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:440
+#: ../lib/Video/DVDRip/GUI/Main.pm:437
 msgid "Create WAV from selected audio track"
 msgstr "Crea WAV de la pista d'àudio seleccionada"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:451
+#: ../lib/Video/DVDRip/GUI/Main.pm:448
 msgid "_Cluster"
 msgstr "_Clúster"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:454
+#: ../lib/Video/DVDRip/GUI/Main.pm:451
 msgid "Contro_l..."
 msgstr "Con_trol..."
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:462
+#: ../lib/Video/DVDRip/GUI/Main.pm:459
 msgid "_Debug"
 msgstr "_Depuració"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:466
+#: ../lib/Video/DVDRip/GUI/Main.pm:463
 msgid "Show _Transcode commands..."
 msgstr "Mostra ordres del _transcode..."
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:472
+#: ../lib/Video/DVDRip/GUI/Main.pm:469
 msgid "Check _dependencies..."
 msgstr "_Comprova dependències..."
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:479
+#: ../lib/Video/DVDRip/GUI/Main.pm:476
 msgid "_Help"
 msgstr "Aj_uda"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:482
+#: ../lib/Video/DVDRip/GUI/Main.pm:479
 msgid "_About dvd::rip"
 msgstr "_Pel que fa al dvd::rip "
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:546
+#: ../lib/Video/DVDRip/GUI/Main.pm:543
 msgid "Selected DVD title"
 msgstr "Títol de DVD seleccionat"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:550
+#: ../lib/Video/DVDRip/GUI/Main.pm:547
 msgid "Choose a DVD title at any time here"
 msgstr "Escolliu aquí un títol de DVD en qualsevol moment"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:648
+#: ../lib/Video/DVDRip/GUI/Main.pm:645
 #, perl-brace-format
 msgid "File '{filename}' not found or not readable."
 msgstr "El fitxer '{filename}' no s'ha trobat o no es pot llegir."
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:700
+#: ../lib/Video/DVDRip/GUI/Main.pm:697
 msgid "Save project: choose filename"
 msgstr "Desa projecte: escolliu un nom de fitxer"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:711 ../lib/Video/DVDRip/GUI/Main.pm:738
+#: ../lib/Video/DVDRip/GUI/Main.pm:708 ../lib/Video/DVDRip/GUI/Main.pm:735
 #, perl-brace-format
 msgid "Project {name} created"
 msgstr "S'ha creat el projecte {name}."
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:775
+#: ../lib/Video/DVDRip/GUI/Main.pm:772
 msgid "Do you want to save this project first?"
 msgstr "Voleu desar abans aquest projecte?"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:826
+#: ../lib/Video/DVDRip/GUI/Main.pm:823
 msgid ""
 "This is the first time you start dvd::rip. The Preferences dialog was opened "
 "automatically for you. Please review the settings, in particular the default "
@@ -2478,7 +2496,7 @@ msgstr ""
 "Assigneu un directori amb espai de disc suficient d'almenys 10 GB per a "
 "còpies de DVD completes."
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:873
+#: ../lib/Video/DVDRip/GUI/Main.pm:870
 msgid ""
 "Probe Command:\n"
 "==============\n"
@@ -2486,7 +2504,7 @@ msgstr ""
 "Ordre d'exploració:\n"
 "=======================\n"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:885
+#: ../lib/Video/DVDRip/GUI/Main.pm:882
 msgid ""
 "Rip Command:\n"
 "============\n"
@@ -2494,7 +2512,7 @@ msgstr ""
 "Ordre d'extracció:\n"
 "======================\n"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:890
+#: ../lib/Video/DVDRip/GUI/Main.pm:887
 msgid ""
 "Scan Command:\n"
 "============\n"
@@ -2502,7 +2520,7 @@ msgstr ""
 "Ordre d'escanejat:\n"
 "===================\n"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:897
+#: ../lib/Video/DVDRip/GUI/Main.pm:894
 msgid ""
 "Grab Preview Image Command:\n"
 "===========================\n"
@@ -2510,11 +2528,11 @@ msgstr ""
 "Ordre de captura de previsualització:\n"
 "=======================================\n"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:908
+#: ../lib/Video/DVDRip/GUI/Main.pm:905
 msgid "You must first rip the selected title to see this command.\n"
 msgstr "Abans heu d'extreure el títol seleccionat per veure aquesta ordre.\n"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:913
+#: ../lib/Video/DVDRip/GUI/Main.pm:910
 msgid ""
 "Transcode Command:\n"
 "==================\n"
@@ -2522,7 +2540,7 @@ msgstr ""
 "Ordre de codificació:\n"
 "========================\n"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:942
+#: ../lib/Video/DVDRip/GUI/Main.pm:939
 msgid ""
 "Additional audio tracks commands:\n"
 "============================\n"
@@ -2530,7 +2548,7 @@ msgstr ""
 "Ordre de pistes d'àudio addicionals:\n"
 "========================================\n"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:963
+#: ../lib/Video/DVDRip/GUI/Main.pm:960
 msgid ""
 "View DVD Command:\n"
 "=================\n"
@@ -2538,7 +2556,7 @@ msgstr ""
 "Ordre de visualització del DVD:\n"
 "=================================\n"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:971
+#: ../lib/Video/DVDRip/GUI/Main.pm:968
 msgid ""
 "View Files Command:\n"
 "===================\n"
@@ -2546,15 +2564,15 @@ msgstr ""
 "Ordre de visualització de fitxers:\n"
 "=====================================\n"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:988
+#: ../lib/Video/DVDRip/GUI/Main.pm:985
 msgid ""
 "CD image creation command:\n"
 "========================\n"
 msgstr ""
-"Ordre de creacio d'imatge de CD:\n"
+"Ordre de creació d'imatge de CD:\n"
 "====================================\n"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:994
+#: ../lib/Video/DVDRip/GUI/Main.pm:991
 msgid ""
 "CD burning command:\n"
 "==================\n"
@@ -2562,7 +2580,7 @@ msgstr ""
 "Ordre de gravació de CD:\n"
 "===========================\n"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:1004
+#: ../lib/Video/DVDRip/GUI/Main.pm:1001
 msgid ""
 "WAV creation command:\n"
 "====================\n"
@@ -2570,17 +2588,17 @@ msgstr ""
 "Ordre de creació de WAV:\n"
 "===========================\n"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:1011
+#: ../lib/Video/DVDRip/GUI/Main.pm:1008
 msgid "Commands executed by dvd::rip"
 msgstr "Ordres a executar pel dvd::rip"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:1037
+#: ../lib/Video/DVDRip/GUI/Main.pm:1034
 msgid ""
 "One or several mandatory tools are\n"
 "missing or too old. You must install them\n"
 "before you can proceed with dvd::rip."
 msgstr ""
-"Una o diverses eines obligatòries manquen\n"
+"Manquen una o diverses eines obligatòries\n"
 "o bé són massa antigues. Heu d'instal·lar-les\n"
 "abans d'usar el dvd::rip."
 
@@ -2606,7 +2624,7 @@ msgid ""
 "just enter its transcode name by hand"
 msgstr ""
 "Escolliu aquí un còdec de vídeo. Si no trobeu a la llista el còdec que "
-"voleu, introduïu el seu nom en transcode a mà."
+"voleu, introduïu el seu nom en 'transcode' a mà."
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:133
 msgid "Configure..."
@@ -2855,8 +2873,8 @@ msgid ""
 "DVD."
 msgstr ""
 "BPP vol dir 'bits per píxel', i és una mesura de la qualitat del vídeo. Els "
-"valors al voltant de 0.25 donen resultats justos (qualitat de VHS), en el "
-"rang de 0.4-0.5 donen molt bona qualitat, propera a la de DVD."
+"valors al voltant de 0.25 donen resultats regulars (qualitat de VHS), i en "
+"el rang que va de 0.4 a 0.5 donen molt bona qualitat, propera a la de DVD."
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:517
 msgid "Manually"
@@ -2974,7 +2992,7 @@ msgstr "No es permeten els títols en mode per capítols"
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:892
 msgid "PSU core mode currently not supported"
-msgstr "Nucli PSU actualment no permès"
+msgstr "El mode nucli PSU actualment no es permet"
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:898
 msgid ""
@@ -3034,7 +3052,7 @@ msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Storage.pm:73
 msgid "VOB directory"
-msgstr "Directori per a VOB"
+msgstr "Directori per als VOB"
 
 #: ../lib/Video/DVDRip/GUI/Project/Storage.pm:74
 msgid "DVD VOB files are stored here."
@@ -3042,11 +3060,11 @@ msgstr "Els fiters VOB del DVD es desaran aquí."
 
 #: ../lib/Video/DVDRip/GUI/Project/Storage.pm:79
 msgid "AVI directory"
-msgstr "Directori per a AVI"
+msgstr "Directori per als AVI"
 
 #: ../lib/Video/DVDRip/GUI/Project/Storage.pm:80
 msgid "For transcoded AVI, MPEG and OGM files."
-msgstr "Per a fitxers AVI, MPEG i OGM codificats."
+msgstr "Per als fitxers AVI, MPEG i OGM codificats."
 
 #: ../lib/Video/DVDRip/GUI/Project/Storage.pm:85
 msgid "Temporary directory"
@@ -3344,179 +3362,179 @@ msgstr "Nom de fitxer de registre"
 msgid "Subtitles"
 msgstr "Subtítols"
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:61
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:60
 msgid "This title has no subtitles"
 msgstr "Aquest títol no té subtítols"
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:77
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:76
 msgid "Subtitle selection"
 msgstr "Selecció de subtítol"
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:81
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:80
 msgid "Select subtitle"
 msgstr "Selecciona subtítol"
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:85
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:84
 msgid "Activated:"
 msgstr "Activat:"
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:99
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:98
 msgid "Preview"
 msgstr "Vista prèvia"
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:107
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:106
 #: ../lib/Video/DVDRip/GUI/Context.pm:790
 msgid "Grab"
 msgstr "Captura"
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:129
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:128
 msgid "image(s)"
 msgstr "imatge(s)"
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:133
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:132
 msgid "starting at"
 msgstr "començant en"
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:142
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:141
 #, perl-brace-format
 msgid "Movie has only {cnt} frames"
 msgstr "El vídeo només té {cnt} fotogrames"
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:146
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:145
 msgid "Invalid time/frame number format"
-msgstr "El formato de temps/número de fotograma no es vàlid"
+msgstr "El format de temps/número de fotograma no és vàlid"
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:150
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:149
 msgid "(timecode nn:nn:nn or frame number)"
 msgstr "(temps en format nn:nn:nn o número de fotograma)"
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:174
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:173
 msgid "Render subtitle on movie"
-msgstr "Incrustar subtítols en el vídeo"
+msgstr "Incrusta subtítols en el vídeo"
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:190
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:189
 msgid "Activate this subtitle "
 msgstr "Activa aquest subtítol "
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:195
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:194
 msgid "for rendering"
 msgstr "per incrustar"
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:199
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:198
 msgid "Colors "
 msgstr "Colors "
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:204
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:203
 msgid "Enable manipulation"
 msgstr "Activa manipulació"
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:208
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:207
 msgid "Preview image count "
 msgstr "Núm. de vistes prèvies "
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:219
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:218
 msgid "Vertical offset "
 msgstr "Desplaçament vertical "
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:228
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:227
 msgid "rows"
 msgstr "files"
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:233
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:232
 msgid "Gray A/B "
 msgstr "Gris A/B "
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:242
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:251
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:241
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:250
 msgid "Value not between 0 and 255"
 msgstr "El valor no és entre 0 i 255"
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:255
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:254
 msgid "Preview window "
 msgstr "Vista prèvia "
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:264
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:263
 msgid "Open"
 msgstr "Obre"
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:276
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:275
 msgid "Time shift "
 msgstr "Desplaçament temporal "
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:285
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:284
 msgid "ms"
 msgstr "ms"
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:291
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:290
 msgid "Index A/B "
 msgstr "Índex A/B "
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:306
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:305
 msgid "Postprocessing "
 msgstr "Postprocessament "
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:310
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:309
 msgid "Antialiasing"
 msgstr "Suavitzat de vores"
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:313
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:312
 msgid "Suggest "
 msgstr "Suggeriment "
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:319
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:318
 msgid "Values for letterbox"
 msgstr "Valors per a letterbox"
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:329
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:328
 msgid "Values for full size movie"
 msgstr "Valors per a mida completa"
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:352
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:351
 msgid "Create vobsub file"
 msgstr "Crea fitxer vobsub"
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:364
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:368
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:363
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:367
 msgid "Create now"
 msgstr "Crea ara"
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:374
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:373
 msgid "View vobsub"
 msgstr "Visualitza vobsub"
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:378
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:377
 msgid "Only useful for single-CD-rips or after transcoding"
 msgstr "Només és útil per a codificacions d'un únic CD o després de codificar"
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:382
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:381
 msgid "Create later"
 msgstr "Crea més tard"
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:385
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:384
 msgid "after transcoding"
 msgstr "després de codificar"
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:389
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:388
 msgid "This considers splitted files automaticly"
 msgstr "Això té en consideració els fitxers dividits automàticament"
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:458
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:457
 msgid "You need Mplayer to view vobsub files."
 msgstr "Necessiteu l'Mplayer per visualitzar fitxers vobsub."
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:464
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:463
 msgid "This is only supported for ripped movies."
 msgstr "Només està permès per a pel·lícules extretes."
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:470
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:469
 msgid "What about creating the vobsub file first?"
 msgstr "I si creeu abans el fitxer vobsub?"
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:476
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:475
 msgid "Executing command: "
 msgstr "S'està executant l'ordre: "
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:533
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:532
 msgid "Sorry, you need subtitle2pgm for this to work."
 msgstr "Us cal el subtitle2pgm per a aquesta tasca."
 
@@ -3749,7 +3767,7 @@ msgstr "Prova de conformitat:"
 
 #: ../lib/Video/DVDRip/GUI/Filters.pm:79
 msgid "dvd::rip - Filters & Preview"
-msgstr "dvd::rip - Filtres i Previsualització"
+msgstr "dvd::rip - Filtres i Vista prèvia"
 
 #: ../lib/Video/DVDRip/GUI/Filters.pm:165
 msgid "Available filters"
@@ -3760,8 +3778,8 @@ msgid ""
 "Double click a row to activate a filter. Greyed out filters are not "
 "available anymore, because they are activated already."
 msgstr ""
-"Una doble pulsació en una fila activa un filtre. Els filtres de gris ja no "
-"estan disponibles, perquè ja estan activados."
+"Una pulsació doble en una fila activa un filtre. Els filtres de gris ja no "
+"estan disponibles, perquè ja estan activats."
 
 #: ../lib/Video/DVDRip/GUI/Filters.pm:211
 msgid "Used filters"
@@ -3778,7 +3796,7 @@ msgid ""
 "while the preview window is open."
 msgstr ""
 "No podeu canviar l'ordre dels filtres mentre\n"
-"la finestra de vista prèvia està oberta."
+"la finestra de vista prèvia és oberta."
 
 #: ../lib/Video/DVDRip/GUI/Filters.pm:274
 msgid "Filter information"

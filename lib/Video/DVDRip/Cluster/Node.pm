@@ -1,4 +1,4 @@
-# $Id: Node.pm,v 1.41.2.2 2007/04/13 11:19:38 joern Exp $
+# $Id: Node.pm,v 1.41.2.3 2008/01/13 12:57:11 joern Exp $
 
 #-----------------------------------------------------------------------
 # Copyright (C) 2001-2006 Jörn Reder <joern AT zyn.de>.
@@ -396,7 +396,7 @@ sub get_test_command {
     foreach my $tool ( sort keys %{$depend->tools} ) {
         my $def = $depend->tools->{$tool};
         next if not $def->{cluster};
-        $command .= $def->{version_cmd}.";";
+        $command .= $def->{version_cmd}." 2>&1;";
     }
     $command .= "echo --program_versions--; ";
     $command .= "' 2>&1";

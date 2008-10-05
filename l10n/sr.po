@@ -26,7 +26,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dvd::rip 0.97\n"
 "Report-Msgid-Bugs-To: dvd::rip Translation Team <dvdrip-lang AT exit1.org>\n"
-"POT-Creation-Date: 2007-08-09 23:25+0200\n"
+"POT-Creation-Date: 2008-01-13 15:18+0100\n"
 "PO-Revision-Date: 2006-12-15 02:39+0100\n"
 "Last-Translator: Filip Miletic <filmil at gmail dot com>\n"
 "Language-Team: Serbian <kde-yu@kde.org.yu> <gnom@prevod.org>\n"
@@ -101,7 +101,7 @@ msgstr ""
 "       -w        покретање веб сервера\n"
 "       -W порт   порт за веб сервер (изворно: 8888)\n"
 
-#: ../bin/dvdrip-splash:12 ../lib/Video/DVDRip/GUI/Main.pm:1049
+#: ../bin/dvdrip-splash:12 ../lib/Video/DVDRip/GUI/Main.pm:1046
 msgid "splash.en.png"
 msgstr "splash.sr.png"
 
@@ -126,7 +126,7 @@ msgstr "Аудио"
 #: ../lib/Video/DVDRip/GUI/Cluster/Title.pm:133
 #: ../lib/Video/DVDRip/GUI/ExecFlow.pm:79
 #: ../lib/Video/DVDRip/GUI/Preferences.pm:192
-#: ../lib/Video/DVDRip/GUI/Main.pm:776
+#: ../lib/Video/DVDRip/GUI/Main.pm:773
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:198
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:615
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:621
@@ -144,7 +144,7 @@ msgstr "Да"
 #: ../lib/Video/DVDRip/GUI/Cluster/Title.pm:134
 #: ../lib/Video/DVDRip/GUI/ExecFlow.pm:80
 #: ../lib/Video/DVDRip/GUI/Preferences.pm:193
-#: ../lib/Video/DVDRip/GUI/Main.pm:777
+#: ../lib/Video/DVDRip/GUI/Main.pm:774
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:199
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:616
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:622
@@ -727,7 +727,7 @@ msgstr "Пробајте да форсирате споро хватање ка�
 #: ../lib/Video/DVDRip/GUI/Project/ClipZoom.pm:749
 #: ../lib/Video/DVDRip/GUI/Project/ClipZoom.pm:776
 #: ../lib/Video/DVDRip/GUI/Project/ClipZoom.pm:798
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:527
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:526
 msgid "You first have to rip this title."
 msgstr "Прво морате да ишчупате овај наслов."
 
@@ -798,7 +798,7 @@ msgstr ""
 msgid "Transcode multiple titles"
 msgstr "Транскодирај више наслова"
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:802 ../lib/Video/DVDRip/GUI/Main.pm:372
+#: ../lib/Video/DVDRip/JobPlanner.pm:802 ../lib/Video/DVDRip/GUI/Main.pm:369
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:38
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:651
 msgid "Transcode"
@@ -998,89 +998,89 @@ msgstr "‟ не подржава OGG контејнер"
 msgid "Set video codec to 'xvid', MPEG not supported by OGG container"
 msgstr "Постави видео кодек на „xvid“, OGG не подржава (S)VCD/CVD"
 
-#: ../lib/Video/DVDRip/Title.pm:744
+#: ../lib/Video/DVDRip/Title.pm:749
 #: ../lib/Video/DVDRip/GUI/Project/Title.pm:120
 msgid "Chp"
 msgstr "Пог"
 
-#: ../lib/Video/DVDRip/Title.pm:746
+#: ../lib/Video/DVDRip/Title.pm:751
 msgid "Aud"
 msgstr "Ауд"
 
-#: ../lib/Video/DVDRip/Title.pm:750
+#: ../lib/Video/DVDRip/Title.pm:755
 msgid "frames"
 msgstr "кадрова"
 
-#: ../lib/Video/DVDRip/Title.pm:822 ../lib/Video/DVDRip/Title.pm:900
+#: ../lib/Video/DVDRip/Title.pm:827 ../lib/Video/DVDRip/Title.pm:905
 #, perl-brace-format
 msgid "Can't mkpath directory '{dir}'"
 msgstr "Не могу да извршим mkpath за директоријум „{dir}“"
 
-#: ../lib/Video/DVDRip/Title.pm:984
+#: ../lib/Video/DVDRip/Title.pm:989
 msgid "Width isn't even."
 msgstr "Ширина није парна."
 
-#: ../lib/Video/DVDRip/Title.pm:987
+#: ../lib/Video/DVDRip/Title.pm:992
 msgid "Width is not divisible by 16."
 msgstr "Ширина није дељива са 16."
 
-#: ../lib/Video/DVDRip/Title.pm:990
+#: ../lib/Video/DVDRip/Title.pm:995
 msgid "Height isn't even."
 msgstr "Висина није парна."
 
-#: ../lib/Video/DVDRip/Title.pm:993
+#: ../lib/Video/DVDRip/Title.pm:998
 msgid "Height is not divisible by 16."
 msgstr "Висина није дељива са 16."
 
-#: ../lib/Video/DVDRip/Title.pm:1001
+#: ../lib/Video/DVDRip/Title.pm:1006
 msgid "Settings Ok"
 msgstr "Подешавања су у реду"
 
-#: ../lib/Video/DVDRip/Title.pm:1007
+#: ../lib/Video/DVDRip/Title.pm:1012
 msgid "After 1st clipping"
 msgstr "После првог сечења"
 
-#: ../lib/Video/DVDRip/Title.pm:1008
+#: ../lib/Video/DVDRip/Title.pm:1013
 msgid "After 2nd clipping"
 msgstr "После другог сечења"
 
-#: ../lib/Video/DVDRip/Title.pm:1009
+#: ../lib/Video/DVDRip/Title.pm:1014
 msgid "After zoom"
 msgstr "После увећања"
 
-#: ../lib/Video/DVDRip/Title.pm:1014
+#: ../lib/Video/DVDRip/Title.pm:1019
 #, perl-brace-format
 msgid "Eff. ratio: <b>{eff}</b>, phys. ratio: <b>{phys}</b>"
 msgstr "Ефективни однос: <b>{eff}</b>, физички однос: <b>{phys}</b>"
 
-#: ../lib/Video/DVDRip/Title.pm:1174
+#: ../lib/Video/DVDRip/Title.pm:1189
 #, perl-brace-format
 msgid "Can't read VOB navigation file '{filename}'"
 msgstr "Не могу да прочитам VOB навигациони фајл „{filename}“"
 
-#: ../lib/Video/DVDRip/Title.pm:1205
+#: ../lib/Video/DVDRip/Title.pm:1220
 msgid "Program stream units calculated"
 msgstr "Израчунате јединице тока програма"
 
-#: ../lib/Video/DVDRip/Title.pm:1244
+#: ../lib/Video/DVDRip/Title.pm:1320
 #, perl-brace-format
 msgid "invalid parameter for frame_size ('{frame_size}')"
 msgstr "неисправан параметар за величину кадра („{frame_size}“)"
 
-#: ../lib/Video/DVDRip/Title.pm:1664 ../lib/Video/DVDRip/Title.pm:3032
+#: ../lib/Video/DVDRip/Title.pm:1740 ../lib/Video/DVDRip/Title.pm:3108
 #, perl-brace-format
 msgid "Can't read VOB navigation file '{vob_nav_file}'"
 msgstr "Не могу да прочитам VOB навигациони фајл „{vob_nav_file}“"
 
-#: ../lib/Video/DVDRip/Title.pm:1979
+#: ../lib/Video/DVDRip/Title.pm:2055
 msgid "Enabled PSU core. Movie is NTSC and has more than one PSU."
 msgstr "Укључено PSU језгро. Филм је NTSC и има више од једног PSU-а."
 
-#: ../lib/Video/DVDRip/Title.pm:1984
+#: ../lib/Video/DVDRip/Title.pm:2060
 msgid "Not enabling PSU core, because this movie has only one PSU."
 msgstr "Не укључујем PSU језгро, зато што овај филм има само један PSU."
 
-#: ../lib/Video/DVDRip/Title.pm:2497
+#: ../lib/Video/DVDRip/Title.pm:2573
 #, perl-brace-format
 msgid ""
 "When using fast resize: Clip1 and Zoom size must be divisible by "
@@ -1089,13 +1089,13 @@ msgstr ""
 "Када користите брзо мењање величине: Исечак 1 у величина увећања морају бити "
 "дељиви са {multiple_of}"
 
-#: ../lib/Video/DVDRip/Title.pm:2504
+#: ../lib/Video/DVDRip/Title.pm:2580
 msgid "When using fast resize: Width and height must both shrink or expand"
 msgstr ""
 "Када користите брзо мењање величине: И ширина и висина морају да се скупљају "
 "или проширују"
 
-#: ../lib/Video/DVDRip/Title.pm:3006
+#: ../lib/Video/DVDRip/Title.pm:3082
 msgid ""
 "Fast VOB navigation only available for ripped DVD's, falling back to slow "
 "method."
@@ -1103,20 +1103,20 @@ msgstr ""
 "Брза VOB навигација је могућа само за ишчупане DVD-ове, враћам се на спори "
 "метод."
 
-#: ../lib/Video/DVDRip/Title.pm:3010
+#: ../lib/Video/DVDRip/Title.pm:3086
 msgid "VOB navigation file is missing. Slow navigation method used."
 msgstr "VOB навигациони фајл недостаје. Користи се метод за спору навигацију."
 
-#: ../lib/Video/DVDRip/Title.pm:3014
+#: ../lib/Video/DVDRip/Title.pm:3090
 msgid "Using slow preview grabbing as adviced by user"
 msgstr "Користи се спора добавка прегледа, према упутству корисника"
 
-#: ../lib/Video/DVDRip/Title.pm:3044
+#: ../lib/Video/DVDRip/Title.pm:3120
 #, perl-brace-format
 msgid "VOB navigation file '{vob_nav_file}' is corrupted."
 msgstr "VOB навигациони фајл „{vob_nav_file}“ није исправан."
 
-#: ../lib/Video/DVDRip/Title.pm:3059
+#: ../lib/Video/DVDRip/Title.pm:3135
 #, perl-brace-format
 msgid ""
 "Can't find frame {frame} in VOB navigation file '{vob_nav_file}' (which has "
@@ -1125,35 +1125,35 @@ msgstr ""
 "Не могу да пронађем кадар {frame} у VOB навигационом фајлу "
 "„{vob_nav_file}“ (који има само {frames} кадрова). "
 
-#: ../lib/Video/DVDRip/Title.pm:3497
+#: ../lib/Video/DVDRip/Title.pm:3573
 msgid "You first have to transcode this title."
 msgstr "Прво морате да кодирате овај наслов."
 
-#: ../lib/Video/DVDRip/Title.pm:3660
+#: ../lib/Video/DVDRip/Title.pm:3736
 msgid "No files for image creation selected."
 msgstr "Нема изабраних фајлова за прављење слике."
 
-#: ../lib/Video/DVDRip/Title.pm:3669 ../lib/Video/DVDRip/Title.pm:3746
+#: ../lib/Video/DVDRip/Title.pm:3745 ../lib/Video/DVDRip/Title.pm:3822
 msgid "No burn files selected."
 msgstr "Нема изабраних фајлова за нарезивање."
 
-#: ../lib/Video/DVDRip/Title.pm:3670
+#: ../lib/Video/DVDRip/Title.pm:3746
 msgid "File is already an CD image."
 msgstr "Фајл је већ CD слика."
 
-#: ../lib/Video/DVDRip/Title.pm:3675
+#: ../lib/Video/DVDRip/Title.pm:3751
 msgid "Can't burn (S)VCD on the fly"
 msgstr "Не могу да нарезујем (S)VCD-ове у лету"
 
-#: ../lib/Video/DVDRip/Title.pm:3735
+#: ../lib/Video/DVDRip/Title.pm:3811
 msgid "No files for burning selected."
 msgstr "Нема изабраних фајлова за нарезивање."
 
-#: ../lib/Video/DVDRip/Title.pm:4003 ../lib/Video/DVDRip/Title.pm:4038
+#: ../lib/Video/DVDRip/Title.pm:4079 ../lib/Video/DVDRip/Title.pm:4114
 msgid "No subtitle selected"
 msgstr "Није изабран титл"
 
-#: ../lib/Video/DVDRip/Title.pm:4291
+#: ../lib/Video/DVDRip/Title.pm:4367
 #, perl-brace-format
 msgid ""
 "Your frame size isn't conform to the standard,\n"
@@ -1164,7 +1164,7 @@ msgstr ""
 "који је {should_width}x{should_height} за {codec}/{mode}, али сте Ви "
 "подесили {width}x{height}."
 
-#: ../lib/Video/DVDRip/Title.pm:4316
+#: ../lib/Video/DVDRip/Title.pm:4392
 msgid ""
 "2nd clipping parameters can only be\n"
 "moved to 1st clipping parameters, if\n"
@@ -1260,183 +1260,193 @@ msgid "Don't grab subtitles"
 msgstr "Не хватај титлове"
 
 #: ../lib/Video/DVDRip/Config.pm:310
+#, fuzzy
+msgid "Default Clip & Zoom preset"
+msgstr "Примени подешавања за опсецање и зумирање"
+
+#: ../lib/Video/DVDRip/Config.pm:316
 msgid "Preferred language"
 msgstr "Пожељни језик"
 
-#: ../lib/Video/DVDRip/Config.pm:316
+#: ../lib/Video/DVDRip/Config.pm:322
 msgid "Workaround transcode NPTL bugs"
 msgstr " Премости грешке у NPTLу"
 
-#: ../lib/Video/DVDRip/Config.pm:322
+#: ../lib/Video/DVDRip/Config.pm:328
 msgid "Set LD_ASSUME_KERNEL to"
 msgstr "Постави LD_ASSUME_KERNEL на"
 
-#: ../lib/Video/DVDRip/Config.pm:329
+#: ../lib/Video/DVDRip/Config.pm:335
 msgid "Optimize layout for small screens"
 msgstr ""
 
-#: ../lib/Video/DVDRip/Config.pm:333
+#: ../lib/Video/DVDRip/Config.pm:339
 msgid ""
 "With this option the dvd::rip GUI may be tweaked to fit even on small "
 "screens by adding scrollbars to the notebook pages. dvd::rip needs to be "
 "restarted to take effect"
 msgstr ""
 
-#: ../lib/Video/DVDRip/Config.pm:341
+#: ../lib/Video/DVDRip/Config.pm:347
 msgid "Basic settings"
 msgstr "Основне поставке"
 
-#: ../lib/Video/DVDRip/Config.pm:348
+#: ../lib/Video/DVDRip/Config.pm:354
 msgid "Commands"
 msgstr "Наредбе"
 
-#: ../lib/Video/DVDRip/Config.pm:354
+#: ../lib/Video/DVDRip/Config.pm:360
 msgid "Cluster options"
 msgstr "Опције скупине"
 
-#: ../lib/Video/DVDRip/Config.pm:360
+#: ../lib/Video/DVDRip/Config.pm:366
 msgid "Miscellaneous options"
 msgstr "Разне опције"
 
-#: ../lib/Video/DVDRip/Config.pm:382
-msgid "- No Modifications -"
+#: ../lib/Video/DVDRip/Config.pm:387
+#, fuzzy
+msgid "- No Modifications (anamorph) -"
 msgstr "- Без измена -"
 
-#: ../lib/Video/DVDRip/Config.pm:398
+#: ../lib/Video/DVDRip/Config.pm:403
+msgid "Autoadjust, Clipping only (anamorph)"
+msgstr ""
+
+#: ../lib/Video/DVDRip/Config.pm:408
 msgid "Autoadjust, Big Frame Size, HQ Resize"
 msgstr "Аутоматско подешавање, Велики кадрови, HQ мењање величине"
 
-#: ../lib/Video/DVDRip/Config.pm:405
+#: ../lib/Video/DVDRip/Config.pm:415
 msgid "Autoadjust, Medium Frame Size, HQ Resize"
 msgstr "Аутоматско подешавање, Средњи кадрови, HQ мењање величине"
 
-#: ../lib/Video/DVDRip/Config.pm:412
+#: ../lib/Video/DVDRip/Config.pm:422
 msgid "Autoadjust, Small Frame Size, HQ Resize"
 msgstr "Аутоматско подешавање, Мали кадрови, HQ мењање величине"
 
-#: ../lib/Video/DVDRip/Config.pm:419
+#: ../lib/Video/DVDRip/Config.pm:429
 msgid "Autoadjust, Big Frame Size, Fast Resize"
 msgstr "Аутоматско подешавање, Велики кадрови, Брзо мењање величине"
 
-#: ../lib/Video/DVDRip/Config.pm:426
+#: ../lib/Video/DVDRip/Config.pm:436
 msgid "Autoadjust, Medium Frame Size, Fast Resize"
 msgstr "Аутоматско подешавање, Средњи кадрови, Брзо мењање величине"
 
-#: ../lib/Video/DVDRip/Config.pm:433
+#: ../lib/Video/DVDRip/Config.pm:443
 msgid "Autoadjust, Small Frame Size, Fast Resize"
 msgstr "Аутоматско подешавање, Мали кадрови, Брзо мењање величине"
 
-#: ../lib/Video/DVDRip/Config.pm:440
+#: ../lib/Video/DVDRip/Config.pm:450
 msgid "VCD 4:3, PAL"
 msgstr "VCD 4:3, PAL"
 
-#: ../lib/Video/DVDRip/Config.pm:456
+#: ../lib/Video/DVDRip/Config.pm:466
 msgid "VCD 16:9, PAL"
 msgstr "VCD 16:9, PAL"
 
-#: ../lib/Video/DVDRip/Config.pm:472
+#: ../lib/Video/DVDRip/Config.pm:482
 msgid "SVCD 16:9 -> 4:3 letterbox, PAL"
 msgstr "SVCD 16:9 -> 4:3 сандуче, PAL"
 
-#: ../lib/Video/DVDRip/Config.pm:488
+#: ../lib/Video/DVDRip/Config.pm:498
 msgid "SVCD anamorph, PAL"
 msgstr "SVCD anamorph, PAL"
 
-#: ../lib/Video/DVDRip/Config.pm:504
+#: ../lib/Video/DVDRip/Config.pm:514
 msgid "XSVCD anamorph, PAL"
 msgstr "XSVCD anamorph, PAL"
 
-#: ../lib/Video/DVDRip/Config.pm:520
+#: ../lib/Video/DVDRip/Config.pm:530
 msgid "CVD anamorph, PAL"
 msgstr "CVD anamorph, PAL"
 
-#: ../lib/Video/DVDRip/Config.pm:536
+#: ../lib/Video/DVDRip/Config.pm:546
 msgid "VCD 4:3, NTSC"
 msgstr "VCD 4:3, NTSC"
 
-#: ../lib/Video/DVDRip/Config.pm:552
+#: ../lib/Video/DVDRip/Config.pm:562
 msgid "VCD 16:9, NTSC"
 msgstr "VCD 16:9, NTSC"
 
-#: ../lib/Video/DVDRip/Config.pm:568
+#: ../lib/Video/DVDRip/Config.pm:578
 msgid "SVCD 16:9 -> 4:3 letterbox, NTSC"
 msgstr "SVCD 16:9 -> 4:3 сандуче, NTSC"
 
-#: ../lib/Video/DVDRip/Config.pm:584
+#: ../lib/Video/DVDRip/Config.pm:594
 msgid "SVCD anamorph, NTSC"
 msgstr "SVCD anamorph, NTSC"
 
-#: ../lib/Video/DVDRip/Config.pm:600
+#: ../lib/Video/DVDRip/Config.pm:610
 msgid "XSVCD anamorph, NTSC"
 msgstr "XSVCD anamorph, NTSC"
 
-#: ../lib/Video/DVDRip/Config.pm:616
+#: ../lib/Video/DVDRip/Config.pm:626
 msgid "CVD anamorph, NTSC"
 msgstr "CVD anamorph, NTSC"
 
-#: ../lib/Video/DVDRip/Config.pm:918
+#: ../lib/Video/DVDRip/Config.pm:938
 #, perl-brace-format
 msgid "{file} executable : Ok"
 msgstr "{file} извршни : У реду"
 
-#: ../lib/Video/DVDRip/Config.pm:921 ../lib/Video/DVDRip/Config.pm:937
+#: ../lib/Video/DVDRip/Config.pm:941 ../lib/Video/DVDRip/Config.pm:957
 #, perl-brace-format
 msgid "{file} not found : NOT Ok"
 msgstr "{file} није пронађен : НИЈЕ у реду"
 
-#: ../lib/Video/DVDRip/Config.pm:923
+#: ../lib/Video/DVDRip/Config.pm:943
 #, perl-brace-format
 msgid "{file} not executable : NOT Ok"
 msgstr "{file} није извршни : НИЈЕ у реду"
 
-#: ../lib/Video/DVDRip/Config.pm:933
+#: ../lib/Video/DVDRip/Config.pm:953
 msgid "has whitespace : NOT Ok"
 msgstr "садржи размаке : НИЈЕ у реду"
 
-#: ../lib/Video/DVDRip/Config.pm:934
+#: ../lib/Video/DVDRip/Config.pm:954
 msgid "is no absolute path : NOT Ok"
 msgstr "није апсолутна стаза : НИЈЕ у реду"
 
-#: ../lib/Video/DVDRip/Config.pm:939
+#: ../lib/Video/DVDRip/Config.pm:959
 #, perl-brace-format
 msgid "{file} not writable : NOT Ok"
 msgstr "{file} није уписив : НИЈЕ у реду"
 
-#: ../lib/Video/DVDRip/Config.pm:942
+#: ../lib/Video/DVDRip/Config.pm:962
 #, perl-brace-format
 msgid "{file} writable : Ok"
 msgstr "{file} уписив : У реду"
 
-#: ../lib/Video/DVDRip/Config.pm:953
+#: ../lib/Video/DVDRip/Config.pm:973
 #, perl-brace-format
 msgid "{value} is numeric : Ok"
 msgstr "{value} је нумеричка : У реду"
 
-#: ../lib/Video/DVDRip/Config.pm:956
+#: ../lib/Video/DVDRip/Config.pm:976
 #, perl-brace-format
 msgid "{value} isn't numeric : NOT Ok"
 msgstr "{value} није нумеричка : НИЈЕ у реду"
 
-#: ../lib/Video/DVDRip/Config.pm:966
+#: ../lib/Video/DVDRip/Config.pm:986
 msgid "is empty : Ok"
 msgstr "је празан : У реду"
 
-#: ../lib/Video/DVDRip/Config.pm:977
+#: ../lib/Video/DVDRip/Config.pm:997
 #, perl-brace-format
 msgid "{value} exists : Ok"
 msgstr "{value} постоји : У реду"
 
-#: ../lib/Video/DVDRip/Config.pm:980
+#: ../lib/Video/DVDRip/Config.pm:1000
 #, perl-brace-format
 msgid "{value} doesn't exist : NOT Ok"
 msgstr "{value} не постоји : НИЈЕ у реду"
 
-#: ../lib/Video/DVDRip/Config.pm:991
+#: ../lib/Video/DVDRip/Config.pm:1011
 #, perl-brace-format
 msgid "'{value}' is known : Ok"
 msgstr "„{value}“ је позната : У реду"
 
-#: ../lib/Video/DVDRip/Config.pm:995
+#: ../lib/Video/DVDRip/Config.pm:1015
 #, perl-brace-format
 msgid "'{value}' unknown: NOT Ok"
 msgstr "„{value}“ није позната: НИЈЕ у реду"
@@ -1806,7 +1816,7 @@ msgid "dvd::rip - Cluster Control"
 msgstr "двд::рип - Управљање ројем"
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:250
-#: ../lib/Video/DVDRip/GUI/Main.pm:302
+#: ../lib/Video/DVDRip/GUI/Main.pm:299
 msgid "_File"
 msgstr "_Датотека"
 
@@ -2336,7 +2346,7 @@ msgstr "Порука о грешци"
 msgid "dvd::rip - Message"
 msgstr "двд::рип - Порука"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:142
+#: ../lib/Video/DVDRip/GUI/Main.pm:141
 #, perl-brace-format
 msgid ""
 "An internal exception was thrown!\n"
@@ -2349,132 +2359,132 @@ msgstr ""
 "\n"
 "{msg}"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:161
+#: ../lib/Video/DVDRip/GUI/Main.pm:160
 #, perl-brace-format
 msgid "Detected transcode version: {version}"
 msgstr "Пронађена верзија transcode-а: {version}"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:175
+#: ../lib/Video/DVDRip/GUI/Main.pm:174
 msgid "Opening project file failed. Aborting."
 msgstr "Отварање датотеке пројекта није успело.  Крај."
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:209
+#: ../lib/Video/DVDRip/GUI/Main.pm:208
 msgid ""
 "dvd::rip detected transcode version >= 1.1.x. Support for this version is "
 "experimental. Please report bugs, if you find them."
 msgstr ""
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:305
+#: ../lib/Video/DVDRip/GUI/Main.pm:302
 msgid "_New Project"
 msgstr "_Нови пројекат"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:313
+#: ../lib/Video/DVDRip/GUI/Main.pm:310
 msgid "_Open Project..."
 msgstr "_Отвори пројекат..."
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:321
+#: ../lib/Video/DVDRip/GUI/Main.pm:318
 msgid "_Save Project"
 msgstr "_Сачувај пројекат"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:328
+#: ../lib/Video/DVDRip/GUI/Main.pm:325
 msgid "Save _Project as..."
 msgstr "Сачувај пројекат _као..."
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:335
+#: ../lib/Video/DVDRip/GUI/Main.pm:332
 msgid "_Close Project"
 msgstr "_Затвори пројекат"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:350
+#: ../lib/Video/DVDRip/GUI/Main.pm:347
 msgid "_Exit"
 msgstr "_Крај"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:358
+#: ../lib/Video/DVDRip/GUI/Main.pm:355
 msgid "_Edit"
 msgstr "_Уреди"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:361
+#: ../lib/Video/DVDRip/GUI/Main.pm:358
 msgid "Edit _Preferences..."
 msgstr "Уреди _поставке..."
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:369
+#: ../lib/Video/DVDRip/GUI/Main.pm:366
 msgid "_Title"
 msgstr "_Наслов"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:383
+#: ../lib/Video/DVDRip/GUI/Main.pm:380
 msgid "View target file"
 msgstr "Прикажи циљну датотеку"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:394
+#: ../lib/Video/DVDRip/GUI/Main.pm:391
 msgid "Add project to cluster"
 msgstr "Додај пројекат у рој"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:411
+#: ../lib/Video/DVDRip/GUI/Main.pm:408
 msgid "Create vobsub"
 msgstr "Направи vobsub"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:424
+#: ../lib/Video/DVDRip/GUI/Main.pm:421
 msgid "Create dvdrip-info file"
 msgstr "Направи датотеку dvdrip-info"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:440
+#: ../lib/Video/DVDRip/GUI/Main.pm:437
 msgid "Create WAV from selected audio track"
 msgstr "Направи WAV од изабране траке"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:451
+#: ../lib/Video/DVDRip/GUI/Main.pm:448
 msgid "_Cluster"
 msgstr "_Рој"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:454
+#: ../lib/Video/DVDRip/GUI/Main.pm:451
 msgid "Contro_l..."
 msgstr "_Управљање..."
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:462
+#: ../lib/Video/DVDRip/GUI/Main.pm:459
 msgid "_Debug"
 msgstr "_Исправка грешака"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:466
+#: ../lib/Video/DVDRip/GUI/Main.pm:463
 msgid "Show _Transcode commands..."
 msgstr "Прика_жи Transcode наредбе..."
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:472
+#: ../lib/Video/DVDRip/GUI/Main.pm:469
 msgid "Check _dependencies..."
 msgstr "Провери за_висности..."
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:479
+#: ../lib/Video/DVDRip/GUI/Main.pm:476
 msgid "_Help"
 msgstr "_Помоћ"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:482
+#: ../lib/Video/DVDRip/GUI/Main.pm:479
 msgid "_About dvd::rip"
 msgstr "_О програму двд::рип"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:546
+#: ../lib/Video/DVDRip/GUI/Main.pm:543
 msgid "Selected DVD title"
 msgstr "Изабрани DVD наслов"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:550
+#: ../lib/Video/DVDRip/GUI/Main.pm:547
 msgid "Choose a DVD title at any time here"
 msgstr "Одавде можете да изаберете наслов ДВДа"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:648
+#: ../lib/Video/DVDRip/GUI/Main.pm:645
 #, perl-brace-format
 msgid "File '{filename}' not found or not readable."
 msgstr "Фајл „{filename}“ није пронађен или није читљив."
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:700
+#: ../lib/Video/DVDRip/GUI/Main.pm:697
 msgid "Save project: choose filename"
 msgstr "Чување пројекта: изаберите име датотеке"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:711 ../lib/Video/DVDRip/GUI/Main.pm:738
+#: ../lib/Video/DVDRip/GUI/Main.pm:708 ../lib/Video/DVDRip/GUI/Main.pm:735
 #, perl-brace-format
 msgid "Project {name} created"
 msgstr "Направљен је пројекат „{name}‟"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:775
+#: ../lib/Video/DVDRip/GUI/Main.pm:772
 msgid "Do you want to save this project first?"
 msgstr "Да ли прво желите да запамтите овај пројекат?"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:826
+#: ../lib/Video/DVDRip/GUI/Main.pm:823
 msgid ""
 "This is the first time you start dvd::rip. The Preferences dialog was opened "
 "automatically for you. Please review the settings, in particular the default "
@@ -2486,7 +2496,7 @@ msgstr ""
 "ДВД уређај и директоријум са базом података. Изаберите директоријум на диску "
 "са пуно места или бар 10GB за копије целих ДВД дискова."
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:873
+#: ../lib/Video/DVDRip/GUI/Main.pm:870
 msgid ""
 "Probe Command:\n"
 "==============\n"
@@ -2494,7 +2504,7 @@ msgstr ""
 "Наредба за тражење:\n"
 "==============\n"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:885
+#: ../lib/Video/DVDRip/GUI/Main.pm:882
 msgid ""
 "Rip Command:\n"
 "============\n"
@@ -2502,7 +2512,7 @@ msgstr ""
 "Наредба за чупање:\n"
 "============\n"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:890
+#: ../lib/Video/DVDRip/GUI/Main.pm:887
 msgid ""
 "Scan Command:\n"
 "============\n"
@@ -2510,7 +2520,7 @@ msgstr ""
 "Наредба за претрагу:\n"
 "============\n"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:897
+#: ../lib/Video/DVDRip/GUI/Main.pm:894
 msgid ""
 "Grab Preview Image Command:\n"
 "===========================\n"
@@ -2518,11 +2528,11 @@ msgstr ""
 "Наредба за хватање прелиминарне слике:\n"
 "===========================\n"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:908
+#: ../lib/Video/DVDRip/GUI/Main.pm:905
 msgid "You must first rip the selected title to see this command.\n"
 msgstr "Прво морате ишчупати изабрани наслов да бисте видели ову команду.\n"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:913
+#: ../lib/Video/DVDRip/GUI/Main.pm:910
 msgid ""
 "Transcode Command:\n"
 "==================\n"
@@ -2530,7 +2540,7 @@ msgstr ""
 "Наредба за кодирање:\n"
 "==================\n"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:942
+#: ../lib/Video/DVDRip/GUI/Main.pm:939
 msgid ""
 "Additional audio tracks commands:\n"
 "============================\n"
@@ -2538,7 +2548,7 @@ msgstr ""
 "Команде за додатне аудио нумере:\n"
 "============================\n"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:963
+#: ../lib/Video/DVDRip/GUI/Main.pm:960
 msgid ""
 "View DVD Command:\n"
 "=================\n"
@@ -2546,7 +2556,7 @@ msgstr ""
 "Наредба за приказ DVD-а:\n"
 "=================\n"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:971
+#: ../lib/Video/DVDRip/GUI/Main.pm:968
 msgid ""
 "View Files Command:\n"
 "===================\n"
@@ -2554,7 +2564,7 @@ msgstr ""
 "Наредба за приказ фајлова:\n"
 "===================\n"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:988
+#: ../lib/Video/DVDRip/GUI/Main.pm:985
 msgid ""
 "CD image creation command:\n"
 "========================\n"
@@ -2562,7 +2572,7 @@ msgstr ""
 "Наредба за прављење CD слике:\n"
 "========================\n"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:994
+#: ../lib/Video/DVDRip/GUI/Main.pm:991
 msgid ""
 "CD burning command:\n"
 "==================\n"
@@ -2570,7 +2580,7 @@ msgstr ""
 "Наредба за нарезивање CD-а:\n"
 "==================\n"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:1004
+#: ../lib/Video/DVDRip/GUI/Main.pm:1001
 msgid ""
 "WAV creation command:\n"
 "====================\n"
@@ -2578,11 +2588,11 @@ msgstr ""
 "Наредба за прављење WAV-а:\n"
 "====================\n"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:1011
+#: ../lib/Video/DVDRip/GUI/Main.pm:1008
 msgid "Commands executed by dvd::rip"
 msgstr "Наредбе које извршава двд::рип"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:1037
+#: ../lib/Video/DVDRip/GUI/Main.pm:1034
 msgid ""
 "One or several mandatory tools are\n"
 "missing or too old. You must install them\n"
@@ -3339,179 +3349,179 @@ msgstr "Име дневника"
 msgid "Subtitles"
 msgstr "Титлови"
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:61
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:60
 msgid "This title has no subtitles"
 msgstr "Овај наслов нема титлове"
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:77
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:76
 msgid "Subtitle selection"
 msgstr "Избор титлова"
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:81
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:80
 msgid "Select subtitle"
 msgstr "Изаберите титл"
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:85
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:84
 msgid "Activated:"
 msgstr "Укључено:"
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:99
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:98
 msgid "Preview"
 msgstr "Преглед"
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:107
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:106
 #: ../lib/Video/DVDRip/GUI/Context.pm:790
 msgid "Grab"
 msgstr "Ухвати"
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:129
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:128
 msgid "image(s)"
 msgstr "слике"
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:133
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:132
 msgid "starting at"
 msgstr "почиње на"
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:142
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:141
 #, perl-brace-format
 msgid "Movie has only {cnt} frames"
 msgstr "Филм има само оволико кадрова: {cnt}"
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:146
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:145
 msgid "Invalid time/frame number format"
 msgstr "Неисправан формат времена и броја кадра"
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:150
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:149
 msgid "(timecode nn:nn:nn or frame number)"
 msgstr "(временска ознака nn:nn:nn или број кадра) "
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:174
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:173
 msgid "Render subtitle on movie"
 msgstr "Рендеруј титл на филм"
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:190
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:189
 msgid "Activate this subtitle "
 msgstr "Укључи овај титл"
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:195
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:194
 msgid "for rendering"
 msgstr "за рендеровање"
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:199
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:198
 msgid "Colors "
 msgstr "Боје "
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:204
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:203
 msgid "Enable manipulation"
 msgstr "Укључи манипулацију"
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:208
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:207
 msgid "Preview image count "
 msgstr "Број слика за преглед"
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:219
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:218
 msgid "Vertical offset "
 msgstr "Усправни померај"
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:228
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:227
 msgid "rows"
 msgstr "редови"
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:233
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:232
 msgid "Gray A/B "
 msgstr "Сива A/B "
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:242
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:251
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:241
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:250
 msgid "Value not between 0 and 255"
 msgstr "Вредност мора бити између 0 и 255"
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:255
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:254
 msgid "Preview window "
 msgstr "Прозор за преглед "
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:264
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:263
 msgid "Open"
 msgstr "Отвори"
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:276
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:275
 msgid "Time shift "
 msgstr "Временски померај "
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:285
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:284
 msgid "ms"
 msgstr "ms"
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:291
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:290
 msgid "Index A/B "
 msgstr "Индекс A/B "
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:306
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:305
 msgid "Postprocessing "
 msgstr "Накнадна обрада "
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:310
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:309
 msgid "Antialiasing"
 msgstr "Антиалиасинг"
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:313
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:312
 msgid "Suggest "
 msgstr "Предложи "
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:319
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:318
 msgid "Values for letterbox"
 msgstr "Вредности за поштанско сандуче"
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:329
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:328
 msgid "Values for full size movie"
 msgstr "Вредности за филм пуне величине"
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:352
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:351
 msgid "Create vobsub file"
 msgstr "Направи vobsub фајл"
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:364
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:368
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:363
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:367
 msgid "Create now"
 msgstr "Направи сада"
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:374
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:373
 msgid "View vobsub"
 msgstr "Прикажи vobsub"
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:378
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:377
 msgid "Only useful for single-CD-rips or after transcoding"
 msgstr "Корисно је само за појединачно чупање CD-а или после кодирања"
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:382
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:381
 msgid "Create later"
 msgstr "Направи касније"
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:385
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:384
 msgid "after transcoding"
 msgstr "после кодирања"
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:389
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:388
 msgid "This considers splitted files automaticly"
 msgstr "Ово увек узима у обзир подељене фајлове."
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:458
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:457
 msgid "You need Mplayer to view vobsub files."
 msgstr "Потребан Вам је Mplayer за приказ vobsub фајлова."
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:464
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:463
 msgid "This is only supported for ripped movies."
 msgstr "Ово је подржано само за ишчупане филмове."
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:470
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:469
 msgid "What about creating the vobsub file first?"
 msgstr "Како би било да прво направите vobsub фајл?"
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:476
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:475
 msgid "Executing command: "
 msgstr "Извршавање наредбе:"
 
-#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:533
+#: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:532
 msgid "Sorry, you need subtitle2pgm for this to work."
 msgstr "Извините, потребан Вам је subtitle2pgm да би ово радило."
 

@@ -1,6 +1,25 @@
-$Id: Changes,v 1.187.2.11 2007/08/09 21:44:49 joern Exp $
+$Id: Changes,v 1.187.2.14 2008/10/05 10:32:57 joern Exp $
 
 Revision history and release notes for dvd::rip.
+
+0.98.9 [stable branch] Sun Oct 5 2008, joern
+    Features:
+    - Full support for anamorph transcoding by setting the
+      pixel aspect ratio in the transcoded files if no
+      resizing is applied.
+    - New "Autoadjust, Clipping only" preset by Marc Sherman
+      <msherman AT projectile.ca>., which makes use of the
+      new anamorph transcoding feature.
+    - New preference option for the default Clip & Zoom preset.
+    - Updated Catalan translation.
+    - New Danish translation by Ysangkok.
+
+    Bugfixed:
+    - Fixed a race condition in cluster node version detection.
+      Thanks for the report to Sean Gallagher <stgallag AT gmail.com>.
+    - Fixed a division by zero condition when video is not resized.
+    - Fixed cluster mode problem with avi merging. Thanks for
+      help debugging this to Helge Mühlmeier <H_Muehlmeier AT gmx.de>.
 
 0.98.8 [stable branch] Thu Aug 95 2007, joern
     Bugfixes:
@@ -17,7 +36,6 @@ Revision history and release notes for dvd::rip.
       I can't remember anymore ;)
     - dvd::rip now remembers the main window size between
       sessions.  
-    
 
 0.98.7 [stable branch] Sun Aug 05 2007, joern
     Bugfixes:
