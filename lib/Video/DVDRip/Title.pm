@@ -1,4 +1,4 @@
-# $Id: Title.pm,v 1.180.2.6 2008/10/01 10:03:12 joern Exp $
+# $Id: Title.pm,v 1.180.2.8 2009-02-22 18:33:07 joern Exp $
 
 #-----------------------------------------------------------------------
 # Copyright (C) 2001-2006 Jörn Reder <joern AT zyn.de>.
@@ -384,7 +384,7 @@ sub set_tc_video_af6_codec {
 
     $self->{tc_video_af6_codec} = $value;
 
-    $self->set_tc_multipass(0) if $value eq 'h264';
+#    $self->set_tc_multipass(0) if $value eq 'h264';
 
     return $value;
 }
@@ -1979,7 +1979,7 @@ sub get_detect_audio_bitrate_command {
     my $self = shift;
     
     my $nr          = $self->tc_title_nr;
-    my $tmp_file    = "/tmp/dvdrip.audioprobe.$$.vob";
+    my $tmp_file    = $self->project->snap_dir."/dvdrip.audioprobe.$$.vob";
     my $data_source = $self->project->rip_data_source;
 
     return
@@ -2679,6 +2679,12 @@ sub get_transcode_command {
 
     $command .= $self->get_subtitle_transcode_options;
 
+    if ( $self->tc_video_af6_codec eq 'h264' and
+         $self->tc_multipass and $pass == 1 ) {
+        $command .= " && cp x264_2pass.log divx4.log";
+    }
+         
+
     $command = "$command && echo EXECFLOW_OK ";
 
     return $command;
@@ -2708,7 +2714,7 @@ sub get_transcode_audio_command {
     my $command = "mkdir -p $dir && "
         . "execflow -n $tc_nice transcode "
         . " -H 10"
-        . " -g 0x0 -u 50"
+        . " -u 50"
         . " -a $vob_nr"
         . " -y raw";
 
@@ -3147,7 +3153,7 @@ sub get_take_snapshot_command {
 
     my $nr           = $self->nr;
     my $frame        = $self->preview_frame_nr;
-    my $tmp_dir      = "/tmp/dvdrip$$.snap";
+    my $tmp_dir      = $self->project->snap_dir."/dvdrip$$.snap";
     my $filename     = $self->preview_filename( type => 'orig' );
     my $raw_filename = $self->raw_snapshot_filename;
     my $frame_rate   = $self->frame_rate;
@@ -3197,7 +3203,7 @@ sub get_take_snapshot_command_transcode {
 
     my $nr           = $self->nr;
     my $frame        = $self->preview_frame_nr;
-    my $tmp_dir      = "/tmp/dvdrip$$.ppm";
+    my $tmp_dir      = $self->project->snap_dir."/dvdrip$$.ppm";
     my $filename     = $self->preview_filename( type => 'orig' );
     my $raw_filename = $self->raw_snapshot_filename;
 

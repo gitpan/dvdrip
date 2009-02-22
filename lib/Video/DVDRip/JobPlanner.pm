@@ -1,4 +1,4 @@
-# $Id: JobPlanner.pm,v 1.14.2.4 2007/08/05 16:58:21 joern Exp $
+# $Id: JobPlanner.pm,v 1.14.2.5 2009-02-22 18:31:02 joern Exp $
 
 #-----------------------------------------------------------------------
 # Copyright (C) 2001-2006 Jörn Reder <joern AT zyn.de>.
@@ -1076,7 +1076,14 @@ sub get_transcode_progress_parser {
         return sub {
             my ($job, $buffer) = @_;
             if ( $buffer =~ /frame=(\d+)/ ) {
-                $job->set_progress_cnt($1);
+                my $frame = $1;
+                $job->set_progress_cnt($frame);
+                if ( $buffer =~ /first=(\d+)/ ) {
+                    $job->set_progress_cnt($frame-$1);
+                }
+            }
+            if ( $buffer =~ /last=(\d+)/ ) {
+                $job->set_progress_max($1);
             }
             1;
         };

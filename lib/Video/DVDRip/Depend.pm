@@ -1,4 +1,4 @@
-# $Id: Depend.pm,v 1.22.2.9 2007/08/05 17:07:35 joern Exp $
+# $Id: Depend.pm,v 1.22.2.11 2009-02-22 18:49:50 joern Exp $
 
 #-----------------------------------------------------------------------
 # Copyright (C) 2001-2006 Jörn Reder <joern AT zyn.de>.
@@ -25,6 +25,11 @@ my @DVDRIP_BIN_FILES = qw (
     dvdrip-subpng
 );
 
+my @DVDRIP_MASTER_BIN_FILES = qw (
+    execflow              
+    dvdrip-master       
+);
+
 my $OBJECT;
 
 my $ORDER = 0;
@@ -38,7 +43,9 @@ my %TOOLS = (
         exists      => 1,
         get_version => sub {
             my $missing_file_cnt = 0;
-            foreach my $dvdrip_file (@DVDRIP_BIN_FILES) {
+            my @files = $Video::DVDRip::ISMASTER ?
+                @DVDRIP_MASTER_BIN_FILES : @DVDRIP_BIN_FILES;
+            foreach my $dvdrip_file ( @files ) {
                 if ( !__PACKAGE__->get_full_path($dvdrip_file) ) {
                     ++$missing_file_cnt;
                     print STDERR __x( "ERROR: '{file}' not found in PATH\n",
@@ -95,7 +102,10 @@ my %TOOLS = (
         version_cmd => "convert -version",
         get_version => sub {
             my ($cmd) = @_;
-            qx[$cmd 2>&1] =~ /ImageMagick\s+(\d+\.\d+(\.\d+)?)/i;
+            my ($output) = qx[$cmd 2>&1];
+            #-- GraphicsMagick is compatible with ImageMagick 5.5.2.
+            return "5.5.2" if $output =~ /GraphicsMagick\s+(\d+\.\d+(\.\d+)?)/i;
+            $output =~ /ImageMagick\s+(\d+\.\d+(\.\d+)?)/i;
             return $1;
         },
         convert   => 'default',

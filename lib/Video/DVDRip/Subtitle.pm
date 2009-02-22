@@ -1,4 +1,4 @@
-# $Id: Subtitle.pm,v 1.13 2006/08/16 19:34:38 joern Exp $
+# $Id: Subtitle.pm,v 1.13 2006-08-16 19:34:38 joern Exp $
 
 #-----------------------------------------------------------------------
 # Copyright (C) 2001-2006 Jörn Reder <joern AT zyn.de>.

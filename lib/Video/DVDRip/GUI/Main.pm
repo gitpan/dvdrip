@@ -1,4 +1,4 @@
-# $Id: Main.pm,v 1.91.2.5 2007/08/09 21:35:51 joern Exp $
+# $Id: Main.pm,v 1.91.2.6 2009-02-22 18:30:38 joern Exp $
 
 #-----------------------------------------------------------------------
 # Copyright (C) 2001-2006 Jörn Reder <joern AT zyn.de>.
@@ -200,16 +200,6 @@ sub start {
                 return 0;
             }
         );
-
-        if ( !$function && $self->version("transcode") >= 10100 ) {
-            $self->message_window (
-                type    => "warning",
-                message => 
-                    __("dvd::rip detected transcode version >= 1.1.x. "
-                      ."Support for this version is experimental. "
-                      ."Please report bugs, if you find them.")
-            );
-        }
     }
 
     Gtk2->main;

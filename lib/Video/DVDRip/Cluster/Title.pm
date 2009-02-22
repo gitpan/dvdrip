@@ -1,4 +1,4 @@
-# $Id: Title.pm,v 1.56.2.2 2008/10/03 09:35:59 joern Exp $
+# $Id: Title.pm,v 1.56.2.3 2009-02-22 18:29:53 joern Exp $
 
 #-----------------------------------------------------------------------
 # Copyright (C) 2001-2006 Jörn Reder <joern AT zyn.de>.
@@ -214,9 +214,18 @@ sub get_transcode_audio_command {
     my $command = $self->SUPER::get_transcode_audio_command(@_);
     $command =~ s/\s+&& echo EXECFLOW_OK//;
 
-    $command .= " -S DVDRIP_JOB_PSU"
-        . " -W DVDRIP_JOB_CHUNK_CNT,DVDRIP_JOB_CHUNK_CNT,"
-        . $self->vob_nav_file;
+    if ( $self->version("transcode") >= 10100 ) {
+        $command .=
+              " --psu_mode --no_split"
+            . " --psu_chunks DVDRIP_JOB_PSU-DVDRIP_JOB_ADD_ONE_PSU"
+            . " --nav_seek ".$self->vob_nav_file;
+    }
+    else {
+        $command .=
+              " -S DVDRIP_JOB_PSU"
+            . " -W DVDRIP_JOB_CHUNK_CNT,DVDRIP_JOB_CHUNK_CNT,"
+            . $self->vob_nav_file;
+    }
 
     $command .= " && echo EXECFLOW_OK";
 

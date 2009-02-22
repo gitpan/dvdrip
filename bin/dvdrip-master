@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 
-# $Id: dvdrip-master,v 1.8 2006/08/25 16:20:44 joern Exp $
+# $Id: dvdrip-master,v 1.8.2.1 2009-02-22 18:50:16 joern Exp $
 
 #-----------------------------------------------------------------------
 # Copyright (C) 2001-2003 Jörn Reder <joern@zyn.de> All Rights Reserved
@@ -25,6 +25,7 @@ use Locale::Messages qw (bind_textdomain_filter
 setlocale( LC_MESSAGES, "" );
 
 BEGIN {
+    $Video::DVDRip::ISMASTER = 1;
 
     # That's Perl! The job classes inherit from this class,
     # which is decided at *runtime* - this way standard and

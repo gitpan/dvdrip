@@ -28,7 +28,7 @@ III.
               * 1.1.1 Debian packages
               * 1.1.2 SuSE packages
               * 1.1.3 Mandrake packages
-              * 1.1.4 RedHat packages
+              * 1.1.4 Fedora packages
               * 1.1.5 gentoo packages
               * 1.1.6 FreeBSD port
               * 1.1.7 OpenBSD port
@@ -99,13 +99,27 @@ deb http://www.debian-multimedia.org experimental main
 
      http://plf.zarb.org/
 
-   1.1.4 RedHat packages
+   1.1.4 Fedora packages
 
-   Matthias Saou does a great job in building dvd::rip and other
-   multimedia related packages. You can find them at freshrpms.net. This
-   is a direct link the dvd::rip package:
+   Get dvd::rip for Fedora from here:
 
-     http://freshrpms.net/rpm/perl-Video-DVDRip
+     rpmfusion.org
+
+   Here some notes from Nicolas Chauvet about the Fedora package:
+
+   Installation of rpmfusion.org only as told on the website is a
+   pre-requirement. yum install dvdrip will install the dvdrip package but
+   not all the dependencies. Experienced users can install dvdrip-master
+   only on their node controller.
+
+   So to get every dependencies installed one shoult install yum install
+   xvid4conf ffmpeg transcode lsdvd rar2 ogmtools xine mplayer ImageMagick
+   xine-lib-extras-freeworld.
+
+   Actually rar2 and ogmtools will be available sooner or later.
+
+   Problem and packaging bugs can be reported at
+   http://bugzilla.rpmfusion.org.
 
    1.1.5 gentoo packages
 
@@ -141,8 +155,8 @@ deb http://www.debian-multimedia.org experimental main
    Local download of the latest stable release: (currently no unstable
    release available)
 
-     dvdrip-0.98.8.tar.gz
-     dvdrip-0.98.8.tar.gz.asc (GnuPG signature, get key)
+     dvdrip-0.98.10.tar.gz
+     dvdrip-0.98.10.tar.gz.asc (GnuPG signature, get key)
 
    CPAN download directory: (list of mirrors)
 
@@ -423,12 +437,12 @@ bin/dvdrip
 
    You can download a static HTML version of this documentation:
 
-     http://www.exit1.org/dvdrip/dist/dvdrip-doc-html-0.98.8.tar.bz2
+     http://www.exit1.org/dvdrip/dist/dvdrip-doc-html-0.98.10.tar.bz2
 
    A PDF version is also available (generated using the excellent tool
    htmldoc):
 
-     http://www.exit1.org/dvdrip/dist/dvdrip-doc-0.98.8.pdf.bz2
+     http://www.exit1.org/dvdrip/dist/dvdrip-doc-0.98.10.pdf.bz2
      __________________________________________________________________
 
 IV.  
@@ -610,26 +624,39 @@ URL References
   15. http://wwwkeys.de.pgp.net:11371/pks/lookup?op=get&search=0x285CF473
 
 VI. CHANGES
-   $Id: Changes,v 1.187.2.14 2008/10/05 10:32:57 joern Exp $
+   $Id: Changes,v 1.187.2.16 2009-02-22 18:50:22 joern Exp $
 
    Revision history and release notes for dvd::rip.
 
-   0.98.9 [stable branch] Sun Oct 5 2008, joern
+   0.98.10 [stable branch] Sun Feb 22 2009, joern
     Features:
-    - Full support for anamorph transcoding by setting the
-      pixel aspect ratio in the transcoded files if no
-      resizing is applied.
-    - New "Autoadjust, Clipping only" preset by Marc Sherman
-      <msherman AT projectile.ca>., which makes use of the
-      new anamorph transcoding feature.
-    - New preference option for the default Clip & Zoom preset.
-    - Updated Catalan translation.
-    - New Danish translation by Ysangkok.
+    - transcode 1.1 compatibility improved, warning about
+      experimental dvd::rip support removed; there are still issues
+      with some filters in the filter preview dialog; your mileage
+      may vary.
+    - Workaround for transcode h264 two-pass problem, so dvd::rip
+      now supports h264 two-pass encoding.
+    - Applied patch from Jussi Judin <jjudin+dvdrip AT iki.fi> to
+      detect GraphicMagicks as an ImageMagick replacement.
+    - No files will be placed in /tmp anymore, instead all temporary
+      files will go to PROJECT_DIR/tmp. Thanks for the hint to
+      Michael Renner <michael.renner AT gmx.de>.
+    - dvdrip-master doesn't throw warnings on unneeded missing
+      binaries anymore, if installed alone without the full
+      (anyway on the master unneeded) packages. Suggested by
+      Nicolas Chauvet <kwizart AT gmail.com>.
+    - Added .ogv extension for OGG files as another option.
+      Suggested by Nicolas Chauvet.
 
-    Bugfixed:
-    - Fixed a race condition in cluster node version detection.
-      Thanks for the report to Sean Gallagher <stgallag AT gmail.com>.
-    - Fixed a division by zero condition when video is not resized.
-    - Fixed cluster mode problem with avi merging. Thanks for
-      help debugging this to Helge Mühlmeier <H_Muehlmeier AT gmx.de>.
-
+    Bugfixes:
+    - Fixed cluster mode audio processing with transcode 1.1.x.
+      Thanks for the report to Samuele Giovanni Tonon <samu AT
+      linuxasylum.net>.
+    - Fixed race condition which could result in a missing audio
+      merge in cluster mode when title has one track. Based on a
+      patch from Matt Lawrence <m3lawren AT uwaterloo.ca>.
+    - Fixed wrong progress information (not taking chunks into
+      account) in cluster mode.
+    - Added a patch from Nicolas Chauvet to fix a problem with
+      Fedora's Perl (setlocale).
+    

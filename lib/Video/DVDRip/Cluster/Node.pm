@@ -1,4 +1,4 @@
-# $Id: Node.pm,v 1.41.2.3 2008/01/13 12:57:11 joern Exp $
+# $Id: Node.pm,v 1.41.2.4 2009-02-22 18:27:33 joern Exp $
 
 #-----------------------------------------------------------------------
 # Copyright (C) 2001-2006 Jörn Reder <joern AT zyn.de>.
@@ -222,7 +222,8 @@ sub prepare_command {
         my %params = (
             DVDRIP_NODE_DATA_BASE_DIR   => $self->data_base_dir,
             DVDRIP_NODE_NAME            => $self->name,
-            DVDRIP_JOB_PSU              => sprintf("%02d",$job->get_stash->{psu}),
+            DVDRIP_JOB_PSU              => sprintf("%02d",$job->get_stash->{psu}+0),
+            DVDRIP_JOB_ADD_ONE_PSU      => sprintf("%02d",$job->get_stash->{psu}+1),
             DVDRIP_JOB_CHUNK            => sprintf("%05d",$job->get_stash->{chunk}),
             DVDRIP_JOB_AVI_NR           => sprintf("%02d",$job->get_stash->{avi_nr}),
             DVDRIP_JOB_CHUNK_CNT        => $job->get_stash->{chunk_cnt},

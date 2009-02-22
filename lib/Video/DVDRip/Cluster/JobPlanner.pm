@@ -1,4 +1,4 @@
-# $Id: JobPlanner.pm,v 1.3 2006/08/16 19:34:38 joern Exp $
+# $Id: JobPlanner.pm,v 1.3.2.1 2009-02-22 18:26:44 joern Exp $
 
 #-----------------------------------------------------------------------
 # Copyright (C) 2001-2006 Jörn Reder <joern AT zyn.de>.
@@ -132,6 +132,10 @@ sub build_cluster_psu_jobs {
         if ( $tc_merge_audio_job ) {
             $tc_merge_audio_job->set_depends_on([$tc_merge_video_job, $tc_audio_job]);
             push @psu_jobs, $tc_merge_audio_job;
+        }
+        else {
+            #-- with one audio track video need to depend on the audio job
+            push @{$tc_merge_video_job->{depends_on}}, $tc_audio_job->get_name;
         }
     }
 

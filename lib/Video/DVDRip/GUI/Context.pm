@@ -1,4 +1,4 @@
-# $Id: Context.pm,v 1.18 2006/08/18 21:23:00 joern Exp $
+# $Id: Context.pm,v 1.18.2.1 2009-02-22 10:18:53 joern Exp $
 
 #-----------------------------------------------------------------------
 # Copyright (C) 2001-2006 Jörn Reder <joern AT zyn.de>.
@@ -560,13 +560,13 @@ sub create {
             preview_filename_clip2 => sub { -f $_[0]->preview_filename_zoom },
 
             #-- multipass only with non MPEG files
-            tc_multipass => sub { ! $_[0]->is_mpeg &&
-                                    $_[0]->tc_video_af6_codec ne 'h264' },
+            tc_multipass => sub { ! $_[0]->is_mpeg }, # &&
+#                                    $_[0]->tc_video_af6_codec ne 'h264' },
 
             #-- reuse log active only with 2pass encoding
             tc_multipass_reuse_log => sub { $_[0]->tc_multipass &&
-                                            ! $_[0]->is_mpeg  &&
-                                              $_[0]->tc_video_af6_codec ne 'h264' },
+                                            ! $_[0]->is_mpeg }, #  &&
+#                                              $_[0]->tc_video_af6_codec ne 'h264' },
 
             #-- fast resizing
             tc_fast_resize => sub { $_[0]->fast_resize_possible },
