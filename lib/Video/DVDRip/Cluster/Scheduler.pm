@@ -1,4 +1,4 @@
-# $Id: Scheduler.pm,v 1.6.2.1 2007/04/13 11:20:43 joern Exp $
+# $Id: Scheduler.pm 2301 2007-04-13 11:20:43Z joern $
 #-----------------------------------------------------------------------
 # Copyright (C) 2001-2006 Jörn Reder <joern AT zyn.de>.
 # All Rights Reserved. See file COPYRIGHT for details.

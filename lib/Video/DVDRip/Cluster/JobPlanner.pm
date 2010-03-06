@@ -1,4 +1,4 @@
-# $Id: JobPlanner.pm,v 1.3.2.1 2009-02-22 18:26:44 joern Exp $
+# $Id: JobPlanner.pm 2368 2009-02-22 18:26:44Z joern $
 
 #-----------------------------------------------------------------------
 # Copyright (C) 2001-2006 Jörn Reder <joern AT zyn.de>.

@@ -1,4 +1,4 @@
-# $Id: JobPlanner.pm,v 1.14.2.5 2009-02-22 18:31:02 joern Exp $
+# $Id: JobPlanner.pm 2391 2009-12-19 13:34:55Z joern $
 
 #-----------------------------------------------------------------------
 # Copyright (C) 2001-2006 Jörn Reder <joern AT zyn.de>.
@@ -257,7 +257,6 @@ sub build_rip_job {
         name                => "rip_and_preview",
         title               => __"Rip selected title(s) / chapter(s)",
         jobs                => \@jobs,
-        fails_with_members  => 1,
         stop_on_failure     => 0,
         post_callbacks      => sub { $self->get_project->backup_copy },
     );
@@ -403,16 +402,18 @@ sub analyze_rip {
 
         $job->frontend_signal("toc_info_changed");
 
-	if ( $disc_frames < $title_frames - 500 ) {
-		$job->set_error_message (
+	if ( $disc_frames / $title_frames < 0.99 ) {
+
+        my $message = 
                     __x("It seems that transcode ripping stopped short.\n".
 			"The movie has {title_frames} frames, but only {disc_frames}\n".
 			"were ripped. This is most likely a problem with your\n".
 			"transcode/libdvdread installation, resp. a problem with\n".
 			"this specific DVD.",
                         title_frames => $title_frames,
-                        disc_frames  => $disc_frames)
-		);
+                        disc_frames  => $disc_frames);
+            
+  		$job->set_warning_message ($message);
 	}
     }
 
@@ -730,7 +731,6 @@ sub build_transcode_job {
         title               => __"Transcode multiple titles",
         jobs                => \@title_jobs,
         parallel            => 0,
-        fails_with_members  => 1,
         stop_on_failure     => 0,
     );
 }

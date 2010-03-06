@@ -6,6 +6,7 @@ Ales Tosovsky <tosovsky AT wo.cz>
 
 [Danish]
 Ysangkok <ysangkok AT gmail.com>
+Kenneth Nielsen
 
 [French]
 Sebastien Corot <scorot AT libertysurf.fr>

@@ -1,4 +1,4 @@
-# $Id: ExecFlow.pm,v 1.7.2.1 2007/03/10 09:52:51 joern Exp $
+# $Id: ExecFlow.pm 2390 2009-12-19 13:34:38Z joern $
 
 #-----------------------------------------------------------------------
 # Copyright (C) 2001-2006 Jörn Reder <joern AT zyn.de>.
@@ -128,6 +128,9 @@ sub report_job_error {
     my $self = shift;
     my ($job) = @_;
 
+    #-- No report for jobs which are member of a group. The
+    #-- toplevel group will report the error as well and
+    #-- we don't want to see the same error multiple times
     return if $job->get_group;
 
     $self->log(

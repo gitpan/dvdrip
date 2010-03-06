@@ -1,4 +1,4 @@
-# $Id: Pipe.pm,v 1.18 2006/05/15 20:27:16 joern Exp $
+# $Id: Pipe.pm 2067 2006-05-15 20:27:34Z joern $
 
 package Video::DVDRip::GUI::Pipe;
 

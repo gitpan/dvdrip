@@ -1,4 +1,4 @@
-/* $Id: dvdrip-splitpipe.c,v 1.2 2006/03/27 20:50:00 joern Exp $
+/* $Id: dvdrip-splitpipe.c 1947 2006-03-27 20:50:00Z joern $
  *
  * Copyright (C) 2001-2006 Jörn Reder <joern@zyn.de> All Rights Reserved
  * 

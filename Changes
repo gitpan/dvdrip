@@ -1,6 +1,27 @@
-$Id: Changes,v 1.187.2.16 2009-02-22 18:50:22 joern Exp $
+$Id: Changes 2398 2010-03-06 13:06:46Z joern $
 
 Revision history and release notes for dvd::rip.
+
+0.98.11 [stable branch] Sat Mar 6 2010, joern
+    Notes:
+    - Event::ExecFlow version 0.64 is required for this version.
+      This fixes a bug where no error messages were shown after
+      ripping short. It was reported via Ubunutu Launchpad:
+      https://bugs.launchpad.net/ubuntu/+source/dvdrip/+bug/478710
+      (You find it in the perl-modules/ directory, which was updated
+       to the most recent versions btw)
+      
+    Features:
+    - Updated Danish and Catalan translation. Thanks to Ysangkok,
+      Kenneth Nielson and Joan Farrerons.
+    - Turn "ripping short" error message into a warning, so the
+      ripping process continues and it's up to the user to decide
+      whether this is critical or not.
+
+    Bugfixes:
+    - Fixed h264 2pass cluster mode bug, generating a malformed
+      transcode command. Reported by semkath <semkath AT arcor.de>
+      and Christiaan Putter <ceputter AT googlemail.com>.
 
 0.98.10 [stable branch] Sun Feb 22 2009, joern
     Features:

@@ -1,4 +1,4 @@
-# $Id: Makefile.PL,v 1.35 2006/08/20 14:19:53 joern Exp $
+# $Id: Makefile.PL 2393 2009-12-19 13:42:17Z joern $
 
 use strict;
 
@@ -13,7 +13,7 @@ my %REQUIRED_MODULES = (
         'Locale::TextDomain'    => 1.16,
 	'Event'                 => 1.06,
         'Gtk2::Ex::FormFactory' => 0.65,
-        'Event::ExecFlow'       => 0.62,
+        'Event::ExecFlow'       => 0.64,
         'Event::RPC'            => 0.89,
         'AnyEvent'              => 1.02,
 );

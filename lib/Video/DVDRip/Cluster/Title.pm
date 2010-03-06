@@ -1,4 +1,4 @@
-# $Id: Title.pm,v 1.56.2.3 2009-02-22 18:29:53 joern Exp $
+# $Id: Title.pm 2397 2010-03-06 13:06:33Z joern $
 
 #-----------------------------------------------------------------------
 # Copyright (C) 2001-2006 Jörn Reder <joern AT zyn.de>.
@@ -190,8 +190,12 @@ sub get_transcode_command {
     # no preview in cluster mode
     $command =~ s/-J\s+preview=[^\s]+//;
 
-    # add -S and -W options for chunk selection
-    $command .= " -S $psu -W $chunk,$chunk_cnt,$nav_file";
+    # add -S and -W options for chunk selection (dont' just append,
+    # because the transcode command probably got appended some
+    # additional shell commands - e.g. h264 log copy stuff)
+    $command =~
+        s{ (execflow.*?transcode) }
+         { $1 -S $psu -W $chunk,$chunk_cnt,$nav_file };
 
     # sorry, can't remember why I do that...
     $command =~ s/-M 2//;

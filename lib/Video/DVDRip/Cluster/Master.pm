@@ -1,4 +1,4 @@
-# $Id: Master.pm,v 1.45.2.2 2007/08/05 16:56:51 joern Exp $
+# $Id: Master.pm 2322 2007-08-05 16:56:51Z joern $
 #-----------------------------------------------------------------------
 # Copyright (C) 2001-2006 Jörn Reder <joern AT zyn.de>.
 # All Rights Reserved. See file COPYRIGHT for details.

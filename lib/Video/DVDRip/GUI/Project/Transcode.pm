@@ -1,4 +1,4 @@
-# $Id: Transcode.pm,v 1.20.2.2 2007/08/09 21:37:41 joern Exp $
+# $Id: Transcode.pm 2344 2007-08-09 21:37:41Z joern $
 
 #-----------------------------------------------------------------------
 # Copyright (C) 2001-2006 Jörn Reder <joern AT zyn.de>.

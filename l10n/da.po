@@ -1,20 +1,21 @@
-# translation of da.po to Danish
-# Copyright (C) YEAR Jörn Reder <joern AT zyn.de>
-# Copyright (C) Janus Troelsen <ysangkok@gmail.com>, 2008.
-# This file is distributed under the same license as the Perl package.
+# translation of da.po to danish
+# Copyright (C) 2007 Wormux Development Team
+# This file is distributed under the same license as the Wormux package.
 #
+# Ysangkok <ysangkok@gmail.com>, 2006, 2007, 2008, 2009.
 msgid ""
 msgstr ""
 "Project-Id-Version: da\n"
 "Report-Msgid-Bugs-To: dvd::rip Translation Team <dvdrip-lang AT exit1.org>\n"
-"POT-Creation-Date: 2008-01-13 15:18+0100\n"
-"PO-Revision-Date: 2008-01-13 14:36+0100\n"
-"Last-Translator: Janus Troelsen <ysangkok@gmail.com>\n"
-"Language-Team: danish <da@li.org>\n"
+"POT-Creation-Date: 2009-12-20 13:35+0100\n"
+"PO-Revision-Date: 2009-06-30 14:43+0200\n"
+"Last-Translator: Ysangkok <ysangkok@gmail.com>\n"
+"Language-Team: Danish <kde-i18n-doc@kde.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.4\n"
+"X-Generator: Lokalize 0.3\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../bin/dvdrip:47
 msgid ""
@@ -37,26 +38,8 @@ msgid ""
 "          A new file is created, if it doesn't exist.\n"
 "\n"
 msgstr ""
-"\n"
-"Brug: dvdrip [-c] [-d niveau] [-p fil] [-f funktion [-t titel-nr]] [fil]\n"
-"       dvdrip --version | -version | -v\n"
-"\n"
-"       -c åben kloster kontrol vinduet\n"
-"\n"
-"       -d set fejlretnings niveau\n"
-"\n"
-"       -f kør en af de følgende funktioner (skal have filnavn)\n"
-"          transcode         transcode den valgte titel\n"
-"          transcode_split   transcode og opdel den valgte titel\n"
-"\n"
-"       -t titel-nr som funktionen skal gælde på\n"
-"          (som udgangspunkt den sidst valgte titel)\n"
-"\n"
-"       -p opsætningsfilens filnavn (som udgangspunkt: ~/.dvdriprc)\n"
-"          Hvis filen ikke eksisterer vil den blive oprettet.\n"
-"\n"
 
-#: ../bin/dvdrip-master:60
+#: ../bin/dvdrip-master:61
 msgid ""
 "\n"
 "Usage: dvdrip-master [-w [-W port] ] [loglevel]\n"
@@ -69,34 +52,24 @@ msgid ""
 "       -w        start webserver service\n"
 "       -W port   port for webserver (default: 8888)\n"
 msgstr ""
-"\n"
-"Brug: dvdrip-master [-w [-W port] ] [logniveau]\n"
-"\n"
-"       logniveau  logger meddelelser til STDOUT\n"
-"                 1 - basal logging, ingen detaljer\n"
-"                 2 - log aktuelle jobs\n"
-"                 3 - log alle udførte kommandoer også\n"
-"\n"
-"       -w        start webserveren\n"
-"       -W port   port til webserver (udgangspunkt: 8888)\n"
 
-#: ../bin/dvdrip-splash:12 ../lib/Video/DVDRip/GUI/Main.pm:1046
+#: ../bin/dvdrip-splash:12 ../lib/Video/DVDRip/GUI/Main.pm:1036
 msgid "splash.en.png"
-msgstr "splash.da.png"
+msgstr ""
 
 #: ../lib/Video/DVDRip/CPAN/Scanf.pm:163
 #, perl-brace-format
 msgid "'{function}' not supported"
-msgstr "'{function}' ikke understøttet"
+msgstr ""
 
 #: ../lib/Video/DVDRip/FilterList.pm:400
 msgid "Video"
-msgstr "Video"
+msgstr ""
 
 #: ../lib/Video/DVDRip/FilterList.pm:401
 #: ../lib/Video/DVDRip/GUI/Project/Title.pm:121
 msgid "Audio"
-msgstr "Audio"
+msgstr ""
 
 #: ../lib/Video/DVDRip/FilterList.pm:434
 #: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:208
@@ -105,7 +78,7 @@ msgstr "Audio"
 #: ../lib/Video/DVDRip/GUI/Cluster/Title.pm:133
 #: ../lib/Video/DVDRip/GUI/ExecFlow.pm:79
 #: ../lib/Video/DVDRip/GUI/Preferences.pm:192
-#: ../lib/Video/DVDRip/GUI/Main.pm:773
+#: ../lib/Video/DVDRip/GUI/Main.pm:763
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:198
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:615
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:621
@@ -114,7 +87,7 @@ msgstr "Audio"
 #: ../lib/Video/DVDRip/GUI/Context.pm:99
 #: ../lib/Video/DVDRip/GUI/Context.pm:104
 msgid "Yes"
-msgstr "Ja"
+msgstr ""
 
 #: ../lib/Video/DVDRip/FilterList.pm:434
 #: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:209
@@ -123,7 +96,7 @@ msgstr "Ja"
 #: ../lib/Video/DVDRip/GUI/Cluster/Title.pm:134
 #: ../lib/Video/DVDRip/GUI/ExecFlow.pm:80
 #: ../lib/Video/DVDRip/GUI/Preferences.pm:193
-#: ../lib/Video/DVDRip/GUI/Main.pm:774
+#: ../lib/Video/DVDRip/GUI/Main.pm:764
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:199
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:616
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:622
@@ -132,466 +105,475 @@ msgstr "Ja"
 #: ../lib/Video/DVDRip/GUI/Context.pm:99
 #: ../lib/Video/DVDRip/GUI/Context.pm:104
 msgid "No"
-msgstr "Nej"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Cluster/Node.pm:289
+#: ../lib/Video/DVDRip/Cluster/Node.pm:290
 #, perl-brace-format
 msgid "Node '{node}' stopped"
-msgstr "Slaven '{node}' blev stoppet"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Cluster/Node.pm:304
+#: ../lib/Video/DVDRip/Cluster/Node.pm:305
 #, perl-brace-format
 msgid "Node '{node}' started"
-msgstr "Slaven '{node}' blev startet"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Cluster/Node.pm:353
+#: ../lib/Video/DVDRip/Cluster/Node.pm:354
 #, perl-brace-format
 msgid "Node {name} finished tests"
-msgstr "Slaven {name} færdiggjorde tests"
+msgstr ""
 
 #: ../lib/Video/DVDRip/Cluster/Pipe.pm:124
 #, perl-brace-format
 msgid "execute command: {command} (timeout={timeout})"
-msgstr "udfør kommando: {command} (timeout={timeout})"
+msgstr ""
 
 #: ../lib/Video/DVDRip/Cluster/Pipe.pm:164
 msgid "Command cancelled due to timeout"
-msgstr "Kommandoen blev annuleret pga. timeout"
+msgstr ""
 
 #: ../lib/Video/DVDRip/Cluster/Pipe.pm:193
 #, perl-brace-format
 msgid "Job has PID {pid}"
-msgstr "Jobbet har PID {pid}"
+msgstr ""
 
 #: ../lib/Video/DVDRip/Cluster/Pipe.pm:240
 #, perl-brace-format
 msgid "Aborting command. Sending signal 1 to PID {pid}..."
-msgstr "Stopper kommando: Sender signal 1 til PID {pid}..."
+msgstr ""
 
 #: ../lib/Video/DVDRip/Cluster/Master.pm:98
 msgid "Master daemon activated"
-msgstr "Hoveddæmonen er aktiveret"
+msgstr ""
 
 #: ../lib/Video/DVDRip/Cluster/Master.pm:110
 #, perl-brace-format
 msgid "Got signal {signal}."
-msgstr "Fik signal {signal}."
+msgstr ""
 
 #: ../lib/Video/DVDRip/Cluster/Master.pm:181
 msgid "Node check watcher disabled"
-msgstr "Slave-overvågning deaktiveret"
+msgstr ""
 
 #: ../lib/Video/DVDRip/Cluster/Master.pm:213
 msgid "Warning: node check fping reported nothing"
-msgstr "Advarsel: Slave check fping rapporterede intet"
+msgstr ""
 
 #: ../lib/Video/DVDRip/Cluster/Master.pm:230
 #, perl-brace-format
 msgid "Node '{node_name}' is now online."
-msgstr "Slaven '{node_name}' er nu online."
+msgstr ""
 
 #: ../lib/Video/DVDRip/Cluster/Master.pm:239
 #, perl-brace-format
 msgid "Node '{node_name}' is still reachable. Will be online in 5 seconds."
-msgstr "Slaven '{node_name}' kan stadig tilgås. Vil være online i 5 sekunder."
+msgstr ""
 
 #: ../lib/Video/DVDRip/Cluster/Master.pm:248
 #, perl-brace-format
 msgid "Node '{node_name}' is now reachable. Will be online in 10 seconds."
-msgstr "Slaven '{node_name}' kan nu tilgås. Vil være online i 10 sekunder."
+msgstr ""
 
 #: ../lib/Video/DVDRip/Cluster/Master.pm:256
 #, perl-brace-format
 msgid "Node '{node_name}' is Ok again"
-msgstr "Slaven '{node_name}' er OK igen."
+msgstr ""
 
 #: ../lib/Video/DVDRip/Cluster/Master.pm:267
 #, perl-brace-format
 msgid "Warning: Node '{node_name}' is unreachable"
-msgstr "Advarsel: Slaven '{node_name}' kan ikke tilgås"
+msgstr ""
 
 #: ../lib/Video/DVDRip/Cluster/Master.pm:277
 #, perl-brace-format
 msgid "Warning: Node '{node_name}' possibly offline"
-msgstr "Advarsel: Slaven '{node_name}' er muligvis offline"
+msgstr ""
 
 #: ../lib/Video/DVDRip/Cluster/Master.pm:370
-#, perl-brace-format
+#, fuzzy, perl-brace-format
 msgid "Loading node file '{file}'"
-msgstr "Indlæser slave-fil '{file}'"
+msgstr "Læser standard konfigureringsfil"
 
 #: ../lib/Video/DVDRip/Cluster/Master.pm:394
 #, perl-brace-format
 msgid "Loading project file '{filename}'"
-msgstr "Indlæser projekt-fil '{filename}'"
+msgstr ""
 
 #: ../lib/Video/DVDRip/Cluster/Master.pm:431
 msgid "Node must have a name"
-msgstr "Slaven skal have et navn"
+msgstr ""
 
 #: ../lib/Video/DVDRip/Cluster/Master.pm:432
 msgid "Node with this name already exists"
-msgstr "En slave med dette navn eksisterer allerede"
+msgstr ""
 
 #: ../lib/Video/DVDRip/Cluster/Master.pm:441
 #, perl-brace-format
 msgid "Node '{node_name}' saved to '{filename}'"
-msgstr "Slaven '{node_name}' gemt til '{filename}'"
+msgstr ""
 
 #: ../lib/Video/DVDRip/Cluster/Master.pm:522
 #, perl-brace-format
 msgid "Project with filename '{filename}' added"
-msgstr "Projekt med filnavnet '{filename}' tilføjet"
+msgstr ""
 
 #: ../lib/Video/DVDRip/Cluster/Master.pm:655
 #, perl-brace-format
 msgid "Project {project} removed"
-msgstr "Projekt '{project}' fjernet"
+msgstr ""
 
 #: ../lib/Video/DVDRip/Cluster/Master.pm:741
 msgid "Master shutdown. Stopping active jobs."
-msgstr "Lukning af mesteren. Stopper aktive jobs."
+msgstr ""
 
 #: ../lib/Video/DVDRip/Cluster/Master.pm:745
+#, fuzzy
 msgid "Master shutdown"
-msgstr "Luk mesteren"
+msgstr "Administratormodus"
 
 #: ../lib/Video/DVDRip/Cluster/Master.pm:756
 msgid "Cluster control daemon will shutdown in 2 seconds..."
-msgstr "Kloster kontrol dæmonen vil lukkes om 2 sekunder..."
+msgstr ""
 
 #: ../lib/Video/DVDRip/Cluster/ExecFlowFrontend.pm:50
 #: ../lib/Video/DVDRip/GUI/ExecFlow.pm:97
 #, perl-brace-format
 msgid "Start job '{name}'"
-msgstr "Start job '{name}'"
+msgstr ""
 
 #: ../lib/Video/DVDRip/Cluster/ExecFlowFrontend.pm:83
-#: ../lib/Video/DVDRip/GUI/ExecFlow.pm:134
+#: ../lib/Video/DVDRip/GUI/ExecFlow.pm:137
 #, perl-brace-format
 msgid "Job '{name}' exited with error: {error}"
-msgstr "Job '{name}' afsluttede med fejlen: {error}"
+msgstr ""
 
 #: ../lib/Video/DVDRip/Cluster/ExecFlowFrontend.pm:100
-#: ../lib/Video/DVDRip/GUI/ExecFlow.pm:161
+#: ../lib/Video/DVDRip/GUI/ExecFlow.pm:164
 #, perl-brace-format
 msgid "Job '{name}' warning: {warning}"
-msgstr "Job '{name}' advarsel: {warning}"
+msgstr ""
 
 #: ../lib/Video/DVDRip/Cluster/ExecFlowFrontend.pm:113
-#: ../lib/Video/DVDRip/GUI/ExecFlow.pm:178
-#, perl-brace-format
-msgid "Job '{name}' cancelled"
-msgstr "Job '{name}' annulleret"
-
-#: ../lib/Video/DVDRip/Cluster/ExecFlowFrontend.pm:116
 #: ../lib/Video/DVDRip/GUI/ExecFlow.pm:181
 #, perl-brace-format
+msgid "Job '{name}' cancelled"
+msgstr ""
+
+#: ../lib/Video/DVDRip/Cluster/ExecFlowFrontend.pm:116
+#: ../lib/Video/DVDRip/GUI/ExecFlow.pm:184
+#, perl-brace-format
 msgid "Job '{name}' finished"
-msgstr "Job '{name}' afsluttede"
+msgstr ""
 
 #: ../lib/Video/DVDRip/Cluster/Scheduler.pm:57
 msgid "All running cluster projects"
-msgstr "Alle kørende kloster projekter"
+msgstr ""
 
 #: ../lib/Video/DVDRip/Cluster/JobPlanner.pm:41
 #, perl-brace-format
 msgid "Process all PSU's - title #{nr}"
-msgstr "Processer alle PSU'er - titel #{nr}"
+msgstr ""
 
 #: ../lib/Video/DVDRip/Cluster/JobPlanner.pm:56
 msgid "Move PSU #0 file to final destination"
-msgstr "Flyt PSU #0 fil til endelig destination"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Cluster/JobPlanner.pm:223
+#: ../lib/Video/DVDRip/Cluster/JobPlanner.pm:227
 #, perl-brace-format
 msgid "Merge all audio tracks - title #{nr}, PSU #{psu}"
-msgstr "Sammensmelt alle lydspor - titel #{nr}, PSU#{psu}"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Cluster/JobPlanner.pm:264
+#: ../lib/Video/DVDRip/Cluster/JobPlanner.pm:268
 #, perl-brace-format
 msgid "Multipass video transcoding - title #{nr}, PSU #{psu}, chunk #{chunk}"
-msgstr "Multipass video transcoder - titel #{nr}, PSU #{psu}, stump #{chunk}"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Cluster/JobPlanner.pm:285
+#: ../lib/Video/DVDRip/Cluster/JobPlanner.pm:289
 #, perl-brace-format
 msgid "Process all video chunks - title #{nr}, PSU #{psu}"
-msgstr "Processer alle videostumper - titel #{nr}, PSU#{psu}"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Cluster/JobPlanner.pm:296
+#: ../lib/Video/DVDRip/Cluster/JobPlanner.pm:300
 #, perl-brace-format
 msgid "Merge video chunks - title #{nr}, PSU #{psu}"
-msgstr "Sammensmelt alle videostumper - titel #{nr}, PSU #{psu}"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Cluster/JobPlanner.pm:318
-#: ../lib/Video/DVDRip/Cluster/JobPlanner.pm:354
-#: ../lib/Video/DVDRip/JobPlanner.pm:309 ../lib/Video/DVDRip/JobPlanner.pm:464
+#: ../lib/Video/DVDRip/Cluster/JobPlanner.pm:322
+#: ../lib/Video/DVDRip/Cluster/JobPlanner.pm:358
+#: ../lib/Video/DVDRip/JobPlanner.pm:308 ../lib/Video/DVDRip/JobPlanner.pm:465
 #: ../lib/Video/DVDRip/JobPlanner.pm:1064
-#: ../lib/Video/DVDRip/JobPlanner.pm:1159
-#: ../lib/Video/DVDRip/JobPlanner.pm:1240
-#: ../lib/Video/DVDRip/JobPlanner.pm:1276
-#: ../lib/Video/DVDRip/JobPlanner.pm:1284
+#: ../lib/Video/DVDRip/JobPlanner.pm:1166
+#: ../lib/Video/DVDRip/JobPlanner.pm:1247
+#: ../lib/Video/DVDRip/JobPlanner.pm:1283
+#: ../lib/Video/DVDRip/JobPlanner.pm:1291
+#, fuzzy
 msgid "fps"
-msgstr "billeder per sekund"
+msgstr "%s FPS"
 
-#: ../lib/Video/DVDRip/Cluster/JobPlanner.pm:332
+#: ../lib/Video/DVDRip/Cluster/JobPlanner.pm:336
 #, perl-brace-format
 msgid "Merge all PSU files - title #{nr}"
-msgstr "Sammensmelt alle PSU filer - titel #{nr}"
+msgstr ""
 
 #: ../lib/Video/DVDRip/TranscodeRC.pm:121
 msgid "can't send command to transcode"
-msgstr "kan ikke sende kommando til transcode"
+msgstr ""
 
 #: ../lib/Video/DVDRip/TranscodeRC.pm:241
-#, perl-brace-format
+#, fuzzy, perl-brace-format
 msgid "Unknown preview command '{command}'"
-msgstr "Ukendt forhåndsvisning-kommando '{command}'"
+msgstr "Ukendt kommando"
 
-#: ../lib/Video/DVDRip/Depend.pm:35
+#: ../lib/Video/DVDRip/Depend.pm:40
 msgid "All internal command files"
-msgstr "Alle interne kommando filer"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Depend.pm:44
+#: ../lib/Video/DVDRip/Depend.pm:51
 #, perl-brace-format
 msgid "ERROR: '{file}' not found in PATH\n"
-msgstr "FEJL: '{file}' blev ikke fundet i PATH\n"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Depend.pm:71
+#: ../lib/Video/DVDRip/Depend.pm:78
 msgid "dvd::rip is nothing without transcode"
-msgstr "dvd::rip er ingenting ud transcode"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Depend.pm:93
+#: ../lib/Video/DVDRip/Depend.pm:100
 msgid "Needed for preview image processing"
-msgstr "Nødvendigt for forhåndsvisning"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Depend.pm:108
+#: ../lib/Video/DVDRip/Depend.pm:118
 msgid "FFmpeg video converter command line program"
 msgstr ""
 
-#: ../lib/Video/DVDRip/Depend.pm:122
+#: ../lib/Video/DVDRip/Depend.pm:132
+#, fuzzy
 msgid "xvid4 configuration tool"
-msgstr "xvid4 konfigurationsredskab"
+msgstr "ingen konfigurationsfil!"
 
-#: ../lib/Video/DVDRip/Depend.pm:137
+#: ../lib/Video/DVDRip/Depend.pm:147
 msgid "Needed for subtitles"
-msgstr "Nødvendigt for undertekster"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Depend.pm:152
+#: ../lib/Video/DVDRip/Depend.pm:162
 msgid "Needed for faster DVD TOC reading"
-msgstr "Nødvendigt for hurtigere DVD TOC læsning"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Depend.pm:167
+#: ../lib/Video/DVDRip/Depend.pm:177
 msgid "Needed for compressed vobsub subtitles"
-msgstr "Nødvendigt for komprimerede vobsub undertekster"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Depend.pm:183
+#: ../lib/Video/DVDRip/Depend.pm:193
 msgid "Needed for subtitle vobsub viewing"
-msgstr "Nødvendigt for undertekster (vobsub) læsning"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Depend.pm:204
+#: ../lib/Video/DVDRip/Depend.pm:214
 msgid "Needed for OGG/Vorbis"
-msgstr "Nødvendigt for Ogg Vorbis"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Depend.pm:220
+#: ../lib/Video/DVDRip/Depend.pm:230
 msgid "For chapter progress bar (ogmtools)"
-msgstr "For kapitel fremgangs-meter (ogmtools)"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Depend.pm:235
+#: ../lib/Video/DVDRip/Depend.pm:245
 msgid "Needed for (S)VCD encoding"
-msgstr "Nødvendigt for (S)VCD encoding"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Depend.pm:250
+#: ../lib/Video/DVDRip/Depend.pm:260
 msgid "Can be used to view DVD's/files"
-msgstr "Kan bruges til at vise DVD'en filer"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Depend.pm:265
+#: ../lib/Video/DVDRip/Depend.pm:275
 msgid "Only for cluster mode master"
-msgstr "Kun til hoved-kloster-tilstand"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Depend.pm:280
+#: ../lib/Video/DVDRip/Depend.pm:290
 msgid "Used for DVD device scanning"
-msgstr "Bruges til DVD enhedsscanning"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Depend.pm:342
+#: ../lib/Video/DVDRip/Depend.pm:352
 msgid "not installed"
-msgstr "ikke installeret"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Depend.pm:539
+#: ../lib/Video/DVDRip/Depend.pm:549
 msgid "Program"
-msgstr "Program"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Depend.pm:539 ../lib/Video/DVDRip/GUI/Filters.pm:294
+#: ../lib/Video/DVDRip/Depend.pm:549 ../lib/Video/DVDRip/GUI/Filters.pm:294
 msgid "Version"
 msgstr "Version"
 
 #: ../lib/Video/DVDRip/BitrateCalc.pm:204
+#, fuzzy
 msgid "Number of frames"
-msgstr "Antal billeder"
+msgstr "Antal hold:"
 
 #: ../lib/Video/DVDRip/BitrateCalc.pm:211
 msgid "Frames per second"
-msgstr "Billeder per sekund"
+msgstr ""
 
 #: ../lib/Video/DVDRip/BitrateCalc.pm:218
 #: ../lib/Video/DVDRip/GUI/Project/Title.pm:118
+#, fuzzy
 msgid "Runtime"
-msgstr "Runtime"
+msgstr "Kører spillet"
 
 #: ../lib/Video/DVDRip/BitrateCalc.pm:253
 #, perl-brace-format
 msgid "Audio size is given with {audio_size} MB"
-msgstr "Lydstørrelse er angivet som {audio_size} MB"
+msgstr ""
 
 #: ../lib/Video/DVDRip/BitrateCalc.pm:258
 msgid "Audio size"
-msgstr "Lydstørrelse"
+msgstr ""
 
 #: ../lib/Video/DVDRip/BitrateCalc.pm:292
 #, perl-brace-format
 msgid "(incl. {avi_overhead} byte AVI overhead per frame)"
-msgstr "(inkl. {avi_overhead} bytes AVI overhead per billede)"
+msgstr ""
 
 #: ../lib/Video/DVDRip/BitrateCalc.pm:300
 msgid "(assume nominal bitrate for this quality)"
-msgstr "(antager nominal bitrate til denne kvalitet)"
+msgstr ""
 
 #: ../lib/Video/DVDRip/BitrateCalc.pm:303
 msgid "(exact bitrate match assumed)"
-msgstr "(eksakt bitrate tilpasning antaget)"
+msgstr ""
 
 #: ../lib/Video/DVDRip/BitrateCalc.pm:308
 #, perl-brace-format
 msgid "Audio track #{nr}"
-msgstr "Lydspor #{nr}"
+msgstr ""
 
 #: ../lib/Video/DVDRip/BitrateCalc.pm:342
 #, perl-brace-format
 msgid "AVI video overhead ({avi_overhead} bytes per frame)"
-msgstr "AVI video overhead  ({avi_overhead} bytes per billede)"
+msgstr ""
 
 #: ../lib/Video/DVDRip/BitrateCalc.pm:365
 #, perl-brace-format
 msgid "OGG overhead ({ogg_overhead} percent of video+audio size)"
-msgstr "Ogg overhead ({ogg_overhead} procent af video+lyd størrelse)"
+msgstr ""
 
 #: ../lib/Video/DVDRip/BitrateCalc.pm:398
+#, fuzzy
 msgid "Number of discs"
-msgstr "Antal skiver"
+msgstr "Antal hold:"
 
 #: ../lib/Video/DVDRip/BitrateCalc.pm:408
 msgid "Disc size"
-msgstr "Størrelse per skive"
+msgstr ""
 
 #: ../lib/Video/DVDRip/BitrateCalc.pm:422
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:470
 msgid "Target size"
-msgstr "Målstørrelse"
+msgstr ""
 
 #: ../lib/Video/DVDRip/BitrateCalc.pm:461
 msgid "VCD sector size addition (factor: 2324/2048)"
-msgstr "VCD sektor størrelse addition (faktor: 2324/2048)"
+msgstr ""
 
 #: ../lib/Video/DVDRip/BitrateCalc.pm:472
 msgid "VCD per disc overhead (600 sectors)"
-msgstr "VCD overhead per skive (600 sektorer)"
+msgstr ""
 
 #: ../lib/Video/DVDRip/BitrateCalc.pm:481
 msgid "(X)(S)VCD/CVD target size"
-msgstr "(X)(S)VCD/CVD målstørrelse"
+msgstr ""
 
 #: ../lib/Video/DVDRip/BitrateCalc.pm:508
 msgid "vobsub size"
-msgstr "vobsub størrelse"
+msgstr ""
 
 #: ../lib/Video/DVDRip/BitrateCalc.pm:522
 #, perl-brace-format
 msgid "vobsub size subtitle #{nr}"
-msgstr "vobsub størrelse undertekst #{nr}"
+msgstr ""
 
 #: ../lib/Video/DVDRip/BitrateCalc.pm:552
 msgid "Space left for video"
-msgstr "Plads tilbage til video"
+msgstr ""
 
 #: ../lib/Video/DVDRip/BitrateCalc.pm:564
 msgid "Resulting video bitrate, rounded"
-msgstr "Reulterende videobitrate, afrundet"
+msgstr ""
 
 #: ../lib/Video/DVDRip/BitrateCalc.pm:587
 #: ../lib/Video/DVDRip/BitrateCalc.pm:708
+#, fuzzy
 msgid "Resulting BPP"
-msgstr "Resulterende farvedybde"
+msgstr "Opløsning"
 
 #: ../lib/Video/DVDRip/BitrateCalc.pm:600
 msgid "Resulting video size"
-msgstr "Resulterende videostørrelse"
+msgstr ""
 
 #: ../lib/Video/DVDRip/BitrateCalc.pm:626
 #, perl-brace-format
 msgid "Bitrate too high, set to {max_video_rate}"
-msgstr "Bitraten er for høj, set maximalt til {max_video_rate}"
+msgstr ""
 
 #: ../lib/Video/DVDRip/BitrateCalc.pm:634
 #: ../lib/Video/DVDRip/BitrateCalc.pm:640
 msgid "Bitrate too high, limited"
-msgstr "Bitraten er for høj og er derfor blevet gjort mindre"
+msgstr ""
 
 #: ../lib/Video/DVDRip/BitrateCalc.pm:646
 msgid "VCD has fixed rate"
-msgstr "VCD har en fast rate"
+msgstr ""
 
 #: ../lib/Video/DVDRip/BitrateCalc.pm:679
+#, fuzzy
 msgid "Manual BPP setting"
-msgstr "Manuel farvedybde"
+msgstr "Manuel forbindelse"
 
 #: ../lib/Video/DVDRip/BitrateCalc.pm:686
 msgid "Resulting Video Bitrate"
-msgstr "Resulterende videobitrate"
+msgstr ""
 
 #: ../lib/Video/DVDRip/BitrateCalc.pm:699
 msgid "Manual video bitrate setting"
-msgstr "Manuel videobitrate"
+msgstr ""
 
 #: ../lib/Video/DVDRip/BitrateCalc.pm:720
 msgid "Resulting Video Size"
-msgstr "Resulterende videostørrelse"
+msgstr ""
 
 #: ../lib/Video/DVDRip/BitrateCalc.pm:742
 msgid "Resulting File Size"
-msgstr "Resulterende filstørrelse"
+msgstr ""
 
 #: ../lib/Video/DVDRip/Logger.pm:138
 msgid "Logfile nuked."
-msgstr "Logfilen blev atombombet."
+msgstr ""
 
 #: ../lib/Video/DVDRip/Subtitle.pm:138
 #, perl-brace-format
 msgid "{cnt} images"
-msgstr "{cnt} billeder"
+msgstr ""
 
 #: ../lib/Video/DVDRip/Audio.pm:252 ../lib/Video/DVDRip/GUI/MultiAudio.pm:132
+#, fuzzy
 msgid "Discard"
-msgstr "Afvis"
+msgstr "Diskogranat"
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:44 ../lib/Video/DVDRip/JobPlanner.pm:279
+#: ../lib/Video/DVDRip/JobPlanner.pm:44 ../lib/Video/DVDRip/JobPlanner.pm:278
 #, perl-brace-format
 msgid "title #{title}"
-msgstr "titel #{title}"
+msgstr ""
 
 #: ../lib/Video/DVDRip/JobPlanner.pm:45
 #, perl-brace-format
 msgid "chapter #{chapter}"
-msgstr "kapitel #{chapter}"
+msgstr ""
 
 #: ../lib/Video/DVDRip/JobPlanner.pm:59 ../lib/Video/DVDRip/JobPlanner.pm:99
 #: ../lib/Video/DVDRip/JobPlanner.pm:135
 #, perl-brace-format
 msgid "Read TOC ({method})"
-msgstr "Læs TOC ({method})"
+msgstr ""
 
 #: ../lib/Video/DVDRip/JobPlanner.pm:75
 msgid "Successfully read DVD TOC"
-msgstr "Læste DVD TOC'en succesfuldt"
+msgstr ""
 
 #: ../lib/Video/DVDRip/JobPlanner.pm:78
 msgid ""
@@ -599,71 +581,64 @@ msgid ""
 "(Did you specify the mount point of your DVD drive in the Preferences?)\n"
 "The error message is:\n"
 msgstr ""
-"Kunne ikke kopiere IFO filer. vobsub skabelse vil ikke virke ordentligt.\n"
-"(Huskede du at angive mountpunktet til dit DVD drev i opsætningen?)\n"
-"Fejlmeddelelsen er:\n"
 
 #: ../lib/Video/DVDRip/JobPlanner.pm:106 ../lib/Video/DVDRip/JobPlanner.pm:149
 msgid ""
 "Error reading table of contents. Please check your DVD device settings in "
 "the Preferences and don't forget to put a DVD in the drive."
 msgstr ""
-"Fejl under indlæsning af indholdfortegnelsen. Vær venlig at chekke at dit "
-"DVD drevs indstillinger i opsætningen og glem ikke at putte en DVD i drevet."
 
 #: ../lib/Video/DVDRip/JobPlanner.pm:122
 msgid "Warning: lsdvd failed reading TOC, trying tcprobe."
-msgstr "Advarsel: lsdvd fejlede under læsning af TOC, prøver tcprobe."
+msgstr ""
 
 #: ../lib/Video/DVDRip/JobPlanner.pm:138
 msgid "Determine number of titles"
-msgstr "Autodetektér antal titler"
+msgstr ""
 
 #: ../lib/Video/DVDRip/JobPlanner.pm:176
 #, perl-brace-format
 msgid "Probe - title #{title}"
-msgstr "Gransker - titel #{title}"
+msgstr ""
 
 #: ../lib/Video/DVDRip/JobPlanner.pm:211
 msgid "Probe all DVD titles"
-msgstr "Gransk alle DVD titler"
+msgstr ""
 
 #: ../lib/Video/DVDRip/JobPlanner.pm:238
 #, perl-brace-format
 msgid "Rip chapters of title #{nr}"
-msgstr "Rip kapitler fra titel #{nr}"
+msgstr ""
 
 #: ../lib/Video/DVDRip/JobPlanner.pm:251
 #, perl-brace-format
 msgid "Process title #{nr}"
-msgstr "Processerer titel #{nr}"
+msgstr ""
 
 #: ../lib/Video/DVDRip/JobPlanner.pm:258
 msgid "Rip selected title(s) / chapter(s)"
-msgstr "Rip valgte titler/kapitler"
+msgstr ""
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:278
+#: ../lib/Video/DVDRip/JobPlanner.pm:277
 msgid "Rip"
-msgstr "Rip"
+msgstr ""
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:280
+#: ../lib/Video/DVDRip/JobPlanner.pm:279
 #, perl-brace-format
 msgid "chapter {chapter}"
-msgstr "Kapitel {chapter}"
+msgstr ""
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:361
+#: ../lib/Video/DVDRip/JobPlanner.pm:360
 #, perl-brace-format
 msgid "Chapter {nr} is too small and useless. You should deselect it."
-msgstr "Kapitel {nr} er for småt og ubrugeligt. Du burde afvælge det."
+msgstr ""
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:392
+#: ../lib/Video/DVDRip/JobPlanner.pm:391
 #, perl-brace-format
 msgid ""
 "DVD TOC reported wrong framerate {toc_fps}, adjusted frame rate to "
 "{disc_fps} and frame count to {disc_count}"
 msgstr ""
-"DVD TOC rapporterede forkert billedrate {toc_fps}, justerer billedraten til "
-"{disc_fps} og billedantallet til {disc_count}"
 
 #: ../lib/Video/DVDRip/JobPlanner.pm:408
 #, perl-brace-format
@@ -674,33 +649,29 @@ msgid ""
 "transcode/libdvdread installation, resp. a problem with\n"
 "this specific DVD."
 msgstr ""
-"Det virker som om at transcode stoppede før den var færdig med at rippe.\n"
-"Filmen har {title_frames} billeder, men kun {disc_frames} blev rippet. Dette "
-"er muligvis et problem\n"
-"Med denne DVD."
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:427
+#: ../lib/Video/DVDRip/JobPlanner.pm:428
 #, perl-brace-format
 msgid "Detect audio bitrate of title #{nr}"
-msgstr "Detektér lydbitraten af titel #{nr}"
+msgstr ""
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:453
+#: ../lib/Video/DVDRip/JobPlanner.pm:454
 msgid "Grab preview"
-msgstr "Lav forhåndsvisning"
-
-#: ../lib/Video/DVDRip/JobPlanner.pm:494 ../lib/Video/DVDRip/JobPlanner.pm:518
-msgid "transcode can't find this frame. "
-msgstr "transcode kan ikke finde denne frame. "
+msgstr ""
 
 #: ../lib/Video/DVDRip/JobPlanner.pm:495 ../lib/Video/DVDRip/JobPlanner.pm:519
+msgid "transcode can't find this frame. "
+msgstr ""
+
+#: ../lib/Video/DVDRip/JobPlanner.pm:496 ../lib/Video/DVDRip/JobPlanner.pm:520
 msgid "Try a lower frame number. "
-msgstr "Prøv et lavere antal frames. "
+msgstr ""
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:497 ../lib/Video/DVDRip/JobPlanner.pm:521
+#: ../lib/Video/DVDRip/JobPlanner.pm:498 ../lib/Video/DVDRip/JobPlanner.pm:522
 msgid "Try forcing slow frame grabbing."
-msgstr "Prøv at tvinge langsom frame grabbing."
+msgstr ""
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:509 ../lib/Video/DVDRip/JobPlanner.pm:604
+#: ../lib/Video/DVDRip/JobPlanner.pm:510 ../lib/Video/DVDRip/JobPlanner.pm:605
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:859
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:904
 #: ../lib/Video/DVDRip/GUI/Project/ClipZoom.pm:710
@@ -709,220 +680,211 @@ msgstr "Prøv at tvinge langsom frame grabbing."
 #: ../lib/Video/DVDRip/GUI/Project/ClipZoom.pm:798
 #: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:526
 msgid "You first have to rip this title."
-msgstr "Du skal have rippet denne titel først."
+msgstr ""
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:539
+#: ../lib/Video/DVDRip/JobPlanner.pm:540
 msgid "Process preview frame"
-msgstr "Processer forhåndsvisning"
+msgstr ""
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:549
+#: ../lib/Video/DVDRip/JobPlanner.pm:550
 msgid "Generate preview thumbnails"
-msgstr "Generer forhåndsvisninger"
+msgstr ""
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:572
+#: ../lib/Video/DVDRip/JobPlanner.pm:573
 msgid "Apply preset & make previews"
-msgstr "Anvend preset & lav forhåndsvisninger"
+msgstr ""
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:575
+#: ../lib/Video/DVDRip/JobPlanner.pm:576
 msgid "Apply Clip & Zoom preset"
-msgstr "Anvend clip & zoom preset"
+msgstr ""
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:612
+#: ../lib/Video/DVDRip/JobPlanner.pm:613
 msgid "You can't select a frame range with psu core."
-msgstr "Du kan ikke vælge et frame vindue med PSU core."
+msgstr ""
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:620
+#: ../lib/Video/DVDRip/JobPlanner.pm:621
 msgid "PSU core only available for ripped DVD's."
-msgstr "PSU core kan kun bruges med rippede DVD'er."
+msgstr ""
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:626
+#: ../lib/Video/DVDRip/JobPlanner.pm:627
 #: ../lib/Video/DVDRip/GUI/Project/Title.pm:416
+#, fuzzy
 msgid "No chapters selected."
-msgstr "Ingen kapitler valgt."
+msgstr "Ingen spillere forbundet"
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:632
+#: ../lib/Video/DVDRip/JobPlanner.pm:633
 msgid ""
 "Splitting AVI files in\n"
 "chapter mode makes no sense."
 msgstr ""
-"Splitter AVI filer i \n"
-"kapiteltilstand giver ingen mening."
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:639
+#: ../lib/Video/DVDRip/JobPlanner.pm:640
 msgid "WARNING: no target audio track #0"
-msgstr "ADVARSEL: ingen lydspor #0 i målet"
+msgstr ""
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:646
+#: ../lib/Video/DVDRip/JobPlanner.pm:647
 msgid "Having more than one audio track isn't possible on a (X)VCD."
-msgstr "At have mere end et lydspor er ikke muligt på en (X)VCD."
+msgstr ""
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:654
+#: ../lib/Video/DVDRip/JobPlanner.pm:655
 msgid ""
 "WARNING: Having more than two audio tracks\n"
 "on a (X)SVCD/CVD is not standard conform. You may\n"
 "encounter problems on hardware players."
 msgstr ""
-"ADVARSEL: At have mere end to lydspor\n"
-"på en (X)SVCD/CVD er ikke i takt med standarden.\n"
-"Du for måske problemer med hardwareafpillere."
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:665
+#: ../lib/Video/DVDRip/JobPlanner.pm:666
 msgid ""
 "You better cancel now and select the appropriate\n"
 "preset on the Clip &amp; Zoom page."
 msgstr ""
-"Du må hellere annullere nu og vælge den rigtige preset på \"Clip & Zoom\" "
-"siden."
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:730
+#: ../lib/Video/DVDRip/JobPlanner.pm:731
 msgid "Transcode multiple titles"
-msgstr "Transcode flere titler"
+msgstr ""
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:802 ../lib/Video/DVDRip/GUI/Main.pm:369
+#: ../lib/Video/DVDRip/JobPlanner.pm:802 ../lib/Video/DVDRip/GUI/Main.pm:359
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:38
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:651
 msgid "Transcode"
-msgstr "Transcode"
+msgstr ""
 
 #: ../lib/Video/DVDRip/JobPlanner.pm:816
 msgid "Transcode chapters"
-msgstr "Transcode kapitler"
+msgstr ""
 
 #: ../lib/Video/DVDRip/JobPlanner.pm:865
 msgid "Transcode with VBR audio, first pass"
-msgstr "Transcode med VBR lyd, første pass"
+msgstr ""
 
 #: ../lib/Video/DVDRip/JobPlanner.pm:903
 msgid "Transcode with VBR audio, second pass"
-msgstr "Transcode med VBR lyd, anden pass"
+msgstr ""
 
 #: ../lib/Video/DVDRip/JobPlanner.pm:924
 msgid "Transcode with VBR audio"
-msgstr "Transcode med VBR lyd"
+msgstr ""
 
 #: ../lib/Video/DVDRip/JobPlanner.pm:935
 msgid "Calculate video bitrate "
-msgstr "Beregn video bitraten"
+msgstr ""
 
 #: ../lib/Video/DVDRip/JobPlanner.pm:943
 #, perl-brace-format
 msgid "Adjusted video bitrate to {video_bitrate} after vbr audio transcoding"
-msgstr "Juster videobitraten til {video_bitrate} efter VBR lyd transcoding"
+msgstr ""
 
 #: ../lib/Video/DVDRip/JobPlanner.pm:964
 msgid "Transcode multipass"
-msgstr "Transcode multipass"
+msgstr ""
 
 #: ../lib/Video/DVDRip/JobPlanner.pm:989
 msgid "Transcode video"
-msgstr "Transcode video"
+msgstr ""
 
 #: ../lib/Video/DVDRip/JobPlanner.pm:993
 #, perl-brace-format
 msgid "PSU {psu}"
-msgstr "PSU {psu}"
+msgstr ""
 
 #: ../lib/Video/DVDRip/JobPlanner.pm:997
 #, perl-brace-format
 msgid "chunk {chunk}"
-msgstr "stump {chunk}"
+msgstr ""
 
 #: ../lib/Video/DVDRip/JobPlanner.pm:1001
 #, perl-brace-format
 msgid "pass {pass}"
-msgstr "pass {pass}"
+msgstr ""
 
 #: ../lib/Video/DVDRip/JobPlanner.pm:1004
 msgid "single pass"
-msgstr "single pass"
+msgstr ""
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:1118
+#: ../lib/Video/DVDRip/JobPlanner.pm:1125
 msgid "Merge audio"
-msgstr "Sammensmelt lyd"
+msgstr ""
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:1120
+#: ../lib/Video/DVDRip/JobPlanner.pm:1127
 #, perl-brace-format
 msgid "audio track #{nr}"
-msgstr "Lydspor #{nr}"
+msgstr ""
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:1198
+#: ../lib/Video/DVDRip/JobPlanner.pm:1205
 msgid "Transcode & merge audio track"
-msgstr "Transcode & sammensmelt lydspor"
+msgstr ""
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:1209
+#: ../lib/Video/DVDRip/JobPlanner.pm:1216
 msgid "Add additional audio tracks"
-msgstr "Tilføj ekstra lydspor"
+msgstr ""
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:1218
+#: ../lib/Video/DVDRip/JobPlanner.pm:1225
 msgid "Transcode audio"
-msgstr "Transcode lyd"
+msgstr ""
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:1220
+#: ../lib/Video/DVDRip/JobPlanner.pm:1227
 #, perl-brace-format
 msgid "track #{nr}"
-msgstr "spor #{nr}"
+msgstr ""
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:1250
+#: ../lib/Video/DVDRip/JobPlanner.pm:1257
 msgid "Multiplex MPEG"
-msgstr "Multiplex MPEG"
+msgstr ""
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:1272
+#: ../lib/Video/DVDRip/JobPlanner.pm:1279
 msgid "Split OGG"
-msgstr "Opdel Ogg"
+msgstr ""
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:1272
+#: ../lib/Video/DVDRip/JobPlanner.pm:1279
 msgid "Split AVI"
-msgstr "Opdel AVI"
+msgstr ""
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:1321
+#: ../lib/Video/DVDRip/JobPlanner.pm:1328
 msgid "Grab subtitle images"
-msgstr "Tag undertekst billeder"
+msgstr ""
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:1342
+#: ../lib/Video/DVDRip/JobPlanner.pm:1349
 msgid ""
 "Need IFO files in place.\n"
 "You must re-read TOC from DVD."
 msgstr ""
-"Skal have IFO filer på plads.\n"
-"Du skal genindlæse TOC'en fra DVD'en."
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:1351
+#: ../lib/Video/DVDRip/JobPlanner.pm:1358
 msgid ""
 "No splitted target files available.\n"
 "First transcode and split the movie."
 msgstr ""
-"Ingen opdelte målfiler tilgængelige.\n"
-"Først skal du transcode og opddele filmen."
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:1401
-#: ../lib/Video/DVDRip/JobPlanner.pm:1448
+#: ../lib/Video/DVDRip/JobPlanner.pm:1408
+#: ../lib/Video/DVDRip/JobPlanner.pm:1455
 msgid "Create vobsub files"
-msgstr "Lav vobsub filer"
+msgstr ""
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:1441
+#: ../lib/Video/DVDRip/JobPlanner.pm:1448
 msgid "Extract PS1 streams from VOB"
-msgstr "Udtræk PS1 strømme fra VOB"
+msgstr ""
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:1459
+#: ../lib/Video/DVDRip/JobPlanner.pm:1466
 msgid "Splitted vobsub file generation"
-msgstr "Opdel vobsub fil generering"
+msgstr ""
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:1470
+#: ../lib/Video/DVDRip/JobPlanner.pm:1477
+#, fuzzy
 msgid "Count frames of files"
-msgstr "Tæl antal filer"
+msgstr "Kunne ikke åbne filen %s"
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:1489
+#: ../lib/Video/DVDRip/JobPlanner.pm:1496
 #, perl-brace-format
 msgid "File {file} has {frames} frames."
-msgstr "Fil {file} har {frames} billeder."
+msgstr ""
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:1525
+#: ../lib/Video/DVDRip/JobPlanner.pm:1532
 msgid "Single vobsub file generation"
-msgstr "En enkelt vobsub fil generering"
+msgstr ""
 
-#: ../lib/Video/DVDRip/JobPlanner.pm:1536
+#: ../lib/Video/DVDRip/JobPlanner.pm:1543
 msgid "Extract PS1 stream from VOB"
-msgstr "Udtræk PS1 strøm fra VOB"
+msgstr ""
 
 #: ../lib/Video/DVDRip/Title.pm:434
 #, perl-brace-format
@@ -930,559 +892,542 @@ msgid ""
 "Set codec of audio track #{nr} to 'mp3', 'vorbis' not supported by AVI "
 "container"
 msgstr ""
-"Sæt codec af lydspor #{nr} til 'mp3', 'vorbis' er ikke understøttet af AVI "
-"containeren"
 
 #: ../lib/Video/DVDRip/Title.pm:443
 #, perl-brace-format
 msgid ""
 "Set codec of audio track #{nr} to 'mp3', 'mp2' not supported by AVI container"
 msgstr ""
-"Sæt codec af lydspor #{nr} til 'mp3', 'mp2' er ikke understøttet af AVI "
-"containeren"
 
 #: ../lib/Video/DVDRip/Title.pm:454
 msgid "Set video codec to 'xvid', '"
-msgstr "Sæt videocodec til 'xvid', '"
+msgstr ""
 
 #: ../lib/Video/DVDRip/Title.pm:456
 msgid "' not supported by AVI container"
-msgstr "' er ikke understøttet af AVI containeren."
+msgstr ""
 
 #: ../lib/Video/DVDRip/Title.pm:468
 #, perl-brace-format
 msgid "Set codec of audio track #{nr} to 'mp2', '"
-msgstr "Sæt codec af lydspor #{nr} til 'mp2', '"
+msgstr ""
 
 #: ../lib/Video/DVDRip/Title.pm:471 ../lib/Video/DVDRip/Title.pm:481
 msgid "' not supported by MPEG container"
-msgstr "' er ikke understøttet af MPEG containeren"
+msgstr ""
 
 #: ../lib/Video/DVDRip/Title.pm:479
 msgid "Set video codec to 'SVCD', '"
-msgstr "Sæt codec af lydspor #{nr} til 'SVCD', '"
+msgstr ""
 
 #: ../lib/Video/DVDRip/Title.pm:494
 #, perl-brace-format
 msgid "Set codec of audio track #{nr} to 'vorbis', '"
-msgstr "Sæt codec af lydspor #{nr} til 'vorbis', '"
+msgstr ""
 
 #: ../lib/Video/DVDRip/Title.pm:497
 msgid "' not supported by OGG container"
-msgstr "' er ikke understøttet af Ogg containeren"
+msgstr ""
 
 #: ../lib/Video/DVDRip/Title.pm:506
 msgid "Set video codec to 'xvid', MPEG not supported by OGG container"
 msgstr ""
-"Sæt video codec til 'xvid', MPEG er ikke understøttet af Ogg containeren"
 
-#: ../lib/Video/DVDRip/Title.pm:749
+#: ../lib/Video/DVDRip/Title.pm:753
 #: ../lib/Video/DVDRip/GUI/Project/Title.pm:120
 msgid "Chp"
-msgstr "Chp"
-
-#: ../lib/Video/DVDRip/Title.pm:751
-msgid "Aud"
-msgstr "Aud"
+msgstr ""
 
 #: ../lib/Video/DVDRip/Title.pm:755
-msgid "frames"
-msgstr "billeder"
+msgid "Aud"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Title.pm:827 ../lib/Video/DVDRip/Title.pm:905
+#: ../lib/Video/DVDRip/Title.pm:759
+#, fuzzy
+msgid "frames"
+msgstr "Spil"
+
+#: ../lib/Video/DVDRip/Title.pm:831 ../lib/Video/DVDRip/Title.pm:909
 #, perl-brace-format
 msgid "Can't mkpath directory '{dir}'"
-msgstr "Kunne ikke mkpath katalog '{dir}'"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Title.pm:989
+#: ../lib/Video/DVDRip/Title.pm:993
 msgid "Width isn't even."
-msgstr "Bredde er ikke fast."
+msgstr ""
 
-#: ../lib/Video/DVDRip/Title.pm:992
+#: ../lib/Video/DVDRip/Title.pm:996
 msgid "Width is not divisible by 16."
-msgstr "16 går ikke op i bredden."
+msgstr ""
 
-#: ../lib/Video/DVDRip/Title.pm:995
+#: ../lib/Video/DVDRip/Title.pm:999
 msgid "Height isn't even."
-msgstr "Højden er ikke fast."
+msgstr ""
 
-#: ../lib/Video/DVDRip/Title.pm:998
+#: ../lib/Video/DVDRip/Title.pm:1002
 msgid "Height is not divisible by 16."
-msgstr "16 går ikke op i højden."
+msgstr ""
 
-#: ../lib/Video/DVDRip/Title.pm:1006
+#: ../lib/Video/DVDRip/Title.pm:1010
 msgid "Settings Ok"
-msgstr "Indstillinger OK"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Title.pm:1012
+#: ../lib/Video/DVDRip/Title.pm:1016
 msgid "After 1st clipping"
-msgstr "Efter første clipping"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Title.pm:1013
+#: ../lib/Video/DVDRip/Title.pm:1017
 msgid "After 2nd clipping"
-msgstr "Efter anden clipping"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Title.pm:1014
+#: ../lib/Video/DVDRip/Title.pm:1018
 msgid "After zoom"
-msgstr "Efter zoom"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Title.pm:1019
+#: ../lib/Video/DVDRip/Title.pm:1023
 #, perl-brace-format
 msgid "Eff. ratio: <b>{eff}</b>, phys. ratio: <b>{phys}</b>"
-msgstr "Effektivitetsforhold: <b>{eff}</b>, fysisk forhold: <b>{phys}</b>"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Title.pm:1189
+#: ../lib/Video/DVDRip/Title.pm:1187
 #, perl-brace-format
 msgid "Can't read VOB navigation file '{filename}'"
-msgstr "Kan ikke læse VOB navigationsfilen '{filename}'"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Title.pm:1220
+#: ../lib/Video/DVDRip/Title.pm:1218
 msgid "Program stream units calculated"
-msgstr "Programstrøm enheder (program stream units) beregnet"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Title.pm:1320
+#: ../lib/Video/DVDRip/Title.pm:1301
 #, perl-brace-format
 msgid "invalid parameter for frame_size ('{frame_size}')"
-msgstr "ulovlig parameter til frame_size ('{frame_size}')"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Title.pm:1740 ../lib/Video/DVDRip/Title.pm:3108
+#: ../lib/Video/DVDRip/Title.pm:1721 ../lib/Video/DVDRip/Title.pm:3101
 #, perl-brace-format
 msgid "Can't read VOB navigation file '{vob_nav_file}'"
-msgstr "Kan ikke læse VOB navigationsfilen '{vob_nav_file}'"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Title.pm:2055
+#: ../lib/Video/DVDRip/Title.pm:2036
 msgid "Enabled PSU core. Movie is NTSC and has more than one PSU."
-msgstr "PSU kerne er slået til. Filmen er NTSC-kodet og har mere end en PSU."
+msgstr ""
 
-#: ../lib/Video/DVDRip/Title.pm:2060
+#: ../lib/Video/DVDRip/Title.pm:2041
 msgid "Not enabling PSU core, because this movie has only one PSU."
-msgstr "Slår ikke PSU kernen til, fordi denne film kun har en PSU."
+msgstr ""
 
-#: ../lib/Video/DVDRip/Title.pm:2573
+#: ../lib/Video/DVDRip/Title.pm:2559
 #, perl-brace-format
 msgid ""
 "When using fast resize: Clip1 and Zoom size must be divisible by "
 "{multiple_of}"
 msgstr ""
-"Fejl under hurtig skalering: Clip1 og Zoom størrelsen skal kunne divideres "
-"med {multiple_of}"
 
-#: ../lib/Video/DVDRip/Title.pm:2580
+#: ../lib/Video/DVDRip/Title.pm:2566
 msgid "When using fast resize: Width and height must both shrink or expand"
-msgstr "Fejl under hurtig skalering: Højden og bredden skal vokse eller krympe"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Title.pm:3082
+#: ../lib/Video/DVDRip/Title.pm:3075
 msgid ""
 "Fast VOB navigation only available for ripped DVD's, falling back to slow "
 "method."
 msgstr ""
-"Hurtig VOB navigation er hun tilgængelig for rippede DVD'er; vælger langsom "
-"metode."
 
-#: ../lib/Video/DVDRip/Title.pm:3086
+#: ../lib/Video/DVDRip/Title.pm:3079
 msgid "VOB navigation file is missing. Slow navigation method used."
-msgstr "VOB navigationsfilen mangler. Langsom navigation bruges i stedet."
+msgstr ""
 
-#: ../lib/Video/DVDRip/Title.pm:3090
+#: ../lib/Video/DVDRip/Title.pm:3083
 msgid "Using slow preview grabbing as adviced by user"
-msgstr "Bruger langsom forhåndsvisning, som brugeren har anmodet om."
+msgstr ""
 
-#: ../lib/Video/DVDRip/Title.pm:3120
+#: ../lib/Video/DVDRip/Title.pm:3113
 #, perl-brace-format
 msgid "VOB navigation file '{vob_nav_file}' is corrupted."
-msgstr "VOB navigationsfilen '{vob_nav_file}' er korrupt."
+msgstr ""
 
-#: ../lib/Video/DVDRip/Title.pm:3135
+#: ../lib/Video/DVDRip/Title.pm:3128
 #, perl-brace-format
 msgid ""
 "Can't find frame {frame} in VOB navigation file '{vob_nav_file}' (which has "
 "only {frames} frames). "
 msgstr ""
-"Kan ikke finde billede {frame} i VOB navigationsfilen '{vob_nav_file}' (som "
-"kun har {frames} billeder). "
 
-#: ../lib/Video/DVDRip/Title.pm:3573
+#: ../lib/Video/DVDRip/Title.pm:3566
 msgid "You first have to transcode this title."
-msgstr "Du skal først transcode denne titel."
+msgstr ""
 
-#: ../lib/Video/DVDRip/Title.pm:3736
+#: ../lib/Video/DVDRip/Title.pm:3729
 msgid "No files for image creation selected."
-msgstr "Der blev ikke valgt nogen filer til billede opretning."
+msgstr ""
 
-#: ../lib/Video/DVDRip/Title.pm:3745 ../lib/Video/DVDRip/Title.pm:3822
+#: ../lib/Video/DVDRip/Title.pm:3738 ../lib/Video/DVDRip/Title.pm:3815
 msgid "No burn files selected."
-msgstr "Ingen filer til brænding blev valgt."
+msgstr ""
 
-#: ../lib/Video/DVDRip/Title.pm:3746
+#: ../lib/Video/DVDRip/Title.pm:3739
 msgid "File is already an CD image."
-msgstr "Filen er allerede et CD-billede."
+msgstr ""
 
-#: ../lib/Video/DVDRip/Title.pm:3751
+#: ../lib/Video/DVDRip/Title.pm:3744
 msgid "Can't burn (S)VCD on the fly"
-msgstr "Kan ikke brænde (S)VCD on-the-fly"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Title.pm:3811
+#: ../lib/Video/DVDRip/Title.pm:3804
 msgid "No files for burning selected."
-msgstr "Ingen filer blev valgt til brænding."
+msgstr ""
 
-#: ../lib/Video/DVDRip/Title.pm:4079 ../lib/Video/DVDRip/Title.pm:4114
+#: ../lib/Video/DVDRip/Title.pm:4072 ../lib/Video/DVDRip/Title.pm:4107
 msgid "No subtitle selected"
-msgstr "Ingen undertitler valgt"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Title.pm:4367
+#: ../lib/Video/DVDRip/Title.pm:4360
 #, perl-brace-format
 msgid ""
 "Your frame size isn't conform to the standard,\n"
 "which is {should_width}x{should_height} for {codec}/{mode}, but you "
 "configured {width}x{height}."
 msgstr ""
-"Din rammestørrelse overholder ikke standarden,\n"
-"som er {should_width}×{should_height} til {codec}/{mode}, men du har valgt "
-"{width}×{height}."
 
-#: ../lib/Video/DVDRip/Title.pm:4392
+#: ../lib/Video/DVDRip/Title.pm:4385
 msgid ""
 "2nd clipping parameters can only be\n"
 "moved to 1st clipping parameters, if\n"
 "1st clipping is not defined."
 msgstr ""
-"Anden grænse for klipning må kun\n"
-"flyttes til første klipningsgrænse hvis\n"
-"førstklipnings ikke er defineret."
 
-#: ../lib/Video/DVDRip/Config.pm:194
+#: ../lib/Video/DVDRip/Config.pm:195
 msgid "Default DVD device"
-msgstr "DVD-drev som skal bruges (udgangspunkt)"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Config.pm:203
+#: ../lib/Video/DVDRip/Config.pm:204
 msgid "Eject Command"
-msgstr "\"Skub ud\"-kommando"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Config.pm:209
+#: ../lib/Video/DVDRip/Config.pm:210
+#, fuzzy
 msgid "DVD player command"
-msgstr "DVD-afspiller kommando"
+msgstr "Spiller %i er forbundet"
 
-#: ../lib/Video/DVDRip/Config.pm:220
+#: ../lib/Video/DVDRip/Config.pm:221
+#, fuzzy
 msgid "File player command"
-msgstr "Fil-afspiller kommando"
+msgstr "Spiller %i er forbundet"
 
-#: ../lib/Video/DVDRip/Config.pm:227
+#: ../lib/Video/DVDRip/Config.pm:228
+#, fuzzy
 msgid "STDIN player command"
-msgstr "STDIN-afspiller kommando"
+msgstr "Ingen spillere forbundet"
 
-#: ../lib/Video/DVDRip/Config.pm:236
+#: ../lib/Video/DVDRip/Config.pm:237
 msgid "rar command (for vobsub compression)"
-msgstr "rar kommando (til vobsub komprimering)"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Config.pm:243
+#: ../lib/Video/DVDRip/Config.pm:244
 msgid "Default data base directory"
-msgstr "Data katalog (udgangspunkt)"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Config.pm:248
+#: ../lib/Video/DVDRip/Config.pm:249
 msgid "Default directory for .rip project files"
-msgstr "Katalog til .rip-projekt-filer (udgangspunkt)"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Config.pm:253
+#: ../lib/Video/DVDRip/Config.pm:254
 msgid "OGG file extension"
-msgstr "Extension til Ogg-filer"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Config.pm:259
+#: ../lib/Video/DVDRip/Config.pm:260
 msgid "Start cluster control daemon locally"
-msgstr "Start kloster-kontrol dæmonen lokalt"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Config.pm:264
+#: ../lib/Video/DVDRip/Config.pm:265
 msgid "Hostname of server with daemon"
-msgstr "Værtsnavn til serveren med dæmonen"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Config.pm:269
+#: ../lib/Video/DVDRip/Config.pm:270
 msgid "TCP port number of daemon"
-msgstr "TCP-portnummer som dæmonen kører på"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Config.pm:275
+#: ../lib/Video/DVDRip/Config.pm:276
 msgid "Default video codec"
-msgstr "Video-codec (udgangspunkt)"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Config.pm:285
+#: ../lib/Video/DVDRip/Config.pm:286
 msgid "Default container format"
-msgstr "Container-format (udgangspunkt)"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Config.pm:291
+#: ../lib/Video/DVDRip/Config.pm:292
 msgid "Default BPP value"
-msgstr "Farvedybde (udgangspunkt)"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Config.pm:295
+#: ../lib/Video/DVDRip/Config.pm:296
 msgid ""
 "If this option is set dvd::rip automatically calculates the video bitrate "
 "using this BPP value"
 msgstr ""
-"Hvis denne option er sat, vil dvd::rip automatisk beregne video-bitraten ud "
-"fra farvedybden"
 
-#: ../lib/Video/DVDRip/Config.pm:300
+#: ../lib/Video/DVDRip/Config.pm:301
 msgid "Grab subtitles while ripping"
-msgstr "Rip også undertekster"
-
-#: ../lib/Video/DVDRip/Config.pm:304
-msgid "Grab all subtitles"
-msgstr "Rip alle undertekster"
+msgstr ""
 
 #: ../lib/Video/DVDRip/Config.pm:305
-msgid "Grab subtitles of preferred language"
-msgstr "Rip undertekster med foretrukket sprog"
+msgid "Grab all subtitles"
+msgstr ""
 
 #: ../lib/Video/DVDRip/Config.pm:306
+msgid "Grab subtitles of preferred language"
+msgstr ""
+
+#: ../lib/Video/DVDRip/Config.pm:307
 msgid "Don't grab subtitles"
-msgstr "Rip ikke undertekster"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Config.pm:310
-#, fuzzy
+#: ../lib/Video/DVDRip/Config.pm:311
 msgid "Default Clip & Zoom preset"
-msgstr "Anvend clip & zoom preset"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Config.pm:316
+#: ../lib/Video/DVDRip/Config.pm:317
 msgid "Preferred language"
-msgstr "Foretrukket sprog"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Config.pm:322
+#: ../lib/Video/DVDRip/Config.pm:323
 msgid "Workaround transcode NPTL bugs"
-msgstr "Tag højde for transcode-NPTL-fejl"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Config.pm:328
+#: ../lib/Video/DVDRip/Config.pm:329
 msgid "Set LD_ASSUME_KERNEL to"
-msgstr "Sæt LD_ASSUME_KERNEL til"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Config.pm:335
+#: ../lib/Video/DVDRip/Config.pm:336
 msgid "Optimize layout for small screens"
 msgstr ""
 
-#: ../lib/Video/DVDRip/Config.pm:339
+#: ../lib/Video/DVDRip/Config.pm:340
 msgid ""
 "With this option the dvd::rip GUI may be tweaked to fit even on small "
 "screens by adding scrollbars to the notebook pages. dvd::rip needs to be "
 "restarted to take effect"
 msgstr ""
 
-#: ../lib/Video/DVDRip/Config.pm:347
+#: ../lib/Video/DVDRip/Config.pm:348
 msgid "Basic settings"
-msgstr "Basale indstillinger"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Config.pm:354
+#: ../lib/Video/DVDRip/Config.pm:355
 msgid "Commands"
-msgstr "Kommandoer"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Config.pm:360
-msgid "Cluster options"
-msgstr "Kloster-opsætning"
-
-#: ../lib/Video/DVDRip/Config.pm:366
-msgid "Miscellaneous options"
-msgstr "Andre indstillinger"
-
-#: ../lib/Video/DVDRip/Config.pm:387
+#: ../lib/Video/DVDRip/Config.pm:361
 #, fuzzy
-msgid "- No Modifications (anamorph) -"
-msgstr "- Ingen modifikationer -"
+msgid "Cluster options"
+msgstr "Klyngebombe"
 
-#: ../lib/Video/DVDRip/Config.pm:403
+#: ../lib/Video/DVDRip/Config.pm:367
+msgid "Miscellaneous options"
+msgstr ""
+
+#: ../lib/Video/DVDRip/Config.pm:388
+msgid "- No Modifications (anamorph) -"
+msgstr ""
+
+#: ../lib/Video/DVDRip/Config.pm:404
 msgid "Autoadjust, Clipping only (anamorph)"
 msgstr ""
 
-#: ../lib/Video/DVDRip/Config.pm:408
+#: ../lib/Video/DVDRip/Config.pm:409
 msgid "Autoadjust, Big Frame Size, HQ Resize"
-msgstr "Autojustér, stor rammestørrelse, højkvalitetsskalering"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Config.pm:415
+#: ../lib/Video/DVDRip/Config.pm:416
 msgid "Autoadjust, Medium Frame Size, HQ Resize"
-msgstr "Autojustér, medium rammestørrelse, højkvalitetsskalering"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Config.pm:422
+#: ../lib/Video/DVDRip/Config.pm:423
 msgid "Autoadjust, Small Frame Size, HQ Resize"
-msgstr "Autojustér, lille rammestørrelse, højkvalitetsskalering"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Config.pm:429
+#: ../lib/Video/DVDRip/Config.pm:430
 msgid "Autoadjust, Big Frame Size, Fast Resize"
-msgstr "Autojustér, stor rammesstørrelse, hurtig skalering"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Config.pm:436
+#: ../lib/Video/DVDRip/Config.pm:437
 msgid "Autoadjust, Medium Frame Size, Fast Resize"
-msgstr "Autojustér, medium rammesstørrelse, hurtig skalering"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Config.pm:443
+#: ../lib/Video/DVDRip/Config.pm:444
 msgid "Autoadjust, Small Frame Size, Fast Resize"
-msgstr "Autojustér, lille rammesstørrelse, hurtig skalering"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Config.pm:450
+#: ../lib/Video/DVDRip/Config.pm:451
 msgid "VCD 4:3, PAL"
-msgstr "VCD 4:3, PAL"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Config.pm:466
+#: ../lib/Video/DVDRip/Config.pm:467
 msgid "VCD 16:9, PAL"
-msgstr "VCD 16:9, PAL"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Config.pm:482
+#: ../lib/Video/DVDRip/Config.pm:483
 msgid "SVCD 16:9 -> 4:3 letterbox, PAL"
-msgstr "SVCD 16:9 -> 4:3 letterbox, PAL"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Config.pm:498
+#: ../lib/Video/DVDRip/Config.pm:499
 msgid "SVCD anamorph, PAL"
-msgstr "SVCD anamorph, PAL"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Config.pm:514
+#: ../lib/Video/DVDRip/Config.pm:515
 msgid "XSVCD anamorph, PAL"
-msgstr "XSVCD anamorph, PAL"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Config.pm:530
+#: ../lib/Video/DVDRip/Config.pm:531
 msgid "CVD anamorph, PAL"
-msgstr "CVD anamorph, PAL"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Config.pm:546
+#: ../lib/Video/DVDRip/Config.pm:547
 msgid "VCD 4:3, NTSC"
-msgstr "VCD 4:3, NTSC"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Config.pm:562
+#: ../lib/Video/DVDRip/Config.pm:563
 msgid "VCD 16:9, NTSC"
-msgstr "VCD 16:9, NTSC"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Config.pm:578
+#: ../lib/Video/DVDRip/Config.pm:579
 msgid "SVCD 16:9 -> 4:3 letterbox, NTSC"
-msgstr "SVCD 16:9 -> 4:3 letterbox, NTSC"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Config.pm:594
+#: ../lib/Video/DVDRip/Config.pm:595
 msgid "SVCD anamorph, NTSC"
-msgstr "SVCD anamorph, NTSC"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Config.pm:610
+#: ../lib/Video/DVDRip/Config.pm:611
 msgid "XSVCD anamorph, NTSC"
-msgstr "XSVCD anamorph, NTSC"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Config.pm:626
+#: ../lib/Video/DVDRip/Config.pm:627
 msgid "CVD anamorph, NTSC"
-msgstr "CVD anamorph, NTSC"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Config.pm:938
+#: ../lib/Video/DVDRip/Config.pm:939
 #, perl-brace-format
 msgid "{file} executable : Ok"
-msgstr "{file} (kørbar): OK"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Config.pm:941 ../lib/Video/DVDRip/Config.pm:957
+#: ../lib/Video/DVDRip/Config.pm:942 ../lib/Video/DVDRip/Config.pm:958
 #, perl-brace-format
 msgid "{file} not found : NOT Ok"
-msgstr "{file} ikke fundet: IKKE OK"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Config.pm:943
+#: ../lib/Video/DVDRip/Config.pm:944
 #, perl-brace-format
 msgid "{file} not executable : NOT Ok"
-msgstr "{file} (ikke kørbar): IKKE OK"
-
-#: ../lib/Video/DVDRip/Config.pm:953
-msgid "has whitespace : NOT Ok"
-msgstr "har mellemrum i sti: IKKE OK"
+msgstr ""
 
 #: ../lib/Video/DVDRip/Config.pm:954
-msgid "is no absolute path : NOT Ok"
-msgstr "er ikke en absolut filsti: IKKE OK"
+msgid "has whitespace : NOT Ok"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Config.pm:959
+#: ../lib/Video/DVDRip/Config.pm:955
+msgid "is no absolute path : NOT Ok"
+msgstr ""
+
+#: ../lib/Video/DVDRip/Config.pm:960
 #, perl-brace-format
 msgid "{file} not writable : NOT Ok"
-msgstr "{file} (ikke skrivbar): IKKE OK"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Config.pm:962
+#: ../lib/Video/DVDRip/Config.pm:963
 #, perl-brace-format
 msgid "{file} writable : Ok"
-msgstr "{file} (skrivbar): OK"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Config.pm:973
+#: ../lib/Video/DVDRip/Config.pm:974
 #, perl-brace-format
 msgid "{value} is numeric : Ok"
-msgstr "{value} er numerisk: OK"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Config.pm:976
+#: ../lib/Video/DVDRip/Config.pm:977
 #, perl-brace-format
 msgid "{value} isn't numeric : NOT Ok"
-msgstr "{value} er ikke numerisk: IKKE OK"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Config.pm:986
+#: ../lib/Video/DVDRip/Config.pm:987
 msgid "is empty : Ok"
-msgstr "er tom: OK"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Config.pm:997
+#: ../lib/Video/DVDRip/Config.pm:998
 #, perl-brace-format
 msgid "{value} exists : Ok"
-msgstr "{value} eksisterer: OK"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Config.pm:1000
+#: ../lib/Video/DVDRip/Config.pm:1001
 #, perl-brace-format
 msgid "{value} doesn't exist : NOT Ok"
-msgstr "{value} eksisterer ikke: IKKE OK"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Config.pm:1011
+#: ../lib/Video/DVDRip/Config.pm:1012
 #, perl-brace-format
 msgid "'{value}' is known : Ok"
-msgstr "'{value}' er kendt: OK"
+msgstr ""
 
-#: ../lib/Video/DVDRip/Config.pm:1015
+#: ../lib/Video/DVDRip/Config.pm:1016
 #, perl-brace-format
 msgid "'{value}' unknown: NOT Ok"
-msgstr "'{value}' er ukendt: IKKE OK"
+msgstr ""
 
 #: ../lib/Video/DVDRip/Project.pm:168
 #, perl-brace-format
 msgid "Project file saved to '{filename}'"
-msgstr "Projektfilen blev gemt som '{filename}'"
+msgstr ""
 
 #: ../lib/Video/DVDRip/Project.pm:174
 #, perl-brace-format
 msgid "Project temporary dir '{dir}' created"
-msgstr "Midlertidigt projektkatalog '{dir}' blev oprettet"
+msgstr ""
 
 #: ../lib/Video/DVDRip/Project.pm:229
 msgid "no filename set"
-msgstr "intet filnavn sat"
+msgstr ""
 
 #: ../lib/Video/DVDRip/Project.pm:230 ../lib/Video/DVDRip/Project.pm:235
 #, perl-brace-format
 msgid "can't read {filename}"
-msgstr "kan ikke læse {filename}"
+msgstr ""
 
 #: ../lib/Video/DVDRip/Project.pm:244
 msgid "File is no dvd::rip file"
-msgstr "Filen er ikke en dvd::rip fil"
+msgstr ""
 
 #: ../lib/Video/DVDRip/Project.pm:271
 #, perl-brace-format
 msgid "Can't load {filename}, wrong data format"
-msgstr "Kan ikke læse {filename}, forkert dataformat"
+msgstr ""
 
 #: ../lib/Video/DVDRip/Project.pm:276
 #, perl-brace-format
 msgid "can't load {filename}. Perl error: {error}"
-msgstr "kan ikke indlæse {filename}. Perl fejl: {error}"
+msgstr ""
 
 #: ../lib/Video/DVDRip/Project.pm:403
 msgid "WARNING: no IFO files found - vobsub feature disabled."
 msgstr ""
-"ADVARSEL: ingen IFO-filer blev fundet – vobsub funktionalitet slået fra"
 
 #: ../lib/Video/DVDRip/Project.pm:407
 #, perl-brace-format
 msgid "Copying IFO files from {src_dir} to {dir}"
-msgstr "Kopierer IFO-filer fra {src_dir} til {dir}"
+msgstr ""
 
 #: ../lib/Video/DVDRip/Project.pm:444
 #, perl-brace-format
 msgid "Mounting DVD at {mount_point}"
-msgstr "Monterer DVD på {mount_point}"
+msgstr ""
 
 #: ../lib/Video/DVDRip/Project.pm:455
 #, perl-brace-format
 msgid "Failed to mount DVD at {mount_point} ({mount_error})"
-msgstr "Kunne ikke montere DVD på {mount_point} ({mount_error})"
+msgstr ""
 
 #: ../lib/Video/DVDRip/Project.pm:476
 #, perl-brace-format
 msgid "Umount {mount_point}: "
-msgstr "Afmonterer {mount_point}: "
+msgstr ""
 
 #: ../lib/Video/DVDRip/Project.pm:537
 #, perl-brace-format
@@ -1490,463 +1435,447 @@ msgid ""
 "Warning: filter {filter} removed from title #{nr} because this transcode "
 "installation doesn't provide it anymore"
 msgstr ""
-"Advarsel: filter {filter} blev fjernet fra titel #{nr} fordi denne "
-"installation af transcode ikke understøtter det mere"
 
 #: ../lib/Video/DVDRip/GUI/Preview.pm:143
 msgid ""
 "Error executing a transcode socket command:\n"
 "\n"
 msgstr ""
-"Fejl under eksekvering af transcode socket kommando:\n"
-"\n"
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:80
 #: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:81
 #: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:82
 #: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:83
 msgid "Not tested yet"
-msgstr "Ikke testet endnu"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:101
 msgid "dvd::rip - Edit cluster node"
-msgstr "dvd::rip – rediger klosterslave"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:158
 msgid "Edit node properties"
-msgstr "Rediger slaveegenskaber"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:162
 #: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:576
 #: ../lib/Video/DVDRip/GUI/Depend.pm:132
 #: ../lib/Video/DVDRip/GUI/Filters.pm:173
 #: ../lib/Video/DVDRip/GUI/Filters.pm:219
+#, fuzzy
 msgid "Name"
-msgstr "Navn"
+msgstr "Spil"
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:168
+#, fuzzy
 msgid "Hostname"
-msgstr "Værtsnavn"
+msgstr "Vær vært for et spil"
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:170
 msgid "Network hostname of this node. Defaults to node name."
-msgstr "Værtsnavn på denne slave (som udgangspunkt slavenavnet)"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:174
 msgid "No valid hostname"
-msgstr "Intet gyldigt værtsnavn"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:179
 msgid "Local data directory"
-msgstr "Lokalt datakatalog"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:180
 msgid ""
 "This is the mount point of the dvd::rip data master directory on this node, "
 "e.g. connected via NFS or Samba"
 msgstr ""
-"Dette er monteringspunktet til dvd::rip data-master-kataloget på denne slave "
-"(kan f.eks. være monteret med NFS eller Samba)"
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:186
 msgid "Speed index"
-msgstr "Hastighedsindeks"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:188
 msgid ""
 "Enter an integer value indicating the speed of this node. The higher the "
 "value the faster it is. Faster nodes are preferred over slower nodes."
 msgstr ""
-"Skriv et heltal som repræsenterer denne slaves hastighed. Jo højere tallet "
-"er, jo hurtigere er den. Hurtigere slaver foretrækkes frem for langsomme "
-"slaver."
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:195
 msgid "Additional transcode options"
-msgstr "Yderlige transcode argumenter"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:197
 msgid ""
 "You can specify additional transcode options for this node, e.g. -u 4,2 to "
 "increase the performance on a two processor machine"
 msgstr ""
-"Du kan skrive yderlige transcode kommandolinjeargumenter til denne slave. F."
-"eks. \"-u 4,2\" for at forøge hastigheden på en maskine med to processorer."
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:203
 msgid "Node has dvd::rip data harddrive?"
-msgstr "Har slaven en dvd::rip data harddisk?"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:205
 msgid ""
 "If this node has the dvd::rip data hardrive locally connected, I/O intensive "
 "jobs are executed on this node with higher priority"
 msgstr ""
-"Hvis denne slave har dvd::rip data harddisken forbundet lokalt, vil I/O "
-"intensive operationer køres på denne slave ved højere prioritet"
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:213
 msgid "Node runs Cluster Control Daemon?"
-msgstr "Kører slaven kloster-kontrol-dæmonen?"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:214
 msgid ""
 "Specify whether on this node runs the cluster control daemon. In that case "
 "no ssh remote command execution is neccessary"
 msgstr ""
-"Skriv om denne slave kører kloster-kontrol-dæmonen. Hvis dette er tilfældet, "
-"er fjern-SSH-kommandoeksekvering ikke nødvendigt."
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:222
+#, fuzzy
 msgid "Username to connect with ssh"
-msgstr "Brugernavn til SSH"
+msgstr "Fejl: Kan ikke forbinde til %s:%s"
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:223
 msgid ""
 "You need to setup passwordless authorization via ~/.ssh/authorized_keys for "
 "this user from the master server to the node"
 msgstr ""
-"Du må konfigurere autorisation uden password for denne bruger vha. ~/.ssh/"
-"authorized_keys fra masterserveren til slaven."
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:230
 msgid "SSH command and options"
-msgstr "SSH-kommando og kommandolinjeargumenter"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:232
 msgid ""
 "Usually you leave this empty (defaults to 'ssh -x'), but if your setup needs "
 "special ssh options you may edit them here"
 msgstr ""
-"Normalt vil du lade dette felt være tomt (så vil kommandoen 'ssh -x' blive "
-"brugt), men hvis din netværkskonfiguration kræver specielle SSH-"
-"indstillinger kan du skrive dem her."
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:240
+#, fuzzy
 msgid "Test settings"
-msgstr "Testindstillinger"
+msgstr "Hold-statistik"
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:244
 msgid ""
 "This triggers a simple test connection to the node, checking file "
 "permissions, transcode versions etc."
 msgstr ""
-"Dette forsøger at lave en simpel testforbindelse til slaven, chekker "
-"filrettigheder, transcode-versioner o.s.v."
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:267
 msgid "Node test results"
-msgstr "Slave testresultater"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:297
+#, fuzzy
 msgid "Test"
-msgstr "Test"
+msgstr "Hold"
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:301
+#, fuzzy
 msgid "Result"
-msgstr "Resultat"
+msgstr "Opløsning"
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:305
 msgid "Details"
-msgstr "Detaljer"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:312
+#, fuzzy
 msgid "SSH connection"
-msgstr "SSH-forbindelse"
+msgstr "Manuel forbindelse"
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:324
 msgid "Data directory"
-msgstr "Datakatalog"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:343
 msgid "Write access"
-msgstr "Skriveadgang"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:357
 #, fuzzy
 msgid "Program versions"
-msgstr "Fremgang"
+msgstr "Wormux version "
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:467
 msgid "No details available"
-msgstr "Ingen detaljer tilgængelige"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:468
 msgid "Not tested, no SSH connection!"
-msgstr "Blev ikke testet, kunne ikke lave SSH-forbindelse!"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:469
 msgid "OK"
-msgstr "OK"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:470
 msgid "NOT OK"
-msgstr "IKKE OK"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:475
+#, fuzzy
 msgid "Master can connect to node"
-msgstr "Masterserveren kan forbinde til denne slave"
+msgstr "Manuel forbindelse"
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:499
 msgid "Empty"
-msgstr "Tom"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:502
 msgid "Node's data directory"
-msgstr "Slavens datakatalog"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:506
-#, fuzzy
 msgid "Masters' data directory"
-msgstr "Masterserverens datakatalog"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:520
+#, fuzzy
 msgid "Content of data directory matches"
-msgstr "Datakatalogets indhold passer"
+msgstr "Kan ikke åbne holdkataloget (%s)!"
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:531
-#, fuzzy
 msgid "Node's programs"
-msgstr "Slavens transcode"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:533
-#, fuzzy
 msgid "Masters's programs"
-msgstr "Masterserverens transcode"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:555
 msgid "Node can write to data directory"
-msgstr "Slaven kan skrive til datakataloget"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:605
 msgid "Can't execute tests:"
-msgstr "Kan ikke udføre tests:"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:628
-#, fuzzy
 msgid "ssh connect"
-msgstr "SSH-forbindelse"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:629
 #, fuzzy
 msgid "Content of project base directory"
-msgstr "Datakatalogets indhold passer"
+msgstr "Kan ikke åbne holdkataloget (%s)!"
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:630
 msgid "Project base directory writable"
 msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:631
-#, fuzzy
 msgid "transcode version match"
-msgstr "transcode-version"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:659
 msgid "All tests successful"
-msgstr "Alle tests blev udført succesfuldt"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:665
 msgid "Brief report"
-msgstr "Kort rapport"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Node.pm:675
 msgid "Detailed report"
-msgstr "Detaljeret rapport"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Title.pm:64
 msgid "dvd::rip - Edit cluster project"
-msgstr "dvd::rip – rediger kloster projekt"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Title.pm:108
 msgid "Edit cluster project properties"
-msgstr "Rediger klosterprojektets egenskaber"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Title.pm:113
 #: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:433
 msgid "Project"
-msgstr "Projekt"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Title.pm:117
+#, fuzzy
 msgid "Number of frames per chunk"
-msgstr "Antal billeder per stump"
+msgstr "Antal hold:"
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Title.pm:119
 msgid ""
 "The smaller the chunks the higher the parallelism, but overall bitrate "
 "distribution may suffer if set too low"
 msgstr ""
-"Jo mindre stumperne er, jo større bliver muligheden for parallelt arbejde. "
-"Men der kan komme dårlig bitratedistribution hvis dette er sat for lavt."
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Title.pm:126
 msgid "Cleanup temporary files after merging?"
-msgstr "Slet midlertidige filer efter sammensmeltning?"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Title.pm:132
 msgid "Cleanup original VOB files when finished?"
-msgstr "Slet originale VOB-filer bagefter?"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:158
 msgid "dvd::rip - Cluster Control"
-msgstr "dvd::rip – klosterkontrol"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:250
-#: ../lib/Video/DVDRip/GUI/Main.pm:299
+#: ../lib/Video/DVDRip/GUI/Main.pm:289
 msgid "_File"
-msgstr "_Fil"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:253
+#, fuzzy
 msgid "_Close window"
-msgstr "_Luk vindue"
+msgstr "Fuld skærm/vindue"
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:261
+#, fuzzy
 msgid "_Master"
-msgstr "_Masterserver"
+msgstr "Administratormodus"
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:264
+#, fuzzy
 msgid "_Connect Master Daemon"
-msgstr "For_bind til masterserver-dæmon"
+msgstr "Forbind til spil"
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:271
 msgid "_Disconnect from Master Daemon"
-msgstr "_Afbryd forbindelse med masterserver-dæmon"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:281
 msgid "Shutdown Master Daemon"
-msgstr "Luk masterserver-dæmon"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:289
 msgid "_Node"
-msgstr "S_lave"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:292
 msgid "_Add node"
-msgstr "_Tilføj slave"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:298
 msgid "_Edit node"
-msgstr "_Rediger slave"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:310
 msgid "_Start node"
-msgstr "_Start slave"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:320
 msgid "Sto_p node"
-msgstr "Sto_p slave"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:330
+#, fuzzy
 msgid "_Remove node"
-msgstr "F_jern slave"
+msgstr "Servermodus"
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:343
 msgid "_Project"
-msgstr "_Projekt"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:346
 msgid "_Edit project"
-msgstr "_Rediger projekt"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:356
 msgid "_Start project"
-msgstr "_Start projekt"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:366
 msgid "_Cancel project"
-msgstr "_Annuller projekt"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:376
 msgid "Res_tart project"
-msgstr "_Genstart projekt"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:386
 msgid "_Remove project"
-msgstr "_Fjern projekt"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:421
 msgid "Project queue"
-msgstr "Projektkø"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:432
 #: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:575
 msgid "Number"
-msgstr "Nummer"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:434
 msgid "State"
-msgstr "Tilstand"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:435
 #: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:578
 #: ../lib/Video/DVDRip/Term/Progress.pm:75
 msgid "Progress"
-msgstr "Fremgang"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:448
 msgid "Edit project"
-msgstr "Rediger projekt"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:458
 msgid "Start project"
-msgstr "Start projekt"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:468
 msgid "Cancel project"
-msgstr "Annuller projekt"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:478
 msgid "Restart project"
-msgstr "Genstart projekt"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:489
 msgid "Remove project"
-msgstr "Fjern projekt"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:508
 msgid "Job running status"
-msgstr "Jobstatus"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:563
 msgid "Registered Nodes"
-msgstr "Registrerede slaver"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:577
 #: ../lib/Video/DVDRip/Term/Progress.pm:74
 msgid "Job"
-msgstr "Job"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:595
 msgid "Add node"
-msgstr "Tilføj slave"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:601
+#, fuzzy
 msgid "Edit node"
-msgstr "Rediger slave"
+msgstr "Klientmodus"
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:613
 msgid "Start node"
-msgstr "Start slave"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:624
 msgid "Stop node"
-msgstr "Stop slave"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:643
 msgid "Cluster control daemon log output"
-msgstr "Log klosterkontrol-dæmonens output"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:686
 msgid ""
 "You must first configure a cluster control daemon\n"
 "in the Preferences dialog."
 msgstr ""
-"Du skal først konfigurere en klosterkontrol-dæmon\n"
-"i \"Indstillinger\"-vinduet."
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:717
 #, perl-brace-format
 msgid "Can't connect to master daemon on {server}:{port}."
-msgstr "Kan ikke forbinde til masterserver-dæmonen på {server}:{port}."
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:736
 #, perl-brace-format
@@ -1955,97 +1884,96 @@ msgid ""
 "Execute the dvdrip-master program by hand to\n"
 "see why it doesn't run."
 msgstr ""
-"Kan ikke starte den lokale masterdæmon på port {port}.\n"
-"Prøv at køre dvdrip-master programmet i hånden for\n"
-"at se hvorfor det fejler."
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:984
 msgid "Please configure the master node first"
-msgstr "Vær venlig at konfigurere masterserveren først"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:1005
 msgid "Connection to master daemon lost!"
-msgstr "Forbindelsen til masterdæmonen blev afbrudt!"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:1058
 msgid "Do you want to remove the selected project?"
-msgstr "Vil du fjerne det valgte projekt?"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:1140
 msgid "Do you want to remove the selected node?"
-msgstr "Vil du fjerne den valgte slave?"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Cluster/Control.pm:1210
 msgid ""
 "Do you really want to shutdown\n"
 "the Cluster Control Daemon?"
-msgstr "Vil du virkelig lukke<br>klosterkontrol-dæmonen?"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/MultiAudio.pm:44
 msgid "dvd::rip - Manage multiple audio tracks"
-msgstr "dvd::rip – hold styr på flere lydspor"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/MultiAudio.pm:83
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:269
 msgid "Manage multiple audio tracks"
-msgstr "Hold styr på flere lydspor"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/MultiAudio.pm:94
 msgid "Source tracks"
-msgstr "Spor i kilden"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/MultiAudio.pm:98
 msgid "Target tracks"
-msgstr "Spor i målet"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Depend.pm:42
 msgid "dvd::rip - Dependency check"
-msgstr "dvd::rip – afhængighedscheck"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Depend.pm:58
 msgid "Required tools"
-msgstr "Nødvendige redskaber"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Depend.pm:76
+#, fuzzy
 msgid " Text version "
-msgstr "Tekstversion"
+msgstr "Wormux version "
 
 #: ../lib/Video/DVDRip/GUI/Depend.pm:82
 msgid "Text version, suitable for bug reports"
-msgstr "Tekstversion, anvendelig til fejlrapportering"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Depend.pm:85
 msgid " Ok "
-msgstr " OK "
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Depend.pm:133
 msgid "Comment"
-msgstr "Kommentar"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Depend.pm:134
 msgid "Mandatory"
-msgstr "Obligatorisk"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Depend.pm:135
 msgid "Suggested"
-msgstr "Anbefalet"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Depend.pm:136
 msgid "Minimum"
-msgstr "Minimum"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Depend.pm:137
+#, fuzzy
 msgid "Maximum"
-msgstr "Maksimum"
+msgstr "Maksimum FPS"
 
 #: ../lib/Video/DVDRip/GUI/Depend.pm:138
 msgid "Installed"
-msgstr "Installeret"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Depend.pm:139
 #: ../lib/Video/DVDRip/GUI/Preferences.pm:282
 msgid "Ok"
-msgstr "OK"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Depend.pm:157
 msgid ""
@@ -2055,21 +1983,15 @@ msgid ""
 "- Suggested numbers are the versions the author works with, so they are well "
 "tested."
 msgstr ""
-"– Obligatoriske redskaber skal være til stede med minimumsversionen fra "
-"listen.\n"
-"– Valgfrie redskaber kan mangle eller være for gamle – disse funktioner vil "
-"blive slået fra.\n"
-"– Anbefalede versionsnumre er de versioner som forfatteren bruger, så de er "
-"gennemprøvede."
 
 #: ../lib/Video/DVDRip/GUI/Depend.pm:171
 msgid "Installed tools"
-msgstr "Installerede redskaber"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/ExecFlow.pm:64
 #, perl-brace-format
 msgid "This task needs about {needed} MB, {free} MB are free."
-msgstr "Denne gerning kræver {needed} MB, {free} MB er tilgængelige."
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/ExecFlow.pm:71
 #, perl-brace-format
@@ -2078,94 +2000,94 @@ msgid ""
 "about {needed} MB, but only {free} MB are available.\n"
 "Do you want to continue anyway?"
 msgstr ""
-"Advarsel: Der er ikke meget diskplads. Denne gerning\n"
-"skal bruge {needed} MB, men kun {free} MB er tilgængelige.\n"
-"Vil du fortsætte alligevel?"
 
 #: ../lib/Video/DVDRip/GUI/BitrateCalc.pm:42
 msgid "dvd::rip - Storage and bitrate calculation details"
-msgstr "dvd::rip – plads- og bitrate-beregningsdetaljer"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/BitrateCalc.pm:107
 #: ../lib/Video/DVDRip/GUI/Filters.pm:173
 #: ../lib/Video/DVDRip/GUI/Filters.pm:219
 #: ../lib/Video/DVDRip/GUI/Filters.pm:289
 msgid "Description"
-msgstr "Beskrivelse"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/BitrateCalc.pm:107
 msgid "Operator"
-msgstr "Operatør"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/BitrateCalc.pm:107
+#, fuzzy
 msgid "Value"
-msgstr "Værdi"
+msgstr "Pause"
 
 #: ../lib/Video/DVDRip/GUI/BitrateCalc.pm:107
+#, fuzzy
 msgid "Unit"
-msgstr "Enhed"
+msgstr "Ubegrænset"
 
 #: ../lib/Video/DVDRip/GUI/Progress.pm:48
 msgid "Status"
-msgstr "Status"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Progress.pm:62
 msgid "Show job plan and progress details"
-msgstr "Vis jobplan og fremgangsdetaljer"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Progress.pm:76
 #: ../lib/Video/DVDRip/GUI/Progress.pm:245
 msgid "Pause and resume processing"
-msgstr "Afbryd og genoptag processering"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Progress.pm:90
 msgid "Cancel processing"
-msgstr "Annuller processering"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Progress.pm:180
 #, perl-brace-format
 msgid "Free diskspace: {free} MB"
-msgstr "Fri diskplads: {free} MB"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Progress.pm:208
 msgid "dvd::rip - Job plan and progress details"
-msgstr "dvd::rip – jobplan og fremgangsdetaljer"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Progress.pm:232
 msgid "Hide window"
-msgstr "Skjul vindue"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Progress.pm:233
 msgid "Hide details window"
-msgstr "Skjul detaljevindue"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Progress.pm:243
+#, fuzzy
 msgid "Pause jobs"
-msgstr "Afbryd jobs"
+msgstr "Pause"
 
 #: ../lib/Video/DVDRip/GUI/Progress.pm:244
 msgid "Resume"
-msgstr "Genoptag"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Progress.pm:259
 msgid "Cancel jobs"
-msgstr "Annuller jobs"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Progress.pm:260
 msgid "Cancel all running jobs"
-msgstr "Annuller alle kørende jobs"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Preferences.pm:56
 msgid "dvd::rip - Preferences"
-msgstr "dvd::rip – præferencer"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Preferences.pm:74
 msgid "Global preferences"
-msgstr "Globale præferencer"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Preferences.pm:172
 msgid "Create directory"
-msgstr "Lav katalog"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Preferences.pm:178
 #, perl-brace-format
@@ -2174,94 +2096,92 @@ msgid ""
 "\n"
 "{dir}"
 msgstr ""
-"Kan ikke lave katalog:\n"
-"\n"
-"{dir}"
 
 #: ../lib/Video/DVDRip/GUI/Preferences.pm:217
 #: ../lib/Video/DVDRip/GUI/Project/Storage.pm:37
 msgid "This is a list of connected DVD drives found in your system"
-msgstr "Dette er en liste over DVD-drev som blev fundet i dit system"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Preferences.pm:265
 msgid "Check all settings"
-msgstr "Check alle indstillinger"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Preferences.pm:272
 msgid "Cancel"
-msgstr "Annuller"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Preferences.pm:307
 msgid "Check results"
-msgstr "Check resultater"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Preferences.pm:378
 msgid "not tested : Ok"
-msgstr "ikke testet: OK"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/ZoomCalculator.pm:26
 msgid "No fast resizing"
-msgstr "Ingen hurtig skalering"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/ZoomCalculator.pm:45
 msgid "Using clip2"
-msgstr "Bruger clip2"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/ZoomCalculator.pm:46
 msgid "Using zoom"
-msgstr "Bruger zoom"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/ZoomCalculator.pm:55
 msgid "Yes - use clip1"
-msgstr "Ja – brug clip1"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/ZoomCalculator.pm:56
 msgid "Yes - use clip2"
-msgstr "Ja – brug clip2"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/ZoomCalculator.pm:57
 msgid "No - take existent clip1"
-msgstr "Nej – brug eksisterende clip1"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/ZoomCalculator.pm:96
 msgid "dvd::rip - Zoom Calculator"
-msgstr "dvd::rip – zoom beregning"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/ZoomCalculator.pm:131
 msgid "Apply Clip & Zoom settings"
-msgstr "Anvend \"Clip & Zoom\" indstillinger"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/ZoomCalculator.pm:167
+#, fuzzy
 msgid "Parameters"
-msgstr "Parametre"
+msgstr "Faldskærm"
 
 #: ../lib/Video/DVDRip/GUI/ZoomCalculator.pm:171
 msgid "Fast resize align"
-msgstr "Hurtig skalerings-tilpasning"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/ZoomCalculator.pm:175
 msgid "Result frame align"
-msgstr "Resultat billede-tilpasning"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/ZoomCalculator.pm:179
 msgid "Achieve result align"
-msgstr "Opnå resultat-tilpasning"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/ZoomCalculator.pm:183
 msgid "Auto clipping"
-msgstr "Autoklipning"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/ZoomCalculator.pm:202
 msgid "V-Rate: "
-msgstr "V-Rate: "
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/ZoomCalculator.pm:207
 msgid "BPP: "
-msgstr "Farvedybde: "
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/ZoomCalculator.pm:212
 msgid "Total size: "
-msgstr "Total størrelse: "
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/ZoomCalculator.pm:216
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:465
@@ -2271,53 +2191,53 @@ msgstr "Total størrelse: "
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:748
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:770
 msgid "MB"
-msgstr "MB"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/ZoomCalculator.pm:247
 msgid "Zoom calculations"
-msgstr "Zoom beregninger"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/ZoomCalculator.pm:256
 msgid "Result size"
-msgstr "Resultatstørrelse"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/ZoomCalculator.pm:257
 #: ../lib/Video/DVDRip/GUI/Project/ClipZoom.pm:416
 msgid "BPP"
-msgstr "Farvedybde"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/ZoomCalculator.pm:258
 msgid "Eff. AR"
-msgstr "Effeltivitets AR"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/ZoomCalculator.pm:259
 msgid "AR error"
-msgstr "AR fejl"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/ZoomCalculator.pm:260
 msgid "Clip1 (t/b/l/r)"
-msgstr "Clip1 (t/b/l/r)"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/ZoomCalculator.pm:261
 msgid "Zoom size"
-msgstr "Zoom størrelse"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/ZoomCalculator.pm:262
 msgid "Clip2 (t/b/l/r)"
-msgstr "Clip2 (t/b/l/r)"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Base.pm:117
 #, perl-brace-format
 msgid "Overwrite existing file '{filename}'?"
-msgstr "'{filename}' eksisterer allerede. Overskriv?"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Base.pm:173
 msgid "Error message"
-msgstr "Fejlmeddelelse"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Base.pm:207
 msgid "dvd::rip - Message"
-msgstr "dvd::rip – besked"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Main.pm:141
 #, perl-brace-format
@@ -2327,304 +2247,265 @@ msgid ""
 "\n"
 "{msg}"
 msgstr ""
-"Der forekom en intern undtagelse!\n"
-"Fejlmeddelelsen var:\n"
-"\n"
-"{msg}"
 
 #: ../lib/Video/DVDRip/GUI/Main.pm:160
 #, perl-brace-format
 msgid "Detected transcode version: {version}"
-msgstr "Dektekterede transcode version: {version}"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Main.pm:174
 msgid "Opening project file failed. Aborting."
-msgstr "Kunne ikke åbne projektfil. Afbryder."
-
-#: ../lib/Video/DVDRip/GUI/Main.pm:208
-msgid ""
-"dvd::rip detected transcode version >= 1.1.x. Support for this version is "
-"experimental. Please report bugs, if you find them."
 msgstr ""
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:302
+#: ../lib/Video/DVDRip/GUI/Main.pm:292
 msgid "_New Project"
-msgstr "_Nyt projekt"
+msgstr ""
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:310
+#: ../lib/Video/DVDRip/GUI/Main.pm:300
 msgid "_Open Project..."
-msgstr "_Åbn projekt"
+msgstr ""
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:318
+#: ../lib/Video/DVDRip/GUI/Main.pm:308
 msgid "_Save Project"
-msgstr "_Gem projekt"
+msgstr ""
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:325
+#: ../lib/Video/DVDRip/GUI/Main.pm:315
 msgid "Save _Project as..."
-msgstr "Gem _projekt som..."
+msgstr ""
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:332
+#: ../lib/Video/DVDRip/GUI/Main.pm:322
 msgid "_Close Project"
-msgstr "_Luk projekt"
+msgstr ""
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:347
+#: ../lib/Video/DVDRip/GUI/Main.pm:337
 msgid "_Exit"
-msgstr "_Afslut"
+msgstr ""
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:355
+#: ../lib/Video/DVDRip/GUI/Main.pm:345
 msgid "_Edit"
-msgstr "_Rediger"
+msgstr ""
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:358
+#: ../lib/Video/DVDRip/GUI/Main.pm:348
 msgid "Edit _Preferences..."
-msgstr "Rediger _præferencer"
+msgstr ""
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:366
+#: ../lib/Video/DVDRip/GUI/Main.pm:356
+#, fuzzy
 msgid "_Title"
-msgstr "_Titel"
+msgstr "Tid"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:380
+#: ../lib/Video/DVDRip/GUI/Main.pm:370
 msgid "View target file"
-msgstr "Vis målfil"
+msgstr ""
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:391
+#: ../lib/Video/DVDRip/GUI/Main.pm:381
 msgid "Add project to cluster"
-msgstr "Tilføj projekt til kloster"
+msgstr ""
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:408
+#: ../lib/Video/DVDRip/GUI/Main.pm:398
 msgid "Create vobsub"
-msgstr "Lav vobsub"
+msgstr ""
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:421
+#: ../lib/Video/DVDRip/GUI/Main.pm:411
 msgid "Create dvdrip-info file"
-msgstr "Lav dvdrip-infofil"
+msgstr ""
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:437
+#: ../lib/Video/DVDRip/GUI/Main.pm:427
 msgid "Create WAV from selected audio track"
-msgstr "Lav WAV ud fra det valgte lydspor"
+msgstr ""
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:448
+#: ../lib/Video/DVDRip/GUI/Main.pm:438
+#, fuzzy
 msgid "_Cluster"
-msgstr "_Kloster"
+msgstr "Klyngebombe"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:451
+#: ../lib/Video/DVDRip/GUI/Main.pm:441
 msgid "Contro_l..."
-msgstr "Kontro_l..."
+msgstr ""
+
+#: ../lib/Video/DVDRip/GUI/Main.pm:449
+msgid "_Debug"
+msgstr ""
+
+#: ../lib/Video/DVDRip/GUI/Main.pm:453
+msgid "Show _Transcode commands..."
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Main.pm:459
-msgid "_Debug"
-msgstr "_Debug"
+msgid "Check _dependencies..."
+msgstr ""
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:463
-msgid "Show _Transcode commands..."
-msgstr "Vis _transcode kommandoer..."
+#: ../lib/Video/DVDRip/GUI/Main.pm:466
+#, fuzzy
+msgid "_Help"
+msgstr "Hjælp"
 
 #: ../lib/Video/DVDRip/GUI/Main.pm:469
-msgid "Check _dependencies..."
-msgstr "_Check afhængigheder"
-
-#: ../lib/Video/DVDRip/GUI/Main.pm:476
-msgid "_Help"
-msgstr "_Hjælp"
-
-#: ../lib/Video/DVDRip/GUI/Main.pm:479
 msgid "_About dvd::rip"
-msgstr "_Om dvd::rip"
+msgstr ""
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:543
+#: ../lib/Video/DVDRip/GUI/Main.pm:533
 msgid "Selected DVD title"
-msgstr "Valgt DVD-titel"
+msgstr ""
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:547
+#: ../lib/Video/DVDRip/GUI/Main.pm:537
 msgid "Choose a DVD title at any time here"
-msgstr "Vælg en DVD-titel her"
+msgstr ""
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:645
+#: ../lib/Video/DVDRip/GUI/Main.pm:635
 #, perl-brace-format
 msgid "File '{filename}' not found or not readable."
-msgstr "Filen '{filename}' blev ikke fundet, eller den kunne ikke læses."
+msgstr ""
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:697
+#: ../lib/Video/DVDRip/GUI/Main.pm:687
 msgid "Save project: choose filename"
-msgstr "Gem projekt: vælg filnavn"
+msgstr ""
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:708 ../lib/Video/DVDRip/GUI/Main.pm:735
+#: ../lib/Video/DVDRip/GUI/Main.pm:698 ../lib/Video/DVDRip/GUI/Main.pm:725
 #, perl-brace-format
 msgid "Project {name} created"
-msgstr "Projektet {name} blev lavet"
+msgstr ""
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:772
+#: ../lib/Video/DVDRip/GUI/Main.pm:762
 msgid "Do you want to save this project first?"
-msgstr "Vil du gemme dit projekt?"
+msgstr ""
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:823
+#: ../lib/Video/DVDRip/GUI/Main.pm:813
 msgid ""
 "This is the first time you start dvd::rip. The Preferences dialog was opened "
 "automatically for you. Please review the settings, in particular the default "
 "DVD device and your data base directory. Point it to a directory with "
 "sufficient diskspace of at least 10 GB for full DVD copies."
 msgstr ""
-"Dette er første gang du starter dvd::rip. Opsætningsvinduet blev åbnet "
-"automatisk for dig. Vær venlig at gennemse indstillingerne, specielt check "
-"om DVD-drevet er korrekt. Også indstil stien til datakataloget. Sæt den til "
-"et katalog med tilstrækkelig diskplads (mindst 10 GB til hele DVD kopier)."
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:870
+#: ../lib/Video/DVDRip/GUI/Main.pm:860
 msgid ""
 "Probe Command:\n"
 "==============\n"
 msgstr ""
-"Sonderingskommando:\n"
-"===================\n"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:882
+#: ../lib/Video/DVDRip/GUI/Main.pm:872
 msgid ""
 "Rip Command:\n"
 "============\n"
 msgstr ""
-"Rippe kommando:\n"
-"===============\n"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:887
+#: ../lib/Video/DVDRip/GUI/Main.pm:877
 msgid ""
 "Scan Command:\n"
 "============\n"
 msgstr ""
-"Scan kommando:\n"
-"==============\n"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:894
+#: ../lib/Video/DVDRip/GUI/Main.pm:884
 msgid ""
 "Grab Preview Image Command:\n"
 "===========================\n"
 msgstr ""
-"\"Tag forhåndsvisning\"-kommando:\n"
-"===============================\n"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:905
+#: ../lib/Video/DVDRip/GUI/Main.pm:895
 msgid "You must first rip the selected title to see this command.\n"
-msgstr "Du skal rippe den valgte titel før du kan se denne kommando.\n"
+msgstr ""
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:910
+#: ../lib/Video/DVDRip/GUI/Main.pm:900
 msgid ""
 "Transcode Command:\n"
 "==================\n"
 msgstr ""
-"Transcode kommando:\n"
-"===================\n"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:939
+#: ../lib/Video/DVDRip/GUI/Main.pm:929
 msgid ""
 "Additional audio tracks commands:\n"
 "============================\n"
 msgstr ""
-"Yderlige lydsporskommandoer:\n"
-"============================\n"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:960
+#: ../lib/Video/DVDRip/GUI/Main.pm:950
 msgid ""
 "View DVD Command:\n"
 "=================\n"
 msgstr ""
-"\"Vis DVD\"-kommando:\n"
-"===================\n"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:968
+#: ../lib/Video/DVDRip/GUI/Main.pm:958
 msgid ""
 "View Files Command:\n"
 "===================\n"
 msgstr ""
-"\"Vis filer\"-kommando:\n"
-"=====================\n"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:985
+#: ../lib/Video/DVDRip/GUI/Main.pm:975
 msgid ""
 "CD image creation command:\n"
 "========================\n"
 msgstr ""
-"\"CD-billede\"-kommando:\n"
-"======================\n"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:991
+#: ../lib/Video/DVDRip/GUI/Main.pm:981
 msgid ""
 "CD burning command:\n"
 "==================\n"
 msgstr ""
-"CD-brændings-kommando:\n"
-"======================\n"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:1001
+#: ../lib/Video/DVDRip/GUI/Main.pm:991
 msgid ""
 "WAV creation command:\n"
 "====================\n"
 msgstr ""
-"WAV-skabnings-kommando:\n"
-"=======================\n"
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:1008
+#: ../lib/Video/DVDRip/GUI/Main.pm:998
 msgid "Commands executed by dvd::rip"
-msgstr "Kommandoer eksekveret af dvd::rip"
+msgstr ""
 
-#: ../lib/Video/DVDRip/GUI/Main.pm:1034
+#: ../lib/Video/DVDRip/GUI/Main.pm:1024
 msgid ""
 "One or several mandatory tools are\n"
 "missing or too old. You must install them\n"
 "before you can proceed with dvd::rip."
 msgstr ""
-"En af de påkrævede redskaber mangler, eller den er for gammel. Du bliver "
-"nødt til at installere den/dem før du kan fortsætte brugen af dvd::rip."
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:83
 msgid "Container options"
-msgstr "Container indstillinger"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:86
 msgid "Select container"
-msgstr "Vælg container"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:100
+#, fuzzy
 msgid "Video options"
-msgstr "Video-indstillinger"
+msgstr "Instillinger"
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:121
 msgid "Video codec"
-msgstr "Video-codec"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:127
 msgid ""
 "Choose a video codec here. If you don't find the codec you want in the list, "
 "just enter its transcode name by hand"
 msgstr ""
-"Vælg et video-codec her. Hvis du ikke kan finde det codec du vil have i "
-"listen, kan du bare skrive dets transcode navn i hånden"
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:133
+#, fuzzy
 msgid "Configure..."
-msgstr "Konfigurer..."
+msgstr "Konfigurationsmenu"
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:135
 msgid ""
 "The xvid4 video codec may be configured in detail if you have the xvid4conf "
 "utility installed"
 msgstr ""
-"xvid4-video-codec'et kan konfigureres yderligere hvis du har xvid4conf "
-"redskabet installeret"
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:148
 msgid "ffmpeg/af6 codec"
-msgstr "ffmpeg/af6 codec"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:154
 msgid ""
 "Some transcode video export modules support multiple video codecs, e.g. the "
 "ffmpeg module. Enter the name of the video codec the module should use here"
 msgstr ""
-"Nogle transcode video-eksport moduler understøtter flere video-codecs, f."
-"eks. ffmpeg modulet. Skriv navnet på det video-codec modulet skal bruge her"
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:159
 msgid "Keyframes"
-msgstr "Keyframes"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:163
 msgid ""
@@ -2632,13 +2513,10 @@ msgid ""
 "inserted into the video stream. The lower this value the better the quality, "
 "but filesize may increase as well"
 msgstr ""
-"Denne indstilling kontrollerer antallet af billeder keyframen skal placeres "
-"inde i video-strømmen. Jo lavere denne værdi er, jo bedre er kvaliteten; men "
-"filstørrelsen kan også vokse."
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:173
 msgid "Video framerate"
-msgstr "Video-billede-rate"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:178
 msgid ""
@@ -2647,14 +2525,10 @@ msgid ""
 "framerate conversion check out the Filters dialog, which provides some video "
 "filters for this task"
 msgstr ""
-"Dette er video-billede-raten i filmen. Lav kun dette om hvis transcode "
-"opdager en forkert billede-rate, hvilket nogle gange sker. Hvis du vil have "
-"rigtig billede-rate konversion skal du kigge i \"Filter\"-dialogboksen, som "
-"tilbyder nogle video-filtre til denne opgave."
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:189
 msgid "2-pass encoding"
-msgstr "2-pass encoding"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:193
 msgid ""
@@ -2662,13 +2536,10 @@ msgid ""
 "significantly. But the whole transcoding needs nearly twice the time. It's "
 "strongly recommended to use 2-pass encoding whenever possible."
 msgstr ""
-"2-pass encoding forhøjer billedkvaliteten og lyd-bitrate-præcisionen "
-"markant. Men hele transcodingen tager næsten dobbelt så lang tid. Det er "
-"anbefalet at bruge 2-pass encoding når det er muligt."
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:202
 msgid "Reuse log"
-msgstr "Genbrug log"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:204
 msgid ""
@@ -2678,15 +2549,10 @@ msgid ""
 "by activating this button. dvd::rip will skip the first pass saving much "
 "time."
 msgstr ""
-"Under første pass i en 2-pass transcoding bliver en logfil med statistisk "
-"information skrevet. Hvis du ikke ændrer nogle parametre der har med videoen "
-"at gøre kan du muligvis genbruge denne logfil til fremtidige transcodings "
-"ved at bruge denne funktion. dvd::rip vil så springe første pass over og "
-"dermed spare masser af tid."
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:215
 msgid "Deinterlace mode"
-msgstr "Deinterlace mode"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:221
 msgid ""
@@ -2694,45 +2560,42 @@ msgid ""
 "the transcoded movie is likely to have many artefacts. The 'Smart "
 "deinterlacing' setting is recommended."
 msgstr ""
-"Vælg en deinterlace algoritme her hvis filmen er interlaced. Hvis du ikke "
-"gør dette og filmen er interlaced vil det forværre billedekvaliteten "
-"markant. \"Smart deinterlacing\" indstillingen er anbefalet."
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:228
 msgid "Filters"
-msgstr "Filtre"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:231
 msgid "Configure filters & preview..."
-msgstr "Konfigurer filtre & forhåndsvisning"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:232
 msgid ""
 "This opens a dialog which gives you access all filters transcode supports."
 msgstr ""
-"Dette åbner en dialog som giver dig adgang til alle de filtre transcode "
-"understøtter."
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:247
+#, fuzzy
 msgid "Audio options"
-msgstr "Lydindstillinger"
+msgstr "Instillinger"
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:258
 msgid "Select track"
-msgstr "Vælg spor"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:264
 msgid "Multi..."
-msgstr "Multi..."
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:311
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:324
+#, fuzzy
 msgid "Quality"
-msgstr "Kvalitet"
+msgstr "Afslut"
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:335
 msgid "Use quality mode"
-msgstr "Brug kvalitetsindstilling"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:348
 #, perl-brace-format
@@ -2741,55 +2604,50 @@ msgid ""
 "samplerate are detected from source,\n"
 "so you can't change them here."
 msgstr ""
-"{ac3_or_pcm}-kodet lyd kommer igennem her. Bit-\n"
-" og samplerate udtages fra kilden,\n"
-"så du kan ikke ændre dem her."
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:364
 #: ../lib/Video/DVDRip/GUI/Filters.pm:776
 msgid "Filter"
-msgstr "Filter"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:367
 msgid "Volume rescale"
-msgstr "Volumereskalering"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:375
 msgid "Scan value"
-msgstr "Scanværdi"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:395
 msgid "Bit-/Samplerate"
-msgstr "Bit og samplerate"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:404
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:533
 msgid "kbit/s"
-msgstr "kbit/s"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:414
 msgid "hz"
-msgstr "Hz"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:431
 msgid "Video bitrate calculation"
-msgstr "Video bitrate beregning"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:437
 msgid "By target size"
-msgstr "Ved målstørrelse"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:440
 msgid "Target media"
-msgstr "Målmedie"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:447
 msgid ""
 "Choose the desired number of discs here. dvd::rip computes the target size "
 "from it and optionally splits the result file accordingly."
 msgstr ""
-"Vælg det ønskede antal skiver her. dvd::rip beregner målstørrelsen for hver "
-"skive og kan også opdele den resulterende fil."
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:458
 msgid ""
@@ -2797,21 +2655,17 @@ msgid ""
 "unit is a true megabyte (1024KB). You may enter an arbitrary value if the "
 "preset don't fit your needs."
 msgstr ""
-"Vælg størrelsen på dit medie her (CD og DVD skive størrelser). Enheden er i "
-"megabytes (1024 KB). Du kan indtaste en valgfri størrelse hvis de "
-"prædefinerede ikke passer."
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:477
 msgid ""
 "This entry is computed based on the settings above, but you may enter an "
 "arbitrary value as well."
 msgstr ""
-"Dette felt beregnes automatisk baseret på værdierne ovenfor, men du kan selv "
-"skrive noget hvis du vil."
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:486
+#, fuzzy
 msgid "Consider frame range"
-msgstr "Tag højde for \"frame range\""
+msgstr "Ændr sigtevinkel"
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:488
 msgid ""
@@ -2821,20 +2675,14 @@ msgid ""
 "the frame range not just for testing purposes but also for the final "
 "transcoding, e.g. for cutting off credits."
 msgstr ""
-"Hvis du angav en \"frame range\" i 'Generelle indstillinger' sektionen, så "
-"kan du aktivere denne checkbox hvis du vil have at video bitraten skal "
-"baseres på denne \"frame range\", og ikke på hele titel længden. Du kan også "
-"gøre dette hvis du skrev din \"frame range\" i den intention at den også "
-"skulle bruges til den endelige transcoding, f.eks. til at skære rulletekster "
-"væk."
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:500
 msgid "By quality"
-msgstr "Ved kvalitet"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:504
 msgid "BPP value"
-msgstr "Farvedybde"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:509
 msgid ""
@@ -2842,139 +2690,134 @@ msgid ""
 "around 0.25 give fair results (VHS quality), 0.4-0.5 very good quality near "
 "DVD."
 msgstr ""
-"Farvedybden angives i BPP som står for \"Bits per pixel\", og er en måde at "
-"måle videokvaliteten i. Værdier omkring 0.25 (bemærk englesk talnotation) "
-"giver OK resultater (VHS kvalitet). 0.4-0.5 giver meget gode resultater (DVD "
-"kvalitet)."
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:517
 msgid "Manually"
-msgstr "Manuelt"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:520
 msgid "Video bitrate"
-msgstr "Video bitrate"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:528
 msgid ""
 "If you don't want a calculated video bitrate just enter an arbitrary value "
 "here."
 msgstr ""
-"Hvis du ikke vil have en video bitrate beregnet, så indtast en værdi her."
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:549
 msgid "General options"
-msgstr "Generelle indstillinger"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:553
 msgid "Frame range"
-msgstr "\"Frame range\""
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:565
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:587
 #, perl-brace-format
 msgid "Movie has only {number} frames"
-msgstr "Filmen har kun {number} billeder (frames)"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:571
 msgid "Start frame number must be smaller than end frame number"
-msgstr "\"Start frame\"-nummeret skal være mindre end \"slut frame\"-nummeret"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:593
 msgid "End frame number must be greated than start frame number"
-msgstr "\"Slut frame\"-nummeret skal være større end \"start frame\"-nummeret"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:602
 msgid "transcode options"
-msgstr "transcode indstillinger"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:607
 msgid "Process nice level"
-msgstr "Processér flot niveau"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:614
+#, fuzzy
 msgid "Preview window"
-msgstr "Forhåndsvisningsvindue"
+msgstr "Fuld skærm/vindue"
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:620
 msgid "Use PSU core"
-msgstr "Brug PSU-kerne"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:625
 msgid "Execute afterwards"
-msgstr "Eksekvér bagefter"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:634
 msgid "and exit"
-msgstr "og afslut"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:646
 msgid "Operate"
-msgstr "Benyt"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:662
 msgid "View"
-msgstr "Vis"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:673
+#, fuzzy
 msgid "Add to cluster"
-msgstr "Tilføj til kloster"
+msgstr "Tilføj brugerdefineret hold"
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:691
 msgid "Split files on transcoding"
-msgstr "Opdel filer under transcoding"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:702
 msgid "Calculated storage"
-msgstr "Beregnet plads"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:719
 msgid "V-Rate:"
-msgstr "V-rate:"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:724
 msgid "Video size:"
-msgstr "Videostørrelse:"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:733
 msgid "BPP:"
-msgstr "Farvedybde:"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:737
 msgid "Audio size:"
-msgstr "Lydstørrelse:"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:744
 msgid "Other size:"
-msgstr "Anden størrelse:"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:752
 msgid "Details..."
-msgstr "Detaljer..."
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:762
 msgid "Total size:"
-msgstr "Total størrelse:"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:886
 msgid "Titles in chapter mode are not supported"
-msgstr "Titler i kapitel-indstilling understøttes ikke"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:892
 msgid "PSU core mode currently not supported"
-msgstr "PSU-kerne-tilstand er ikke understøttet"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:898
 msgid ""
 "Cluster mode is only supported\n"
 "for ripped DVD's."
 msgstr ""
-"Kloster-tilstand understøttes\n"
-"kun for rippede DVD'er."
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:910
 msgid "MPEG processing is not supported for cluster mode."
-msgstr "MPEG-processering understøttes ikke i kloster-tilstand."
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Transcode.pm:916
 msgid ""
@@ -2987,131 +2830,122 @@ msgid ""
 "WARNING: your frame range setting\n"
 "is ignored in cluster mode"
 msgstr ""
-"ADVARSEL: din \"frame range\"-indstilling\n"
-"bliver ignoreret i kloster-tilstand"
 
 #: ../lib/Video/DVDRip/GUI/Project/Storage.pm:44
 #: ../lib/Video/DVDRip/GUI/Project/Storage.pm:210
 msgid "Choose DVD device file"
-msgstr "Vælg DVD-drev-fil"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Storage.pm:49
 #: ../lib/Video/DVDRip/GUI/Project/Storage.pm:136
 msgid "Press this button to open a file chooser dialog"
-msgstr "Tryk denne knap for at åbne et filvælge-vindue"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Storage.pm:55
 msgid "Storage"
-msgstr "Opbevaring"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Storage.pm:60
 msgid "Storage path information"
-msgstr "Information om opbevaringssti"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Storage.pm:65
+#, fuzzy
 msgid "Project name"
-msgstr "Projektnavn"
+msgstr "Spillernavn"
 
 #: ../lib/Video/DVDRip/GUI/Project/Storage.pm:66
 msgid ""
 "This is a short name for the project. All generated files are named like "
 "this."
 msgstr ""
-"Dette er projektets korte navn. Alle genererede filer vil blive navngivet ud "
-"fra dette."
 
 #: ../lib/Video/DVDRip/GUI/Project/Storage.pm:73
 msgid "VOB directory"
-msgstr "VOB-katalog"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Storage.pm:74
 msgid "DVD VOB files are stored here."
-msgstr "DVD VOB-filer opbevares her."
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Storage.pm:79
 msgid "AVI directory"
-msgstr "AVI-katalog"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Storage.pm:80
 msgid "For transcoded AVI, MPEG and OGM files."
-msgstr "Til transcodede AVI-, MPEG- og OGM-filer."
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Storage.pm:85
 msgid "Temporary directory"
-msgstr "Midlertidigt katalog"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Storage.pm:86
 msgid "For temporary files"
-msgstr "Til midlertidige filer"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Storage.pm:90
 msgid "Create project"
-msgstr "Lav projekt"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Storage.pm:94
 msgid ""
 "This asks for a project filename and creates the neccessary filesystem "
 "structure"
 msgstr ""
-"Denne handling vil spørge om et projekt filnavn og derefter lave den "
-"nødvendige katalogstruktur"
 
 #: ../lib/Video/DVDRip/GUI/Project/Storage.pm:109
 msgid "Data source selection"
-msgstr "Datakilde-selektion"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Storage.pm:118
 msgid "Select a DVD device or an image directory for input"
-msgstr "Vælg et DVD-drev eller et billede-katalog til input"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Storage.pm:123
 msgid "Choose DVD device"
-msgstr "Vælg DVD-drev"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Storage.pm:128
 msgid "or"
-msgstr "eller"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Storage.pm:131
 #: ../lib/Video/DVDRip/GUI/Project/Storage.pm:242
 msgid "Choose DVD image directory"
-msgstr "Vælg DVD-billede katalog"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Storage.pm:141
 msgid "Or enter by hand"
-msgstr "Eller indtast i hånden"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Storage.pm:144
 msgid ""
 "dvd::rip uses this location for DVD input. Either it's the filename of a "
 "physical DVD device or the path of a full DVD image copy."
 msgstr ""
-"dvd::rip bruger denne lokation til DVD-input. Enten er det et filnavn til et "
-"fysisk DVD-drev, ellers er det stien til et helt DVD-billede."
 
 #: ../lib/Video/DVDRip/GUI/Project/Storage.pm:153
 msgid "Choose a ripping mode"
-msgstr "Vælg ripnings-tilstand"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Storage.pm:166
 msgid "Copy data from DVD to harddisk before encoding"
-msgstr "Kopier data fra DVD til harddisk før encoding"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Storage.pm:168
 msgid ""
 "Use this mode if you have enough diskspace for a complete copy of the DVD "
 "contents. It's the fastest and most flexible DVD mode."
 msgstr ""
-"Brug denne tilstand hvis du ikke har nok diskplads til en hel kopi af "
-"DVD'en. Dette er det hurtigste og mest fleksible DVD-tilstand."
 
 #: ../lib/Video/DVDRip/GUI/Project/Storage.pm:177
 msgid "Encode DVD on the fly"
-msgstr "Encode DVD on-the-fly"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Storage.pm:178
 msgid "No DVD contents are copied to harddisk."
-msgstr "Intet DVD-indhold vil blive kopieret til harddisken."
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Storage.pm:182
 msgid ""
@@ -3126,439 +2960,429 @@ msgid ""
 "- Faster preview grabbing and frame range transcoding\n"
 "- transcode's PSU core for optimized A/V sync with NTSC video\n"
 msgstr ""
-"\"Kopierer DVD'en (eller billedet) til harddisken før encoding\" er\n"
-"den anbefalede tilstand, fordi det er hurtigere og ikke bruger dit\n"
-"DVD-drev nær så meget. Der er også nogle interessante indstillinger\n"
-"tilgængelige med denne tilstand, som ikke findes i andre tilstande pga.\n"
-"interne transcode restriktioner:\n"
-"\n"
-"- Kloster transcoding\n"
-"- Undertekst indbrænding\n"
-"- Hurtigere forhåndsvisningsgenerering og \"frame range\" transcoding\n"
-"- transcode's PSU-kerne til optimeret audio/video synkronisering med NTSC-"
-"video\n"
 
 #: ../lib/Video/DVDRip/GUI/Project/Storage.pm:259
 msgid ""
 "Selected directory is no DVD image directory. It has no VIDEO_TS folder."
 msgstr ""
-"Det valgte katalog er ikke et DVD-billede katalog. Det har inget VIDEO_TS "
-"katalog."
 
 #: ../lib/Video/DVDRip/GUI/Project/ClipZoom.pm:52
 msgid "Clip & Zoom"
-msgstr "Clip & Zoom"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/ClipZoom.pm:76
 msgid "Preview images"
-msgstr "Forhåndsvisninger"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/ClipZoom.pm:84
 msgid "Grab preview frame #"
-msgstr "Tag forhåndsvisning #"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/ClipZoom.pm:91
 msgid "Force slow grabbing"
-msgstr "Tving langsom tagning"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/ClipZoom.pm:95
+#, fuzzy
 msgid "Grab frame"
-msgstr "Tag billede"
+msgstr "Spillets navn:"
 
 #: ../lib/Video/DVDRip/GUI/Project/ClipZoom.pm:103
 msgid "Show video from here"
-msgstr "Vis video herfra"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/ClipZoom.pm:248
 msgid "Adjust clip and zoom parameters"
-msgstr "Justér Clip & Zoom parametre"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/ClipZoom.pm:279
 msgid "Presets"
-msgstr "Forvalgte indstillinger"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/ClipZoom.pm:287
 msgid "Apply preset values"
-msgstr "Anvend forvalgte værdier"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/ClipZoom.pm:292
 msgid ""
 "Overwrites all Clip & Zoom settings from the selected preset and regenerates "
 "the preview images."
 msgstr ""
-"Overskriver alle Clip & Zoom indstillinger fra den forvalgte indstilling, og "
-"regenererer forhåndsvisninger."
 
 #: ../lib/Video/DVDRip/GUI/Project/ClipZoom.pm:301
 #: ../lib/Video/DVDRip/GUI/FormFactory/ClipImage.pm:20
 msgid "Top"
-msgstr "Top"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/ClipZoom.pm:305
 #: ../lib/Video/DVDRip/GUI/FormFactory/ClipImage.pm:21
 msgid "Bottom"
-msgstr "Bund"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/ClipZoom.pm:309
 #: ../lib/Video/DVDRip/GUI/FormFactory/ClipImage.pm:22
 msgid "Left"
-msgstr "Venstre"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/ClipZoom.pm:313
 #: ../lib/Video/DVDRip/GUI/FormFactory/ClipImage.pm:23
 msgid "Right"
-msgstr "Højre"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/ClipZoom.pm:319
 msgid "1st clipping"
-msgstr "Første clipping"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/ClipZoom.pm:349
 msgid "Generate preview images"
-msgstr "Genererer forhåndsvisninger"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/ClipZoom.pm:354
 msgid "Generates new preview images based on the actual settings"
-msgstr "Genererer nye forhåndsvisninger baseret på de aktuelle indstillinger"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/ClipZoom.pm:360
 msgid "2nd clipping"
-msgstr "Anden clipping"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/ClipZoom.pm:390
 msgid "Move 2nd clipping to 1st"
-msgstr "Flytter anden clipping til første clipping"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/ClipZoom.pm:393
 msgid ""
 "Turns second clipping into first clipping. This is possible only with high "
 "quality scaling."
 msgstr ""
-"Laver første clipping om til første clipping. Dette er kun muligt med høj-"
-"kvalitets-skalering."
 
 #: ../lib/Video/DVDRip/GUI/Project/ClipZoom.pm:402
 msgid "Width"
-msgstr "Bredde"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/ClipZoom.pm:406
 msgid "Height"
-msgstr "Højde"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/ClipZoom.pm:412
 msgid "V-Rate"
-msgstr "V-rate"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/ClipZoom.pm:422
 msgid "Zoom"
-msgstr "Zoom"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/ClipZoom.pm:446
 msgid "Calc height"
-msgstr "Beregn højden"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/ClipZoom.pm:450
 msgid ""
 "Calculates the height based on the given width with correct aspect ratio"
-msgstr "Beregner højden, baseret på den givne bredde og højde-bredde forhold"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/ClipZoom.pm:454
 msgid "Calc width"
-msgstr "Beregn bredden"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/ClipZoom.pm:457
 msgid ""
 "Calculates the width based on the given height with correct aspect ratio"
-msgstr "Beregner bredden, baseret på den givne højde og højde-bredde forhold"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/ClipZoom.pm:463
 msgid "Use fast resizing"
-msgstr "Brug hurtig skalering"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/ClipZoom.pm:472
 msgid "Open zoom calculator"
-msgstr "Åbn zoom regnemaskine"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/ClipZoom.pm:570
 #, perl-brace-format
 msgid "Preview image: {type}"
-msgstr "Forhåndsvisning: {type}"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/ClipZoom.pm:716
 msgid "This function is only avaiable for ripped DVD's."
-msgstr "Denne funktion er kun tilgængelig til rippede DVD'er."
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/ClipZoom.pm:722
 msgid "Illegal frame number. Maximum is "
-msgstr "Ugyldigt billede nummer. Makimum er "
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/ClipZoom.pm:731
 #, perl-brace-format
 msgid "Executing command for video preview: {command}"
-msgstr "Kører kommando til forhåndsvisning: {command}"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/ClipZoom.pm:755
 msgid ""
 "This is not possible because\n"
 "fast resizing is enabled."
-msgstr "Dette er ikke muligt når hurtig skalering er slået til."
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Logging.pm:26
 msgid "Logging"
-msgstr "Logging"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Logging.pm:37
 msgid "Log messages"
-msgstr "Log-meddelelser"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Logging.pm:75
 msgid "Nuke log file"
-msgstr "Atombomb logfilen"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Logging.pm:83
 msgid "Log filename"
-msgstr "Log-filnavn"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:39
+#, fuzzy
 msgid "Subtitles"
-msgstr "Undertekster"
+msgstr "Offentlige kampe"
 
 #: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:60
 msgid "This title has no subtitles"
-msgstr "Denne titel har ingen undertekster"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:76
 msgid "Subtitle selection"
-msgstr "Undertekst selektion"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:80
 msgid "Select subtitle"
-msgstr "Vælg undertekst"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:84
 msgid "Activated:"
-msgstr "Aktiveret:"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:98
 msgid "Preview"
-msgstr "Forhåndsvisning"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:106
 #: ../lib/Video/DVDRip/GUI/Context.pm:790
 msgid "Grab"
-msgstr "Tag"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:128
 msgid "image(s)"
-msgstr "billeder(s)"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:132
+#, fuzzy
 msgid "starting at"
-msgstr "starter ved"
+msgstr "Starter et nyt spil"
 
 #: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:141
 #, perl-brace-format
 msgid "Movie has only {cnt} frames"
-msgstr "Filmen har kun {cnt} billeder"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:145
 msgid "Invalid time/frame number format"
-msgstr "Ugyldigt tid/billede nummer format"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:149
 msgid "(timecode nn:nn:nn or frame number)"
-msgstr "(tidsformat nn:nn:nn eller billede nummer)"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:173
 msgid "Render subtitle on movie"
-msgstr "Brænd undertekster ind i filmen"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:189
 msgid "Activate this subtitle "
-msgstr "Aktivér denne undertekst"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:194
 msgid "for rendering"
-msgstr "til indbrænding"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:198
 msgid "Colors "
-msgstr "Farver"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:203
 msgid "Enable manipulation"
-msgstr "Aktivér manipulation"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:207
 msgid "Preview image count "
-msgstr "Antal forhåndsvisninger"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:218
 msgid "Vertical offset "
-msgstr "Lodret offset"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:227
 msgid "rows"
-msgstr "rækker"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:232
 msgid "Gray A/B "
-msgstr "Grå A/B"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:241
 #: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:250
 msgid "Value not between 0 and 255"
-msgstr "Værdien er ikke mellem 0 og 255"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:254
 msgid "Preview window "
-msgstr "Forhåndsvisningsvindue"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:263
 msgid "Open"
-msgstr "Åbn"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:275
 msgid "Time shift "
-msgstr "Tidsskift"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:284
 msgid "ms"
-msgstr "millisekunder"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:290
 msgid "Index A/B "
-msgstr "Indeks A/B"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:305
 msgid "Postprocessing "
-msgstr "Postprocessering"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:309
+#, fuzzy
 msgid "Antialiasing"
-msgstr "Kantudjævning"
+msgstr "Klargører"
 
 #: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:312
 msgid "Suggest "
-msgstr "Foreslå "
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:318
 msgid "Values for letterbox"
-msgstr "Værdier til letterbox"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:328
 msgid "Values for full size movie"
-msgstr "Værdier til fuld-størrelse film"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:351
 msgid "Create vobsub file"
-msgstr "Lav vobsub fil"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:363
 #: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:367
 msgid "Create now"
-msgstr "Lav nu"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:373
 msgid "View vobsub"
-msgstr "Vis vobsub"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:377
 msgid "Only useful for single-CD-rips or after transcoding"
-msgstr "Kun brugbar med enkelt-CD ripninger eller efter transcoding"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:381
 msgid "Create later"
-msgstr "Lav senere"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:384
 msgid "after transcoding"
-msgstr "efter transcoding"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:388
 msgid "This considers splitted files automaticly"
-msgstr "Dette tager højde for opdelte filer automatisk"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:457
 msgid "You need Mplayer to view vobsub files."
-msgstr "Du skal bruge Mplayer for at vise vobsub filer."
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:463
 msgid "This is only supported for ripped movies."
-msgstr "Dette understøttes kun for rippede film."
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:469
 msgid "What about creating the vobsub file first?"
-msgstr "Hvad med at lave vobsub-filen først?"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:475
+#, fuzzy
 msgid "Executing command: "
-msgstr "Eksekverer kommando: "
+msgstr "Hovedkommandør: "
 
 #: ../lib/Video/DVDRip/GUI/Project/Subtitle.pm:532
 msgid "Sorry, you need subtitle2pgm for this to work."
 msgstr ""
-"Jeg beklager, men du skal have \"subtitle2pgm\" for at dette vil virke."
 
 #: ../lib/Video/DVDRip/GUI/Project/Title.pm:40
 msgid "RIP Title"
-msgstr "Rip titel"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Title.pm:51
+#, fuzzy
 msgid "Read content"
-msgstr "Indlæs indhold"
+msgstr "Hovedkommandør"
 
 #: ../lib/Video/DVDRip/GUI/Project/Title.pm:55
 msgid "Read DVD table of contents"
-msgstr "Indlæs DVD-indholdsfortegnelse"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Title.pm:56
 msgid "Scan the DVD for all available titles and setup the table of contents"
-msgstr "Scan DVD'en for alle tilgængelige titler og opsæt indholdsfortegnelsen"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Title.pm:65
 msgid "Open DVD tray"
-msgstr "Åbn DVD-drevets bakke"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Title.pm:67
 msgid "Open the tray of your configured DVD device"
-msgstr "Åbn bakken til dit valgte DVD-drev"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Title.pm:82
 msgid "Close DVD tray"
-msgstr "Luk DVD-drevets bakke"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Title.pm:84
 msgid "Close the tray of your configuried DVD device"
-msgstr "Luk bakken til dit valgte DVD-drev"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Title.pm:100
 msgid "DVD table of contents"
-msgstr "DVD-indholdsfortegnelse"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Title.pm:112
 msgid "Select title for further operation"
-msgstr "Vælg titel til yderlige handling"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Title.pm:117
+#, fuzzy
 msgid "Title"
-msgstr "Titel"
+msgstr "Tid"
 
 #: ../lib/Video/DVDRip/GUI/Project/Title.pm:119
 msgid "Norm"
-msgstr "Norm"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Title.pm:122
 msgid "Framerate"
-msgstr "Billederate"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Title.pm:123
 msgid "Aspect"
-msgstr "Højde/bredde-forhold"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Title.pm:124
+#, fuzzy
 msgid "Frames"
-msgstr "Billeder"
+msgstr "Spil"
 
 #: ../lib/Video/DVDRip/GUI/Project/Title.pm:125
 msgid "Resolution"
@@ -3566,52 +3390,46 @@ msgstr "Opløsning"
 
 #: ../lib/Video/DVDRip/GUI/Project/Title.pm:142
 msgid "View selected title/chapter(s)"
-msgstr "Vis valgte titler/kapitler"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Title.pm:150
 msgid "RIP selected title(s)/chapter(s)"
-msgstr "Rip valgte titler/kapitler"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Title.pm:178
 msgid "Select audio track"
-msgstr "Vælg lydspor"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Title.pm:179
 msgid ""
 "All audio tracks are ripped, but this track is also scanned for volume while "
 "ripping"
 msgstr ""
-"Alle lydspor er rippet, men dette spor er og scannet for lydstyrkeniveau "
-"under ripning"
 
 #: ../lib/Video/DVDRip/GUI/Project/Title.pm:191
 msgid "Select viewing angle"
-msgstr "Vælg kameravinkel"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Title.pm:192
 msgid ""
 "This selection affects ripping, so you must rip again if you change this "
 "later"
 msgstr ""
-"Denne indstilling har indflydelse på ripningen, så du skal rippe igen hvis "
-"du ændrer denne indstilling senere"
 
 #: ../lib/Video/DVDRip/GUI/Project/Title.pm:203
 msgid "Grab subtitle preview images"
-msgstr "Tag undertekst-forhåndsvisninger"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Title.pm:210
 msgid ""
 "No subitle images are created while ripping but can be grabbed later on "
 "demand. This is the fastest ripping mode."
 msgstr ""
-"Ingen undertekst-billeder bliver lavet under ripningen men de kan tages "
-"senere hvis du vil have det. Dette er den hurtigste ripningstilstand."
 
 #: ../lib/Video/DVDRip/GUI/Project/Title.pm:217
 #: ../lib/Video/DVDRip/GUI/Project/Title.pm:265
 msgid "All"
-msgstr "Alle"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Title.pm:219
 msgid ""
@@ -3619,69 +3437,65 @@ msgid ""
 "preview immediately. Note that this will slow down the ripping process "
 "significantly."
 msgstr ""
-"Der bliver lavet billeder af alle undertekst-strømme under ripningen og de "
-"kan derfor ses med det samme. Bemærk at dette vil gøre ripningen betydeligt "
-"langsommere."
 
 #: ../lib/Video/DVDRip/GUI/Project/Title.pm:227
+#, fuzzy
 msgid "By language"
-msgstr "Ved sprog"
+msgstr "Sprog"
 
 #: ../lib/Video/DVDRip/GUI/Project/Title.pm:229
 msgid ""
 "Grab subtitle images of specific languages only. Note that this will slow "
 "down the ripping process significantly."
 msgstr ""
-"Tag kun undertekst-billeder med det valgte sprog. Bemærk at dette vil gøre "
-"ripningen betydeligt langsommere."
 
 #: ../lib/Video/DVDRip/GUI/Project/Title.pm:246
 msgid "Select one or more languages"
-msgstr "Vælg en eller flere sprog"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Title.pm:247
+#, fuzzy
 msgid "Language selection"
-msgstr "Vælg sprog"
+msgstr "Manuel forbindelse"
 
 #: ../lib/Video/DVDRip/GUI/Project/Title.pm:253
 msgid "Specify chapter mode"
-msgstr "Angiv kapitel-tilstand"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Title.pm:258
+#, fuzzy
 msgid "None"
-msgstr "Ingen"
+msgstr "færdig"
 
 #: ../lib/Video/DVDRip/GUI/Project/Title.pm:259
 msgid "The title is handled as a whole ignoring all chapter marks"
-msgstr "Denne titel håndteres som en helhed. Alle kapitel-mærker ignoreres."
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Title.pm:266
 msgid ""
 "Processing is divided into chapters. You get one file per chapter for all "
 "chapters of this title"
 msgstr ""
-"Processeringen bliver opdelt i kapitler. Du får en fil per kapitel, for "
-"hvert eneste kapitel i denne titel."
 
 #: ../lib/Video/DVDRip/GUI/Project/Title.pm:273
+#, fuzzy
 msgid "Selection"
-msgstr "Selektion"
+msgstr "Før action"
 
 #: ../lib/Video/DVDRip/GUI/Project/Title.pm:274
 msgid ""
 "Processing is divided into chapters. You get one file per chapter for a "
 "specific selection of chapters"
 msgstr ""
-"Processeringen bliver opdelt i kapitler. Du får en fil per kapitel, for en "
-"specifik mængde valgte kapitler."
 
 #: ../lib/Video/DVDRip/GUI/Project/Title.pm:288
 msgid "Select one or more chapters"
-msgstr "Vælg en eller flere kapitler"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Project/Title.pm:289
+#, fuzzy
 msgid "Chapter selection"
-msgstr "Kapitelvalg"
+msgstr "Skift kriger"
 
 #: ../lib/Video/DVDRip/GUI/Project/Title.pm:303
 msgid ""
@@ -3692,307 +3506,1319 @@ msgid ""
 "\n"
 "Do you want to re-read the TOC now?"
 msgstr ""
-"Hvis du genindlæser indholdsfortegnelsen vil alle\n"
-"indstillinger for dette projekt blive tabt. Du har sikkert\n"
-"lyst til at gemme projektet til en anden fil før du fortsætter\n"
-"\n"
-"Vil du genindlæse indholdsfortegnelsen nu?"
 
 #: ../lib/Video/DVDRip/GUI/Project/Title.pm:409
+#, fuzzy
 msgid "Please select a title."
-msgstr "Vælg venligst en titel."
+msgstr "Spil flere gange"
 
 #: ../lib/Video/DVDRip/GUI/Context.pm:41
 msgid "No subtitles activated."
-msgstr "Ingen undertekster aktiveret."
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Context.pm:255
 #, perl-brace-format
 msgid "DVD title #{nr}"
-msgstr "DVD titel #{nr}"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Context.pm:304
-#, perl-brace-format
+#, fuzzy, perl-brace-format
 msgid "Angle {angle}"
-msgstr "Kameravinkel {angle}"
+msgstr "Ændr sigtevinkel"
 
 #: ../lib/Video/DVDRip/GUI/Context.pm:790
 msgid "Show"
-msgstr "Fremvis"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/FormFactory/ClipImage.pm:26
 msgid "Conformance check:"
-msgstr "Overensstemmelse check:"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Filters.pm:79
 msgid "dvd::rip - Filters & Preview"
-msgstr "dvd::rip – filtre og forhåndsvisning"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Filters.pm:165
 msgid "Available filters"
-msgstr "Tilgængelige filtre"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Filters.pm:178
 msgid ""
 "Double click a row to activate a filter. Greyed out filters are not "
 "available anymore, because they are activated already."
 msgstr ""
-"Dobbeltklik på en række for at aktivere et filter. Grå filtre er ikke "
-"tilgængelige længere, fordi de allerede er aktiveret."
 
 #: ../lib/Video/DVDRip/GUI/Filters.pm:211
 msgid "Used filters"
-msgstr "Brugte filtre"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Filters.pm:223
 msgid "Double click a row to remove a filter, reorder by drag and drop"
 msgstr ""
-"Dobbeltklik på en række for at fjerne et filter. Byt rundt på filtre ved at "
-"\"trække og slippe\""
 
 #: ../lib/Video/DVDRip/GUI/Filters.pm:240
 msgid ""
 "You can't change the filter order\n"
 "while the preview window is open."
 msgstr ""
-"Du kan ikke ændre filterrækkefølgen\n"
-"mens forhåndsvisningsvinduet er åbent."
 
 #: ../lib/Video/DVDRip/GUI/Filters.pm:274
 msgid "Filter information"
-msgstr "Filterinformation"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Filters.pm:284
+#, fuzzy
 msgid "Filter name"
-msgstr "Filternavn"
+msgstr "Spillernavn"
 
 #: ../lib/Video/DVDRip/GUI/Filters.pm:299
+#, fuzzy
 msgid "Author(s)"
-msgstr "Forfatter(e)"
+msgstr "Forfattere:"
 
 #: ../lib/Video/DVDRip/GUI/Filters.pm:304
 msgid "A/V type"
-msgstr "A/V type"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Filters.pm:309
 msgid "Colorspace"
-msgstr "Farvespektrum"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Filters.pm:314
 msgid "PRE/POST"
-msgstr "PRE/POST"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Filters.pm:319
 msgid "Multiple"
-msgstr "Flere"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Filters.pm:338
 msgid "Filter settings"
-msgstr "Filterindstillinger"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Filters.pm:349
 msgid "Preview settings"
-msgstr "Forhåndsvisningsindstillinger"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Filters.pm:354
 msgid ""
 "Frames buffered in the preview window and thus are available for scrubbing"
-msgstr "Billeder er buffret i forhåndsvisningsvinduet og kan derfor bruges"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Filters.pm:362
 msgid "Preview should start at this frame"
-msgstr "Forhåndsvisninger skal starte ved dette billede"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Filters.pm:371
 msgid "Preview should start stop this frame"
-msgstr "Forhåndsvisninger skal stoppe ved dette billede"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Filters.pm:398
 msgid "Preview control"
-msgstr "Forhåndsvisningskontrol"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Filters.pm:404
 msgid "Open preview window and play"
-msgstr "Åbn forhåndsvisningsvindue og afspil"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Filters.pm:412
 msgid "Apply filter chain"
-msgstr "Anvend filterkæde"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Filters.pm:420
 msgid "Decrease preview speed"
-msgstr "Afspil langsommere"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Filters.pm:428
 msgid "Increase preview speed"
-msgstr "Afspil hurtigere"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Filters.pm:438
 msgid "Pause/Resume"
-msgstr "Paus/fortsæt"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Filters.pm:447
 msgid "Step backward one frame"
-msgstr "Gå et billlede tilbage"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Filters.pm:456
 msgid "Step forward one frame"
-msgstr "Gå et billede frem"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Filters.pm:465
 msgid "Step backward several frames"
-msgstr "Gå flere billeder tilbage"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Filters.pm:474
 msgid "Step forward several frames"
-msgstr "Gå flere billeder frem"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Filters.pm:482
 msgid "Stop playing and close preview window"
-msgstr "Stop afspilning og luk forhåndsvisningsvinduet"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Filters.pm:777
 msgid "Enable"
-msgstr "Slå til"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Filters.pm:778
 msgid "Disable"
-msgstr "Slå fra"
+msgstr ""
 
 #: ../lib/Video/DVDRip/GUI/Filters.pm:779
 msgid "Enable or disable filter temporarily"
-msgstr "Slå filtre midlertidigt til/fra"
+msgstr ""
 
 #: ../lib/Video/DVDRip/Content.pm:77
 #, perl-brace-format
 msgid "Illegal title number {nr}"
-msgstr "Ugyldigt titel nummer {nr}"
+msgstr ""
 
 #: ../lib/Video/DVDRip.pm:29
 msgid "No deinterlacing"
-msgstr "Ingen deinterlacing"
+msgstr ""
 
 #: ../lib/Video/DVDRip.pm:30
 msgid "Interpolate scanlines (fast)"
-msgstr "Interpolér scanlines (hurtigt)"
+msgstr ""
 
 #: ../lib/Video/DVDRip.pm:31
 msgid "Handled by encoder (may segfault)"
-msgstr "Håndteres af encoderen (kan bryde sammen)"
+msgstr ""
 
 #: ../lib/Video/DVDRip.pm:32
 msgid "Zoom to full frame (slow)"
-msgstr "Zoom til helt billede (langsomt)"
+msgstr ""
 
 #: ../lib/Video/DVDRip.pm:33
 msgid "Interpolate scanlines / blend frames (pp=lb)"
-msgstr "Interpoler scanlines / sammensmelt billeder (pp=lb)"
+msgstr ""
 
 #: ../lib/Video/DVDRip.pm:34
 msgid "Automatic deinterlacing of single frames"
-msgstr "Automatisk deinterlacing af enkelte billeder"
+msgstr ""
 
 #: ../lib/Video/DVDRip.pm:35
 msgid "Smart deinterlacing"
-msgstr "Smart deinterlacing"
+msgstr ""
 
 #: ../lib/Video/DVDRip.pm:36
 msgid "Inverse telecine"
-msgstr "Omvendt telecine"
+msgstr ""
 
 #: ../lib/Video/DVDRip.pm:40
+#, fuzzy
 msgid "No antialiasing"
-msgstr "Ingen kantudjævning"
+msgstr "Netværksinitialisation"
 
 #: ../lib/Video/DVDRip.pm:41
 msgid "Process de-interlace effects"
-msgstr "Processér de-interlace effekter"
+msgstr ""
 
 #: ../lib/Video/DVDRip.pm:42
 msgid "Process resize effects"
-msgstr "Processér skaleringseffekter"
+msgstr ""
 
 #: ../lib/Video/DVDRip.pm:43
 msgid "Process full frame (slow)"
-msgstr "Processér helt billede (langsomt)"
+msgstr ""
 
 #: ../lib/Video/DVDRip.pm:47
 msgid "None, volume rescale only"
-msgstr "Ingen, kun volume reskalering"
+msgstr ""
 
 #: ../lib/Video/DVDRip.pm:48
 msgid "Range compression (liba52 filter)"
-msgstr "Områdekomprimering (liba52 filter)"
+msgstr ""
 
 #: ../lib/Video/DVDRip.pm:49
 msgid "Normalizing (mplayer filter)"
-msgstr "Normalisering (mplayer filter)"
+msgstr ""
 
 #: /home/joern/projects/Event-ExecFlow/lib/Event/ExecFlow/Job/Command.pm:115
 #, perl-brace-format
 msgid "Executing command: {command}"
-msgstr "Eksekverer kommando: {command}"
+msgstr ""
 
-#: /home/joern/projects/Event-ExecFlow/lib/Event/ExecFlow/Job/Command.pm:225
+#: /home/joern/projects/Event-ExecFlow/lib/Event/ExecFlow/Job/Command.pm:216
 msgid "Sending signal 9 to PID(s)"
-msgstr "Sender signal 9 til process-ID('er)"
+msgstr ""
 
 #: /home/joern/projects/Event-ExecFlow/lib/Event/ExecFlow/Job.pm:330
 msgid "Cancelled"
-msgstr "Annulleret"
+msgstr ""
 
 #: /home/joern/projects/Event-ExecFlow/lib/Event/ExecFlow/Job.pm:331
+#, fuzzy
 msgid "Error"
-msgstr "Fejl"
+msgstr ""
+"Fejl:\n"
+"%s"
 
 #: /home/joern/projects/Event-ExecFlow/lib/Event/ExecFlow/Job.pm:332
 msgid "Skipped"
-msgstr "Sprunget over"
+msgstr ""
 
 #: /home/joern/projects/Event-ExecFlow/lib/Event/ExecFlow/Job.pm:334
 msgid "Waiting"
-msgstr "Venter"
+msgstr ""
 
 #: /home/joern/projects/Event-ExecFlow/lib/Event/ExecFlow/Job.pm:347
 #, perl-brace-format
 msgid "Duration: {time}"
-msgstr "Længde: {time}"
+msgstr ""
 
 #: /home/joern/projects/Event-ExecFlow/lib/Event/ExecFlow/Job.pm:356
+#, fuzzy
 msgid "Initializing"
-msgstr "Initalisering"
+msgstr "Klargører"
 
 #: /home/joern/projects/Event-ExecFlow/lib/Event/ExecFlow/Job.pm:363
 #, perl-brace-format
 msgid "elapsed {time}"
-msgstr "forløbet tid: {time}"
+msgstr ""
 
 #: /home/joern/projects/Event-ExecFlow/lib/Event/ExecFlow/Job.pm:367
 msgid " finished"
-msgstr "færdig"
+msgstr ""
 
 #: /home/joern/projects/Event-ExecFlow/lib/Event/ExecFlow/Job.pm:380
 #, perl-brace-format
 msgid "{percent}PERCENT done."
-msgstr "{percent}PERCENT færdig."
+msgstr ""
 
-#~ msgid "Project '{project}' - title #{nr}"
-#~ msgstr "Projekt '{project}' - titel #{nr}"
+#~ msgid "! Map %s not found :-("
+#~ msgstr "! Banen %s blev ikke fundet :-("
 
-#~ msgid "Process PSU #{nr}"
-#~ msgstr "Processer PSU #{nr}"
+#~ msgid "%i player ready"
+#~ msgid_plural "%i players ready"
+#~ msgstr[0] "Spiller %i er klar"
+#~ msgstr[1] "Spillere %i er klar"
 
-#~ msgid "Process all audio tracks - title #{nr}, PSU #{psu}"
-#~ msgstr "Processer alle lydspor - titel #{nr}, PSU#{psu}"
+#~ msgid "%s <%s> aka %s from %s"
+#~ msgstr "%s <%s> også kendt som %s fra %s"
 
-#~ msgid "PS1 file '{filename}' already exists. Skip extraction."
-#~ msgstr "PS1 fil '{filename}' eksisterer allerede. Springer udtrækning over."
+#~ msgid "%s <%s> from %s"
+#~ msgstr "%s <%s> fra %s"
 
-#~ msgid ", file #{nr}"
-#~ msgstr ", fil #{nr}"
+#~ msgid "%s Team"
+#~ msgstr "Hold %s"
 
-#~ msgid "Volume scan"
-#~ msgstr "Volume scanning"
+#~ msgid "%s Team - Remote"
+#~ msgstr "Hold %s – Fjernt"
 
-#~ msgid "Create WAV"
-#~ msgstr "Lav WAV"
+#~ msgid "%s from %s team commited suicide!"
+#~ msgstr "%s (%s) begik selvmord!"
+
+#~ msgid "%s from %s team has died."
+#~ msgstr "%s (%s) døde."
+
+#~ msgid "%s from %s team has fallen into the water!"
+#~ msgstr "%s (%s) faldt i vandet."
+
+#~ msgid "%s from %s team has fallen off the map!"
+#~ msgstr "%s (%s) faldt ud af banen!"
+
+#~ msgid "%s from %s team has hit the ground too hard!"
+#~ msgstr "%s (%s) ramte jorden for hårdt!"
+
+#~ msgid "%s from %s team is dead because he is clumsy!"
+#~ msgstr "%s (%s) døde fordi han var klodset!"
+
+#~ msgid "%s has won %u point of energy!"
+#~ msgid_plural "%s has won %u points of energy!"
+#~ msgstr[0] "%s har fået %u point ekstra energi!"
+#~ msgstr[1] "%s har fået %u point ekstra energi!"
+
+#~ msgid "%s is a psychopath, he has killed a member of the %s team!"
+#~ msgstr "%s er en psykopat; han dræbte en fra holdet %s!"
+
+#~ msgid "%s is next to a mine!"
+#~ msgstr "%s trådte på en mine!"
+
+#~ msgid "%s team already has infinite ammo for the %s!"
+#~ msgstr "Holdet %s har allerede uendelig ammunition for %s!"
+
+#~ msgid "%s team has skipped its turn."
+#~ msgstr "Holdet %s sprang dets tur over."
+
+#~ msgid "%s team has won %u Cluster bazookas!"
+#~ msgid_plural "%s team has won %u Cluster bazookas!"
+#~ msgstr[0] "Holdet %s har fået %u klyngebazooka!"
+#~ msgstr[1] "Holdet %s har fået %u klyngebazookaer!"
+
+#~ msgid "%s team has won %u Gnu! Blow them all, cowboy!"
+#~ msgid_plural "%s team has won %u Gnus! Blow them all, cowboy!"
+#~ msgstr[0] "Holdet %s har fået %u gnu! Spræng dem alle i luften, cowboy!"
+#~ msgstr[1] "Holdet %s har fået %u gnuer! Spræng dem alle i luften, cowboy!"
+
+#~ msgid "%s team has won %u air attack!"
+#~ msgid_plural "%s team has won %u air attacks!"
+#~ msgstr[0] "Holdet %s har fået %u luftangreb!"
+#~ msgstr[1] "Holdet %s har fået %u luftangreb!"
+
+#~ msgid ""
+#~ "%s team has won %u airhammer! Don't make too much noise with it! Thanks, "
+#~ "your neighbours."
+#~ msgid_plural ""
+#~ "%s team has won %u airhammers! Don't make too much noise with them! "
+#~ "Thanks, your neighbours."
+#~ msgstr[0] ""
+#~ "Holdet %s har fået %u tryklufthammer! Lav ikke for meget larm med den! På "
+#~ "forhånd tak. Hilsen, dine naboer."
+#~ msgstr[1] ""
+#~ "Holdet %s har fået %u tryklufthammere! Lav ikke for meget larm med dem! "
+#~ "På forhånd tak. Hilsen, dine naboer."
+
+#~ msgid "%s team has won %u anvil! Splat them all!"
+#~ msgid_plural "%s team has won %u anvils! Splat them all!"
+#~ msgstr[0] "Holdet %s har fået %u ambolt! Kvas dem alle!"
+#~ msgstr[1] "Holdet %s har fået %u ambolte! Kvas dem alle!"
+
+#~ msgid "%s team has won %u automatic bazooka!"
+#~ msgid_plural "%s team has won %u automatic bazookas!"
+#~ msgstr[0] "Holdet %s har fået %u laserstyret bazooka!"
+#~ msgstr[1] "Holdet %s har fået %u laserstyrede bazookaer!"
+
+#~ msgid "%s team has won %u baseball bat!"
+#~ msgid_plural "%s team has won %u baseball bats!"
+#~ msgstr[0] "Holdet %s har fået %u baseballbat!"
+#~ msgstr[1] "Holdet %s har fået %u baseballbat!"
+
+#~ msgid "%s team has won %u bazooka!"
+#~ msgid_plural "%s team has won %u bazookas!"
+#~ msgstr[0] "Holdet %s har fået %u bazooka!"
+#~ msgstr[1] "Holdet %s har fået %u bazookaer!"
+
+#~ msgid ""
+#~ "%s team has won %u blowtorch! If you're under 18, ask your parents to use "
+#~ "it."
+#~ msgid_plural ""
+#~ "%s team has won %u blowtorchs! If you're under 18, ask your parents to "
+#~ "use it."
+#~ msgstr[0] ""
+#~ "Holdet %s har fået %u blæselampe! Hvis du er under 18, så husk at spørge "
+#~ "dine forældre om lov til at bruge den."
+#~ msgstr[1] ""
+#~ "Holdet %s har fået %u blæselamper! Hvis du er under 18, så husk at spørge "
+#~ "dine forældre om lov til at bruge dem."
+
+#~ msgid "%s team has won %u bounce ball! Boing!"
+#~ msgid_plural "%s team has won %u bounce balls! Boing!"
+#~ msgstr[0] "Holdet %s har fået %u hoppebold! Boing!"
+#~ msgstr[1] "Holdet %s har fået %u hoppebolde! Boing!"
+
+#~ msgid "%s team has won %u cluster bomb!"
+#~ msgid_plural "%s team has won %u cluster bombs!"
+#~ msgstr[0] "Holdet %s har fået %u klyngebombe!"
+#~ msgstr[1] "Holdet %s har fået %u klyngebomber!"
+
+#~ msgid "%s team has won %u construct weapon! Don't forget your helmet."
+#~ msgid_plural ""
+#~ "%s team has won %u construct weapons! Don't forget your helmet."
+#~ msgstr[0] "Holdet %s har fået %u konstruktionsvåben! Glem ikke hjelmen!"
+#~ msgstr[1] "Holdet %s har fået %u konstruktionsvåben! Glem ikke hjelmen!"
+
+#~ msgid "%s team has won %u disco grenade! Shake your body when throwing it!"
+#~ msgid_plural ""
+#~ "%s team has won %u disco grenades! Shake your body when throwing them!"
+#~ msgstr[0] ""
+#~ "Holdet %s har fået %u diskogranat! Husk at danse når du kaster den!"
+#~ msgstr[1] ""
+#~ "Holdet %s har fået %u diskogranater! Husk at danse når du kaster dem!"
+
+#~ msgid "%s team has won %u dynamite!"
+#~ msgid_plural "%s team has won %u dynamites!"
+#~ msgstr[0] "Holdet %s har fået %u dynamit!"
+#~ msgstr[1] "Holdet %s har fået %u dynamitter!"
+
+#~ msgid "%s team has won %u flame-thrower!"
+#~ msgid_plural "%s team has won %u flame-throwers!"
+#~ msgstr[0] "Holdet %s har fået %u flammekaster!"
+#~ msgstr[1] "Holdet %s har fået %u flammekastere!"
+
+#~ msgid "%s team has won %u football bomb!"
+#~ msgid_plural "%s team has won %u football bombs!"
+#~ msgstr[0] "Holdet %s har fået %u fodboldbombe!"
+#~ msgstr[1] "Holdet %s har fået %u fodboldbomber!"
+
+#~ msgid "%s team has won %u grapple!"
+#~ msgid_plural "%s team has won %u grapples!"
+#~ msgstr[0] "Holdet %s har fået %u klo!"
+#~ msgstr[1] "Holdet %s har fået %u klør!"
+
+#~ msgid "%s team has won %u grenade!"
+#~ msgid_plural "%s team has won %u grenades!"
+#~ msgstr[0] "Holdet %s har fået %u granat!"
+#~ msgstr[1] "Holdet %s har fået %u granater!"
+
+#~ msgid "%s team has won %u gun!"
+#~ msgid_plural "%s team has won %u guns!"
+#~ msgstr[0] "Holdet %s har fået %u pistol!"
+#~ msgstr[1] "Holdet %s har fået %u pistoler!"
+
+#~ msgid "%s team has won %u jetpack! Groovy!"
+#~ msgid_plural "%s team has won %u jetpacks! Groovy!"
+#~ msgstr[0] "Holdet %s har fået %u jetpack! Svedigt!"
+#~ msgstr[1] "Holdet %s har fået %u jetpacks! Svedigt!"
+
+#~ msgid "%s team has won %u lowgrav! I'm Neil Armstrong!"
+#~ msgid_plural "%s team has won %u lowgravs! I'm Neil Armstrong!"
+#~ msgstr[0] ""
+#~ "Holdet %s har fået %u svag tyngdekraft! Se mig, jeg er Neil Armstrong!"
+#~ msgstr[1] ""
+#~ "Holdet %s har fået %u svage tyngdekræfter! Se mig, jeg er Neil Armstrong!"
+
+#~ msgid "%s team has won %u mine!"
+#~ msgid_plural "%s team has won %u mines!"
+#~ msgstr[0] "Holdet %s har fået %u mine!"
+#~ msgstr[1] "Holdet %s har fået %u miner!"
+
+#~ msgid "%s team has won %u parachute!"
+#~ msgid_plural "%s team has won %u parachutes!"
+#~ msgstr[0] "Holdet %s har fået %u faldskærm!"
+#~ msgstr[1] "Holdet %s har fået %u faldskærme!"
+
+#~ msgid "%s team has won %u polecat! You have you're gas mask, right ?"
+#~ msgid_plural ""
+#~ "%s team has won %u polecats! You have you're gas mask, right ?"
+#~ msgstr[0] "Holdet %s har fået %u stinkdyr! Du har husket gasmasken, ikke?"
+#~ msgstr[1] "Holdet %s har fået %u stinkdyr! Du har husket gasmasken, ikke?"
+
+#~ msgid "%s team has won %u riot bomb!"
+#~ msgid_plural "%s team has won %u riot bombs!"
+#~ msgstr[0] "Holdet %s har fået %u oprørsbombe!"
+#~ msgstr[1] "Holdet %s har fået %u oprørsbomber!"
+
+#~ msgid "%s team has won %u shotgun!"
+#~ msgid_plural "%s team has won %u shotguns!"
+#~ msgstr[0] "Holdet %s har fået %u haglgevær!"
+#~ msgstr[1] "Holdet %s har fået %u haglgeværer!"
+
+#~ msgid "%s team has won %u slap!"
+#~ msgid_plural "%s team has won %u slaps! Dodge this!"
+#~ msgstr[0] "Holdet %s har fået %u slag!"
+#~ msgstr[1] "Holdet %s har fået %u slag! Smag lidt på den her!"
+
+#~ msgid "%s team has won %u sniper rifle! Aim and shoot between the eyes!"
+#~ msgid_plural ""
+#~ "%s team has won %u sniper rifles! Aim and shoot between the eyes!"
+#~ msgstr[0] "Holdet %s har fået %u sniper-riffel! Sigt og skyd mellem øjnene!"
+#~ msgstr[1] "Holdet %s har fået %u sniper-rifler! Skyd dem mellem øjnene!"
+
+#~ msgid "%s team has won %u submachine gun!"
+#~ msgid_plural "%s team has won %u submachine guns!"
+#~ msgstr[0] "Holdet %s har fået %u maskinpistol!"
+#~ msgstr[1] "Holdet %s har fået %u maskinpistoler!"
+
+#~ msgid "%s team has won %u suicide!"
+#~ msgid_plural "%s team has won %u suicides! Use them all for an extra bonus!"
+#~ msgstr[0] "Holdet %s har fået %u selvmord!"
+#~ msgstr[1] "Holdet %s har fået %u selvmord!"
+
+#~ msgid "%s team has won %u syringe!"
+#~ msgid_plural "%s team has won %u syringes!"
+#~ msgstr[0] "Holdet %s har fået %u sprøjte!"
+#~ msgstr[1] "Holdet %s har fået %u sprøjter!"
+
+#~ msgid "%s team has won %u teleportation!"
+#~ msgid_plural "%s team has won %u teleportations!"
+#~ msgstr[0] "Holdet %s har fået %u teleportation!"
+#~ msgstr[1] "Holdet %s har fået %u teleportationer!"
+
+#~ msgid "%s team has won %u turn skip! I know you'll love it."
+#~ msgid_plural "%s team has won %u turn skips! I know you'll love them."
+#~ msgstr[0] ""
+#~ "Holdet %s har fået %u \"spring turen over\"! Jeg ved du elsker dem."
+#~ msgstr[1] ""
+#~ "Holdet %s har fået %u \"spring turen over\"! Jeg ved du elsker dem."
+
+#~ msgid "%s team has won %u tux launcher! Never seen a flying penguin?"
+#~ msgid_plural ""
+#~ "%s team has won %u tux launchers! Never seen a flying penguin?"
+#~ msgstr[0] ""
+#~ "Holdet %s har fået %u Tux-affyring! Har du aldrig set en flyvende pingvin?"
+#~ msgstr[1] ""
+#~ "Holdet %s har fået %u Tux-affyringer! Har du aldrig set en flyvende "
+#~ "pingvin?"
+
+#~ msgid "%s team was fragged down."
+#~ msgstr "Holdet %s blev udryddet."
+
+#~ msgid "%s took a member of the %s team to the grave with him!"
+#~ msgstr "%s tog et medlem af holdet %s med i graven!"
+
+#~ msgid "(dead)"
+#~ msgstr "(død)"
+
+#~ msgid "(system language)"
+#~ msgstr "(systemsprog)"
+
+#~ msgid "(unknown time)"
+#~ msgstr "(ukendt tid)"
+
+#~ msgid "(unlimited)"
+#~ msgstr "(ubegrænset)"
+
+#~ msgid ""
+#~ "A new version %s is available, while your version is %s.You may want to "
+#~ "check whether an update is available for your OS!"
+#~ msgstr ""
+#~ "En ny version (%s) er tilgængelig. Din nuværende version er %s. Du kan "
+#~ "chekke om der er en ny version tilgængelig for dit operativsystem."
+
+#~ msgid "Air Attack"
+#~ msgstr "Luftangreb"
+
+#~ msgid "Airhammer"
+#~ msgstr "Tryklufthammer"
+
+#~ msgid "All teams"
+#~ msgstr "Alle hold"
+
+#~ msgid "Always"
+#~ msgstr "Altid"
+
+#~ msgid "And the winner is..."
+#~ msgstr "Og vinderen er..."
+
+#~ msgid ""
+#~ "Angle : Up/Down\n"
+#~ "Fire : space key\n"
+#~ "a hit per turn"
+#~ msgstr ""
+#~ "Vinkel: Op/ned piletaster\n"
+#~ "Affyr: mellemrum\n"
+#~ "Et skud per tur"
+
+#~ msgid "Anvil"
+#~ msgstr "Ambolt"
+
+#~ msgid "Automatic Bazooka"
+#~ msgstr "Laserstyret bazooka"
+
+#~ msgid "Back to battle"
+#~ msgstr "Tilbage til kampen"
+
+#~ msgid "Bad socket ..."
+#~ msgstr "Dårlig socket..."
+
+#~ msgid "Baseball Bat"
+#~ msgstr "Baseballbat"
+
+#~ msgid "Bazooka"
+#~ msgstr "Bazooka"
+
+#~ msgid "Blitz"
+#~ msgstr "Blitz"
+
+#~ msgid "Blowtorch"
+#~ msgstr "Blæselampe"
+
+#~ msgid "Bounce Ball"
+#~ msgstr "Hoppebold"
+
+#~ msgid "Bye bye tux..."
+#~ msgstr "Faaarvel Tux..."
+
+#~ msgid "Can't find team %s!"
+#~ msgstr "Kan ikke finde holdet %s!"
+
+#~ msgid "Cannot open personal teams directory (%s)!"
+#~ msgstr "Kan ikke åbne det personlige holdkatalog (%s)!"
+
+#~ msgid "Cannot open the custom teams directory (%s)!"
+#~ msgstr "Kan ikke åbne det brugerdefinerede holdkatalog (%s)!"
+
+#~ msgid "Center camera to character"
+#~ msgstr "Centrér kamera på kriger"
+
+#~ msgid "Change active character"
+#~ msgstr "Ændr aktiv kriger"
+
+#~ msgid "Change weapon category"
+#~ msgstr "Ændr våbenkatalog"
+
+#~ msgid "Change weapon countdown"
+#~ msgstr "Ændr våbennedtælling"
+
+#~ msgid "Character names:"
+#~ msgstr "Krigerenes navne:"
+
+#~ msgid "Check updates online?"
+#~ msgstr "Check for opdateringer på nettet?"
+
+#~ msgid "Choose randomly between the different maps"
+#~ msgstr "Skift tilfældigt rundt mellem de forskellige baner"
+
+#~ msgid "Classic"
+#~ msgstr "Klassisk"
+
+#~ msgid "Click: Center camera on character"
+#~ msgstr "Klik: Centrér kamera på kriger"
+
+#~ msgid "Clumsiest"
+#~ msgstr "Mest klodset"
+
+#~ msgid "Cluzooka"
+#~ msgstr "Cluzooka"
+
+#~ msgid "Commit Suicide"
+#~ msgstr "Begå selvmord"
+
+#~ msgid "Connected !"
+#~ msgstr "Forbundet!"
+
+#~ msgid "Connected players: "
+#~ msgstr "Forbunde spillere:"
+
+#~ msgid "Construct"
+#~ msgstr "Konstruér"
+
+#~ msgid "Controlled by: "
+#~ msgstr "Kontrolleret af: "
+
+#~ msgid "Credits"
+#~ msgstr "Udviklere"
+
+#~ msgid "Damage per turn during death mode"
+#~ msgstr "Skade per tur under dødsmodus"
+
+#~ msgid "Displays this message"
+#~ msgstr "Vis denne meddelelse"
+
+#~ msgid "Drag&drop: Move camera"
+#~ msgstr "Træk og slip: Panorér kamera"
+
+#~ msgid "Duration before death mode"
+#~ msgstr "Tid før dødsmodus"
+
+#~ msgid "Duration of a turn"
+#~ msgstr "Længden af en tur"
+
+#~ msgid "Dynamite"
+#~ msgstr "Dynamit"
+
+#~ msgid "END OF GAME"
+#~ msgstr "SLUT PÅ SPILLET"
+
+#~ msgid "Effects volume"
+#~ msgstr "Lydeffekt volume"
+
+#~ msgid "Energy"
+#~ msgstr "Energi"
+
+#~ msgid "Error initializing network: Client %s does not agree with you!! - %s"
+#~ msgstr ""
+#~ "Fejl under initialisering af netværk: Klienten %s er ikke enig med dig! - "
+#~ "%s"
+
+#~ msgid "Error loading team :"
+#~ msgstr "Fejl under indlæsning af hold:"
+
+#~ msgid ""
+#~ "Error while creating directory \"%s\": unable to store configuration file."
+#~ msgstr ""
+#~ "Fejl under dannelse af kataloget \"%s\": kan ikke gemme "
+#~ "konfigurationsfilen."
+
+#~ msgid ""
+#~ "Error while deleting the directory \"%s\". Unable to delete the custom "
+#~ "team."
+#~ msgstr ""
+#~ "Fejl under sletning af kataloget \"%s\". Kan ikke slette det "
+#~ "brugerdefinerede hold."
+
+#~ msgid ""
+#~ "Error while deleting the file \"%s\". Unable to delete the custom team."
+#~ msgstr ""
+#~ "Fejl under sletning af filen \"%s\". Kan ikke slette det brugerdefinerede "
+#~ "hold."
+
+#~ msgid "Error: Unable to contact the index server to host a game"
+#~ msgstr "Fejl: Kan ikke kontakte indeksserveren for at starte et spil"
+
+#~ msgid ""
+#~ "Error: Unable to contact the index server to search for an internet game"
+#~ msgstr ""
+#~ "Fejl: Kan ikke kontakte indeksserveren for at søge efter internetspil"
+
+#~ msgid "Error: Unable to start server"
+#~ msgstr "Fejl: Kan ikke starte server"
+
+#~ msgid ""
+#~ "Error: Your server is not reachable from the internet. Check your "
+#~ "firewall configuration: TCP Port %s must accept connection from the "
+#~ "outside. If you are not directly connected to the internet, check your "
+#~ "router configuration: TCP Port %s must be forwarded on your computer."
+#~ msgstr ""
+#~ "Fejl: Din server er ikke tilgængelig fra internettet. Check at din "
+#~ "firewall-konfiguration: TCP-port %s skal acceptere forbindelser udefra. "
+#~ "Hvis du ikke er forbundet direkte til internettet, så check din "
+#~ "routerkonfiguration i stedet. I så fald skal du forwarde TCP-port %s til "
+#~ "din computer."
+
+#~ msgid ""
+#~ "Error: Your server is not reachable from the internet. Check your "
+#~ "firewall configuration: TCP Port %u must accept connection from the "
+#~ "outside. If you are not directly connected to the internet, check your "
+#~ "router configuration: TCP Port %u must be forwarded on your computer."
+#~ msgstr ""
+#~ "Fejl: Din server er ikke tilgængelig fra internettet. Check at din "
+#~ "firewall-konfiguration: TCP-port %u skal acceptere forbindelser udefra. "
+#~ "Hvis du ikke er forbundet direkte til internettet, så check din "
+#~ "routerkonfiguration i stedet. I så fald skal du forwarde TCP-port %u til "
+#~ "din computer."
+
+#~ msgid "Error: can't find the body \"%s\" for the team \"%s\"."
+#~ msgstr "Fejl: Kan ikke finde kroppen \"%s\" for holdet \"%s\"."
+
+#~ msgid "Flame Thrower"
+#~ msgstr "Flammekaster"
+
+#~ msgid "Football Bomb"
+#~ msgstr "Fodboldbombe"
+
+#~ msgid "Fullscreen?"
+#~ msgstr "Fuld skærm?"
+
+#~ msgid "Game mode"
+#~ msgstr "Spilmodus"
+
+#~ msgid "Gnu Launcher"
+#~ msgstr "Gnukaster"
+
+#~ msgid "Graphic"
+#~ msgstr "Grafik"
+
+#~ msgid "Grapple"
+#~ msgstr "Klo"
+
+#~ msgid "Gravity"
+#~ msgstr "Tyngdekraft"
+
+#~ msgid "Grenade"
+#~ msgstr "Granat"
+
+#~ msgid "Ground initialization..."
+#~ msgstr "Banen klargøres..."
+
+#~ msgid "Gun"
+#~ msgstr "Pistol"
+
+#~ msgid "Have a good game!"
+#~ msgstr "Hav et godt spil!"
+
+#~ msgid "High jump"
+#~ msgstr "Højt hop"
+
+#~ msgid ""
+#~ "How to use it : left click on target\n"
+#~ "Initial fire angle : Up/Down\n"
+#~ "Fire : keep space key pressed until the desired strength\n"
+#~ "an ammo per turn"
+#~ msgstr ""
+#~ "Hvordan man bruger det: Venstreklik på målet\n"
+#~ "Affyringsvinkel (udgangspunkt): Op/ned piletaster\n"
+#~ "Affyr: Hold mellemrum nede indtil den ønskede styrke er nået\n"
+#~ "Et stykke ammunition per tur"
+
+#~ msgid ""
+#~ "Howto use it : keep space key pressed\n"
+#~ "Angle : Up/Down\n"
+#~ "an ammo per turn"
+#~ msgstr ""
+#~ "Hvordan man bruger det: Hold mellemrum nede\n"
+#~ "Vinkel: Op/ned piletaster\n"
+#~ "Et stykke ammunition per tur"
+
+#~ msgid ""
+#~ "Howto use it : keep space key pressed\n"
+#~ "an ammo per turn"
+#~ msgstr ""
+#~ "Hvordan man bruger det: Hold mellemrum nede\n"
+#~ "Et stykke ammunition per tur"
+
+#~ msgid ""
+#~ "Howto use it : left click on target\n"
+#~ "an ammo per turn"
+#~ msgstr ""
+#~ "Hvordan man bruger det: Venstreklik på målet\n"
+#~ "Et stykke ammunition per tur"
+
+#~ msgid "Hurry up, you are too slow !!"
+#~ msgstr "Skynd dig, du er for langsom!"
+
+#~ msgid ""
+#~ "If you found a bug or have a feature request send us a email (in english, "
+#~ "please):"
+#~ msgstr ""
+#~ "Hvis du har fundet en fejl eller du har en idé til nye ting, så send os "
+#~ "en e-mail (på engelsk, tak):"
+
+#~ msgid "Initial energy"
+#~ msgstr "Energi som udgangspunkt"
+
+#~ msgid ""
+#~ "Initial fire angle : Up/Down\n"
+#~ "Fire : keep space key pressed until the desired strength\n"
+#~ "an ammo per turn"
+#~ msgstr ""
+#~ "Affyringsvinkel (udgangspunkt): Op/ned piletaster\n"
+#~ "Affyr: Hold mellemrum nede indtil den ønskede styrke er nået\n"
+#~ "Et stykke ammunition per tur"
+
+#~ msgid "Initialise map"
+#~ msgstr "Klargører banen"
+
+#~ msgid "Initialise sounds"
+#~ msgstr "Klargører lyde"
+
+#~ msgid "Initialise teams"
+#~ msgstr "Klargører hold"
+
+#~ msgid "It's a present!"
+#~ msgstr "Det er en gave!"
+
+#~ msgid "Jetpack"
+#~ msgstr "Jetpack"
+
+#~ msgid "Join #wormux on irc.freenode.net to find some opponents."
+#~ msgstr "Besøg #wormux på irc.freenode.net for at finde nogle modstandere."
+
+#~ msgid "Jump"
+#~ msgstr "Hop"
+
+#~ msgid "Jump backwards"
+#~ msgstr "Hop baglæns"
+
+#~ msgid "Kicks the players designated by <nickname> out of the game"
+#~ msgstr "Fjerner spilleren under navnet <nickname> fra spillet"
+
+#~ msgid "Load maps:"
+#~ msgstr "Indlæser baner:"
+
+#~ msgid "Load teams:"
+#~ msgstr "Indlæser hold:"
+
+#~ msgid "Local teams:"
+#~ msgstr "Lokale hold:"
+
+#~ msgid "LowGrav"
+#~ msgstr "Svag tyngdekraft"
+
+#~ msgid "Map"
+#~ msgstr "Bane"
+
+#~ msgid "Map %s, a creation of: "
+#~ msgstr "Banen %s, en kreation af: "
+
+#~ msgid "Maps"
+#~ msgstr "Baner"
+
+#~ msgid "Max energy"
+#~ msgstr "Maksimum energi"
+
+#~ msgid "Max number of players:"
+#~ msgstr "Maksimum antal spillere:"
+
+#~ msgid "Mine"
+#~ msgstr "Mine"
+
+#~ msgid "Misc"
+#~ msgstr "Andet"
+
+#~ msgid "Most accurate"
+#~ msgstr "Mest præcis"
+
+#~ msgid "Most sold-out"
+#~ msgstr "Mest udsolgt"
+
+#~ msgid "Most useful"
+#~ msgstr "Mest brugbar"
+
+#~ msgid "Most useless"
+#~ msgstr "Mest ubrugelig"
+
+#~ msgid "Most violent"
+#~ msgstr "Mest voldelig"
+
+#~ msgid "Move camera with mouse or arrows"
+#~ msgstr "Flyt kameraet med mus eller piletaster"
+
+#~ msgid "Move character"
+#~ msgstr "Flyt kriger"
+
+#~ msgid "Music volume"
+#~ msgstr "Musik volume"
+
+#~ msgid "Music?"
+#~ msgstr "Musik?"
+
+#~ msgid "Network Game"
+#~ msgstr "Netværksspil"
+
+#~ msgid "Never"
+#~ msgstr "Aldrig"
+
+#~ msgid "New network game at "
+#~ msgstr "Nyt netværksspil på"
+
+#~ msgid "New player warning?"
+#~ msgstr "Ny spiller notifikation?"
+
+#~ msgid "No element <%s> found in the xml config file!"
+#~ msgstr "Intet <%s> element fundet i XML-konfigurationsfilen!"
+
+#~ msgid "Nobody!"
+#~ msgstr "Ingen!"
+
+#~ msgid "Number of characters"
+#~ msgstr "Antal krigere"
+
+#~ msgid "On a character: Changes active one"
+#~ msgstr "Med en kriger: Skifter aktiv kriger"
+
+#~ msgid "On map: Select a target"
+#~ msgstr "Med kortet: Vælger et mål"
+
+#~ msgid "Options menu"
+#~ msgstr "Instillinger menu"
+
+#~ msgid "Parachute is activated automatically."
+#~ msgstr "Faldskærmen er automatisk aktiveret."
+
+#~ msgid "Password:"
+#~ msgstr "Kodeord:"
+
+#~ msgid "Play"
+#~ msgstr "Spil"
+
+#~ msgid "Player"
+#~ msgstr "Spiller"
+
+#~ msgid "Player energy?"
+#~ msgstr "Vis krigernes energi?"
+
+#~ msgid "Player's name?"
+#~ msgstr "Vis krigernes navne?"
+
+#~ msgid "Polecat Launcher"
+#~ msgstr "Stinkdyrskaster"
+
+#~ msgid "Port:"
+#~ msgstr "Port:"
+
+#~ msgid "Quit Wormux"
+#~ msgstr "Afslut Wormux"
+
+#~ msgid "Quit battle"
+#~ msgstr "Forlad kampen"
+
+#~ msgid "Quit game"
+#~ msgstr "Afslut spillet"
+
+#~ msgid "Random map"
+#~ msgstr "Tilfældig bane"
+
+#~ msgid "Reading personal config file"
+#~ msgstr "Læser personlig konfigureringsfil"
+
+#~ msgid "Riot Bomb"
+#~ msgstr "Oprørsbombe"
+
+#~ msgid "Say: "
+#~ msgstr "Sig: "
+
+#~ msgid "Scroll border size"
+#~ msgstr "Scroll-kant-størrelse"
+
+#~ msgid "Scroll on border"
+#~ msgstr "Rul ved kanten"
+
+#~ msgid "Server address:"
+#~ msgstr "Serveradresse:"
+
+#~ msgid "Server available on Internet"
+#~ msgstr "Server tilgængelig på internettet"
+
+#~ msgid "Shotgun"
+#~ msgstr "Haglgevær"
+
+#~ msgid "Show weapons menu"
+#~ msgstr "Vis våbenmenu"
+
+#~ msgid "Show/hide interface"
+#~ msgstr "Vis/skjul interface"
+
+#~ msgid "Show/hide minimap"
+#~ msgstr "Vis/skjul minimap"
+
+#~ msgid "Skip turn"
+#~ msgstr "Spring denne tur over"
+
+#~ msgid "Slap"
+#~ msgstr "Slå"
+
+#~ msgid "Slap the enemy to make him jump a bit."
+#~ msgstr "Slå fjenden for at få ham til at flytte sig lidt."
+
+#~ msgid "Smaller aim angle and walk step"
+#~ msgstr "Mindre sigtevinkel og skridt"
+
+#~ msgid "Sniper Rifle"
+#~ msgstr "Sniper-riffel"
+
+#~ msgid "Someone put a booby trap into the crate!"
+#~ msgstr "Nogen har puttet en fælde i kassen!"
+
+#~ msgid "Sorry, currently, no game is waiting for players"
+#~ msgstr "Desværre, men der er ingen tilgængelige spil som venter på spillere"
+
+#~ msgid ""
+#~ "Sorry, your version is not supported anymore. Supported version are %s. "
+#~ "You can download a updated version on http://www.wormux.org/wiki/download."
+#~ "php"
+#~ msgstr ""
+#~ "Desværre, men din version er ikke supportet mere. Den nyeste supportede "
+#~ "version er %s. Du kan downloade en opdateret version af Wormux på http://"
+#~ "www.wormux.org/wiki/download.php"
+
+#~ msgid "Sound"
+#~ msgstr "Lyd"
+
+#~ msgid "Sound effects?"
+#~ msgstr "Lydeffekter?"
+
+#~ msgid "Sound frequency"
+#~ msgstr "Lydfrekvens"
+
+#~ msgid "Sounds"
+#~ msgstr "Lyde"
+
+#~ msgid "Stock:"
+#~ msgstr "Lager:"
+
+#~ msgid "Submachine Gun"
+#~ msgstr "Maskinpistol"
+
+#~ msgid "SuperTux"
+#~ msgstr "SuperTux"
+
+#~ msgid "Syringe"
+#~ msgstr "Sprøjte"
+
+#~ msgid "Talk in network battle"
+#~ msgstr "Snak i netværkskamp"
+
+#~ msgid "Team graphs"
+#~ msgstr "Hold-grafer"
+
+#~ msgid "Teams editor"
+#~ msgstr "Holdeditor"
+
+#~ msgid "Teleportation"
+#~ msgstr "Teleportation"
+
+#~ msgid "The Cluster Bomb has left the battlefield before it could explode."
+#~ msgstr "Klyngebomben forlod slagmarken før den eksploderede."
+
+#~ msgid "The Football Bomb has left the battlefield before it could explode."
+#~ msgstr "Fodboldbomben forlod slagmarken før den eksploderede."
+
+#~ msgid "The Gnu left the battlefield before exploding"
+#~ msgstr "Gnuen forlod slagmarken før den eksploderede"
+
+#~ msgid "The Polecat left the battlefield before exploding"
+#~ msgstr "Stinkdyret forlod slagmarken før det eksploderede"
+
+#~ msgid "The automatic rocket has left the battlefield..."
+#~ msgstr "Den laserstyrede raket forlod slagmarken..."
+
+#~ msgid "The ball left the battlefield before exploding"
+#~ msgstr "Bolden forlod slagmarken før den eksploderede"
+
+#~ msgid ""
+#~ "The client and server versions are incompatible (local=%s, server=%s). "
+#~ "Please try another server."
+#~ msgstr ""
+#~ "Klient- og serverversionerne er inkompatible (lokal version: %s, server "
+#~ "version: %s) Prøv venligst en anden server."
+
+#~ msgid "The connection timed out. Check there is no firewall in the way!"
+#~ msgstr "Forbindelsen udløb. Check at der ikke er nogen firewall i vejen!"
+
+#~ msgid "The disco grenade has left the dance floor before exploding"
+#~ msgstr "Diskogranaten forlod dansegulvet før den eksploderede"
+
+#~ msgid "The game was interrupted because you got disconnected."
+#~ msgstr "Spillet blev afbrudt fordi din forbindelse blev brudt."
+
+#~ msgid "The grenade left the battlefield before exploding"
+#~ msgstr "Granaten forlod slagmarken før den eksploderede"
+
+#~ msgid "The others are waiting for you! Wake up :-)"
+#~ msgstr "De andre venter på dig! Vågn op :-)"
+
+#~ msgid "The rocket has left the battlefield..."
+#~ msgstr "Raketten forlod slagmarken..."
+
+#~ msgid "The server rejected the connection."
+#~ msgstr "Serveren afslog forbindelsen."
+
+#~ msgid "The server rejected the connection: wrong password!"
+#~ msgstr "Serveren afslog forbindelsen: forkert kodeord!"
+
+#~ msgid "There is only %i team."
+#~ msgid_plural "There are only %i teams."
+#~ msgstr[0] "Der er kun %i hold."
+#~ msgstr[1] "Der er kun %i hold."
+
+#~ msgid ""
+#~ "Timeout : Wheel mouse or Page Up/Down\n"
+#~ "Angle : Up/Down\n"
+#~ "Fire : keep space key pressed until the desired strength\n"
+#~ "an ammo per turn"
+#~ msgstr ""
+#~ "Lunte: Musehjul eller SideOp/SideNed tasterne\n"
+#~ "Vinkel: Op/ned piletaster\n"
+#~ "Affyr: Hold mellemrum nede indtil den ønskede styrke er nået\n"
+#~ "Et stykke ammunition per tur"
+
+#~ msgid ""
+#~ "Timeout : Wheel mouse or Page Up/Down\n"
+#~ "Angle : Up/Down\n"
+#~ "Fire : space key\n"
+#~ "an ammo per turn"
+#~ msgstr ""
+#~ "Lunte: Musehjul eller SideOp/SideNed tasterne\n"
+#~ "Vinkel: Op/ned piletaster\n"
+#~ "Affyr: Mellemrum\n"
+#~ "Et stykke ammunition per tur"
+
+#~ msgid "Unable to contact host."
+#~ msgstr "Kan ikke kontakte værten."
+
+#~ msgid "Unable to open maps directory (%s)!"
+#~ msgstr "Kan ikke åbne banekataloget (%s)!"
+
+#~ msgid "Unable to open personal maps directory (%s)!"
+#~ msgstr "Kan ikke åbne det personlige banekatalog (%s)!"
+
+#~ msgid "Unable to use this port!"
+#~ msgstr "Kan ikke bruge denne port!"
+
+#~ msgid "Version verification failed because: %s"
+#~ msgstr "Version-verifikation fejlede fordi: %s"
+
+#~ msgid "Wait! %i player is not ready yet!"
+#~ msgid_plural "Wait! %i players are not ready yet!"
+#~ msgstr[0] "Vent! Spiller %i er ikke klar endnu!"
+#~ msgstr[1] "Vent! Spillere %i er ikke klar endnu!"
+
+#~ msgid "Waiting for server, all you can do is cancel or chat!"
+#~ msgstr ""
+#~ "Venter på serveren; det eneste du kan gøre er at annullere eller chatte!"
+
+#~ msgid "Weapon: Fire / Bonus box: falls fast"
+#~ msgstr "Våben: Affyr / bonusboks: falder hurtigt"
+
+#~ msgid "Weapons"
+#~ msgstr "Våben"
+
+#~ msgid "Website: "
+#~ msgstr "Hjemmeside: "
+
+#~ msgid "What a shame for %s - he was killed by a simple gun!"
+#~ msgstr "Hvilken skam for %s – han blev dræbt af en simpel pistol!"
+
+#~ msgid "Wind particles?"
+#~ msgstr "Vindpartikler?"
+
+#~ msgid "Winner"
+#~ msgstr "Vinder"
+
+#~ msgid "Wormux launching..."
+#~ msgstr "Wormux starter..."
+
+#~ msgid "Wrong map CRC!"
+#~ msgstr "Banen har en ugyldig CRC-checksum!"
+
+#~ msgid "Wrong map name!"
+#~ msgstr "Ugyldigt banenavn!"
+
+#~ msgid "Wrong team!"
+#~ msgstr "Ugyldigt hold!"
+
+#~ msgid "You are alone :-/"
+#~ msgstr "Du er alene :-/"
+
+#~ msgid "You are alone..."
+#~ msgstr "Du er alene..."
+
+#~ msgid "You need at least one valid map !"
+#~ msgstr "Du skal vælge mindst én gyldig bane!"
+
+#~ msgid "You need at least two valid teams !"
+#~ msgstr "Du skal vælge mindst to gyldige hold!"
+
+#~ msgid "You won't be able to play before selecting a team !"
+#~ msgstr "Du kan ikke spille før du har valgt et hold!"
+
+#~ msgid "Your shot has missed!"
+#~ msgstr "Du ramte ved siden af!"
+
+#~ msgid "aka"
+#~ msgstr "også kendt som"
+
+#~ msgid ""
+#~ "attack direction : Left/Right\n"
+#~ "Bombing : left clic on target\n"
+#~ "a bombing per turn"
+#~ msgstr ""
+#~ "Angrebsretning: Venstre/højre piletaster\n"
+#~ "Bombning: Venstreklik på målet\n"
+#~ "En bombning per tur"
+
+#~ msgid "couldn't load config"
+#~ msgstr "kunne ikke indlæse konfiguration"
+
+#~ msgid "custom player"
+#~ msgstr "brugerdefineret spiller"
+
+#~ msgid "error parsing the config file"
+#~ msgstr "fejl under fortolkning af konfigurationsfil"
+
+#~ msgid "from"
+#~ msgstr "fra"
+
+#~ msgid "o Loading music"
+#~ msgstr "o Indlæser musik"
+
+#~ msgid "o Loading sound profile: %s"
+#~ msgstr "o Indlæser lydprofilen: %s"
+
+#~ msgid "o Opened audio at %d Hz %d bit"
+#~ msgstr "o Åbnede lydenheden ved %d Hz og %d bit"
+
+#~ msgid "Couldn't fetch last version from %s"
+#~ msgstr "Kunne ikke checkke efter ny version på %s"
+
+#~ msgid "HOME directory (environment variable $HOME) could not be found!"
+#~ msgstr "Hjemme katalog (miljøvariabelen $HOME) blev ikke fundet!"
+
+#~ msgid "Tools"
+#~ msgstr "Værktøj"
+
+#, fuzzy
+#~ msgid "Head commander:"
+#~ msgstr "Hovedkommandør: "
+
+#~ msgid "Delete custom team"
+#~ msgstr "Slet brugerdefineret hold"
+
+#~ msgid "Error in %s:%lu (Wormux %s) : %s"
+#~ msgstr "Fejl i %s: %lu (Wormux %s) : %s"
+
+#~ msgid "Unnamed"
+#~ msgstr "Unavngivet"

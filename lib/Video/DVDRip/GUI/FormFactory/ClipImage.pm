@@ -1,4 +1,4 @@
-# $Id: ClipImage.pm,v 1.7 2006/08/16 19:34:38 joern Exp $
+# $Id: ClipImage.pm 2187 2006-08-16 19:34:38Z joern $
 
 #-----------------------------------------------------------------------
 # Copyright (C) 2001-2006 Jörn Reder <joern AT zyn.de>.

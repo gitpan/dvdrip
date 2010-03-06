@@ -1,4 +1,4 @@
-/* $Id: dvdrip-progress.c,v 1.2 2005/10/30 12:42:58 joern Exp $
+/* $Id: dvdrip-progress.c 1863 2005-10-30 12:42:58Z joern $
  *
  * Copyright (C) 2001-2002 Jörn Reder <joern@zyn.de> All Rights Reserved
  * 

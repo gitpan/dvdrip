@@ -28,7 +28,7 @@ III.
               * 1.1.1 Debian packages
               * 1.1.2 SuSE packages
               * 1.1.3 Mandrake packages
-              * 1.1.4 Fedora packages
+              * 1.1.4 RedHat packages
               * 1.1.5 gentoo packages
               * 1.1.6 FreeBSD port
               * 1.1.7 OpenBSD port
@@ -99,27 +99,13 @@ deb http://www.debian-multimedia.org experimental main
 
      http://plf.zarb.org/
 
-   1.1.4 Fedora packages
+   1.1.4 RedHat packages
 
-   Get dvd::rip for Fedora from here:
+   Matthias Saou does a great job in building dvd::rip and other
+   multimedia related packages. You can find them at freshrpms.net. This
+   is a direct link the dvd::rip package:
 
-     rpmfusion.org
-
-   Here some notes from Nicolas Chauvet about the Fedora package:
-
-   Installation of rpmfusion.org only as told on the website is a
-   pre-requirement. yum install dvdrip will install the dvdrip package but
-   not all the dependencies. Experienced users can install dvdrip-master
-   only on their node controller.
-
-   So to get every dependencies installed one shoult install yum install
-   xvid4conf ffmpeg transcode lsdvd rar2 ogmtools xine mplayer ImageMagick
-   xine-lib-extras-freeworld.
-
-   Actually rar2 and ogmtools will be available sooner or later.
-
-   Problem and packaging bugs can be reported at
-   http://bugzilla.rpmfusion.org.
+     http://freshrpms.net/rpm/perl-Video-DVDRip
 
    1.1.5 gentoo packages
 
@@ -361,8 +347,8 @@ sudo make install
 
    You can ommit the "make install" step. But then you can execute the
    'dvdrip' binary only from the build directory and you must put
-   "$PWD/bin" into your PATH (export PATH=$PWD/bin:$PATH), otherwise
-   dvd::rip can't find its files.
+   "$PWD/bin" into your PATH (export PATH=$PWD:$PATH), otherwise dvd::rip
+   can't find its files.
 
    1.4.2 Update dvd::rip
 
@@ -394,14 +380,16 @@ sudo make install
    Just extract another dvd::rip version you want to use somewhere, enter
    the created directory (dvdrip-x.xx) and execute perl Makefile.PL &&
    make here (no make install). Add the actual directory to your PATH
-   (export PATH=$PWD/bin:$PATH) and you can start this version with
-   bin/dvdrip from this directory. All files and libraries located in the
-   actual distribution directory will be used.
+   (export PATH=$PWD:$PATH) and you can start this version with bin/dvdrip
+   from this directory. All files and libraries located in the actual
+   distribution directory will be used. The . in PATH is neccessary,
+   otherwise some dvd::rip helper binaries may be taken from another
+   place.
 
 tar xvfz dvdrip-x.xx.tar.gz
 cd dvdrip-x.xx
 perl Makefile.PL && make
-export PATH=$PWD/bin:$PATH
+export PATH=$PWD:$PATH
 bin/dvdrip
 
    1.5 Uninstall dvd::rip
@@ -591,7 +579,7 @@ Contact the author
    If you don't want to post to the mailing list for some reasons, you can
    contact me by mail. But be aware, that the response time may be longer,
    comparing to a list posting. The address is:
-   [14]Jörn Reder <joern AT zyn.de>. Please place the word "dvd::rip"
+   [14]Joern Reder <joern AT zyn.de>. Please place the word "dvd::rip"
    somewhere in the subject, in addition to your real topic, because this
    helps me classifying your email correctly. Thanks.
 
@@ -624,39 +612,28 @@ URL References
   15. http://wwwkeys.de.pgp.net:11371/pks/lookup?op=get&search=0x285CF473
 
 VI. CHANGES
-   $Id: Changes,v 1.187.2.16 2009-02-22 18:50:22 joern Exp $
+   $Id: Changes 2398 2010-03-06 13:06:46Z joern $
 
    Revision history and release notes for dvd::rip.
 
-   0.98.10 [stable branch] Sun Feb 22 2009, joern
+   0.98.11 [stable branch] Sat Mar 6 2010, joern
+    Notes:
+    - Event::ExecFlow version 0.64 is required for this version.
+      This fixes a bug where no error messages were shown after
+      ripping short. It was reported via Ubunutu Launchpad:
+      https://bugs.launchpad.net/ubuntu/+source/dvdrip/+bug/478710
+      (You find it in the perl-modules/ directory, which was updated
+       to the most recent versions btw)
+      
     Features:
-    - transcode 1.1 compatibility improved, warning about
-      experimental dvd::rip support removed; there are still issues
-      with some filters in the filter preview dialog; your mileage
-      may vary.
-    - Workaround for transcode h264 two-pass problem, so dvd::rip
-      now supports h264 two-pass encoding.
-    - Applied patch from Jussi Judin <jjudin+dvdrip AT iki.fi> to
-      detect GraphicMagicks as an ImageMagick replacement.
-    - No files will be placed in /tmp anymore, instead all temporary
-      files will go to PROJECT_DIR/tmp. Thanks for the hint to
-      Michael Renner <michael.renner AT gmx.de>.
-    - dvdrip-master doesn't throw warnings on unneeded missing
-      binaries anymore, if installed alone without the full
-      (anyway on the master unneeded) packages. Suggested by
-      Nicolas Chauvet <kwizart AT gmail.com>.
-    - Added .ogv extension for OGG files as another option.
-      Suggested by Nicolas Chauvet.
+    - Updated Danish and Catalan translation. Thanks to Ysangkok,
+      Kenneth Nielson and Joan Farrerons.
+    - Turn "ripping short" error message into a warning, so the
+      ripping process continues and it's up to the user to decide
+      whether this is critical or not.
 
     Bugfixes:
-    - Fixed cluster mode audio processing with transcode 1.1.x.
-      Thanks for the report to Samuele Giovanni Tonon <samu AT
-      linuxasylum.net>.
-    - Fixed race condition which could result in a missing audio
-      merge in cluster mode when title has one track. Based on a
-      patch from Matt Lawrence <m3lawren AT uwaterloo.ca>.
-    - Fixed wrong progress information (not taking chunks into
-      account) in cluster mode.
-    - Added a patch from Nicolas Chauvet to fix a problem with
-      Fedora's Perl (setlocale).
-    
+    - Fixed h264 2pass cluster mode bug, generating a malformed
+      transcode command. Reported by semkath <semkath AT arcor.de>
+      and Christiaan Putter <ceputter AT googlemail.com>.
+

@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.12 2005/10/09 11:26:10 joern Exp $
+# $Id: Makefile 1791 2005-10-09 11:26:10Z joern $
 
 all:	../bin/dvdrip-splitpipe ../bin/dvdrip-progress
 

@@ -1,4 +1,4 @@
-# $Id: Preferences.pm,v 1.14.2.1 2007/08/09 21:36:08 joern Exp $
+# $Id: Preferences.pm 2343 2007-08-09 21:36:08Z joern $
 
 #-----------------------------------------------------------------------
 # Copyright (C) 2001-2006 Jörn Reder <joern AT zyn.de>.
